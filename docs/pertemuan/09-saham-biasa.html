@@ -1,0 +1,1857 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="id" xml:lang="id"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Pertemuan 9: Dasar-Dasar Saham Biasa – Manajemen Investasi — EKM 19608</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-597958c53c93a607afca12fd375c57ed.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-7ac2f9da8c2617a4fdd15004b4601015.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-597958c53c93a607afca12fd375c57ed.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-7e5b54916349f3e3ac0a4b69b610fb13.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-c249eed7ddef9cecbef6d31ce12e065b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-7e5b54916349f3e3ac0a4b69b610fb13.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Tidak ada hasil",
+    "search-matching-documents-text": "dokumen cocok",
+    "search-copy-link-title": "Salin tautan untuk mencari",
+    "search-hide-matches-text": "Sembunyikan kecocokan lainnya",
+    "search-more-match-text": "kecocokan lainnya di dokumen ini",
+    "search-more-matches-text": "kecocokan lainnya di dokumen ini",
+    "search-clear-button-title": "Hapus",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Batal",
+    "search-submit-button-title": "Kirim",
+    "search-label": "Mencari"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Manajemen Investasi — EKM 19608</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Mencari"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Alihkan navigasi" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Beranda</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-materi" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Materi</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-materi">    
+        <li>
+    <a class="dropdown-item" href="../pertemuan/01-overview.html">
+ <span class="dropdown-text">01 — Overview Manajemen Investasi</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pertemuan/02-aset-investasi.html">
+ <span class="dropdown-text">02 — Kelas Aset &amp; Perusahaan Investasi</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pertemuan/03-seleksi-portofolio.html">
+ <span class="dropdown-text">03 — Seleksi Portofolio</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pertemuan/04-capm.html">
+ <span class="dropdown-text">04 — Capital Asset Pricing Model</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pertemuan/05-model-faktor.html">
+ <span class="dropdown-text">05 — Model Faktor &amp; Pengantar Multifaktor</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pertemuan/06-dinamika-harga.html">
+ <span class="dropdown-text">06 — Dinamika Harga Aset</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pertemuan/07-alokasi-aset.html">
+ <span class="dropdown-text">07 — Alokasi Aset &amp; Konstruksi Portofolio</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../pertemuan/09-saham-biasa.html">
+ <span class="dropdown-text">09 — Dasar-Dasar Saham Biasa</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pertemuan/10-manajemen-portofolio-ekuitas.html">
+ <span class="dropdown-text">10 — Manajemen Portofolio Ekuitas</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pertemuan/11-valuasi-saham.html">
+ <span class="dropdown-text">11 — Valuasi Saham</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pertemuan/12-portofolio-kuantitatif.html">
+ <span class="dropdown-text">12 — Reksa Dana &amp; ETF</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pertemuan/13-long-short.html">
+ <span class="dropdown-text">13 — Obligasi &amp; Pendapatan Tetap</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pertemuan/14-risiko-derivatif.html">
+ <span class="dropdown-text">14 — Derivatif Ekuitas &amp; Hedging</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-latihan" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Latihan</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-latihan">    
+        <li>
+    <a class="dropdown-item" href="../latihan/latihan-uts.html">
+ <span class="dropdown-text">Latihan UTS</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../latihan/latihan-uas.html">
+ <span class="dropdown-text">Latihan UAS</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../referensi.html"> 
+<span class="menu-text">Referensi</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Alihkan mode gelap"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Di halaman ini</h2>
+   
+  <ul>
+  <li><a href="#tujuan-pembelajaran" id="toc-tujuan-pembelajaran" class="nav-link active" data-scroll-target="#tujuan-pembelajaran"><span class="header-section-number">1</span> Tujuan Pembelajaran</a></li>
+  <li><a href="#karakteristik-saham-biasa" id="toc-karakteristik-saham-biasa" class="nav-link" data-scroll-target="#karakteristik-saham-biasa"><span class="header-section-number">2</span> Karakteristik Saham Biasa</a>
+  <ul class="collapse">
+  <li><a href="#definisi" id="toc-definisi" class="nav-link" data-scroll-target="#definisi"><span class="header-section-number">2.1</span> Definisi</a></li>
+  <li><a href="#hak-hak-pemegang-saham-biasa" id="toc-hak-hak-pemegang-saham-biasa" class="nav-link" data-scroll-target="#hak-hak-pemegang-saham-biasa"><span class="header-section-number">2.2</span> Hak-Hak Pemegang Saham Biasa</a></li>
+  <li><a href="#saham-biasa-vs.-saham-preferen" id="toc-saham-biasa-vs.-saham-preferen" class="nav-link" data-scroll-target="#saham-biasa-vs.-saham-preferen"><span class="header-section-number">2.3</span> Saham Biasa vs.&nbsp;Saham Preferen</a></li>
+  </ul></li>
+  <li><a href="#klasifikasi-saham" id="toc-klasifikasi-saham" class="nav-link" data-scroll-target="#klasifikasi-saham"><span class="header-section-number">3</span> Klasifikasi Saham</a>
+  <ul class="collapse">
+  <li><a href="#berdasarkan-kapitalisasi-pasar" id="toc-berdasarkan-kapitalisasi-pasar" class="nav-link" data-scroll-target="#berdasarkan-kapitalisasi-pasar"><span class="header-section-number">3.1</span> Berdasarkan Kapitalisasi Pasar</a></li>
+  <li><a href="#berdasarkan-style-investasi" id="toc-berdasarkan-style-investasi" class="nav-link" data-scroll-target="#berdasarkan-style-investasi"><span class="header-section-number">3.2</span> Berdasarkan Style Investasi</a></li>
+  <li><a href="#contoh-klasifikasi-di-bei" id="toc-contoh-klasifikasi-di-bei" class="nav-link" data-scroll-target="#contoh-klasifikasi-di-bei"><span class="header-section-number">3.3</span> Contoh Klasifikasi di BEI</a></li>
+  </ul></li>
+  <li><a href="#pasar-modal-dan-mekanisme-perdagangan" id="toc-pasar-modal-dan-mekanisme-perdagangan" class="nav-link" data-scroll-target="#pasar-modal-dan-mekanisme-perdagangan"><span class="header-section-number">4</span> Pasar Modal dan Mekanisme Perdagangan</a>
+  <ul class="collapse">
+  <li><a href="#pasar-primer-vs.-pasar-sekunder" id="toc-pasar-primer-vs.-pasar-sekunder" class="nav-link" data-scroll-target="#pasar-primer-vs.-pasar-sekunder"><span class="header-section-number">4.1</span> Pasar Primer vs.&nbsp;Pasar Sekunder</a></li>
+  <li><a href="#mekanisme-perdagangan-di-bei" id="toc-mekanisme-perdagangan-di-bei" class="nav-link" data-scroll-target="#mekanisme-perdagangan-di-bei"><span class="header-section-number">4.2</span> Mekanisme Perdagangan di BEI</a></li>
+  <li><a href="#biaya-transaksi" id="toc-biaya-transaksi" class="nav-link" data-scroll-target="#biaya-transaksi"><span class="header-section-number">4.3</span> Biaya Transaksi</a></li>
+  </ul></li>
+  <li><a href="#indeks-saham" id="toc-indeks-saham" class="nav-link" data-scroll-target="#indeks-saham"><span class="header-section-number">5</span> Indeks Saham</a>
+  <ul class="collapse">
+  <li><a href="#fungsi-indeks" id="toc-fungsi-indeks" class="nav-link" data-scroll-target="#fungsi-indeks"><span class="header-section-number">5.1</span> Fungsi Indeks</a></li>
+  <li><a href="#metode-pembobotan-indeks" id="toc-metode-pembobotan-indeks" class="nav-link" data-scroll-target="#metode-pembobotan-indeks"><span class="header-section-number">5.2</span> Metode Pembobotan Indeks</a></li>
+  <li><a href="#contoh-perhitungan-price-weighted-index" id="toc-contoh-perhitungan-price-weighted-index" class="nav-link" data-scroll-target="#contoh-perhitungan-price-weighted-index"><span class="header-section-number">5.3</span> Contoh Perhitungan — Price-Weighted Index</a></li>
+  <li><a href="#contoh-perhitungan-value-weighted-index" id="toc-contoh-perhitungan-value-weighted-index" class="nav-link" data-scroll-target="#contoh-perhitungan-value-weighted-index"><span class="header-section-number">5.4</span> Contoh Perhitungan — Value-Weighted Index</a></li>
+  <li><a href="#indeks-di-indonesia" id="toc-indeks-di-indonesia" class="nav-link" data-scroll-target="#indeks-di-indonesia"><span class="header-section-number">5.5</span> Indeks di Indonesia</a></li>
+  </ul></li>
+  <li><a href="#ringkasan" id="toc-ringkasan" class="nav-link" data-scroll-target="#ringkasan"><span class="header-section-number">6</span> Ringkasan</a></li>
+  <li><a href="#latihan-soal" id="toc-latihan-soal" class="nav-link" data-scroll-target="#latihan-soal"><span class="header-section-number">7</span> Latihan Soal</a></li>
+  <li><a href="#referensi" id="toc-referensi" class="nav-link" data-scroll-target="#referensi"><span class="header-section-number">8</span> Referensi</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title">Pertemuan 9: Dasar-Dasar Saham Biasa</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Kode</button></div></div>
+<p class="subtitle lead">Manajemen Investasi — EKM 19608</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="tujuan-pembelajaran" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="tujuan-pembelajaran"><span class="header-section-number">1</span> Tujuan Pembelajaran</h2>
+<p>Setelah mengikuti pertemuan ini, mahasiswa diharapkan mampu:</p>
+<ol type="1">
+<li>Menjelaskan karakteristik dan hak-hak pemegang saham biasa.</li>
+<li>Membedakan jenis-jenis saham berdasarkan <em>style</em> dan kapitalisasi pasar.</li>
+<li>Memahami mekanisme perdagangan saham di pasar modal Indonesia.</li>
+<li>Menghitung indeks saham menggunakan berbagai metode pembobotan.</li>
+<li>Memahami peran pasar primer dan sekunder dalam penerbitan saham.</li>
+</ol>
+</section>
+<section id="karakteristik-saham-biasa" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="karakteristik-saham-biasa"><span class="header-section-number">2</span> Karakteristik Saham Biasa</h2>
+<section id="definisi" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="definisi"><span class="header-section-number">2.1</span> Definisi</h3>
+<p><strong>Saham biasa</strong> (<em>common stock</em>) merepresentasikan kepemilikan residual (<em>residual ownership</em>) dalam suatu perusahaan. Pemegang saham biasa memiliki klaim terakhir atas aset dan pendapatan perusahaan — setelah kreditur dan pemegang saham preferen.</p>
+</section>
+<section id="hak-hak-pemegang-saham-biasa" class="level3" data-number="2.2">
+<h3 data-number="2.2" class="anchored" data-anchor-id="hak-hak-pemegang-saham-biasa"><span class="header-section-number">2.2</span> Hak-Hak Pemegang Saham Biasa</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 31%">
+<col style="width: 68%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Hak</th>
+<th>Penjelasan</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Hak suara</strong> (<em>voting rights</em>)</td>
+<td>Satu saham = satu suara dalam RUPS; memilih dewan komisaris dan direksi</td>
+</tr>
+<tr class="even">
+<td><strong>Hak atas dividen</strong></td>
+<td>Menerima distribusi laba jika dewan memutuskan pembagian dividen</td>
+</tr>
+<tr class="odd">
+<td><strong>Hak klaim residual</strong></td>
+<td>Klaim atas aset perusahaan setelah semua kewajiban dilunasi (saat likuidasi)</td>
+</tr>
+<tr class="even">
+<td><strong>Hak pre-emptive</strong></td>
+<td>Prioritas membeli saham baru (<em>rights issue</em>) untuk menjaga proporsi kepemilikan</td>
+</tr>
+<tr class="odd">
+<td><strong>Hak transferability</strong></td>
+<td>Dapat menjual/mentransfer saham di pasar sekunder</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Catatan</span>Definisi — Limited Liability
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Tanggung jawab pemegang saham <strong>terbatas</strong> pada jumlah investasi. Jika perusahaan bangkrut, pemegang saham kehilangan maksimal sebesar nilai investasinya — tidak lebih.</p>
+</div>
+</div>
+</section>
+<section id="saham-biasa-vs.-saham-preferen" class="level3" data-number="2.3">
+<h3 data-number="2.3" class="anchored" data-anchor-id="saham-biasa-vs.-saham-preferen"><span class="header-section-number">2.3</span> Saham Biasa vs.&nbsp;Saham Preferen</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 33%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspek</th>
+<th>Saham Biasa</th>
+<th>Saham Preferen</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Dividen</strong></td>
+<td>Tidak dijamin, variabel</td>
+<td>Dijamin (<em>fixed</em>), dibayar lebih dulu</td>
+</tr>
+<tr class="even">
+<td><strong>Hak suara</strong></td>
+<td>Ada</td>
+<td>Biasanya tidak ada</td>
+</tr>
+<tr class="odd">
+<td><strong>Klaim likuidasi</strong></td>
+<td>Terakhir (residual)</td>
+<td>Sebelum saham biasa</td>
+</tr>
+<tr class="even">
+<td><strong>Potensi <em>capital gain</em></strong></td>
+<td>Tidak terbatas</td>
+<td>Terbatas</td>
+</tr>
+<tr class="odd">
+<td><strong>Sensitivitas terhadap kinerja</strong></td>
+<td>Tinggi</td>
+<td>Rendah</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="blockquote">
+<p><em>Sumber: Smart, Gitman &amp; Joehnk (2017), Ch. 6</em></p>
+</blockquote>
+</section>
+</section>
+<section id="klasifikasi-saham" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="klasifikasi-saham"><span class="header-section-number">3</span> Klasifikasi Saham</h2>
+<section id="berdasarkan-kapitalisasi-pasar" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="berdasarkan-kapitalisasi-pasar"><span class="header-section-number">3.1</span> Berdasarkan Kapitalisasi Pasar</h3>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Catatan</span>Definisi — Kapitalisasi Pasar (Market Capitalization)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span class="math display">\[
+\text{Market Cap} = \text{Harga Saham} \times \text{Jumlah Saham Beredar}
+\]</span></p>
+</div>
+</div>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 46%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Kategori</th>
+<th style="text-align: center;">Kapitalisasi Pasar</th>
+<th>Karakteristik</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Large-cap</strong> (<em>blue chips</em>)</td>
+<td style="text-align: center;">&gt; Rp 40 triliun (atau &gt;$10B)</td>
+<td>Stabil, likuid, dividennya konsisten</td>
+</tr>
+<tr class="even">
+<td><strong>Mid-cap</strong></td>
+<td style="text-align: center;">Rp 10–40 triliun ($2–10B)</td>
+<td>Pertumbuhan moderat, likuiditas cukup</td>
+</tr>
+<tr class="odd">
+<td><strong>Small-cap</strong></td>
+<td style="text-align: center;">Rp 1–10 triliun ($300M–2B)</td>
+<td>Potensi pertumbuhan tinggi, volatil</td>
+</tr>
+<tr class="even">
+<td><strong>Micro-cap</strong></td>
+<td style="text-align: center;">&lt; Rp 1 triliun (&lt;$300M)</td>
+<td>Sangat volatil, likuiditas rendah</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="berdasarkan-style-investasi" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="berdasarkan-style-investasi"><span class="header-section-number">3.2</span> Berdasarkan Style Investasi</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 39%">
+<col style="width: 39%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Style</th>
+<th>Karakteristik</th>
+<th>Metrik Kunci</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Value stocks</strong></td>
+<td>P/E rendah, P/B rendah, <em>dividend yield</em> tinggi</td>
+<td>P/E &lt; rata-rata sektor</td>
+</tr>
+<tr class="even">
+<td><strong>Growth stocks</strong></td>
+<td>Pertumbuhan EPS tinggi, P/E tinggi, <em>dividend yield</em> rendah</td>
+<td>Pertumbuhan EPS &gt; 15%/tahun</td>
+</tr>
+<tr class="odd">
+<td><strong>Income stocks</strong></td>
+<td>Dividen stabil dan tinggi; <em>payout ratio</em> besar</td>
+<td><em>Dividend yield</em> &gt; 4%</td>
+</tr>
+<tr class="even">
+<td><strong>Cyclical stocks</strong></td>
+<td>Kinerja mengikuti siklus ekonomi</td>
+<td>Sektor: properti, otomotif, komoditas</td>
+</tr>
+<tr class="odd">
+<td><strong>Defensive stocks</strong></td>
+<td>Stabil di berbagai kondisi ekonomi</td>
+<td>Sektor: konsumer, utilitas, kesehatan</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="contoh-klasifikasi-di-bei" class="level3" data-number="3.3">
+<h3 data-number="3.3" class="anchored" data-anchor-id="contoh-klasifikasi-di-bei"><span class="header-section-number">3.3</span> Contoh Klasifikasi di BEI</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 37%">
+<col style="width: 20%">
+<col style="width: 22%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Saham</th>
+<th style="text-align: center;">Kategori Cap</th>
+<th style="text-align: center;">Style</th>
+<th>Sektor</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>BBCA (Bank Central Asia)</td>
+<td style="text-align: center;">Large-cap</td>
+<td style="text-align: center;">Growth/Value</td>
+<td>Keuangan</td>
+</tr>
+<tr class="even">
+<td>TLKM (Telkom Indonesia)</td>
+<td style="text-align: center;">Large-cap</td>
+<td style="text-align: center;">Income/Defensive</td>
+<td>Telekomunikasi</td>
+</tr>
+<tr class="odd">
+<td>ASII (Astra International)</td>
+<td style="text-align: center;">Large-cap</td>
+<td style="text-align: center;">Cyclical</td>
+<td>Konglomerasi</td>
+</tr>
+<tr class="even">
+<td>ACES (Ace Hardware)</td>
+<td style="text-align: center;">Mid-cap</td>
+<td style="text-align: center;">Growth</td>
+<td>Ritel</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="blockquote">
+<p><em>Sumber: Smart, Gitman &amp; Joehnk (2017), Ch. 6; Fabozzi &amp; Markowitz (2011), Ch. 9</em></p>
+</blockquote>
+</section>
+</section>
+<section id="pasar-modal-dan-mekanisme-perdagangan" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="pasar-modal-dan-mekanisme-perdagangan"><span class="header-section-number">4</span> Pasar Modal dan Mekanisme Perdagangan</h2>
+<section id="pasar-primer-vs.-pasar-sekunder" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="pasar-primer-vs.-pasar-sekunder"><span class="header-section-number">4.1</span> Pasar Primer vs.&nbsp;Pasar Sekunder</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 37%">
+<col style="width: 42%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspek</th>
+<th>Pasar Primer</th>
+<th>Pasar Sekunder</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Fungsi</strong></td>
+<td>Penerbitan saham baru</td>
+<td>Perdagangan saham yang sudah beredar</td>
+</tr>
+<tr class="even">
+<td><strong>Pihak terlibat</strong></td>
+<td>Emiten ↔︎ Investor (via underwriter)</td>
+<td>Investor ↔︎ Investor (via broker)</td>
+</tr>
+<tr class="odd">
+<td><strong>Mekanisme</strong></td>
+<td>IPO, Rights Issue, Private Placement</td>
+<td>Order matching di bursa</td>
+</tr>
+<tr class="even">
+<td><strong>Penerima dana</strong></td>
+<td>Emiten (perusahaan)</td>
+<td>Investor penjual</td>
+</tr>
+<tr class="odd">
+<td><strong>Contoh</strong></td>
+<td>IPO GoTo (GOTO) 2022</td>
+<td>Jual-beli BBCA di BEI</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="mekanisme-perdagangan-di-bei" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="mekanisme-perdagangan-di-bei"><span class="header-section-number">4.2</span> Mekanisme Perdagangan di BEI</h3>
+<p>Bursa Efek Indonesia (BEI) menggunakan sistem <strong>JATS</strong> (<em>Jakarta Automated Trading System</em>):</p>
+<ul>
+<li><strong>Sesi perdagangan</strong>: Sesi I (09.00–12.00) dan Sesi II (13.30–16.00) WIB</li>
+<li><strong>Satuan lot</strong>: 100 lembar saham per lot</li>
+<li><strong>Tick size</strong>: Fraksi harga tergantung level harga (Rp 1, Rp 2, Rp 5, Rp 10, Rp 25)</li>
+<li><strong>Settlement</strong>: T+2 (dua hari kerja setelah transaksi)</li>
+<li><strong>Auto rejection</strong>: ±20–35% dari harga sebelumnya (tergantung board)</li>
+</ul>
+</section>
+<section id="biaya-transaksi" class="level3" data-number="4.3">
+<h3 data-number="4.3" class="anchored" data-anchor-id="biaya-transaksi"><span class="header-section-number">4.3</span> Biaya Transaksi</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Komponen</th>
+<th style="text-align: center;">Beli</th>
+<th style="text-align: center;">Jual</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Komisi broker</td>
+<td style="text-align: center;">0,10–0,30%</td>
+<td style="text-align: center;">0,10–0,30%</td>
+</tr>
+<tr class="even">
+<td>Pajak final</td>
+<td style="text-align: center;">0%</td>
+<td style="text-align: center;">0,10%</td>
+</tr>
+<tr class="odd">
+<td><strong>Total estimasi</strong></td>
+<td style="text-align: center;"><strong>~0,15–0,30%</strong></td>
+<td style="text-align: center;"><strong>~0,25–0,40%</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Insight Praktis
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Biaya transaksi mungkin terlihat kecil, tetapi bagi investor aktif (<em>frequent trader</em>), total biaya bisa terakumulasi secara signifikan. Investor dengan portofolio Rp 100 juta yang melakukan <em>turnover</em> 300% per tahun bisa membayar biaya transaksi ~Rp 1,5–2 juta per tahun.</p>
+</div>
+</div>
+<blockquote class="blockquote">
+<p><em>Sumber: Smart, Gitman &amp; Joehnk (2017), Ch. 6</em></p>
+</blockquote>
+</section>
+</section>
+<section id="indeks-saham" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="indeks-saham"><span class="header-section-number">5</span> Indeks Saham</h2>
+<section id="fungsi-indeks" class="level3" data-number="5.1">
+<h3 data-number="5.1" class="anchored" data-anchor-id="fungsi-indeks"><span class="header-section-number">5.1</span> Fungsi Indeks</h3>
+<p>Indeks saham berfungsi sebagai:</p>
+<ol type="1">
+<li><strong>Barometer pasar</strong> — mengukur arah dan magnitude pergerakan pasar secara keseluruhan</li>
+<li><strong>Benchmark</strong> — tolok ukur kinerja portofolio</li>
+<li><strong>Basis produk investasi</strong> — dasar ETF, index fund, dan derivatif</li>
+</ol>
+</section>
+<section id="metode-pembobotan-indeks" class="level3" data-number="5.2">
+<h3 data-number="5.2" class="anchored" data-anchor-id="metode-pembobotan-indeks"><span class="header-section-number">5.2</span> Metode Pembobotan Indeks</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 30%">
+<col style="width: 43%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Metode</th>
+<th>Formula</th>
+<th>Contoh Indeks</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Price-weighted</strong></td>
+<td>Rata-rata harga saham</td>
+<td>Dow Jones Industrial Average</td>
+</tr>
+<tr class="even">
+<td><strong>Value-weighted</strong> (cap-weighted)</td>
+<td>Bobot = market cap / total market cap</td>
+<td>IHSG, S&amp;P 500</td>
+</tr>
+<tr class="odd">
+<td><strong>Equal-weighted</strong></td>
+<td>Setiap saham berbobot sama (1/N)</td>
+<td>S&amp;P 500 Equal Weight</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="contoh-perhitungan-price-weighted-index" class="level3" data-number="5.3">
+<h3 data-number="5.3" class="anchored" data-anchor-id="contoh-perhitungan-price-weighted-index"><span class="header-section-number">5.3</span> Contoh Perhitungan — Price-Weighted Index</h3>
+<p>Tiga saham dalam indeks:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Saham</th>
+<th style="text-align: center;">Harga (<span class="math inline">\(t_0\)</span>)</th>
+<th style="text-align: center;">Harga (<span class="math inline">\(t_1\)</span>)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td style="text-align: center;">Rp 2.000</td>
+<td style="text-align: center;">Rp 2.200</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td style="text-align: center;">Rp 5.000</td>
+<td style="text-align: center;">Rp 4.800</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td style="text-align: center;">Rp 3.000</td>
+<td style="text-align: center;">Rp 3.300</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Indeks awal</strong> (basis = 100):</p>
+<p><span class="math display">\[
+\text{Divisor}_0 = \frac{2.000 + 5.000 + 3.000}{100} = 100
+\]</span></p>
+<p><span class="math display">\[
+\text{Indeks}_1 = \frac{2.200 + 4.800 + 3.300}{100} = 103
+\]</span></p>
+<p><strong>Return indeks:</strong> <span class="math inline">\(\frac{103 - 100}{100} = 3\%\)</span></p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Peringatan</span>Kesalahan Umum
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Pada <em>price-weighted index</em>, saham dengan <strong>harga lebih tinggi</strong> memiliki pengaruh lebih besar terhadap indeks — <em>bukan</em> saham dengan market cap terbesar. Ini menjadi kelemahan utama Dow Jones: saham berharga $300 mempengaruhi indeks 10× lebih besar dari saham $30, terlepas dari ukuran perusahaan.</p>
+</div>
+</div>
+</section>
+<section id="contoh-perhitungan-value-weighted-index" class="level3" data-number="5.4">
+<h3 data-number="5.4" class="anchored" data-anchor-id="contoh-perhitungan-value-weighted-index"><span class="header-section-number">5.4</span> Contoh Perhitungan — Value-Weighted Index</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Saham</th>
+<th style="text-align: center;">Harga (<span class="math inline">\(t_0\)</span>)</th>
+<th style="text-align: center;">Saham Beredar</th>
+<th style="text-align: center;">Market Cap (<span class="math inline">\(t_0\)</span>)</th>
+<th style="text-align: center;">Harga (<span class="math inline">\(t_1\)</span>)</th>
+<th style="text-align: center;">Market Cap (<span class="math inline">\(t_1\)</span>)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>X</td>
+<td style="text-align: center;">Rp 1.000</td>
+<td style="text-align: center;">10 juta</td>
+<td style="text-align: center;">Rp 10 M</td>
+<td style="text-align: center;">Rp 1.100</td>
+<td style="text-align: center;">Rp 11 M</td>
+</tr>
+<tr class="even">
+<td>Y</td>
+<td style="text-align: center;">Rp 500</td>
+<td style="text-align: center;">40 juta</td>
+<td style="text-align: center;">Rp 20 M</td>
+<td style="text-align: center;">Rp 480</td>
+<td style="text-align: center;">Rp 19,2 M</td>
+</tr>
+<tr class="odd">
+<td>Z</td>
+<td style="text-align: center;">Rp 2.000</td>
+<td style="text-align: center;">5 juta</td>
+<td style="text-align: center;">Rp 10 M</td>
+<td style="text-align: center;">Rp 2.100</td>
+<td style="text-align: center;">Rp 10,5 M</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Total market cap:</strong> <span class="math inline">\(t_0 = \text{Rp 40 M}\)</span>, <span class="math inline">\(t_1 = \text{Rp 40,7 M}\)</span></p>
+<p><span class="math display">\[
+\text{Indeks}_1 = \frac{40{,}7}{40{,}0} \times 100 = 101{,}75
+\]</span></p>
+<p><strong>Return indeks:</strong> <span class="math inline">\(1{,}75\%\)</span> — didominasi oleh saham Y karena market cap terbesar.</p>
+</section>
+<section id="indeks-di-indonesia" class="level3" data-number="5.5">
+<h3 data-number="5.5" class="anchored" data-anchor-id="indeks-di-indonesia"><span class="header-section-number">5.5</span> Indeks di Indonesia</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 32%">
+<col style="width: 32%">
+<col style="width: 36%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Indeks</th>
+<th>Metode</th>
+<th>Cakupan</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>IHSG</strong> (Jakarta Composite Index)</td>
+<td>Value-weighted</td>
+<td>Semua saham tercatat di BEI</td>
+</tr>
+<tr class="even">
+<td><strong>LQ45</strong></td>
+<td>Value-weighted</td>
+<td>45 saham paling likuid</td>
+</tr>
+<tr class="odd">
+<td><strong>IDX30</strong></td>
+<td>Value-weighted</td>
+<td>30 saham paling likuid &amp; berkapitalisasi besar</td>
+</tr>
+<tr class="even">
+<td><strong>IDX80</strong></td>
+<td>Value-weighted</td>
+<td>80 saham likuiditas &amp; fundamentals baik</td>
+</tr>
+<tr class="odd">
+<td><strong>Jakarta Islamic Index (JII)</strong></td>
+<td>Value-weighted</td>
+<td>30 saham syariah paling likuid</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="blockquote">
+<p><em>Sumber: Fabozzi &amp; Markowitz (2011), Ch. 9; Reilly &amp; Brown (2015), Ch. 5</em></p>
+</blockquote>
+</section>
+</section>
+<section id="ringkasan" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="ringkasan"><span class="header-section-number">6</span> Ringkasan</h2>
+<ol type="1">
+<li><strong>Saham biasa</strong> memberikan kepemilikan residual dengan hak suara, hak dividen, dan <em>limited liability</em>.</li>
+<li>Saham diklasifikasikan berdasarkan <strong>kapitalisasi pasar</strong> (large/mid/small-cap) dan <strong>style</strong> (value, growth, income, cyclical, defensive).</li>
+<li><strong>Pasar primer</strong> untuk penerbitan baru (IPO), <strong>pasar sekunder</strong> untuk perdagangan antar investor.</li>
+<li><strong>Indeks saham</strong> mengukur pergerakan pasar; metode pembobotan (<em>price-weighted</em>, <em>value-weighted</em>, <em>equal-weighted</em>) menghasilkan return indeks yang berbeda.</li>
+<li>Di Indonesia, IHSG menggunakan metode <em>value-weighted</em> dan mencakup seluruh saham tercatat di BEI.</li>
+</ol>
+</section>
+<section id="latihan-soal" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="latihan-soal"><span class="header-section-number">7</span> Latihan Soal</h2>
+<p><strong>Soal 1 — Hak Pemegang Saham</strong></p>
+<p>PT ABC akan melakukan <em>rights issue</em> dengan rasio 5:1 (setiap 5 saham lama berhak membeli 1 saham baru) di harga Rp 4.000. Harga pasar saat ini Rp 5.500. Investor A memiliki 10.000 saham. (a) Berapa saham baru yang boleh dibeli? (b) Hitung nilai teoritis <em>right</em> per saham. (c) Berapa <em>theoretical ex-rights price</em> (TERP)?</p>
+<p><strong>Soal 2 — Klasifikasi Saham</strong></p>
+<p>Berikan klasifikasi (cap size dan style) untuk saham-saham berikut berdasarkan data:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Saham</th>
+<th style="text-align: center;">Market Cap</th>
+<th style="text-align: center;">P/E</th>
+<th style="text-align: center;">Pertumbuhan EPS</th>
+<th style="text-align: center;">Dividend Yield</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>P</td>
+<td style="text-align: center;">Rp 250 T</td>
+<td style="text-align: center;">12×</td>
+<td style="text-align: center;">8%</td>
+<td style="text-align: center;">5,2%</td>
+</tr>
+<tr class="even">
+<td>Q</td>
+<td style="text-align: center;">Rp 8 T</td>
+<td style="text-align: center;">35×</td>
+<td style="text-align: center;">25%</td>
+<td style="text-align: center;">0,5%</td>
+</tr>
+<tr class="odd">
+<td>R</td>
+<td style="text-align: center;">Rp 500 M</td>
+<td style="text-align: center;">8×</td>
+<td style="text-align: center;">3%</td>
+<td style="text-align: center;">7,1%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Soal 3 — Indeks Harga Saham</strong></p>
+<p>Hitung return indeks menggunakan metode <em>price-weighted</em> dan <em>value-weighted</em>:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Saham</th>
+<th style="text-align: center;">Harga Awal</th>
+<th style="text-align: center;">Harga Akhir</th>
+<th style="text-align: center;">Saham Beredar</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>D</td>
+<td style="text-align: center;">Rp 3.000</td>
+<td style="text-align: center;">Rp 3.300</td>
+<td style="text-align: center;">5 juta</td>
+</tr>
+<tr class="even">
+<td>E</td>
+<td style="text-align: center;">Rp 1.500</td>
+<td style="text-align: center;">Rp 1.425</td>
+<td style="text-align: center;">20 juta</td>
+</tr>
+<tr class="odd">
+<td>F</td>
+<td style="text-align: center;">Rp 6.000</td>
+<td style="text-align: center;">Rp 6.600</td>
+<td style="text-align: center;">2 juta</td>
+</tr>
+</tbody>
+</table>
+<p>Bandingkan hasilnya dan jelaskan mengapa berbeda.</p>
+<p><strong>Soal 4 — Biaya Transaksi</strong></p>
+<p>Investor membeli 50 lot saham BBCA di harga Rp 9.000 dan menjualnya sebulan kemudian di Rp 9.500. Komisi broker: 0,15% (beli) dan 0,20% (jual). Pajak jual: 0,10%. Hitung: (a) Total biaya transaksi (beli + jual). (b) <em>Net profit</em> setelah semua biaya. (c) <em>Effective return</em> (%).</p>
+</section>
+<section id="referensi" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="referensi"><span class="header-section-number">8</span> Referensi</h2>
+<ul>
+<li>Fabozzi, F. J., &amp; Markowitz, H. M. (2011). <em>The Theory and Practice of Investment Management</em> (2nd ed.), Chapter 9. John Wiley &amp; Sons.</li>
+<li>Reilly, F. K., &amp; Brown, K. C. (2015). <em>Investment Analysis and Portfolio Management</em> (10th ed.), Chapter 5. Cengage Learning.</li>
+<li>Smart, S. B., Gitman, L. J., &amp; Joehnk, M. D. (2017). <em>Fundamentals of Investing</em> (13th ed.), Chapter 6. Pearson.</li>
+</ul>
+
+
+<!-- -->
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Disalin!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Disalin!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+    const viewSource = window.document.getElementById('quarto-view-source') ||
+                       window.document.getElementById('quarto-code-tools-source');
+    if (viewSource) {
+      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+      viewSource.addEventListener("click", function(e) {
+        if (sourceUrl) {
+          // rstudio viewer pane
+          if (/\bcapabilities=\b/.test(window.location)) {
+            window.open(sourceUrl);
+          } else {
+            window.location.href = sourceUrl;
+          }
+        } else {
+          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+          modal.show();
+        }
+        return false;
+      });
+    }
+    function toggleCodeHandler(show) {
+      return function(e) {
+        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+        for (let i=0; i<detailsSrc.length; i++) {
+          const details = detailsSrc[i].parentElement;
+          if (show) {
+            details.open = true;
+          } else {
+            details.removeAttribute("open");
+          }
+        }
+        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+        const fromCls = show ? "hidden" : "unhidden";
+        const toCls = show ? "unhidden" : "hidden";
+        for (let i=0; i<cellCodeDivs.length; i++) {
+          const codeDiv = cellCodeDivs[i];
+          if (codeDiv.classList.contains(fromCls)) {
+            codeDiv.classList.remove(fromCls);
+            codeDiv.classList.add(toCls);
+          } 
+        }
+        return false;
+      }
+    }
+    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+    if (hideAllCode) {
+      hideAllCode.addEventListener("click", toggleCodeHandler(false));
+    }
+    const showAllCode = window.document.getElementById("quarto-show-all-code");
+    if (showAllCode) {
+      showAllCode.addEventListener("click", toggleCodeHandler(true));
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Kode Sumber</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Pertemuan 9: Dasar-Dasar Saham Biasa"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "Manajemen Investasi — EKM 19608"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">## Tujuan Pembelajaran</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>Setelah mengikuti pertemuan ini, mahasiswa diharapkan mampu:</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Menjelaskan karakteristik dan hak-hak pemegang saham biasa.</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Membedakan jenis-jenis saham berdasarkan *style* dan kapitalisasi pasar.</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Memahami mekanisme perdagangan saham di pasar modal Indonesia.</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Menghitung indeks saham menggunakan berbagai metode pembobotan.</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>Memahami peran pasar primer dan sekunder dalam penerbitan saham.</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="fu">## Karakteristik Saham Biasa</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="fu">### Definisi</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>**Saham biasa** (*common stock*) merepresentasikan kepemilikan residual (*residual ownership*) dalam suatu perusahaan. Pemegang saham biasa memiliki klaim terakhir atas aset dan pendapatan perusahaan — setelah kreditur dan pemegang saham preferen.</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="fu">### Hak-Hak Pemegang Saham Biasa</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Hak <span class="pp">|</span> Penjelasan <span class="pp">|</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="pp">|-----|-----------|</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Hak suara** (*voting rights*) <span class="pp">|</span> Satu saham = satu suara dalam RUPS; memilih dewan komisaris dan direksi <span class="pp">|</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Hak atas dividen** <span class="pp">|</span> Menerima distribusi laba jika dewan memutuskan pembagian dividen <span class="pp">|</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Hak klaim residual** <span class="pp">|</span> Klaim atas aset perusahaan setelah semua kewajiban dilunasi (saat likuidasi) <span class="pp">|</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Hak pre-emptive** <span class="pp">|</span> Prioritas membeli saham baru (*rights issue*) untuk menjaga proporsi kepemilikan <span class="pp">|</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Hak transferability** <span class="pp">|</span> Dapat menjual/mentransfer saham di pasar sekunder <span class="pp">|</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="fu">## Definisi — Limited Liability</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>Tanggung jawab pemegang saham **terbatas** pada jumlah investasi. Jika perusahaan bangkrut, pemegang saham kehilangan maksimal sebesar nilai investasinya — tidak lebih.</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="fu">### Saham Biasa vs. Saham Preferen</span></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Aspek <span class="pp">|</span> Saham Biasa <span class="pp">|</span> Saham Preferen <span class="pp">|</span></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="pp">|-------|-----------|---------------|</span></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Dividen** <span class="pp">|</span> Tidak dijamin, variabel <span class="pp">|</span> Dijamin (*fixed*), dibayar lebih dulu <span class="pp">|</span></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Hak suara** <span class="pp">|</span> Ada <span class="pp">|</span> Biasanya tidak ada <span class="pp">|</span></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Klaim likuidasi** <span class="pp">|</span> Terakhir (residual) <span class="pp">|</span> Sebelum saham biasa <span class="pp">|</span></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Potensi *capital gain*** <span class="pp">|</span> Tidak terbatas <span class="pp">|</span> Terbatas <span class="pp">|</span></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Sensitivitas terhadap kinerja** <span class="pp">|</span> Tinggi <span class="pp">|</span> Rendah <span class="pp">|</span></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; *Sumber: Smart, Gitman &amp; Joehnk (2017), Ch. 6*</span></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="fu">## Klasifikasi Saham</span></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="fu">### Berdasarkan Kapitalisasi Pasar</span></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="fu">## Definisi — Kapitalisasi Pasar (Market Capitalization)</span></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>\text{Market Cap} = \text{Harga Saham} \times \text{Jumlah Saham Beredar}</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Kategori <span class="pp">|</span> Kapitalisasi Pasar <span class="pp">|</span> Karakteristik <span class="pp">|</span></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="pp">|----------|:------------------:|-------------|</span></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Large-cap** (*blue chips*) <span class="pp">|</span> &gt; Rp 40 triliun (atau &gt;$10B) <span class="pp">|</span> Stabil, likuid, dividennya konsisten <span class="pp">|</span></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Mid-cap** <span class="pp">|</span> Rp 10–40 triliun ($2–10B) <span class="pp">|</span> Pertumbuhan moderat, likuiditas cukup <span class="pp">|</span></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Small-cap** <span class="pp">|</span> Rp 1–10 triliun ($300M–2B) <span class="pp">|</span> Potensi pertumbuhan tinggi, volatil <span class="pp">|</span></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Micro-cap** <span class="pp">|</span> &lt; Rp 1 triliun (&lt;$300M) <span class="pp">|</span> Sangat volatil, likuiditas rendah <span class="pp">|</span></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="fu">### Berdasarkan Style Investasi</span></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Style <span class="pp">|</span> Karakteristik <span class="pp">|</span> Metrik Kunci <span class="pp">|</span></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a><span class="pp">|-------|-------------|-------------|</span></span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Value stocks** <span class="pp">|</span> P/E rendah, P/B rendah, *dividend yield* tinggi <span class="pp">|</span> P/E &lt; rata-rata sektor <span class="pp">|</span></span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Growth stocks** <span class="pp">|</span> Pertumbuhan EPS tinggi, P/E tinggi, *dividend yield* rendah <span class="pp">|</span> Pertumbuhan EPS &gt; 15%/tahun <span class="pp">|</span></span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Income stocks** <span class="pp">|</span> Dividen stabil dan tinggi; *payout ratio* besar | *Dividend yield* &gt; 4% <span class="pp">|</span></span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Cyclical stocks** <span class="pp">|</span> Kinerja mengikuti siklus ekonomi <span class="pp">|</span> Sektor: properti, otomotif, komoditas <span class="pp">|</span></span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Defensive stocks** <span class="pp">|</span> Stabil di berbagai kondisi ekonomi <span class="pp">|</span> Sektor: konsumer, utilitas, kesehatan <span class="pp">|</span></span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a><span class="fu">### Contoh Klasifikasi di BEI</span></span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Saham <span class="pp">|</span> Kategori Cap <span class="pp">|</span> Style <span class="pp">|</span> Sektor <span class="pp">|</span></span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a><span class="pp">|-------|:-----------:|:-----:|--------|</span></span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> BBCA (Bank Central Asia) <span class="pp">|</span> Large-cap <span class="pp">|</span> Growth/Value <span class="pp">|</span> Keuangan <span class="pp">|</span></span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> TLKM (Telkom Indonesia) <span class="pp">|</span> Large-cap <span class="pp">|</span> Income/Defensive <span class="pp">|</span> Telekomunikasi <span class="pp">|</span></span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> ASII (Astra International) <span class="pp">|</span> Large-cap <span class="pp">|</span> Cyclical <span class="pp">|</span> Konglomerasi <span class="pp">|</span></span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> ACES (Ace Hardware) <span class="pp">|</span> Mid-cap <span class="pp">|</span> Growth <span class="pp">|</span> Ritel <span class="pp">|</span></span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; *Sumber: Smart, Gitman &amp; Joehnk (2017), Ch. 6; Fabozzi &amp; Markowitz (2011), Ch. 9*</span></span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a><span class="fu">## Pasar Modal dan Mekanisme Perdagangan</span></span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a><span class="fu">### Pasar Primer vs. Pasar Sekunder</span></span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Aspek <span class="pp">|</span> Pasar Primer <span class="pp">|</span> Pasar Sekunder <span class="pp">|</span></span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a><span class="pp">|-------|-------------|---------------|</span></span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Fungsi** <span class="pp">|</span> Penerbitan saham baru <span class="pp">|</span> Perdagangan saham yang sudah beredar <span class="pp">|</span></span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Pihak terlibat** <span class="pp">|</span> Emiten ↔ Investor (via underwriter) <span class="pp">|</span> Investor ↔ Investor (via broker) <span class="pp">|</span></span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Mekanisme** <span class="pp">|</span> IPO, Rights Issue, Private Placement <span class="pp">|</span> Order matching di bursa <span class="pp">|</span></span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Penerima dana** <span class="pp">|</span> Emiten (perusahaan) <span class="pp">|</span> Investor penjual <span class="pp">|</span></span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Contoh** <span class="pp">|</span> IPO GoTo (GOTO) 2022 <span class="pp">|</span> Jual-beli BBCA di BEI <span class="pp">|</span></span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a><span class="fu">### Mekanisme Perdagangan di BEI</span></span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a>Bursa Efek Indonesia (BEI) menggunakan sistem **JATS** (*Jakarta Automated Trading System*):</span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Sesi perdagangan**: Sesi I (09.00–12.00) dan Sesi II (13.30–16.00) WIB</span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Satuan lot**: 100 lembar saham per lot</span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Tick size**: Fraksi harga tergantung level harga (Rp 1, Rp 2, Rp 5, Rp 10, Rp 25)</span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Settlement**: T+2 (dua hari kerja setelah transaksi)</span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Auto rejection**: ±20–35% dari harga sebelumnya (tergantung board)</span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a><span class="fu">### Biaya Transaksi</span></span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Komponen <span class="pp">|</span> Beli <span class="pp">|</span> Jual <span class="pp">|</span></span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a><span class="pp">|----------|:----:|:----:|</span></span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Komisi broker <span class="pp">|</span> 0,10–0,30% <span class="pp">|</span> 0,10–0,30% <span class="pp">|</span></span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Pajak final <span class="pp">|</span> 0% <span class="pp">|</span> 0,10% <span class="pp">|</span></span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Total estimasi** | **~0,15–0,30%** | **~0,25–0,40%** <span class="pp">|</span></span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a><span class="fu">## Insight Praktis</span></span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a>Biaya transaksi mungkin terlihat kecil, tetapi bagi investor aktif (*frequent trader*), total biaya bisa terakumulasi secara signifikan. Investor dengan portofolio Rp 100 juta yang melakukan *turnover* 300% per tahun bisa membayar biaya transaksi ~Rp 1,5–2 juta per tahun.</span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; *Sumber: Smart, Gitman &amp; Joehnk (2017), Ch. 6*</span></span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a><span class="fu">## Indeks Saham</span></span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a><span class="fu">### Fungsi Indeks</span></span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a>Indeks saham berfungsi sebagai:</span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Barometer pasar** — mengukur arah dan magnitude pergerakan pasar secara keseluruhan</span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Benchmark** — tolok ukur kinerja portofolio</span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Basis produk investasi** — dasar ETF, index fund, dan derivatif</span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a><span class="fu">### Metode Pembobotan Indeks</span></span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Metode <span class="pp">|</span> Formula <span class="pp">|</span> Contoh Indeks <span class="pp">|</span></span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a><span class="pp">|--------|---------|-------------|</span></span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Price-weighted** <span class="pp">|</span> Rata-rata harga saham <span class="pp">|</span> Dow Jones Industrial Average <span class="pp">|</span></span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Value-weighted** (cap-weighted) <span class="pp">|</span> Bobot = market cap / total market cap <span class="pp">|</span> IHSG, S&amp;P 500 <span class="pp">|</span></span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Equal-weighted** <span class="pp">|</span> Setiap saham berbobot sama (1/N) <span class="pp">|</span> S&amp;P 500 Equal Weight <span class="pp">|</span></span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a><span class="fu">### Contoh Perhitungan — Price-Weighted Index</span></span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a>Tiga saham dalam indeks:</span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Saham <span class="pp">|</span> Harga ($t_0$) <span class="pp">|</span> Harga ($t_1$) <span class="pp">|</span></span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a><span class="pp">|-------|:-------------:|:-------------:|</span></span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> A <span class="pp">|</span> Rp 2.000 <span class="pp">|</span> Rp 2.200 <span class="pp">|</span></span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> B <span class="pp">|</span> Rp 5.000 <span class="pp">|</span> Rp 4.800 <span class="pp">|</span></span>
+<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> C <span class="pp">|</span> Rp 3.000 <span class="pp">|</span> Rp 3.300 <span class="pp">|</span></span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a>**Indeks awal** (basis = 100):</span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a>\text{Divisor}_0 = \frac{2.000 + 5.000 + 3.000}{100} = 100</span>
+<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a>\text{Indeks}_1 = \frac{2.200 + 4.800 + 3.300}{100} = 103</span>
+<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a>**Return indeks:** $\frac{103 - 100}{100} = 3\%$</span>
+<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a>::: {.callout-warning}</span>
+<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a><span class="fu">## Kesalahan Umum</span></span>
+<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a>Pada *price-weighted index*, saham dengan **harga lebih tinggi** memiliki pengaruh lebih besar terhadap indeks — *bukan* saham dengan market cap terbesar. Ini menjadi kelemahan utama Dow Jones: saham berharga $300 mempengaruhi indeks 10× lebih besar dari saham $30, terlepas dari ukuran perusahaan.</span>
+<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a><span class="fu">### Contoh Perhitungan — Value-Weighted Index</span></span>
+<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Saham <span class="pp">|</span> Harga ($t_0$) <span class="pp">|</span> Saham Beredar <span class="pp">|</span> Market Cap ($t_0$) <span class="pp">|</span> Harga ($t_1$) <span class="pp">|</span> Market Cap ($t_1$) <span class="pp">|</span></span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a><span class="pp">|-------|:---:|:---:|:---:|:---:|:---:|</span></span>
+<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> X <span class="pp">|</span> Rp 1.000 <span class="pp">|</span> 10 juta <span class="pp">|</span> Rp 10 M <span class="pp">|</span> Rp 1.100 <span class="pp">|</span> Rp 11 M <span class="pp">|</span></span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Y <span class="pp">|</span> Rp 500 <span class="pp">|</span> 40 juta <span class="pp">|</span> Rp 20 M <span class="pp">|</span> Rp 480 <span class="pp">|</span> Rp 19,2 M <span class="pp">|</span></span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Z <span class="pp">|</span> Rp 2.000 <span class="pp">|</span> 5 juta <span class="pp">|</span> Rp 10 M <span class="pp">|</span> Rp 2.100 <span class="pp">|</span> Rp 10,5 M <span class="pp">|</span></span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a>**Total market cap:** $t_0 = \text{Rp 40 M}$, $t_1 = \text{Rp 40,7 M}$</span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a>\text{Indeks}_1 = \frac{40{,}7}{40{,}0} \times 100 = 101{,}75</span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a>**Return indeks:** $1{,}75\%$ — didominasi oleh saham Y karena market cap terbesar.</span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a><span class="fu">### Indeks di Indonesia</span></span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Indeks <span class="pp">|</span> Metode <span class="pp">|</span> Cakupan <span class="pp">|</span></span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a><span class="pp">|--------|--------|---------|</span></span>
+<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **IHSG** (Jakarta Composite Index) <span class="pp">|</span> Value-weighted <span class="pp">|</span> Semua saham tercatat di BEI <span class="pp">|</span></span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **LQ45** <span class="pp">|</span> Value-weighted <span class="pp">|</span> 45 saham paling likuid <span class="pp">|</span></span>
+<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **IDX30** <span class="pp">|</span> Value-weighted <span class="pp">|</span> 30 saham paling likuid &amp; berkapitalisasi besar <span class="pp">|</span></span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **IDX80** <span class="pp">|</span> Value-weighted <span class="pp">|</span> 80 saham likuiditas &amp; fundamentals baik <span class="pp">|</span></span>
+<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Jakarta Islamic Index (JII)** <span class="pp">|</span> Value-weighted <span class="pp">|</span> 30 saham syariah paling likuid <span class="pp">|</span></span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; *Sumber: Fabozzi &amp; Markowitz (2011), Ch. 9; Reilly &amp; Brown (2015), Ch. 5*</span></span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a><span class="fu">## Ringkasan</span></span>
+<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Saham biasa** memberikan kepemilikan residual dengan hak suara, hak dividen, dan *limited liability*.</span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Saham diklasifikasikan berdasarkan **kapitalisasi pasar** (large/mid/small-cap) dan **style** (value, growth, income, cyclical, defensive).</span>
+<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Pasar primer** untuk penerbitan baru (IPO), **pasar sekunder** untuk perdagangan antar investor.</span>
+<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Indeks saham** mengukur pergerakan pasar; metode pembobotan (*price-weighted*, *value-weighted*, *equal-weighted*) menghasilkan return indeks yang berbeda.</span>
+<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>Di Indonesia, IHSG menggunakan metode *value-weighted* dan mencakup seluruh saham tercatat di BEI.</span>
+<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a><span class="fu">## Latihan Soal</span></span>
+<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a>**Soal 1 — Hak Pemegang Saham**</span>
+<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a>PT ABC akan melakukan *rights issue* dengan rasio 5:1 (setiap 5 saham lama berhak membeli 1 saham baru) di harga Rp 4.000. Harga pasar saat ini Rp 5.500. Investor A memiliki 10.000 saham. (a) Berapa saham baru yang boleh dibeli? (b) Hitung nilai teoritis *right* per saham. (c) Berapa *theoretical ex-rights price* (TERP)?</span>
+<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a>**Soal 2 — Klasifikasi Saham**</span>
+<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a>Berikan klasifikasi (cap size dan style) untuk saham-saham berikut berdasarkan data:</span>
+<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Saham <span class="pp">|</span> Market Cap <span class="pp">|</span> P/E <span class="pp">|</span> Pertumbuhan EPS <span class="pp">|</span> Dividend Yield <span class="pp">|</span></span>
+<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a><span class="pp">|-------|:---:|:---:|:---:|:---:|</span></span>
+<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> P <span class="pp">|</span> Rp 250 T <span class="pp">|</span> 12× <span class="pp">|</span> 8% <span class="pp">|</span> 5,2% <span class="pp">|</span></span>
+<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Q <span class="pp">|</span> Rp 8 T <span class="pp">|</span> 35× <span class="pp">|</span> 25% <span class="pp">|</span> 0,5% <span class="pp">|</span></span>
+<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> R <span class="pp">|</span> Rp 500 M <span class="pp">|</span> 8× <span class="pp">|</span> 3% <span class="pp">|</span> 7,1% <span class="pp">|</span></span>
+<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a>**Soal 3 — Indeks Harga Saham**</span>
+<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a>Hitung return indeks menggunakan metode *price-weighted* dan *value-weighted*:</span>
+<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Saham <span class="pp">|</span> Harga Awal <span class="pp">|</span> Harga Akhir <span class="pp">|</span> Saham Beredar <span class="pp">|</span></span>
+<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a><span class="pp">|-------|:---:|:---:|:---:|</span></span>
+<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> D <span class="pp">|</span> Rp 3.000 <span class="pp">|</span> Rp 3.300 <span class="pp">|</span> 5 juta <span class="pp">|</span></span>
+<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> E <span class="pp">|</span> Rp 1.500 <span class="pp">|</span> Rp 1.425 <span class="pp">|</span> 20 juta <span class="pp">|</span></span>
+<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> F <span class="pp">|</span> Rp 6.000 <span class="pp">|</span> Rp 6.600 <span class="pp">|</span> 2 juta <span class="pp">|</span></span>
+<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a>Bandingkan hasilnya dan jelaskan mengapa berbeda.</span>
+<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a>**Soal 4 — Biaya Transaksi**</span>
+<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a>Investor membeli 50 lot saham BBCA di harga Rp 9.000 dan menjualnya sebulan kemudian di Rp 9.500. Komisi broker: 0,15% (beli) dan 0,20% (jual). Pajak jual: 0,10%. Hitung: (a) Total biaya transaksi (beli + jual). (b) *Net profit* setelah semua biaya. (c) *Effective return* (%).</span>
+<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a><span class="fu">## Referensi</span></span>
+<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Fabozzi, F. J., &amp; Markowitz, H. M. (2011). *The Theory and Practice of Investment Management* (2nd ed.), Chapter 9. John Wiley &amp; Sons.</span>
+<span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Reilly, F. K., &amp; Brown, K. C. (2015). *Investment Analysis and Portfolio Management* (10th ed.), Chapter 5. Cengage Learning.</span>
+<span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Smart, S. B., Gitman, L. J., &amp; Joehnk, M. D. (2017). *Fundamentals of Investing* (13th ed.), Chapter 6. Pearson.</span></code></pre></div><button title="Salin ke Papan Klip" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

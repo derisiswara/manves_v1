@@ -1,0 +1,300 @@
+---
+title: "Pertemuan 11: Valuasi Saham"
+subtitle: "Manajemen Investasi — EKM 19608"
+---
+
+## Tujuan Pembelajaran
+
+Setelah mengikuti pertemuan ini, mahasiswa diharapkan mampu:
+
+1. Menjelaskan konsep *intrinsic value* dan hubungannya dengan keputusan investasi.
+2. Menghitung nilai saham menggunakan **Dividend Discount Model** (DDM).
+3. Menerapkan **Free Cash Flow to Equity** (FCFE) model untuk valuasi saham.
+4. Menggunakan pendekatan **valuasi relatif** (P/E, P/B, EV/EBITDA).
+5. Membandingkan kelebihan dan keterbatasan setiap metode valuasi.
+
+## Intrinsic Value dan Keputusan Investasi
+
+### Konsep
+
+**Intrinsic value** (nilai intrinsik) adalah estimasi nilai "sebenarnya" suatu saham berdasarkan analisis fundamental — terlepas dari harga pasar saat ini.
+
+::: {.callout-important}
+## Aturan Keputusan
+- Jika **Intrinsic Value > Market Price** → saham *undervalued* → **Beli**
+- Jika **Intrinsic Value < Market Price** → saham *overvalued* → **Jual/Hindari**
+- Jika **Intrinsic Value ≈ Market Price** → saham *fairly valued* → **Hold**
+:::
+
+**Margin of Safety** (konsep Benjamin Graham): investor sebaiknya hanya membeli jika harga pasar *significanly below* intrinsic value — sebagai buffer terhadap kesalahan estimasi.
+
+$$
+\text{Margin of Safety} = \frac{V_0 - P_0}{V_0}
+$$
+
+> *Sumber: Fabozzi & Markowitz (2011), Ch. 11; Reilly & Brown (2015), Ch. 11*
+
+## Dividend Discount Model (DDM)
+
+### Model Umum
+
+Nilai intrinsik saham = present value dari semua dividen masa depan:
+
+$$
+V_0 = \sum_{t=1}^{\infty} \frac{D_t}{(1+k)^t}
+$$
+
+di mana $D_t$ = dividen pada periode $t$, $k$ = required rate of return (cost of equity).
+
+### Gordon Growth Model (Constant Growth DDM)
+
+Jika dividen tumbuh dengan rate konstan $g$ selamanya:
+
+::: {.callout-important}
+## Formula Kunci — Gordon Growth Model
+$$
+V_0 = \frac{D_1}{k - g} = \frac{D_0(1+g)}{k - g}
+$$
+
+Syarat: $k > g$ (required return harus lebih besar dari growth rate).
+:::
+
+### Contoh Perhitungan DDM — Constant Growth
+
+**PT Bank ABC** baru saja membayar dividen $D_0 = \text{Rp 200}$ per saham. Dividen diperkirakan tumbuh 8% per tahun secara permanen. Required return investor: 14%.
+
+**Langkah 1:** Hitung $D_1$
+
+$$
+D_1 = D_0(1+g) = 200(1+0{,}08) = \text{Rp 216}
+$$
+
+**Langkah 2:** Hitung intrinsic value
+
+$$
+V_0 = \frac{216}{0{,}14 - 0{,}08} = \frac{216}{0{,}06} = \text{Rp 3.600}
+$$
+
+**Langkah 3:** Keputusan — jika harga pasar Rp 3.200, maka saham *undervalued* (margin of safety = 11,1%).
+
+::: {.callout-warning}
+## Kesalahan Umum
+Gordon Growth Model sangat sensitif terhadap **$g$ dan $k$**. Perubahan kecil di kedua parameter ini menghasilkan perubahan besar di $V_0$:
+
+| Skenario | $g$ | $k$ | $V_0$ |
+|----------|:---:|:---:|:-----:|
+| Base case | 8% | 14% | Rp 3.600 |
+| $g$ naik 1% | 9% | 14% | Rp 4.360 (+21%) |
+| $k$ turun 1% | 8% | 13% | Rp 4.320 (+20%) |
+
+Perubahan 1% pada $g$ atau $k$ mengubah valuasi lebih dari 20%.
+:::
+
+### Two-Stage DDM
+
+Untuk perusahaan dengan pertumbuhan tinggi yang diperkirakan melambat:
+
+$$
+V_0 = \sum_{t=1}^{n} \frac{D_0(1+g_1)^t}{(1+k)^t} + \frac{V_n}{(1+k)^n}
+$$
+
+di mana $V_n = \frac{D_{n+1}}{k - g_2}$ = *terminal value* pada akhir fase pertumbuhan tinggi.
+
+### Contoh Two-Stage DDM
+
+**PT Tech Maju**: $D_0 = \text{Rp 100}$, pertumbuhan 20% selama 3 tahun, lalu melambat ke 6% selamanya. $k = 15\%$.
+
+| Tahun | Dividen | PV Factor | PV Dividen |
+|:-----:|:------:|:---------:|:----------:|
+| 1 | Rp 120 | 0,8696 | Rp 104,35 |
+| 2 | Rp 144 | 0,7561 | Rp 108,88 |
+| 3 | Rp 172,80 | 0,6575 | Rp 113,62 |
+
+**Terminal value** pada akhir tahun 3:
+
+$$
+V_3 = \frac{D_4}{k - g_2} = \frac{172{,}80 \times 1{,}06}{0{,}15 - 0{,}06} = \frac{183{,}17}{0{,}09} = \text{Rp 2.035,22}
+$$
+
+**PV of terminal value:**
+
+$$
+\text{PV}(V_3) = \frac{2.035{,}22}{(1{,}15)^3} = \frac{2.035{,}22}{1{,}5209} = \text{Rp 1.338,14}
+$$
+
+**Intrinsic value:**
+
+$$
+V_0 = 104{,}35 + 108{,}88 + 113{,}62 + 1.338{,}14 = \text{Rp 1.664,99}
+$$
+
+> *Sumber: Fabozzi & Markowitz (2011), Ch. 11*
+
+## Free Cash Flow to Equity (FCFE) Model
+
+### Konsep
+
+FCFE model digunakan ketika perusahaan **tidak membayar dividen** atau dividen tidak mencerminkan kapasitas pembayaran sesungguhnya.
+
+::: {.callout-note}
+## Definisi — FCFE
+$$
+\text{FCFE} = \text{Net Income} + \text{Depreciation} - \text{CapEx} - \Delta\text{Working Capital} + \text{Net Borrowing}
+$$
+
+FCFE adalah kas yang tersedia bagi pemegang saham **setelah** perusahaan memenuhi semua kewajiban operasional dan investasi.
+:::
+
+### Valuasi dengan FCFE
+
+$$
+V_0 = \sum_{t=1}^{\infty} \frac{\text{FCFE}_t}{(1+k)^t}
+$$
+
+Dengan asumsi pertumbuhan konstan:
+
+$$
+V_0 = \frac{\text{FCFE}_1}{k - g}
+$$
+
+### Contoh Perhitungan FCFE
+
+PT Manufaktur XYZ (dalam miliar Rp):
+
+| Komponen | Nilai |
+|----------|------:|
+| Net Income | 500 |
+| Depreciation | 120 |
+| Capital Expenditure | 200 |
+| ΔWorking Capital | 50 |
+| Net Borrowing | 80 |
+
+$$
+\text{FCFE} = 500 + 120 - 200 - 50 + 80 = \text{Rp 450 miliar}
+$$
+
+Jumlah saham beredar: 2 miliar lembar → FCFE per saham = Rp 225.
+
+Jika pertumbuhan FCFE 7% per tahun dan $k = 13\%$:
+
+$$
+V_0 = \frac{225 \times 1{,}07}{0{,}13 - 0{,}07} = \frac{240{,}75}{0{,}06} = \text{Rp 4.012,50}
+$$
+
+> *Sumber: Fabozzi & Markowitz (2011), Ch. 11; Reilly & Brown (2015), Ch. 11*
+
+## Valuasi Relatif (Pendekatan Multiples)
+
+### Konsep
+
+Valuasi relatif membandingkan **rasio harga** saham target dengan saham-saham sejenis (*comparable companies*) atau rata-rata industri.
+
+### Price-to-Earnings Ratio (P/E)
+
+::: {.callout-important}
+## Formula Kunci — Justified P/E
+Dari Gordon Growth Model:
+
+$$
+\frac{P_0}{E_1} = \frac{D_1/E_1}{k - g} = \frac{\text{Payout Ratio}}{k - g}
+$$
+
+P/E dipengaruhi oleh: (1) payout ratio, (2) required return, (3) growth rate.
+:::
+
+**Trailing P/E** = $P_0 / \text{EPS}_{12 \text{ bulan terakhir}}$
+
+**Forward P/E** = $P_0 / \text{EPS}_{12 \text{ bulan mendatang}}$
+
+### Contoh Valuasi dengan P/E
+
+Saham PT Retail ABC memiliki EPS = Rp 350 (trailing). Rata-rata P/E industri ritel = 18×.
+
+$$
+V_0 = \text{EPS} \times \text{P/E industri} = 350 \times 18 = \text{Rp 6.300}
+$$
+
+Jika harga pasar Rp 5.800 → saham *undervalued* sebesar ~8%.
+
+### Price-to-Book Ratio (P/B)
+
+$$
+\text{P/B} = \frac{\text{Harga Saham}}{\text{Book Value per Share}}
+$$
+
+**Kegunaan:** Cocok untuk perusahaan padat aset (bank, properti, manufaktur). Saham dengan P/B < 1 berarti pasar menilai perusahaan di bawah nilai bukunya.
+
+### Enterprise Value / EBITDA
+
+$$
+\text{EV/EBITDA} = \frac{\text{Market Cap} + \text{Debt} - \text{Cash}}{\text{EBITDA}}
+$$
+
+**Kegunaan:** Menghilangkan pengaruh struktur modal dan pajak — berguna untuk membandingkan perusahaan dengan leverage berbeda.
+
+### Perbandingan Metode Valuasi Relatif
+
+| Metrik | Kelebihan | Keterbatasan |
+|--------|----------|-------------|
+| **P/E** | Intuitif, mudah dihitung | Tidak bermakna jika EPS negatif |
+| **P/B** | Stabil, cocok untuk aset-intensive | Kurang relevan untuk perusahaan tech |
+| **EV/EBITDA** | Netral terhadap leverage | Mengabaikan CapEx dan working capital |
+| **P/S** (Price/Sales) | Selalu positif (sales > 0) | Mengabaikan profitabilitas |
+
+### Contoh Komparasi
+
+| Saham | P/E | P/B | EV/EBITDA | Kesimpulan |
+|-------|:---:|:---:|:---------:|-----------|
+| Bank A | 12× | 1,8× | 8× | *Fairly valued* |
+| Bank B | 8× | 1,1× | 6× | Potensi *undervalued* |
+| Bank C | 18× | 2,5× | 12× | Relatif mahal |
+| **Median industri** | **11×** | **1,6×** | **7,5×** | |
+
+Bank B terlihat *undervalued* di semua metrik → kandidat untuk analisis lebih lanjut (pastikan bukan *value trap*).
+
+::: {.callout-tip}
+## Insight Praktis
+Investor profesional umumnya **tidak mengandalkan satu metode** saja. Praktik terbaik: gunakan **multiple valuation methods** dan bandingkan hasilnya (*triangulation*). Jika semua metode menunjukkan saham *undervalued*, keyakinan (conviction) lebih tinggi.
+:::
+
+> *Sumber: Reilly & Brown (2015), Ch. 11; Smart, Gitman & Joehnk (2017), Ch. 8*
+
+## Ringkasan
+
+1. **Intrinsic value** dibandingkan dengan harga pasar untuk menentukan apakah saham *undervalued* atau *overvalued*.
+2. **DDM (Gordon Growth Model)** menghitung $V_0 = D_1/(k-g)$ — sangat sensitif terhadap asumsi $g$ dan $k$.
+3. **Two-stage DDM** cocok untuk perusahaan yang diperkirakan mengalami pertumbuhan tinggi sementara sebelum stabil.
+4. **FCFE model** digunakan saat dividen tidak mencerminkan kapasitas pembayaran sebenarnya; $V_0 = \text{FCFE}_1 / (k-g)$.
+5. **Valuasi relatif** (P/E, P/B, EV/EBITDA) membandingkan saham dengan *peers* dan rata-rata industri — cepat dan intuitif tetapi mengasumsikan *comparables* dinilai tepat.
+
+## Latihan Soal
+
+**Soal 1 — Gordon Growth Model**
+
+PT Agri Nusantara membayar dividen $D_0 = \text{Rp 150}$ per saham. Pertumbuhan dividen 10% per tahun. (a) Hitung intrinsic value jika $k = 16\%$. (b) Jika harga pasar Rp 2.500, apakah saham layak dibeli? Berapa margin of safety? (c) Berapa harga wajar jika $g$ turun menjadi 7%?
+
+**Soal 2 — Two-Stage DDM**
+
+PT Digital Indo: $D_0 = \text{Rp 80}$. Pertumbuhan dividen 25% selama 4 tahun, kemudian 5% selamanya. $k = 18\%$. Hitung intrinsic value.
+
+**Soal 3 — FCFE Valuation**
+
+Data PT Infrastruktur Bersama (miliar Rp): Net Income = 800, Depreciation = 250, CapEx = 400, ΔWC = 100, Net Borrowing = 150. Saham beredar: 4 miliar lembar. Pertumbuhan FCFE: 8%, $k = 14\%$. Hitung FCFE per saham dan intrinsic value.
+
+**Soal 4 — Valuasi Relatif**
+
+Tiga perusahaan farmasi:
+
+| Saham | EPS | BV/Share | EBITDA (M) | Debt (M) | Cash (M) | Harga | Saham Beredar |
+|-------|:---:|:-------:|:----------:|:--------:|:--------:|:-----:|:------------:|
+| Pharma A | Rp 250 | Rp 1.800 | 600 | 400 | 200 | Rp 4.000 | 1 miliar |
+| Pharma B | Rp 180 | Rp 1.200 | 350 | 300 | 100 | Rp 2.400 | 1,5 miliar |
+| Pharma C | Rp 300 | Rp 2.500 | 800 | 200 | 400 | Rp 6.000 | 0,8 miliar |
+
+Hitung P/E, P/B, dan EV/EBITDA untuk ketiga saham. Saham mana yang paling menarik berdasarkan valuasi relatif?
+
+## Referensi
+
+- Fabozzi, F. J., & Markowitz, H. M. (2011). *The Theory and Practice of Investment Management* (2nd ed.), Chapter 11. John Wiley & Sons.
+- Reilly, F. K., & Brown, K. C. (2015). *Investment Analysis and Portfolio Management* (10th ed.), Chapter 11. Cengage Learning.
+- Smart, S. B., Gitman, L. J., & Joehnk, M. D. (2017). *Fundamentals of Investing* (13th ed.), Chapter 8. Pearson.

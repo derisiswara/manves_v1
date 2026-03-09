@@ -1,0 +1,208 @@
+---
+title: "Pertemuan 7: Alokasi Aset & Konstruksi Portofolio"
+subtitle: "Manajemen Investasi — EKM 19608"
+---
+
+## Tujuan Pembelajaran
+
+Setelah mengikuti pertemuan ini, mahasiswa diharapkan mampu:
+
+1. Menjelaskan pentingnya alokasi aset sebagai determinan utama kinerja portofolio.
+2. Membedakan *Strategic Asset Allocation* (SAA) dan *Tactical Asset Allocation* (TAA).
+3. Menghitung expected return dan risiko portofolio kombinasi aset bebas risiko dan portofolio berisiko.
+4. Memahami proses *rebalancing* portofolio dan strategi implementasinya.
+
+## Pentingnya Alokasi Aset
+
+### Studi Brinson, Hood & Beebower (1986)
+
+Salah satu temuan paling berpengaruh dalam manajemen investasi adalah studi oleh Brinson, Hood & Beebower (BHB) yang menunjukkan bahwa **lebih dari 90% variasi return portofolio** antar waktu dapat dijelaskan oleh **kebijakan alokasi aset** — bukan oleh pemilihan sekuritas (*stock picking*) atau *market timing*.
+
+| Sumber Return | Kontribusi terhadap Variasi Return |
+|---------------|:----------------------------------:|
+| Alokasi aset (*asset allocation policy*) | ~91,5% |
+| Pemilihan sekuritas (*security selection*) | ~4,6% |
+| *Market timing* | ~1,8% |
+| Interaksi | ~2,1% |
+
+::: {.callout-important}
+## Implikasi Kunci
+Keputusan **berapa persen dana dialokasikan** ke ekuitas, obligasi, dan kas jauh lebih penting daripada memilih saham mana yang dibeli. Seorang investor yang salah dalam alokasi aset (misal: 90% kas saat pasar bullish) akan *underperform* meskipun pemilihan sahamnya sempurna.
+:::
+
+> *Sumber: Fabozzi & Markowitz (2011), Ch. 7; Reilly & Brown (2015), Ch. 16*
+
+## Strategic Asset Allocation (SAA)
+
+### Konsep
+
+*Strategic Asset Allocation* (SAA) adalah **alokasi aset jangka panjang** yang ditetapkan berdasarkan tujuan investasi, toleransi risiko, dan horison waktu investor. SAA bersifat **policy-driven** — ditentukan dalam IPS dan hanya direvisi jika terjadi perubahan fundamental dalam profil investor.
+
+### Proses Penetapan SAA
+
+1. **Tentukan kelas aset** yang akan dimasukkan (ekuitas domestik, ekuitas internasional, fixed income, alternatif, kas).
+2. **Estimasi parameter**: *Expected return*, *standard deviation*, dan *covariance* untuk setiap kelas aset.
+3. **Optimasi mean-variance**: Tentukan bobot yang memaksimalkan *expected return* untuk tingkat risiko tertentu (atau meminimalkan risiko untuk target return).
+4. **Evaluasi constraints**: Terapkan batasan dari IPS (likuiditas, regulasi, pajak).
+
+### Contoh SAA Berdasarkan Profil Investor
+
+| Profil | Ekuitas | Fixed Income | Alternatif | Kas |
+|--------|:-------:|:----------:|:---------:|:---:|
+| **Agresif** (muda, toleransi tinggi) | 70–80% | 10–20% | 5–10% | 0–5% |
+| **Moderat** (menengah) | 50–60% | 25–35% | 5–10% | 5–10% |
+| **Konservatif** (pensiun) | 20–30% | 40–50% | 0–10% | 15–25% |
+
+> *Sumber: Fabozzi & Markowitz (2011), Ch. 7*
+
+## Tactical Asset Allocation (TAA)
+
+### Konsep
+
+*Tactical Asset Allocation* (TAA) adalah **penyimpangan jangka pendek** dari SAA berdasarkan pandangan manajer investasi terhadap kondisi pasar saat ini. TAA bersifat **aktif** — manajer menggeser bobot antar kelas aset untuk mengeksploitasi peluang jangka pendek.
+
+### Perbandingan SAA vs. TAA
+
+| Aspek | SAA | TAA |
+|-------|-----|-----|
+| **Horison** | Jangka panjang (5–10+ tahun) | Jangka pendek (bulan–kuartal) |
+| **Basis** | Profil investor & ekspektasi jangka panjang | Valuasi relatif & kondisi pasar saat ini |
+| **Frekuensi perubahan** | Jarang (saat profil investor berubah) | Lebih sering (berkala) |
+| **Sifat** | Pasif (*policy-driven*) | Aktif (*judgment-driven*) |
+| **Contoh** | 60% ekuitas / 40% obligasi (tetap) | Overweight ekuitas menjadi 70% saat pasar dinilai murah |
+
+### Contoh TAA
+
+Seorang manajer investasi memiliki SAA: 60% ekuitas, 40% obligasi. Ia menilai bahwa pasar saham saat ini *undervalued* berdasarkan P/E ratio historis. TAA-nya:
+
+| Kelas Aset | SAA | TAA | Deviasi |
+|-----------|:---:|:---:|:-------:|
+| Ekuitas | 60% | 70% | +10% |
+| Obligasi | 40% | 30% | −10% |
+
+Jika penilaiannya benar dan pasar saham naik 15% sementara obligasi hanya naik 4%:
+
+**Return dengan SAA:**
+
+$$
+R_{\text{SAA}} = 0{,}60(15\%) + 0{,}40(4\%) = 9\% + 1{,}6\% = 10{,}6\%
+$$
+
+**Return dengan TAA:**
+
+$$
+R_{\text{TAA}} = 0{,}70(15\%) + 0{,}30(4\%) = 10{,}5\% + 1{,}2\% = 11{,}7\%
+$$
+
+**Nilai tambah TAA:** $11{,}7\% - 10{,}6\% = 1{,}1\%$
+
+::: {.callout-warning}
+## Kesalahan Umum
+TAA terlihat menarik, namun bukti empiris menunjukkan bahwa **sangat sedikit manajer** yang mampu melakukan TAA secara konsisten menguntungkan. *Market timing* yang salah bisa menghancurkan return. Banyak studi menunjukkan bahwa investor yang *miss* 10 hari terbaik dalam satu dekade kehilangan >50% total return kumulatif.
+:::
+
+> *Sumber: Fabozzi & Markowitz (2011), Ch. 7; Reilly & Brown (2015), Ch. 16*
+
+## Alokasi Aset Bebas Risiko dan Portofolio Berisiko
+
+### Konsep
+
+Dari pembahasan [CML di Pertemuan 4](04-capm.qmd), investor membagi dananya antara **aset bebas risiko** ($R_f$) dan **portofolio berisiko** optimal ($P$). Jika $y$ = proporsi di portofolio berisiko:
+
+::: {.callout-important}
+## Formula Kunci — Alokasi Dua Dana
+$$
+E(R_c) = (1-y) R_f + y \cdot E(R_p) = R_f + y[E(R_p) - R_f]
+$$
+
+$$
+\sigma_c = y \cdot \sigma_p
+$$
+:::
+
+### Contoh Perhitungan
+
+Diketahui: $R_f = 5\%$, portofolio berisiko optimal memiliki $E(R_p) = 14\%$ dan $\sigma_p = 20\%$. Investor memilih untuk mengalokasikan $y = 60\%$ ke portofolio berisiko.
+
+**Hitung return dan risiko portofolio lengkap:**
+
+$$
+E(R_c) = 0{,}05 + 0{,}60(0{,}14 - 0{,}05) = 0{,}05 + 0{,}054 = 10{,}4\%
+$$
+
+$$
+\sigma_c = 0{,}60 \times 0{,}20 = 12\%
+$$
+
+::: {.callout-tip}
+## Interpretasi
+Investor yang lebih *risk-averse* akan memilih $y$ lebih kecil (lebih banyak di aset bebas risiko), sedangkan investor yang lebih agresif akan memilih $y$ lebih besar. Kurva CML menggambarkan semua pilihan kombinasi yang tersedia.
+:::
+
+> *Sumber: Fabozzi & Markowitz (2011), Ch. 7*
+
+## Rebalancing Portofolio
+
+### Konsep
+
+Seiring waktu, alokasi aktual portofolio **menyimpang** dari target SAA karena perbedaan return antar kelas aset. ***Rebalancing*** adalah proses mengembalikan alokasi ke target semula.
+
+### Contoh Kebutuhan Rebalancing
+
+Target SAA: 60% ekuitas, 40% obligasi. Investasi awal Rp 100 juta.
+
+| Kelas Aset | Alokasi Awal | Return | Nilai Akhir | Alokasi Aktual |
+|-----------|:------------:|:------:|:-----------:|:--------------:|
+| Ekuitas | Rp 60 juta | +20% | Rp 72 juta | 64,3% |
+| Obligasi | Rp 40 juta | +5% | Rp 42 juta | 37,5% |
+| **Total** | **Rp 100 juta** | | **Rp 114 juta** | **~101,8%** |
+
+Tanpa rebalancing, portofolio menjadi *overweight* ekuitas (64,3% vs target 60%) — berarti risiko portofolio meningkat secara tidak disengaja.
+
+**Rebalancing:** Jual ekuitas senilai Rp 3,6 juta dan beli obligasi → kembali ke 60/40.
+
+### Strategi Rebalancing
+
+| Strategi | Mekanisme | Kelebihan | Kekurangan |
+|----------|----------|----------|-----------|
+| **Calendar rebalancing** | Rebalance pada interval tetap (bulanan/kuartalan) | Sederhana, disiplin | Mungkin rebalance saat tidak perlu |
+| **Percentage-of-portfolio** | Rebalance jika deviasi melebihi threshold (misal: ±5%) | Hanya saat diperlukan | Memerlukan monitoring kontinu |
+| **Constant-proportion** | Jaga rasio tetap setiap saat | Selalu on-target | Biaya transaksi tinggi |
+
+::: {.callout-tip}
+## Insight Praktis
+Rebalancing secara implisit menerapkan prinsip ***"buy low, sell high"***: menjual kelas aset yang sudah naik (overweight) dan membeli yang turun (underweight). Studi menunjukkan bahwa *disciplined rebalancing* menambahkan 0,3–0,5% per tahun terhadap return portofolio *buy-and-hold*.
+:::
+
+> *Sumber: Reilly & Brown (2015), Ch. 16*
+
+## Ringkasan
+
+1. **Alokasi aset** adalah determinan utama kinerja portofolio — menjelaskan ~90% variasi return menurut studi BHB (1986).
+2. **SAA** bersifat jangka panjang dan *policy-driven*; **TAA** bersifat jangka pendek dan bertujuan mengeksploitasi *mispricing* relatif antar kelas aset.
+3. **Alokasi dua dana** ($E(R_c) = R_f + y[E(R_p)-R_f]$, $\sigma_c = y\sigma_p$) menggambarkan trade-off return-risiko saat memilih proporsi $y$ antara aset berisiko dan bebas risiko.
+4. **Rebalancing** menjaga alokasi tetap sesuai target dan secara implisit menerapkan *buy low, sell high*.
+
+## Latihan Soal
+
+**Soal 1 — SAA vs. TAA**
+
+Dana pensiun memiliki SAA: 55% ekuitas, 35% obligasi, 10% kas. Manajer investasi yakin bahwa suku bunga akan turun signifikan. (a) Jelaskan bagaimana keyakinan ini memengaruhi TAA. (b) Mengapa obligasi menarik saat suku bunga turun? (c) Jika return aktual ekuitas 8%, obligasi 12%, kas 4%, hitung return portofolio SAA dan TAA (asumsikan TAA: 45% ekuitas, 45% obligasi, 10% kas).
+
+**Soal 2 — Alokasi Dua Dana**
+
+Portofolio berisiko optimal memiliki $E(R_p) = 15\%$ dan $\sigma_p = 22\%$. $R_f = 4\%$. (a) Jika investor mengalokasikan $y = 70\%$ ke portofolio berisiko, hitung $E(R_c)$ dan $\sigma_c$. (b) Jika investor lebih konservatif dan memilih $y = 40\%$, hitung $E(R_c)$ dan $\sigma_c$. (c) Gambarkan kedua poin ini pada kurva CML dan jelaskan maknanya.
+
+**Soal 3 — Rebalancing**
+
+Portofolio awal: 50% ekuitas (Rp 250 juta), 30% obligasi (Rp 150 juta), 20% kas (Rp 100 juta). Setelah satu tahun: ekuitas naik 25%, obligasi naik 8%, kas naik 3%. (a) Hitung nilai dan alokasi aktual. (b) Hitung transaksi yang diperlukan untuk rebalancing ke target semula.
+
+**Soal 4 — Sensitivitas MVO**
+
+Dua kelas aset: Ekuitas ($E(R) = 11\%$, $\sigma = 18\%$) dan Obligasi ($E(R) = 6\%$, $\sigma = 7\%$). $\rho = 0{,}15$. (a) Hitung bobot MVP. (b) Jika $E(R_{\text{ekuitas}})$ direvisi menjadi 14% (semua lain tetap), bagaimana perubahan ini memengaruhi *efficient frontier*? Apakah MVP berubah?
+
+## Referensi
+
+- Fabozzi, F. J., & Markowitz, H. M. (2011). *The Theory and Practice of Investment Management* (2nd ed.), Chapter 7. John Wiley & Sons.
+- Reilly, F. K., & Brown, K. C. (2015). *Investment Analysis and Portfolio Management* (10th ed.), Chapter 16. Cengage Learning.
+- Brinson, G. P., Hood, L. R., & Beebower, G. L. (1986). Determinants of Portfolio Performance. *Financial Analysts Journal*, 42(4), 39–44.

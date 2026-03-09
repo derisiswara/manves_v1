@@ -1,0 +1,203 @@
+---
+title: "Pertemuan 6: Dinamika Harga Aset"
+subtitle: "Manajemen Investasi — EKM 19608"
+---
+
+## Tujuan Pembelajaran
+
+Setelah mengikuti pertemuan ini, mahasiswa diharapkan mampu:
+
+1. Menjelaskan *Efficient Market Hypothesis* (EMH) dan tiga bentuknya.
+2. Menguraikan implikasi EMH terhadap strategi investasi aktif dan pasif.
+3. Mengidentifikasi anomali pasar utama yang menantang EMH.
+4. Menjelaskan konsep *random walk* dan hubungannya dengan efisiensi pasar.
+5. Memahami peran *behavioral finance* dalam menjelaskan dinamika harga aset.
+
+## Efficient Market Hypothesis (EMH)
+
+### Konsep
+
+*Efficient Market Hypothesis* (EMH), dirumuskan oleh **Eugene Fama** (1970), menyatakan bahwa harga aset di pasar keuangan **sepenuhnya mencerminkan semua informasi yang tersedia** (*"prices fully reflect all available information"*). Implikasinya: investor tidak dapat secara konsisten menghasilkan *abnormal return* (return di atas yang diprediksi oleh model seperti CAPM) karena setiap informasi baru langsung terakomodasi dalam harga.
+
+::: {.callout-note}
+## Definisi: Pasar Efisien
+Pasar dikatakan efisien jika harga sekuritas menyesuaikan secara **cepat** dan **tidak bias** (*unbiased*) terhadap informasi baru. Dalam pasar efisien:
+
+- Harga saat ini adalah **estimasi terbaik** dari nilai intrinsik.
+- Perubahan harga bersifat **random** (tidak dapat diprediksi).
+- **Tidak ada strategi** yang secara konsisten mengalahkan pasar setelah memperhitungkan risiko dan biaya transaksi.
+:::
+
+### Tiga Bentuk EMH
+
+Fama mengklasifikasikan efisiensi pasar menjadi tiga tingkatan berdasarkan jenis informasi yang tercermin dalam harga:
+
+| Bentuk | Informasi yang Tercermin | Implikasi | Strategi yang Tidak Efektif |
+|--------|------------------------|-----------|-----------------------------|
+| **Weak form** | Harga & volume historis | Analisis teknikal tidak berguna | *Technical analysis*, *charting* |
+| **Semi-strong form** | Semua informasi publik | Analisis fundamental tidak menghasilkan *abnormal return* | *Fundamental analysis* pada data publik |
+| **Strong form** | Semua informasi (publik + privat) | Bahkan *insider information* sudah tercermin | *Insider trading* (dalam teori) |
+
+::: {.callout-important}
+## Hubungan Antar Bentuk
+Strong form ⊃ Semi-strong form ⊃ Weak form
+
+Jika pasar efisien dalam *strong form*, maka otomatis juga efisien dalam *semi-strong* dan *weak form*. Bukti empiris menunjukkan bahwa pasar umumnya efisien dalam *weak form*, **cukup efisien** dalam *semi-strong form*, namun **tidak efisien** dalam *strong form* (karena insider trading memang memberikan keuntungan — itulah mengapa dilarang hukum).
+:::
+
+> *Sumber: Fabozzi & Markowitz (2011), Ch. 6; Avramov (2015), Ch. 6*
+
+## Random Walk dan Pergerakan Harga
+
+### Konsep Random Walk
+
+Jika pasar efisien, maka perubahan harga bersifat **acak** (*random*) karena hanya dipengaruhi oleh informasi baru yang, secara definisi, tidak dapat diprediksi. Ini dikenal sebagai ***random walk hypothesis***.
+
+Idenya sederhana: karena semua informasi yang tersedia **sudah tercermin** dalam harga saat ini, satu-satunya hal yang bisa menggerakkan harga esok hari adalah informasi *baru* yang belum diketahui hari ini. Informasi baru tidak dapat diprediksi — sehingga arah pergerakan harga pun tidak dapat diprediksi.
+
+Analoginya: jika Anda sudah tahu semua berita tentang suatu saham, harga hari ini sudah merefleksikan semua itu. Hanya kejutan (*surprise*) yang akan menggerakkan harga selanjutnya — dan kejutan, secara definisi, tidak bisa diprediksi.
+
+### Implikasi Random Walk
+
+1. **Return masa lalu tidak memprediksi return masa depan** — korelasi serial (*autocorrelation*) return mendekati nol.
+2. **Pola teknikal** (*head and shoulders*, *double top*, dll.) tidak memiliki *predictive power* setelah disesuaikan risiko.
+3. **Harga tidak *mean-reverting*** dalam jangka pendek — kenaikan harga kemarin tidak berarti harga akan turun hari ini.
+
+::: {.callout-warning}
+## Kesalahan Umum
+"Random walk" **tidak berarti** harga bergerak tanpa arah atau return investasi nol. Harga saham memiliki ***drift*** positif karena investor memerlukan kompensasi atas risiko. Yang random adalah **deviasi dari expected return** — bukan return itu sendiri.
+:::
+
+> *Sumber: Fabozzi & Markowitz (2011), Ch. 6*
+
+## Bukti Empiris EMH
+
+### Bukti yang Mendukung EMH
+
+1. **Event studies**: Harga saham menyesuaikan **sangat cepat** terhadap pengumuman earnings, merger, stock splits — sebagian besar penyesuaian terjadi dalam hitungan menit.
+2. **Kinerja reksa dana aktif**: Secara rata-rata, reksa dana aktif **tidak mengalahkan** indeks benchmark setelah biaya. Studi SPIVA menunjukkan >80% fund manager aktif *underperform* benchmark dalam 15 tahun.
+3. **Serial correlation test**: Autokorelasi return harian/mingguan saham umumnya **mendekati nol** — mendukung *weak form efficiency*.
+
+### Anomali Pasar (Bukti Melawan EMH)
+
+Namun, sejumlah **anomali** (*market anomalies*) ditemukan yang menantang EMH:
+
+| Anomali | Deskripsi | Penjelasan Potensial |
+|---------|----------|---------------------|
+| **Size effect** | Small-cap stocks menghasilkan *abnormal return* positif | Kompensasi risiko likuiditas |
+| **Value effect** | Saham dengan P/E atau P/B rendah *outperform* | Kompensasi *financial distress risk* |
+| **Momentum** | Saham yang naik 3–12 bulan lalu cenderung terus naik | *Underreaction* terhadap informasi |
+| **January effect** | Return saham cenderung lebih tinggi di bulan Januari | *Tax-loss selling* di Desember |
+| **Post-earnings announcement drift** | Harga terus bergerak searah dengan *earnings surprise* selama 60 hari | *Underreaction* terhadap informasi earnings |
+| **Low volatility anomaly** | Saham *low-beta* *outperform* setelah risk-adjusted | Perilaku *leverage-constrained* investor |
+
+::: {.callout-tip}
+## Insight Praktis
+Anomali pasar tidak selalu berarti pasar "tidak efisien". Ada tiga kemungkinan penjelasan: (1) anomali mencerminkan **kompensasi risiko** yang belum tertangkap model — bukan *mispricing*; (2) anomali bersifat **sementara** dan menghilang setelah dipublikasikan; (3) anomali nyata tetapi terlalu kecil untuk dieksploitasi setelah biaya transaksi (*limits to arbitrage*).
+:::
+
+> *Sumber: Fabozzi & Markowitz (2011), Ch. 6; Avramov (2015), Ch. 6*
+
+## Behavioral Finance
+
+### Konsep
+
+*Behavioral finance* menantang asumsi **rasionalitas** yang mendasari EMH. Alih-alih bersifat rasional sempurna, investor secara sistematis dipengaruhi oleh ***cognitive biases*** dan ***emotional biases*** yang menyebabkan penyimpangan dari keputusan optimal.
+
+### Bias Kognitif Utama
+
+| Bias | Deskripsi | Dampak pada Investasi |
+|------|----------|----------------------|
+| **Overconfidence** | Terlalu percaya diri pada kemampuan analisis sendiri | *Excessive trading*, diversifikasi kurang |
+| **Anchoring** | Terpaku pada angka referensi (misal: harga beli) | Menolak menjual rugi (*disposition effect*) |
+| **Herding** | Mengikuti perilaku mayoritas investor | *Bubbles* dan *crashes* |
+| **Loss aversion** | Kerugian terasa ~2× lebih menyakitkan dari keuntungan setara | Menahan saham rugi terlalu lama |
+| **Confirmation bias** | Hanya mencari informasi yang mendukung keyakinan sendiri | Mengabaikan sinyal negatif |
+| **Recency bias** | Memberikan bobot berlebih pada informasi terkini | *Extrapolation* kinerja masa lalu |
+
+### Implikasi untuk Manajer Investasi
+
+Behavioral finance memberikan dua implikasi praktis:
+
+1. **Peluang bagi investor rasional**: Jika mayoritas investor berperilaku bias, investor rasional dapat mengeksploitasi *mispricing* yang dihasilkan — ini menjadi justifikasi bagi *active management*.
+2. **Disiplin investasi**: Manajer investasi harus membangun **proses investasi terstruktur** yang meminimalkan pengaruh bias — misalnya menggunakan aturan *stop-loss*, *rebalancing* berkala, dan model kuantitatif.
+
+::: {.callout-warning}
+## Kesalahan Umum
+Behavioral finance **bukan argumen bahwa pasar tidak efisien**. Lebih tepatnya, behavioral finance menunjukkan bahwa efisiensi pasar adalah **proses** — harga bisa menyimpang dari nilai fundamental dalam jangka pendek karena bias perilaku, namun *arbitrageurs* akan secara bertahap mendorong harga kembali mendekati nilai fundamental.
+:::
+
+> *Sumber: Avramov (2015), Ch. 6; Reilly & Brown (2015), Ch. 6*
+
+## Implikasi EMH terhadap Strategi Investasi
+
+| Jika Pasar... | Strategi Optimal | Alasan |
+|---------------|-----------------|--------|
+| **Efisien (strong)** | 100% pasif (index fund) | Tidak ada analisis yang menghasilkan *alpha* |
+| **Efisien (semi-strong)** | Pasif untuk mayoritas; aktif hanya jika punya *private info* (legal) | Analisis publik sudah tercermin |
+| **Tidak sepenuhnya efisien** | Kombinasi pasif + aktif (*core-satellite*) | Ada *mispricing* namun sulit dan mahal untuk dieksploitasi |
+
+### Contoh Perhitungan — Nilai Manajemen Aktif
+
+Seorang investor mempertimbangkan dua opsi ($R_f = 5\%$, benchmark return $= 12\%$):
+
+**Opsi A: Index Fund**
+
+- *Gross return* = 12% (mengikuti benchmark)
+- *Expense ratio* = 0,2%
+- *Net return* = $12\% - 0{,}2\% = 11{,}8\%$
+
+**Opsi B: Active Fund**
+
+- *Gross return* = 13,5% (fund manager menghasilkan *alpha*)
+- *Expense ratio* = 1,5%
+- *Net return* = $13{,}5\% - 1{,}5\% = 12{,}0\%$
+
+**Selisih setelah biaya:**
+
+$$
+\text{Net alpha} = 12{,}0\% - 11{,}8\% = 0{,}2\%
+$$
+
+Fund manager menghasilkan *gross alpha* 1,5% namun setelah biaya, keunggulannya hanya 0,2% — dan ini belum memperhitungkan pajak dari *higher turnover*.
+
+::: {.callout-tip}
+## Interpretasi
+Contoh ini mengilustrasikan mengapa **biaya sangat penting** dalam evaluasi manajemen aktif. Seorang fund manager harus menghasilkan *gross alpha* yang **cukup besar** untuk menutupi biaya yang lebih tinggi. Jika pasar cukup efisien, hanya sedikit manager yang mampu melakukan ini secara konsisten.
+:::
+
+> *Sumber: Fabozzi & Markowitz (2011), Ch. 6; Smart, Gitman & Joehnk (2017), Ch. 9*
+
+## Ringkasan
+
+1. **EMH** menyatakan bahwa harga mencerminkan semua informasi yang tersedia — dalam tiga tingkatan: *weak*, *semi-strong*, dan *strong form*.
+2. **Random walk**: Perubahan harga bersifat acak karena hanya informasi baru yang menggerakkan harga; return masa lalu tidak memprediksi return masa depan.
+3. **Bukti mendukung EMH**: Reksa dana aktif rata-rata *underperform*, harga menyesuaikan cepat terhadap informasi baru, autokorelasi return mendekati nol.
+4. **Anomali pasar** — *size*, *value*, *momentum*, *January effect* — menantang EMH, namun bisa juga mencerminkan kompensasi risiko.
+5. **Behavioral finance** menunjukkan bahwa bias kognitif investor menyebabkan penyimpangan harga dari nilai fundamental.
+6. Implikasi praktis: Jika pasar "cukup efisien", strategi optimal adalah **core-satellite** — mayoritas pasif, sebagian kecil aktif untuk mengeksploitasi anomali.
+
+## Latihan Soal
+
+**Soal 1 — Bentuk EMH**
+
+Untuk masing-masing situasi berikut, tentukan bentuk EMH mana yang dilanggar (jika ada): (a) Investor yang membaca laporan keuangan publik secara konsisten menghasilkan *abnormal return*. (b) Trader yang menggunakan *moving average crossover* tidak menghasilkan return di atas benchmark. (c) Direktur perusahaan yang membeli saham sebelum pengumuman akuisisi menghasilkan profit signifikan.
+
+**Soal 2 — Evaluasi Manajemen Aktif**
+
+Fund A (aktif): gross return 14%, expense ratio 1,8%, turnover 80%. Fund B (pasif): gross return 11,5%, expense ratio 0,15%, turnover 5%. Benchmark return 11,5%. (a) Hitung net return masing-masing. (b) Berapa gross alpha yang harus dihasilkan Fund A agar net return-nya minimal sama dengan Fund B?
+
+**Soal 3 — Anomali dan Implikasi**
+
+Jelaskan *momentum anomaly* dan *post-earnings announcement drift*. Untuk masing-masing: (a) uraikan polanya, (b) tentukan bentuk EMH mana yang dilanggar, (c) berikan satu penjelasan yang konsisten dengan EMH dan satu yang tidak konsisten.
+
+**Soal 4 — Behavioral Bias**
+
+Seorang investor membeli saham pada harga Rp 5.000 dan menolak menjualnya meskipun harga sudah turun ke Rp 3.200 dan fundamental perusahaan memburuk. Ia berkata: "Saya tunggu harga kembali ke Rp 5.000 baru saya jual." (a) Identifikasi bias yang terlibat. (b) Apakah keputusan ini rasional? Jelaskan dari perspektif *prospect theory*.
+
+## Referensi
+
+- Fabozzi, F. J., & Markowitz, H. M. (2011). *The Theory and Practice of Investment Management* (2nd ed.), Chapter 6. John Wiley & Sons.
+- Avramov, D. (2015). *Investment Management*, Chapter 6. Hebrew University of Jerusalem.
+- Reilly, F. K., & Brown, K. C. (2015). *Investment Analysis and Portfolio Management* (10th ed.), Chapter 6. Cengage Learning.
+- Fama, E. F. (1970). Efficient Capital Markets: A Review of Theory and Empirical Work. *Journal of Finance*, 25(2), 383–417.

@@ -1,0 +1,218 @@
+---
+title: "Pertemuan 10: Manajemen Portofolio Ekuitas"
+subtitle: "Manajemen Investasi — EKM 19608"
+---
+
+## Tujuan Pembelajaran
+
+Setelah mengikuti pertemuan ini, mahasiswa diharapkan mampu:
+
+1. Membedakan pendekatan **manajemen portofolio aktif** dan **pasif**.
+2. Menjelaskan strategi *indexing* dan metode replikasi indeks.
+3. Memahami konsep *style investing* (value vs. growth) dan *style analysis*.
+4. Menjelaskan proses *benchmarking* dan evaluasi kinerja relatif.
+5. Menganalisis *tracking error* dan *information ratio* dalam konteks manajemen aktif.
+
+## Manajemen Portofolio Pasif
+
+### Konsep
+
+Manajemen pasif (*passive management*) didasarkan pada asumsi bahwa pasar adalah **efisien** — artinya sulit atau tidak mungkin menghasilkan *excess return* secara konsisten setelah biaya. Strategi utamanya: **mereplikasi kinerja indeks** benchmark.
+
+### Strategi Indexing
+
+**Tujuan:** Meminimalkan *tracking error* terhadap indeks benchmark.
+
+| Metode | Penjelasan | Jumlah Saham | Tracking Error |
+|--------|-----------|:------------:|:--------------:|
+| **Full replication** | Beli semua saham dalam indeks dengan bobot identik | Semua (misal: 45 untuk LQ45) | Sangat rendah |
+| **Stratified sampling** | Beli subset yang merepresentasikan karakteristik indeks | Sebagian (misal: 25–30) | Rendah |
+| **Optimization** | Gunakan optimasi untuk memilih subset saham yang meminimalkan *tracking error* | Terpilih | Terendah untuk jumlah saham terbatas |
+
+::: {.callout-note}
+## Definisi — Tracking Error
+$$
+\text{Tracking Error} = \sigma(R_p - R_b) = \sqrt{\frac{1}{T-1}\sum_{t=1}^{T}(R_{p,t} - R_{b,t})^2}
+$$
+
+di mana $R_p$ = return portofolio, $R_b$ = return benchmark. Tracking error mengukur **konsistensi** kinerja portofolio relatif terhadap benchmark.
+:::
+
+### Keunggulan dan Kelemahan Manajemen Pasif
+
+| Keunggulan | Kelemahan |
+|-----------|----------|
+| Biaya rendah (expense ratio < 0,5%) | Tidak bisa *outperform* pasar |
+| Diversifikasi luas | Terpaksa membeli semua saham (termasuk yang *overvalued*) |
+| Transparansi tinggi | Tidak fleksibel terhadap perubahan pasar |
+| Tax-efficient (turnover rendah) | *Tracking error* meski kecil tetap ada |
+
+> *Sumber: Fabozzi & Markowitz (2011), Ch. 10; Reilly & Brown (2015), Ch. 16*
+
+## Manajemen Portofolio Aktif
+
+### Konsep
+
+Manajemen aktif bertujuan menghasilkan **alpha** positif — yaitu *excess return* di atas benchmark setelah disesuaikan risiko. Asumsi dasarnya: pasar **tidak sepenuhnya efisien** sehingga terdapat peluang *mispricing* yang bisa dieksploitasi.
+
+### Sumber Alpha
+
+| Sumber | Pendekatan | Contoh |
+|--------|-----------|--------|
+| **Stock selection** (*bottom-up*) | Analisis fundamental untuk menemukan saham *mispriced* | Beli saham *undervalued* (intrinsic value > market price) |
+| **Sector rotation** | Overweight/underweight sektor berdasarkan siklus ekonomi | Overweight sektor teknologi saat awal ekspansi |
+| **Market timing** | Geser alokasi ekuitas-kas berdasarkan prediksi pasar | Kurangi ekuitas sebelum koreksi |
+| **Factor tilts** | Overweight faktor yang diprediksi akan memberikan premium | Tilt ke small-cap value |
+
+### Contoh Alpha dari Stock Selection
+
+Seorang manajer mengelola portofolio ekuitas dengan benchmark LQ45. Dalam satu tahun:
+
+| Metrik | Portofolio | LQ45 |
+|--------|:---------:|:----:|
+| Return | 18,5% | 15,0% |
+| Beta | 1,10 | 1,00 |
+| Risk-free rate | 5,0% | 5,0% |
+
+**Alpha (Jensen's Alpha):**
+
+$$
+\alpha = R_p - [R_f + \beta_p(R_m - R_f)] = 18{,}5\% - [5\% + 1{,}10(15\% - 5\%)] = 18{,}5\% - 16\% = 2{,}5\%
+$$
+
+Manajer menghasilkan alpha +2,5% — artinya kinerja portofolio **melebihi** kompensasi risiko yang diambil.
+
+### Information Ratio
+
+::: {.callout-important}
+## Formula Kunci — Information Ratio
+$$
+\text{IR} = \frac{\bar{\alpha}}{\text{Tracking Error}} = \frac{E(R_p - R_b)}{\sigma(R_p - R_b)}
+$$
+
+Information Ratio mengukur **kualitas** manajer aktif — berapa banyak *excess return* yang dihasilkan per unit *active risk*.
+:::
+
+> *Sumber: Fabozzi & Markowitz (2011), Ch. 10*
+
+## Style Investing
+
+### Value vs. Growth
+
+*Style investing* mengklasifikasikan pendekatan investasi berdasarkan karakteristik saham yang dipilih.
+
+| Aspek | Value Investing | Growth Investing |
+|-------|:--------------:|:---------------:|
+| **Fokus** | Saham murah relatif terhadap fundamental | Saham dengan pertumbuhan earnings tinggi |
+| **Metrik utama** | P/E rendah, P/B rendah, dividend yield tinggi | EPS growth tinggi, P/E tinggi |
+| **Asumsi** | Pasar **overreact** terhadap berita buruk → harga terlalu rendah | Pertumbuhan masa depan belum tercermin penuh di harga |
+| **Risiko** | *Value trap* (murah karena memang buruk) | *Overvaluation* jika pertumbuhan melambat |
+| **Investor terkenal** | Warren Buffett, Benjamin Graham | Peter Lynch, T. Rowe Price |
+
+### Style Rotation
+
+Return value dan growth stocks cenderung **bergantian** (*rotation*). Bukti empiris menunjukkan:
+
+- **Value stocks** cenderung *outperform* di awal pemulihan ekonomi dan lingkungan suku bunga rendah.
+- **Growth stocks** cenderung *outperform* di akhir siklus ekspansi dan lingkungan suku bunga menurun.
+
+> *Sumber: Fabozzi & Markowitz (2011), Ch. 10; Reilly & Brown (2015), Ch. 16*
+
+## Benchmarking
+
+### Kriteria Benchmark yang Baik
+
+Menurut Bailey (1992), benchmark yang valid harus memenuhi kriteria berikut:
+
+| Kriteria | Penjelasan |
+|----------|-----------|
+| **Unambiguous** | Identitas dan bobot sekuritas jelas |
+| **Investable** | Investor bisa mereplikasi benchmark (beli semua komponennya) |
+| **Measurable** | Return dapat dihitung secara berkala |
+| **Appropriate** | Konsisten dengan style dan strategi manajer |
+| **Reflective of current opinion** | Manajer memiliki pengetahuan tentang semua komponen |
+| **Specified in advance** | Ditentukan sebelum periode evaluasi |
+| **Accountable** | Manajer menerima benchmark sebagai tolok ukur kinerjanya |
+
+### Benchmark Umum untuk Portofolio Ekuitas Indonesia
+
+| Tipe Portofolio | Benchmark | Alasan |
+|----------------|-----------|--------|
+| Ekuitas domestik (umum) | IHSG | Mencakup seluruh pasar |
+| Blue chip | LQ45 atau IDX30 | Fokus saham likuid besar |
+| Saham syariah | Jakarta Islamic Index (JII) | Universe saham syariah |
+| Small-cap | IDX SMC Composite | Fokus small-mid cap |
+
+::: {.callout-warning}
+## Kesalahan Umum
+Menggunakan benchmark yang **tidak sesuai** dengan strategi investasi adalah kesalahan serius. Contoh: mengevaluasi manajer saham *small-cap* menggunakan IHSG (yang didominasi *large-cap*) akan menghasilkan kesimpulan yang menyesatkan — alpha bisa terlihat positif atau negatif bukan karena skill, tetapi karena *size factor*.
+:::
+
+> *Sumber: Fabozzi & Markowitz (2011), Ch. 10*
+
+## Pasif vs. Aktif — Perdebatan
+
+| Argumen Pro-Pasif | Argumen Pro-Aktif |
+|------------------|-----------------|
+| Mayoritas manajer aktif *underperform* benchmark setelah biaya | Beberapa manajer **konsisten** *outperform* |
+| Biaya rendah = keunggulan kompetitif sistematis | Pasar *emerging* (termasuk Indonesia) kurang efisien → lebih banyak peluang |
+| *Tax efficiency* lebih baik | Manajemen risiko aktif bisa mengurangi *drawdown* |
+| Tidak perlu skill khusus; mudah diimplementasikan | Diversifikasi faktor risiko yang lebih baik |
+| Eugene Fama, John Bogle | Peter Lynch, Warren Buffett |
+
+::: {.callout-tip}
+## Insight — Solusi Hibrid: Core-Satellite
+Banyak investor institusional menggunakan pendekatan **core-satellite**: **core** (60–80%) dikelola secara pasif (*index fund*) untuk efisiensi biaya, sementara **satellite** (20–40%) dikelola secara aktif untuk mengejar alpha. Ini mengkombinasikan keunggulan kedua pendekatan.
+:::
+
+## Ringkasan
+
+1. **Manajemen pasif** mereplikasi indeks benchmark dengan biaya rendah; cocok di pasar efisien.
+2. **Manajemen aktif** bertujuan menghasilkan alpha melalui stock selection, sector rotation, atau market timing.
+3. **Information Ratio** ($\text{IR} = \bar{\alpha} / \text{TE}$) mengukur kualitas manajer aktif — alpha per unit active risk.
+4. **Style investing** (value vs. growth) mengklasifikasikan pendekatan investasi; *returns-based style analysis* mendekomposisi return ke eksposur style.
+5. **Benchmark** harus *appropriate* terhadap strategi manajer; benchmark yang salah menghasilkan evaluasi yang menyesatkan.
+
+## Latihan Soal
+
+**Soal 1 — Tracking Error**
+
+Portofolio indeks dan benchmark menunjukkan return kuartalan berikut selama 2 tahun:
+
+| Kuartal | Return Portofolio | Return Benchmark | Selisih |
+|:-------:|:-----------------:|:----------------:|:-------:|
+| Q1 | 4,2% | 4,0% | +0,2% |
+| Q2 | −2,5% | −2,8% | +0,3% |
+| Q3 | 5,1% | 5,3% | −0,2% |
+| Q4 | 1,8% | 2,0% | −0,2% |
+| Q5 | 3,6% | 3,5% | +0,1% |
+| Q6 | −1,0% | −0,8% | −0,2% |
+| Q7 | 6,2% | 6,0% | +0,2% |
+| Q8 | 2,4% | 2,5% | −0,1% |
+
+Hitung: (a) Rata-rata *excess return*. (b) *Tracking error* (annualized, kalikan $\sqrt{4}$). (c) *Information Ratio*.
+
+**Soal 2 — Jensen's Alpha dan IR**
+
+Dua manajer aktif memiliki kinerja berikut:
+
+| Manajer | Return | Beta | TE |
+|---------|:------:|:----:|:--:|
+| X | 16% | 1,15 | 6% |
+| Y | 14% | 0,90 | 4% |
+
+$R_f = 5\%$, $R_m = 12\%$. Hitung: (a) Jensen's Alpha masing-masing. (b) IR masing-masing. (c) Manajer mana yang lebih baik? Jelaskan.
+
+**Soal 3 — Style Analysis**
+
+Seorang manajer mengklaim strategi "all-cap growth". Analisis RBSA menunjukkan: Large-cap Value 55%, Large-cap Growth 25%, Mid-cap Value 15%, Kas 5%. Apa kesimpulan Anda tentang actual style manajer ini? Benchmark apa yang paling tepat?
+
+**Soal 4 — Core-Satellite**
+
+Investor memiliki portofolio Rp 500 juta. Ia menerapkan core-satellite: 70% *core* (index fund LQ45, expense ratio 0,3%) dan 30% *satellite* (manajer aktif, management fee 2,0%, expected alpha 2,5%). Hitung: (a) Total biaya portofolio per tahun. (b) Expected return jika LQ45 memberikan 12%. (c) Berapa minimum alpha manajer aktif agar strategi ini *breakeven* vs. 100% pasif?
+
+## Referensi
+
+- Fabozzi, F. J., & Markowitz, H. M. (2011). *The Theory and Practice of Investment Management* (2nd ed.), Chapter 10. John Wiley & Sons.
+- Reilly, F. K., & Brown, K. C. (2015). *Investment Analysis and Portfolio Management* (10th ed.), Chapter 16. Cengage Learning.
+- Sharpe, W. F. (1992). Asset Allocation: Management Style and Performance Measurement. *Journal of Portfolio Management*, 18(2), 7–19.

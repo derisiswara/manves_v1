@@ -1,0 +1,251 @@
+---
+title: "Pertemuan 12: Reksa Dana & ETF"
+subtitle: "Manajemen Investasi — EKM 19608"
+---
+
+## Tujuan Pembelajaran
+
+Setelah mengikuti pertemuan ini, mahasiswa diharapkan mampu:
+
+1. Menjelaskan konsep reksa dana dan cara kerjanya.
+2. Membedakan jenis-jenis reksa dana berdasarkan portofolio dan mekanismenya.
+3. Menghitung dan menginterpretasikan Nilai Aktiva Bersih (NAB).
+4. Membandingkan reksa dana aktif dan pasif, serta reksa dana konvensional dan ETF.
+5. Menerapkan kriteria pemilihan reksa dana yang tepat sesuai profil investor.
+
+## Pendahuluan: Reksa Dana sebagai Solusi Investasi
+
+Kebanyakan investor individual tidak memiliki waktu, keahlian, atau modal yang cukup untuk membangun portofolio yang terdiversifikasi sendiri. **Reksa dana** hadir sebagai solusi — memungkinkan investor kecil mengakses portofolio yang dikelola secara profesional dengan biaya yang terjangkau.
+
+::: {.callout-note}
+## Definisi — Reksa Dana
+**Reksa dana** (*mutual fund*) adalah wadah yang menghimpun dana dari banyak investor untuk diinvestasikan bersama dalam portofolio efek (saham, obligasi, pasar uang) oleh Manajer Investasi (MI) yang profesional, diawasi oleh OJK.
+:::
+
+Tiga keunggulan utama reksa dana bagi investor individu:
+
+1. **Diversifikasi instan**: Dengan Rp 100.000 pun, investor memiliki "bagian" dari portofolio berisi puluhan hingga ratusan efek.
+2. **Manajemen profesional**: Dikelola oleh MI berlisensi yang melakukan riset dan memantau pasar setiap hari.
+3. **Likuiditas**: Dapat dicairkan (redemption) kapan saja pada NAB hari itu (T+2 untuk reksa dana konvensional).
+
+> *Sumber: OJK (2023); Reilly & Brown (2015), Ch. 24*
+
+## Cara Kerja Reksa Dana
+
+### Mekanisme
+
+Ketika investor membeli reksa dana, mereka membeli **unit penyertaan** (UP). Uang terkumpul dari semua investor diinvestasikan oleh MI ke dalam portofolio efek. Bank Kustodian menyimpan aset tersebut secara terpisah dari aset MI.
+
+```
+Investor A ─┐
+Investor B ─┼──► REKSA DANA ──► Bank Kustodian ──► Portofolio Efek
+Investor C ─┘       (MI)          (Penyimpan)       (Saham/Obligasi)
+```
+
+**Pihak yang terlibat:**
+
+| Pihak | Peran |
+|-------|-------|
+| **Manajer Investasi (MI)** | Mengelola portofolio, membuat keputusan beli/jual |
+| **Bank Kustodian** | Menyimpan aset, menghitung NAB, administrasi |
+| **OJK** | Mengatur dan mengawasi seluruh industri reksa dana |
+| **Agen Penjual** | Bank, perusahaan sekuritas, platform digital yang menjual unit penyertaan |
+
+### Nilai Aktiva Bersih (NAB)
+
+**NAB** adalah nilai total aset reksa dana dikurangi liabilitas, dibagi jumlah unit penyertaan yang beredar.
+
+::: {.callout-important}
+## Formula Kunci — NAB per Unit
+$$
+\text{NAB per unit} = \frac{\text{Total Nilai Aset Portofolio} - \text{Liabilitas}}{\text{Jumlah Unit Penyertaan Beredar}}
+$$
+:::
+
+**Contoh Perhitungan NAB:**
+
+Reksa dana "Maju Sejahtera" memiliki:
+- Total nilai saham dalam portofolio: Rp 500 miliar
+- Total nilai obligasi: Rp 200 miliar
+- Kas: Rp 10 miliar
+- Liabilitas (fee terutang dll.): Rp 5 miliar
+- Jumlah unit beredar: 350 juta unit
+
+$$
+\text{NAB per unit} = \frac{(500 + 200 + 10 - 5) \text{ miliar}}{350 \text{ juta unit}} = \frac{705 \text{ miliar}}{350 \text{ juta}} = \text{Rp } 2.014
+$$
+
+::: {.callout-tip}
+## Interpretasi
+Jika investor membeli 1.000 unit pada NAB Rp 2.014, mereka membayar Rp 2.014.000. Jika 6 bulan kemudian NAB menjadi Rp 2.200, nilai investasinya menjadi Rp 2.200.000 — imbal hasil 9,2%.
+:::
+
+> *Sumber: OJK (2023); Reilly & Brown (2015), Ch. 24*
+
+## Jenis-Jenis Reksa Dana
+
+### Berdasarkan Portofolio
+
+| Jenis | Portofolio Utama | Risiko | Cocok untuk |
+|-------|-----------------|:------:|-------------|
+| **Reksa Dana Pasar Uang (RDPU)** | Deposito, SBI, obligasi < 1 tahun | Sangat rendah | Dana darurat, investasi jangka pendek (< 1 tahun) |
+| **Reksa Dana Pendapatan Tetap (RDPT)** | Obligasi > 80% | Rendah–menengah | Tujuan 1–3 tahun, konservatif |
+| **Reksa Dana Saham (RDS)** | Saham > 80% | Tinggi | Tujuan > 5 tahun, agresif |
+| **Reksa Dana Campuran (RDC)** | Mix saham + obligasi | Menengah | Tujuan 3–5 tahun, moderat |
+
+::: {.callout-note}
+## RDPU vs. Deposito
+RDPU sering dibandingkan deposito karena risikonya sangat rendah. Perbedaan utama: RDPU **tidak ada jaminan LPS** (berbeda dari deposito yang dijamin s.d. Rp 2 miliar), namun umumnya lebih likuid (tidak ada penalti pencairan dini) dan bisa dimulai dari nominal sangat kecil.
+:::
+
+### Berdasarkan Mekanisme Pengelolaan
+
+| Aspek | Reksa Dana Aktif | Reksa Dana Pasif / Indeks |
+|-------|-----------------|--------------------------|
+| **Tujuan** | *Outperform* benchmark (alpha) | Mereplikasi kinerja indeks |
+| **Pengelolaan** | MI aktif beli/jual, riset intensif | Mengikuti komposisi indeks |
+| **Biaya (expense ratio)** | Tinggi (1–3% per tahun) | Rendah (0,1–0,5% per tahun) |
+| **Turnover** | Tinggi | Sangat rendah |
+| **Kinerja historis** | Sebagian besar gagal *outperform* jangka panjang | Mengikuti pasar |
+
+::: {.callout-warning}
+## Fakta Penting — Reksa Dana Aktif vs. Pasif
+Riset S&P Dow Jones (*SPIVA Scorecard*) secara konsisten menunjukkan bahwa **lebih dari 80% reksa dana saham aktif gagal mengalahkan indeks** dalam jangka 10–15 tahun, terutama setelah memperhitungkan biaya. Ini menjadi argumen kuat untuk reksa dana pasif/indeks bagi investor jangka panjang.
+:::
+
+> *Sumber: OJK (2023); Reilly & Brown (2015), Ch. 24; S&P SPIVA (2023)*
+
+## Exchange-Traded Funds (ETF)
+
+### Konsep
+
+**ETF** adalah reksa dana yang diperdagangkan di bursa efek seperti saham biasa. Seperti reksa dana indeks, ETF umumnya mereplikasi kinerja suatu indeks (misal: LQ45, IDX30, IDX80).
+
+### ETF vs. Reksa Dana Konvensional
+
+| Aspek | Reksa Dana Konvensional | ETF |
+|-------|------------------------|-----|
+| **Cara membeli** | Lewat MI, agen penjual, atau platform | Lewat broker di bursa efek (seperti beli saham) |
+| **Harga** | Ditetapkan 1× sehari (NAB akhir hari) | Berubah real-time sepanjang jam bursa |
+| **Transaksi minimum** | Sering Rp 10.000–100.000 | Minimal 1 lot (100 unit) |
+| **Biaya** | Management fee + subscription/redemption fee | Management fee (lebih rendah) + biaya broker |
+| **Likuiditas** | T+2 (dari NAB) | Intraday (bisa jual kapan saja) |
+| **Transparansi portofolio** | Dipublikasikan bulanan | Dipublikasikan harian |
+
+::: {.callout-note}
+## Contoh ETF di Indonesia
+ETF yang tersedia di BEI antara lain: **ETF LQ45** (XIIT), **ETF IDX30**, **ETF Sri-Kehati**, dan beberapa ETF berbasis obligasi pemerintah. Ticker ETF di BEI umumnya diawali dengan "X".
+:::
+
+> *Sumber: BEI (2023); OJK (2023)*
+
+## Biaya Reksa Dana
+
+### Jenis Biaya
+
+Biaya adalah faktor kritis yang sering diabaikan investor pemula. Biaya langsung mengurangi return.
+
+| Biaya | Definisi | Kapan Dikenakan |
+|-------|----------|----------------|
+| **Management fee** | Biaya pengelolaan MI per tahun | Dipotong dari NAB setiap hari (termasuk dalam NAB) |
+| **Biaya kustodian** | Fee bank kustodian | Dipotong dari NAB |
+| **Subscription fee (front-load)** | % biaya saat membeli | Saat beli unit |
+| **Redemption fee (back-load)** | % biaya saat jual | Saat jual unit |
+
+**Contoh Dampak Biaya:**
+
+Investasi Rp 100 juta, return portofolio 10% per tahun, selama 20 tahun.
+
+| Skenario | Expense Ratio | Nilai Akhir (20 tahun) |
+|----------|:------------:|:---------------------:|
+| Tanpa biaya | 0% | Rp 672,7 juta |
+| ETF / Reksa Dana Indeks | 0,3% | Rp 612,3 juta |
+| Reksa Dana Aktif | 2,0% | Rp 457,0 juta |
+
+::: {.callout-warning}
+## Dampak Biaya Jangka Panjang
+Selisih expense ratio 1,7% per tahun mengurangi nilai akhir sekitar Rp 155 juta — lebih dari 25% dari nilai total. Biaya kecil yang tampak tidak signifikan dalam jangka pendek menjadi sangat material dalam jangka panjang karena efek **compounding biaya**.
+:::
+
+> *Sumber: Reilly & Brown (2015), Ch. 24; OJK (2023)*
+
+## Cara Memilih Reksa Dana
+
+### Langkah Sistematis
+
+1. **Tentukan tujuan investasi dan horizon waktu** → menentukan jenis reksa dana yang tepat.
+2. **Sesuaikan dengan profil risiko** → konservatif (RDPU/RDPT), moderat (RDC), agresif (RDS).
+3. **Periksa rekam jejak kinerja** → minimal 3–5 tahun, bandingkan dengan benchmark.
+4. **Perhatikan biaya** → cek expense ratio, subscription/redemption fee.
+5. **Cek reputasi MI** → AUM (aset kelolaan), pengalaman, rekam jejak MI.
+6. **Pastikan legal OJK** → cek di [pengawasan.ojk.go.id](https://pengawasan.ojk.go.id) — waspada reksa dana ilegal!
+
+### Metrik Kinerja Reksa Dana
+
+| Metrik | Formula | Interpretasi |
+|--------|---------|-------------|
+| **Return** | $\frac{\text{NAB}_t - \text{NAB}_0}{\text{NAB}_0}$ | Imbal hasil absolut |
+| **Sharpe Ratio** | $\frac{R_p - R_f}{\sigma_p}$ | Return per unit risiko |
+| **Alpha (Jensen's)** | $R_p - [R_f + \beta(R_m - R_f)]$ | Return di atas/bawah benchmark |
+| **Tracking Error** | $\sigma(R_p - R_{\text{idx}})$ | Penyimpangan dari indeks (reksa dana indeks/ETF) |
+
+::: {.callout-tip}
+## Tips Praktis
+Untuk investor pemula dengan jangka panjang (>5 tahun), pertimbangkan reksa dana indeks atau ETF terlebih dahulu. Biayanya rendah, transparan, dan secara historis sulit dikalahkan oleh reksa dana aktif dalam jangka panjang. Setelah lebih berpengalaman, dapat mempertimbangkan reksa dana aktif yang konsisten menghasilkan alpha.
+:::
+
+> *Sumber: OJK (2023); Reilly & Brown (2015), Ch. 24*
+
+## Ringkasan
+
+1. **Reksa dana** menghimpun dana dari banyak investor untuk dikelola secara kolektif oleh Manajer Investasi, diawasi OJK.
+2. **NAB per unit** = (Total Aset − Liabilitas) / Jumlah Unit Beredar — nilai inilah yang mencerminkan harga reksa dana.
+3. **Empat jenis utama**: Pasar Uang (risiko terendah) → Pendapatan Tetap → Campuran → Saham (risiko tertinggi), sesuaikan dengan horizon waktu dan toleransi risiko.
+4. **Reksa dana aktif vs. pasif**: Aktif bertujuan *outperform* dengan biaya lebih tinggi; pasif mengikuti indeks dengan biaya rendah. Mayoritas reksa dana aktif gagal *outperform* indeks jangka panjang.
+5. **ETF** adalah reksa dana indeks yang diperdagangkan di bursa secara real-time — lebih likuid dan transparan dibanding reksa dana konvensional.
+6. **Biaya adalah faktor kritis** — perbedaan 1–2% expense ratio per tahun sangat signifikan dalam jangka 10–20 tahun karena efek compounding.
+
+## Latihan Soal
+
+**Soal 1 — Perhitungan NAB**
+
+Reksa dana "Nusantara Growth" memiliki portofolio:
+- Saham senilai Rp 800 miliar
+- Obligasi senilai Rp 150 miliar
+- Kas Rp 20 miliar
+- Liabilitas (fee terutang, dll.) Rp 8 miliar
+- Jumlah unit beredar: 500 juta unit
+
+(a) Hitung NAB per unit. (b) Investor Budi memiliki 10.000 unit — berapa nilai investasinya? (c) Bulan depan portofolio naik 5%, sementara liabilitas tetap dan unit beredar bertambah 10 juta (karena investor baru masuk). Hitung NAB baru per unit.
+
+**Soal 2 — Pemilihan Jenis Reksa Dana**
+
+Cocokkan profil investor berikut dengan jenis reksa dana yang paling tepat dan jelaskan alasannya:
+
+| Investor | Profil |
+|----------|--------|
+| Andi | Menabung untuk dana pensiun 25 tahun lagi, bisa menerima fluktuasi jangka pendek |
+| Budi | Dana darurat yang perlu bisa dicairkan kapan saja tanpa risiko turun |
+| Citra | Menabung untuk uang muka rumah 3 tahun lagi, tidak suka risiko tinggi |
+| Dian | Investor berpengalaman, tujuan jangka panjang 10 tahun, tapi ingin ada alokasi defensif |
+
+**Soal 3 — Dampak Biaya**
+
+Investor menanamkan Rp 50 juta selama 15 tahun. Return portofolio bruto 9% per tahun. Bandingkan dua pilihan:
+- Reksa Dana A (aktif): expense ratio 2,2% per tahun
+- Reksa Dana B (indeks/ETF): expense ratio 0,3% per tahun
+
+(a) Hitung nilai akhir masing-masing (gunakan rumus compound: $V = P(1+r)^n$, dengan $r$ = return net of fees). (b) Berapa selisih nilai akhirnya? (c) Berapa % dari nilai akhir Reksa Dana B yang "hilang" akibat fee tinggi di Reksa Dana A?
+
+**Soal 4 — Evaluasi Kinerja**
+
+Reksa dana saham ABC membukukan return 3 tahun terakhir: +12%, +8%, −3%. Benchmark IHSG: +10%, +5%, −5%. $R_f = 4\%$ per tahun (rata-rata), $\sigma_p = 15\%$, $\beta = 1{,}1$.
+
+(a) Hitung rata-rata return geometrik reksa dana dan IHSG. (b) Hitung Sharpe Ratio reksa dana. (c) Hitung alpha Jensen — apakah manajer menambah nilai atau tidak? (d) Apakah reksa dana ini layak dipilih? Pertimbangkan semua metrik.
+
+## Referensi
+
+- OJK. (2023). *Reksa Dana: Panduan untuk Investor*. Otoritas Jasa Keuangan.
+- Reilly, F. K., & Brown, K. C. (2015). *Investment Analysis and Portfolio Management* (10th ed.), Chapter 24. Cengage Learning.
+- Fabozzi, F. J., & Markowitz, H. M. (2011). *The Theory and Practice of Investment Management* (2nd ed.), Chapter 3. John Wiley & Sons.
+- S&P Dow Jones Indices. (2023). *SPIVA Indonesia Scorecard*. S&P Global.

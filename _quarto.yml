@@ -1,0 +1,71 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Manajemen Investasi — EKM 19608"
+  navbar:
+    background: primary
+    left:
+      - text: "Beranda"
+        href: index.qmd
+      - text: "Materi"
+        menu:
+          - text: "01 — Overview Manajemen Investasi"
+            href: pertemuan/01-overview.qmd
+          - text: "02 — Kelas Aset & Perusahaan Investasi"
+            href: pertemuan/02-aset-investasi.qmd
+          - text: "03 — Seleksi Portofolio"
+            href: pertemuan/03-seleksi-portofolio.qmd
+          - text: "04 — Capital Asset Pricing Model"
+            href: pertemuan/04-capm.qmd
+          - text: "05 — Model Faktor & Pengantar Multifaktor"
+            href: pertemuan/05-model-faktor.qmd
+          - text: "06 — Dinamika Harga Aset"
+            href: pertemuan/06-dinamika-harga.qmd
+          - text: "07 — Alokasi Aset & Konstruksi Portofolio"
+            href: pertemuan/07-alokasi-aset.qmd
+          - text: "---"
+          - text: "09 — Dasar-Dasar Saham Biasa"
+            href: pertemuan/09-saham-biasa.qmd
+          - text: "10 — Manajemen Portofolio Ekuitas"
+            href: pertemuan/10-manajemen-portofolio-ekuitas.qmd
+          - text: "11 — Valuasi Saham"
+            href: pertemuan/11-valuasi-saham.qmd
+          - text: "12 — Reksa Dana & ETF"
+            href: pertemuan/12-portofolio-kuantitatif.qmd
+          - text: "13 — Obligasi & Pendapatan Tetap"
+            href: pertemuan/13-long-short.qmd
+          - text: "14 — Derivatif Ekuitas & Hedging"
+            href: pertemuan/14-risiko-derivatif.qmd
+      - text: "Latihan"
+        menu:
+          - text: "Latihan UTS"
+            href: latihan/latihan-uts.qmd
+          - text: "Latihan UAS"
+            href: latihan/latihan-uas.qmd
+      - text: "Referensi"
+        href: referensi.qmd
+
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    code-copy: true
+    highlight-style: github
+    mainfont: "Inter, sans-serif"
+    monofont: "Fira Code, monospace"
+
+execute:
+  freeze: auto
+  warning: false
+  message: false
+
+lang: id

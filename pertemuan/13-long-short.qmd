@@ -1,0 +1,276 @@
+---
+title: "Pertemuan 13: Obligasi & Investasi Pendapatan Tetap"
+subtitle: "Manajemen Investasi — EKM 19608"
+---
+
+## Tujuan Pembelajaran
+
+Setelah mengikuti pertemuan ini, mahasiswa diharapkan mampu:
+
+1. Menjelaskan karakteristik dan terminologi dasar obligasi.
+2. Menghitung harga obligasi berdasarkan konsep present value.
+3. Menjelaskan hubungan terbalik antara harga obligasi dan suku bunga.
+4. Menghitung dan menginterpretasikan Yield to Maturity (YTM).
+5. Membedakan jenis-jenis obligasi yang tersedia di Indonesia.
+
+## Pendahuluan: Mengapa Belajar Obligasi?
+
+Obligasi adalah instrumen investasi terbesar di dunia — pasar obligasi global lebih besar dari pasar saham global. Di Indonesia, pasar **Surat Berharga Negara (SBN)** menjadi instrumen investasi populer, termasuk melalui produk retail seperti **ORI** (Obligasi Ritel Indonesia) dan **Sukuk**.
+
+Bagi investor, obligasi menawarkan:
+- **Pendapatan tetap** (kupon) yang dapat diprediksi
+- **Risiko lebih rendah** dibanding saham (prioritas klaim lebih tinggi)
+- **Diversifikasi** portofolio (korelasi rendah dengan saham)
+
+> *Sumber: Reilly & Brown (2015), Ch. 18; Kementerian Keuangan RI (2023)*
+
+## Karakteristik Dasar Obligasi
+
+### Terminologi Penting
+
+::: {.callout-important}
+## Istilah Kunci dalam Obligasi
+
+| Istilah | Definisi |
+|---------|----------|
+| **Nilai Nominal (Par Value / Face Value)** | Nilai pokok obligasi yang dibayar kembali saat jatuh tempo (misal: Rp 1.000.000 atau $1.000) |
+| **Kupon (Coupon)** | Bunga periodik yang dibayar penerbit kepada pemegang obligasi |
+| **Tingkat Kupon (Coupon Rate)** | Persentase kupon terhadap nilai nominal (% per tahun) |
+| **Jatuh Tempo (Maturity)** | Tanggal obligasi dilunasi oleh penerbit |
+| **Harga Obligasi** | Harga pasar obligasi — bisa di atas (*premium*) atau di bawah (*discount*) nilai nominal |
+| **Yield to Maturity (YTM)** | Return yang akan diterima jika obligasi dipegang hingga jatuh tempo |
+:::
+
+**Contoh Obligasi:**
+
+Obligasi PT ABC:
+- Nilai nominal: Rp 1.000.000
+- Tingkat kupon: 8% per tahun, dibayar setiap 6 bulan
+- Jatuh tempo: 5 tahun
+
+Artinya: Investor menerima Rp 40.000 setiap 6 bulan (= 8%/2 × Rp 1.000.000), lalu Rp 1.000.000 saat jatuh tempo.
+
+> *Sumber: Reilly & Brown (2015), Ch. 18*
+
+## Harga Obligasi
+
+### Konsep Present Value
+
+Harga obligasi adalah **present value (PV)** dari semua cash flow yang akan diterima — yaitu kupon periodik + nilai nominal saat jatuh tempo.
+
+::: {.callout-important}
+## Formula Kunci — Harga Obligasi
+$$
+P = \sum_{t=1}^{n} \frac{C}{(1+r)^t} + \frac{F}{(1+r)^n}
+$$
+
+di mana:
+
+- $P$ = harga obligasi
+- $C$ = kupon per periode
+- $F$ = nilai nominal (face value)
+- $r$ = required return per periode (yield / jumlah pembayaran per tahun)
+- $n$ = jumlah periode total
+:::
+
+### Contoh Perhitungan
+
+**Soal:** Obligasi 3 tahun, nilai nominal Rp 1.000.000, tingkat kupon 8%/tahun (dibayar tahunan). Investor mengharapkan return 8% per tahun. Berapa harga obligasi?
+
+$$
+P = \frac{80.000}{(1{,}08)^1} + \frac{80.000}{(1{,}08)^2} + \frac{80.000 + 1.000.000}{(1{,}08)^3}
+$$
+
+$$
+= \frac{80.000}{1{,}08} + \frac{80.000}{1{,}1664} + \frac{1.080.000}{1{,}2597}
+$$
+
+$$
+= 74.074 + 68.587 + 857.339 = \text{Rp } 1.000.000
+$$
+
+::: {.callout-tip}
+## Interpretasi
+Ketika required return = tingkat kupon, harga obligasi = nilai nominal (par). Ini adalah kondisi "at par" (*priced at par*).
+:::
+
+> *Sumber: Reilly & Brown (2015), Ch. 18*
+
+## Hubungan Harga dan Yield
+
+### Prinsip Dasar
+
+Hubungan antara harga obligasi dan yield (suku bunga) bersifat **terbalik (inverse)**:
+
+- Ketika suku bunga **naik** → harga obligasi **turun**
+- Ketika suku bunga **turun** → harga obligasi **naik**
+
+**Mengapa?** Bayangkan Anda memegang obligasi kupon 8%. Lalu suku bunga pasar naik ke 10%. Investor baru bisa mendapat 10% dari obligasi baru. Agar obligasi lama Anda menarik, harganya harus **turun** sampai yield-nya setara dengan pasar (10%).
+
+::: {.callout-important}
+## Tiga Skenario Harga
+
+| Kondisi | Harga vs. Nominal | Sebutan |
+|---------|:-----------------:|---------|
+| Required return > Coupon rate | Harga < Nominal | *Discount* |
+| Required return = Coupon rate | Harga = Nominal | *At Par* |
+| Required return < Coupon rate | Harga > Nominal | *Premium* |
+:::
+
+**Contoh Numerik:**
+
+Obligasi sama (nominal Rp 1.000.000, kupon 8%, jatuh tempo 3 tahun):
+
+| Required Return | Harga Obligasi |
+|:--------------:|:--------------:|
+| 6% | Rp 1.053.460 (*premium*) |
+| 8% | Rp 1.000.000 (*at par*) |
+| 10% | Rp 950.264 (*discount*) |
+
+::: {.callout-note}
+## Implikasi bagi Investor
+Ini berarti investor yang membeli obligasi dan suku bunga kemudian naik akan mengalami **capital loss** (harga obligasi turun) jika menjual sebelum jatuh tempo. Inilah yang disebut **risiko suku bunga** (*interest rate risk*).
+:::
+
+> *Sumber: Reilly & Brown (2015), Ch. 18*
+
+## Yield to Maturity (YTM)
+
+### Konsep
+
+**YTM** adalah tingkat diskonto yang membuat present value semua cash flow obligasi sama dengan harga pasarnya. YTM adalah *return* yang akan diperoleh investor **jika membelinya sekarang dan menahannya hingga jatuh tempo**.
+
+YTM juga bisa dipandang sebagai "suku bunga implisit pasar" untuk obligasi tersebut.
+
+### Perhitungan YTM
+
+YTM tidak bisa diselesaikan secara langsung — harus dicari dengan **trial and error** atau kalkulator keuangan.
+
+**Contoh:**
+
+Obligasi harga Rp 950.000, nominal Rp 1.000.000, kupon 8%/tahun, jatuh tempo 3 tahun.
+
+Kita cari $r$ yang memenuhi:
+
+$$
+950.000 = \frac{80.000}{(1+r)^1} + \frac{80.000}{(1+r)^2} + \frac{1.080.000}{(1+r)^3}
+$$
+
+**Coba r = 9,7%:**
+
+$$
+PV = \frac{80.000}{1{,}097} + \frac{80.000}{1{,}2034} + \frac{1.080.000}{1{,}3202} = 72.926 + 66.490 + 818.058 = 957.474 \quad \text{(terlalu tinggi)}
+$$
+
+**Coba r = 10,0%:**
+
+$$
+PV = \frac{80.000}{1{,}1} + \frac{80.000}{1{,}21} + \frac{1.080.000}{1{,}331} = 72.727 + 66.116 + 811.419 = 950.262 \approx 950.000 \checkmark
+$$
+
+**YTM ≈ 10%**
+
+::: {.callout-tip}
+## Aturan Umum YTM
+Ketika obligasi dijual di *discount* (harga < nominal), YTM > coupon rate. Ketika dijual di *premium* (harga > nominal), YTM < coupon rate. Ini konsisten dengan prinsip hubungan terbalik harga-yield.
+:::
+
+> *Sumber: Reilly & Brown (2015), Ch. 18*
+
+## Jenis Obligasi di Indonesia
+
+### Surat Berharga Negara (SBN)
+
+Pemerintah Indonesia menerbitkan berbagai jenis obligasi melalui Kementerian Keuangan:
+
+| Instrumen | Karakteristik | Target Investor |
+|-----------|--------------|----------------|
+| **SUN (Surat Utang Negara)** | Obligasi konvensional, kupon tetap atau variabel, berbagai tenor | Institusional, retail |
+| **ORI (Obligasi Ritel Indonesia)** | SUN khusus investor ritel, kupon tetap, nominal min. Rp 1 juta | Investor ritel individu |
+| **SBR (Savings Bond Ritel)** | Kupon mengambang, tidak bisa diperdagangkan di pasar sekunder | Investor ritel konservatif |
+| **Sukuk Negara Ritel (SR)** | Berbasis prinsip syariah (*ijarah*), kupon = imbal hasil | Investor syariah ritel |
+| **PBS (Project-Based Sukuk)** | Dana infrastruktur pemerintah, berbasis aset | Institusional |
+
+::: {.callout-note}
+## Keunggulan SBN untuk Investor Ritel
+SBN seperti ORI dan SBR sangat populer karena: (1) **bebas risiko gagal bayar** (dijamin pemerintah), (2) bunga/kupon dipotong PPh final 10% (lebih ringan dari deposito 20%), (3) bisa dibeli mulai **Rp 1 juta** melalui bank/aplikasi digital.
+:::
+
+### Obligasi Korporasi
+
+Selain pemerintah, perusahaan swasta dan BUMN juga menerbitkan obligasi:
+
+| Aspek | Obligasi Korporasi | Obligasi Pemerintah |
+|-------|:-----------------:|:------------------:|
+| **Risiko gagal bayar** | Ada (tergantung peringkat) | Sangat rendah |
+| **Yield** | Lebih tinggi (risk premium) | Lebih rendah |
+| **Peringkat (rating)** | AAA hingga D (Pefindo) | AAA |
+| **Likuiditas** | Lebih rendah | Lebih tinggi |
+
+::: {.callout-warning}
+## Risiko Obligasi Korporasi
+Obligasi korporasi dengan peringkat rendah (*high yield / junk bond*) menawarkan kupon tinggi tetapi berisiko **gagal bayar** (*default*). Selalu perhatikan peringkat dari lembaga rating seperti **Pefindo** (Indonesia) atau Moody's/S&P sebelum berinvestasi.
+:::
+
+> *Sumber: Kementerian Keuangan RI (2023); Reilly & Brown (2015), Ch. 18*
+
+## Obligasi dalam Portofolio
+
+### Peran Strategis
+
+Obligasi memiliki peran penting dalam portofolio investasi:
+
+1. **Pendapatan stabil**: Kupon memberikan arus kas yang dapat diprediksi.
+2. **Diversifikasi**: Korelasi saham-obligasi sering negatif atau rendah — saat saham jatuh, obligasi cenderung naik (*flight to quality*).
+3. **Pelindung modal**: Obligasi pemerintah jangka pendek berfungsi hampir seperti kas.
+
+### Reksa Dana Pendapatan Tetap
+
+Bagi investor yang tidak ingin membeli obligasi secara individual, **reksa dana pendapatan tetap** menyediakan akses ke portofolio obligasi yang terdiversifikasi dengan modal kecil (lihat juga [Pertemuan 12](12-portofolio-kuantitatif.qmd) tentang reksa dana).
+
+| Instrumen | Keunggulan | Kekurangan |
+|-----------|-----------|-----------|
+| **Obligasi individual** | Kontrol penuh, tidak ada management fee | Modal besar, diversifikasi terbatas |
+| **Reksa Dana Pendapatan Tetap** | Terdiversifikasi, modal kecil, dikelola profesional | Kena management fee, tidak ada jatuh tempo pasti |
+| **ETF Obligasi** | Likuid, biaya rendah, transparan | Harga fluktuatif (seperti saham) |
+
+> *Sumber: Reilly & Brown (2015), Ch. 18, 24*
+
+## Ringkasan
+
+1. **Obligasi** adalah surat utang yang memberikan kupon periodik dan mengembalikan nilai nominal saat jatuh tempo.
+2. **Harga obligasi** = PV dari semua cash flow (kupon + nominal), dihitung menggunakan required return sebagai tingkat diskonto.
+3. **Harga dan yield bergerak berlawanan**: yield naik → harga turun, yield turun → harga naik. Ini adalah prinsip paling fundamental dalam obligasi.
+4. **YTM** adalah tingkat diskonto yang menyamakan PV cash flow dengan harga pasar — ini adalah "return" sesungguhnya jika dipegang hingga jatuh tempo.
+5. **Pasar SBN Indonesia** menawarkan berbagai produk retail (ORI, SBR, Sukuk Ritel) yang aman, terjangkau, dan memberikan pendapatan tetap bagi investor individu.
+
+## Latihan Soal
+
+**Soal 1 — Harga Obligasi**
+
+Obligasi korporasi: nilai nominal Rp 1.000.000, tingkat kupon 9% per tahun (dibayar tahunan), jatuh tempo 4 tahun. Hitung harga obligasi jika required return: (a) 9%, (b) 7%, (c) 11%. Klasifikasikan apakah *at par*, *premium*, atau *discount*.
+
+**Soal 2 — Hubungan Harga-Yield**
+
+ORI seri terbaru: nilai nominal Rp 1.000.000, kupon 6,5%/tahun, sisa jatuh tempo 2 tahun. (a) Jika required return pasar naik menjadi 8%, berapa harga obligasi? (b) Jika required return turun menjadi 5%, berapa harga obligasi? (c) Investor membeli di harga nominal dan suku bunga kemudian naik ke 8%. Berapa capital loss yang dialami jika menjual sekarang?
+
+**Soal 3 — Yield to Maturity**
+
+Obligasi dijual di pasar seharga Rp 920.000. Nilai nominal Rp 1.000.000, kupon 7%/tahun, jatuh tempo 3 tahun. Cari YTM secara trial and error dengan menguji r = 10% dan r = 10,5%. Laporkan nilai PV masing-masing dan simpulkan kisaran YTM.
+
+**Soal 4 — Analisis Instrumen SBN**
+
+Pemerintah menerbitkan dua instrumen berikut secara bersamaan:
+
+| Instrumen | Tipe | Kupon | Jatuh Tempo | Harga |
+|-----------|------|:-----:|:-----------:|:-----:|
+| ORI-025 | Konvensional, tetap | 6,9% | 2 tahun | Par |
+| SR-020 | Syariah (ijarah) | 6,7% | 3 tahun | Par |
+
+(a) Untuk investor konservatif yang butuh kepastian pendapatan 2 tahun ke depan, mana yang lebih cocok? (b) Investor Andi memiliki Rp 10 juta untuk diinvestasikan di ORI-025. Berapa kupon yang diterima per tahun? (c) Jika setelah 1 tahun suku bunga pasar turun ke 5,5%, apakah Andi bisa menjual ORI-025 di atas atau di bawah harga beli?
+
+## Referensi
+
+- Reilly, F. K., & Brown, K. C. (2015). *Investment Analysis and Portfolio Management* (10th ed.), Chapters 18–19. Cengage Learning.
+- Kementerian Keuangan RI. (2023). *Surat Berharga Negara Ritel*. Direktorat Jenderal Pengelolaan Pembiayaan dan Risiko.
+- Fabozzi, F. J. (2012). *Bond Markets, Analysis, and Strategies* (8th ed.), Chapters 1–2. Pearson.

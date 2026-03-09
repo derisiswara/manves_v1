@@ -1,0 +1,272 @@
+---
+title: "Pertemuan 1: Overview Manajemen Investasi"
+subtitle: "Manajemen Investasi — EKM 19608"
+---
+
+## Tujuan Pembelajaran
+
+Setelah mengikuti pertemuan ini, mahasiswa diharapkan mampu:
+
+1. Menjelaskan definisi investasi dan membedakannya dari spekulasi.
+2. Menguraikan lima langkah proses manajemen investasi (*investment management process*).
+3. Mengidentifikasi jenis-jenis investor dan karakteristik tujuan investasi masing-masing.
+4. Menjelaskan komponen dasar *Investment Policy Statement* (IPS).
+5. Membedakan strategi investasi aktif dan pasif.
+6. Menghitung *Holding Period Return* (HPR) dan menginterpretasikan hasilnya.
+
+## Definisi Investasi
+
+Investasi adalah **komitmen dana saat ini** dengan harapan memperoleh imbalan (*return*) di masa depan yang mengompensasi tiga hal:
+
+1. **Waktu** yang dikorbankan — uang hari ini lebih berharga dari uang di masa depan (*time value of money*).
+2. **Inflasi** — return nominal harus melebihi inflasi agar daya beli meningkat.
+3. **Risiko** (*uncertainty*) — semakin tidak pasti arus kas masa depan, semakin tinggi kompensasi yang diharapkan.
+
+Prinsip dasar: **imbal hasil yang diharapkan selalu harus sepadan dengan risiko yang ditanggung**. Investor yang bersedia menanggung risiko lebih tinggi berhak mengharapkan return lebih tinggi — ini disebut ***risk-return trade-off***.
+
+::: {.callout-note}
+## Investasi vs. Spekulasi
+Perbedaan utama terletak pada **horison waktu** dan **dasar pengambilan keputusan**. Investasi didasarkan pada analisis fundamental yang mendalam dengan horison jangka menengah–panjang, sedangkan spekulasi cenderung berfokus pada pergerakan harga jangka pendek tanpa analisis mendasar. Meskipun batas keduanya sering kabur, seorang manajer investasi profesional selalu beroperasi dalam kerangka investasi, bukan spekulasi.
+:::
+
+> *Sumber: Fabozzi & Markowitz (2011), Ch. 1; Smart, Gitman & Joehnk (2017), Ch. 1*
+
+## Proses Manajemen Investasi
+
+Proses manajemen investasi (*investment management process*) adalah kerangka kerja sistematis yang digunakan oleh manajer investasi profesional untuk mengelola dana klien. Menurut Fabozzi & Markowitz (2011), proses ini terdiri dari **lima langkah** yang saling berkaitan dan bersifat iteratif:
+
+### Langkah 1: Menetapkan Tujuan Investasi
+
+Langkah pertama adalah memahami **siapa** investor tersebut dan **apa** yang ingin dicapai. Tujuan investasi biasanya diekspresikan dalam dua dimensi:
+
+- ***Return objective***: Target imbal hasil — apakah investor membutuhkan *current income* (pendapatan rutin), *capital appreciation* (pertumbuhan modal), atau kombinasi keduanya?
+- ***Risk tolerance***: Seberapa besar fluktuasi nilai portofolio yang dapat diterima investor?
+
+Kedua dimensi ini saling terkait: investor yang menginginkan return tinggi harus bersedia menerima risiko yang lebih tinggi pula. Hubungan ini dikenal sebagai ***risk-return trade-off***.
+
+### Langkah 2: Menyusun Kebijakan Investasi (Investment Policy)
+
+Kebijakan investasi dituangkan dalam dokumen formal yang disebut ***Investment Policy Statement*** (IPS). IPS berfungsi sebagai "peta jalan" yang mengatur:
+
+- Alokasi aset strategis (*strategic asset allocation*)
+- Batasan-batasan investasi (*constraints*)
+- Benchmark kinerja
+- Jadwal rebalancing
+
+Detail mengenai IPS dibahas pada bagian tersendiri di bawah.
+
+### Langkah 3: Memilih Strategi Investasi
+
+Berdasarkan IPS, manajer investasi memilih strategi yang sesuai. Dua kutub utama strategi investasi adalah:
+
+| Aspek | Strategi Aktif | Strategi Pasif |
+|-------|---------------|---------------|
+| **Filosofi** | Pasar tidak selalu efisien — ada peluang *mispricing* | Pasar cukup efisien — sulit mengalahkan pasar secara konsisten |
+| **Tujuan** | Menghasilkan *alpha* (return di atas benchmark) | Mereplikasi return benchmark |
+| **Biaya** | Tinggi (riset, trading) | Rendah (minimal trading) |
+| **Contoh** | Stock picking, market timing | Index fund, ETF tracking |
+| **Turnover** | Tinggi | Rendah |
+
+::: {.callout-tip}
+## Insight Praktis
+Di industri, banyak manajer investasi menggunakan pendekatan **hybrid** — sebagian besar portofolio mengikuti benchmark (core), sementara sebagian kecil dialokasikan untuk posisi aktif (satellite). Pendekatan ini disebut ***core-satellite strategy***.
+:::
+
+### Langkah 4: Mengonstruksi Portofolio
+
+Pada tahap ini, manajer investasi mengimplementasikan strategi dengan memilih sekuritas spesifik dan menentukan bobot (*weight*) masing-masing dalam portofolio. Proses ini melibatkan:
+
+- **Analisis top-down**: Mulai dari makroekonomi → sektor → saham individual.
+- **Analisis bottom-up**: Langsung menilai valuasi saham individual terlebih dahulu.
+- **Optimasi portofolio**: Menggunakan model kuantitatif (akan dibahas di Pertemuan 3).
+
+### Langkah 5: Mengukur dan Mengevaluasi Kinerja
+
+Langkah terakhir — namun bersifat kontinu — adalah mengevaluasi apakah portofolio mencapai tujuan yang ditetapkan. Evaluasi mencakup:
+
+- ***Return measurement***: Menghitung return aktual portofolio.
+- ***Performance attribution***: Mengurai sumber return — apakah berasal dari alokasi aset, seleksi sekuritas, atau *market timing*?
+- ***Benchmark comparison***: Membandingkan kinerja dengan benchmark yang relevan.
+- ***Risk-adjusted performance***: Menggunakan ukuran seperti *Sharpe ratio*, *Treynor ratio*, atau *Jensen's alpha*.
+
+::: {.callout-important}
+## Siklus Iteratif
+Proses manajemen investasi **bukan linear**. Evaluasi kinerja dapat memicu revisi tujuan, perubahan kebijakan, atau penyesuaian strategi. Seorang manajer investasi yang baik terus-menerus memantau dan menyesuaikan portofolio sesuai kondisi pasar dan kebutuhan klien.
+:::
+
+> *Sumber: Fabozzi & Markowitz (2011), Ch. 1*
+
+## Jenis Investor
+
+Memahami jenis investor sangat penting karena setiap tipe memiliki **tujuan**, **horison waktu**, dan ***constraints*** yang berbeda. Secara umum, investor dibagi menjadi dua kategori besar:
+
+### Investor Individual
+
+Investor individual (atau *retail investor*) memiliki karakteristik yang sangat beragam tergantung pada tahap kehidupan, kekayaan, dan preferensi risiko mereka. Beberapa contoh segmen:
+
+- **Profesional muda**: Horison panjang, toleransi risiko tinggi, fokus pada *capital appreciation*.
+- **Keluarga mapan**: Horison menengah, kebutuhan campuran income dan growth.
+- **Pensiunan**: Horison pendek–menengah, toleransi risiko rendah, fokus pada *current income* dan pelestarian modal.
+
+### Investor Institusional
+
+Investor institusional mengelola dana dalam jumlah besar dan memiliki kewajiban (*liabilities*) yang terstruktur. Berikut perbandingan lima jenis utama:
+
+| Jenis Investor | Horison Waktu | Toleransi Risiko | Tujuan Utama | Constraint Unik |
+|---------------|:-------------:|:----------------:|-------------|----------------|
+| **Dana Pensiun** (*Pension Fund*) | Panjang (20–30 tahun) | Menengah–Tinggi | Memenuhi kewajiban pensiun | *Asset-liability matching*, regulasi investasi |
+| **Perusahaan Asuransi** (*Insurance Co.*) | Menengah–Panjang | Rendah–Menengah | Memenuhi klaim polis | *Duration matching*, regulasi solvabilitas |
+| **Endowment** (Yayasan) | Sangat panjang (perpetual) | Tinggi | Mendanai kegiatan yayasan selamanya | *Spending rule* (biasanya 4–5% per tahun) |
+| **Bank** | Pendek–Menengah | Rendah | Likuiditas & margin bunga | Regulasi perbankan ketat, rasio kecukupan modal |
+| **Sovereign Wealth Fund** | Sangat panjang | Tinggi | Diversifikasi kekayaan negara | Tujuan politik/strategis, transparansi |
+
+::: {.callout-warning}
+## Kesalahan Umum
+Mahasiswa sering menganggap semua investor institusional memiliki toleransi risiko tinggi karena ukuran dananya besar. Ini keliru — **toleransi risiko ditentukan oleh sifat kewajiban**, bukan ukuran dana. Bank komersial, misalnya, memiliki toleransi risiko rendah meskipun mengelola aset triliunan rupiah karena kewajibannya bersifat jangka pendek dan pasti (*deposito nasabah*).
+:::
+
+> *Sumber: Fabozzi & Markowitz (2011), Ch. 1; Reilly & Brown (2015), Ch. 2*
+
+## Investment Policy Statement (IPS)
+
+*Investment Policy Statement* (IPS) adalah dokumen formal yang menjadi **kontrak antara investor dan manajer investasi**. IPS mendefinisikan tujuan, batasan, dan pedoman yang mengatur bagaimana portofolio dikelola.
+
+### Komponen IPS
+
+IPS memuat dua kelompok besar: **tujuan** (*objectives*) dan **batasan** (*constraints*).
+
+#### Tujuan (*Objectives*)
+
+1. ***Return objective***: Berapa target return yang dibutuhkan? Apakah investor memerlukan penghasilan rutin (dividen/kupon) atau pertumbuhan modal jangka panjang?
+2. ***Risk objective***: Seberapa besar fluktuasi nilai portofolio yang dapat ditoleransi? Seorang pensiunan tentu tidak tahan melihat portofolionya turun 40% dalam setahun.
+
+#### Batasan (*Constraints*)
+
+Lima batasan utama yang perlu dicantumkan dalam IPS:
+
+| Batasan | Penjelasan | Contoh |
+|---------|-----------|--------|
+| **Horison Waktu** | Kapan dana dibutuhkan? | Dana pensiun: 25 tahun; biaya pendidikan anak: 10 tahun |
+| **Pajak** | Beban pajak yang memengaruhi net return | Pajak dividen 10%, pajak capital gain final 0,1% di BEI |
+| **Likuiditas** | Seberapa mudah aset perlu dicairkan? | Dana darurat harus 100% likuid (deposito/reksa dana pasar uang) |
+| **Regulasi** | Batasan hukum bagi investor tertentu | Dana pensiun dilarang berinvestasi di aset spekulatif tertentu |
+| **Keadaan Khusus** | Preferensi atau larangan spesifik investor | Tidak mau berinvestasi di perusahaan rokok atau minuman keras |
+
+### Contoh Sederhana IPS
+
+Berikut kerangka IPS untuk seorang profesional berusia 35 tahun:
+
+::: {.callout-note}
+## Contoh IPS — Profesional Muda
+
+**Profil Investor:** Usia 35 tahun, pendapatan stabil Rp 25 juta/bulan, belum menikah.
+
+| Komponen | Spesifikasi |
+|----------|------------|
+| *Return objective* | Real return 7% per tahun (di atas inflasi) |
+| *Risk tolerance* | Tinggi — bersedia menerima fluktuasi jangka pendek |
+| *Time horizon* | 25 tahun (hingga pensiun usia 60) |
+| *Liquidity* | Rendah — dana darurat sudah terpisah |
+| *Tax* | Pajak capital gain 0,1% final (saham IDX) |
+| *Legal* | Tidak ada batasan khusus |
+| *Unique* | Tertarik ESG investing |
+| **Alokasi strategis** | 70% ekuitas, 20% fixed income, 10% alternatif |
+:::
+
+> *Sumber: Fabozzi & Markowitz (2011), Ch. 1; Smart, Gitman & Joehnk (2017), Ch. 1*
+
+## Ukuran Return Investasi
+
+Sebelum melangkah lebih jauh, penting memahami bagaimana *return* investasi diukur. Terdapat beberapa ukuran return yang umum digunakan:
+
+### Holding Period Return (HPR)
+
+*Holding period return* mengukur return total selama periode kepemilikan:
+
+$$
+HPR = \frac{P_1 - P_0 + D_1}{P_0}
+$$
+
+di mana $P_0$ = harga beli, $P_1$ = harga jual, dan $D_1$ = dividen atau pendapatan yang diterima selama periode.
+
+### Contoh Perhitungan
+
+Seorang investor membeli saham BBCA pada harga Rp 8.000 per lembar. Setelah satu tahun, harga saham menjadi Rp 8.800 dan investor menerima dividen sebesar Rp 320 per lembar. Berapa HPR?
+
+**Langkah 1:** Identifikasi variabel.
+
+- $P_0 = 8.000$
+- $P_1 = 8.800$
+- $D_1 = 320$
+
+**Langkah 2:** Substitusi ke formula.
+
+$$
+HPR = \frac{8.800 - 8.000 + 320}{8.000} = \frac{1.120}{8.000} = 0{,}14 = 14\%
+$$
+
+**Langkah 3:** Dekomposisi return.
+
+- *Capital gain yield* = $\frac{8.800 - 8.000}{8.000} = 10\%$
+- *Dividend yield* = $\frac{320}{8.000} = 4\%$
+- *Total return* = $10\% + 4\% = 14\%$ ✓
+
+::: {.callout-tip}
+## Interpretasi
+HPR sebesar 14% berarti investor memperoleh imbal hasil total 14% selama satu tahun — terdiri dari 10% kenaikan harga (*capital gain*) dan 4% pendapatan dividen (*dividend yield*). Untuk menilai apakah return ini "baik", kita perlu membandingkannya dengan *benchmark* (misal: return IHSG) dan *risk-free rate*.
+:::
+
+### Rata-Rata Return Multi-Periode
+
+Jika kita memiliki data return beberapa periode, cara paling sederhana adalah menghitung **rata-rata aritmatika** (penjumlahan dibagi jumlah periode).
+
+Namun untuk mengetahui **pertumbuhan kekayaan aktual**, kita perlu menghitung **rata-rata geometrik** yang memperhitungkan efek *compounding*:
+
+$$
+\bar{R}_G = \left[(1+R_1)(1+R_2)\cdots(1+R_T)\right]^{1/T} - 1
+$$
+
+**Contoh sederhana:** Reksa dana membukukan return +20% di tahun pertama dan −10% di tahun kedua.
+
+- Rata-rata aritmatika: $(20\% + (-10\%)) / 2 = 5\%$ per tahun
+- Rata-rata geometrik: $\sqrt{(1{,}20)(0{,}90)} - 1 = \sqrt{1{,}08} - 1 = 3{,}92\%$ per tahun
+
+Jika Anda menginvestasikan Rp 1.000.000, dua tahun kemudian nilainya = $1{,}20 \times 0{,}90 \times 1.000.000 = \text{Rp 1.080.000}$ — pertumbuhan **3,92% per tahun**, bukan 5%. Rata-rata geometrik selalu lebih akurat untuk mengukur pertumbuhan kekayaan.
+
+> *Sumber: Fabozzi & Markowitz (2011), Ch. 1; Reilly & Brown (2015), Ch. 1*
+
+## Ringkasan
+
+1. **Investasi** adalah komitmen dana saat ini untuk memperoleh return di masa depan yang mengompensasi waktu, inflasi, dan risiko.
+2. **Proses manajemen investasi** terdiri dari lima langkah iteratif: tujuan → kebijakan → strategi → konstruksi portofolio → evaluasi kinerja.
+3. **Jenis investor** sangat beragam — dari individu hingga institusi — dan masing-masing memiliki tujuan, horison waktu, dan batasan yang unik.
+4. ***Investment Policy Statement*** (IPS) mendokumentasikan tujuan return/risiko dan batasan-batasan investasi (horison waktu, pajak, likuiditas, regulasi, keadaan khusus).
+5. **Strategi aktif** berupaya mengalahkan benchmark (*alpha*), sedangkan **strategi pasif** bertujuan mereplikasi benchmark dengan biaya rendah.
+6. ***Holding Period Return*** (HPR) mengukur total return selama periode kepemilikan; untuk multi-periode, rata-rata geometrik mencerminkan pertumbuhan kekayaan yang sebenarnya.
+
+## Latihan Soal
+
+**Soal 1 — Holding Period Return**
+
+Seorang investor membeli 500 lembar saham BBRI pada harga Rp 4.200 per lembar. Setahun kemudian, saham tersebut dijual pada harga Rp 4.600 per lembar. Selama periode kepemilikan, investor menerima dividen sebesar Rp 180 per lembar. Hitung: (a) HPR investasi ini, (b) dekomposikan menjadi *capital gain yield* dan *dividend yield*, (c) apakah return ini memuaskan jika inflasi tahun tersebut adalah 4% dan deposito bank menawarkan 5%?
+
+**Soal 2 — Return Multi-Periode**
+
+Reksa dana saham XYZ mencatat return tahunan berikut selama 5 tahun: +25%, −15%, +18%, +10%, −5%. (a) Hitung rata-rata aritmatika return. (b) Hitung rata-rata geometrik return. (c) Jika Anda menginvestasikan Rp 10 juta di awal, berapa nilai investasi di akhir tahun ke-5? (d) Mengapa hasilnya berbeda dengan menggunakan rata-rata aritmatika?
+
+**Soal 3 — Profil Investor dan IPS**
+
+Buat kerangka IPS sederhana untuk dua profil investor berikut. Untuk masing-masing, tentukan: *return objective*, *risk tolerance*, *time horizon*, *liquidity needs*, dan satu keadaan khusus.
+
+- **Profil A**: Mahasiswa baru lulus, usia 23 tahun, bekerja pertama kali, gaji Rp 8 juta/bulan, ingin menabung untuk uang muka rumah dalam 7 tahun.
+- **Profil B**: Pengusaha usia 55 tahun, berencana pensiun dalam 5 tahun, memiliki tabungan Rp 2 miliar, sudah tidak ada tanggungan.
+
+**Soal 4 — Investasi vs. Spekulasi**
+
+Klasifikasikan masing-masing tindakan berikut sebagai investasi atau spekulasi, dan jelaskan alasannya: (a) Membeli reksa dana indeks dan menahannya selama 10 tahun. (b) Membeli saham *penny stock* tak dikenal karena rumor akan naik minggu depan. (c) Menabung di deposito berjangka 1 tahun. (d) Membeli saham berdasarkan analisis laporan keuangan dengan target 3 tahun.
+
+## Referensi
+
+- Fabozzi, F. J., & Markowitz, H. M. (2011). *The Theory and Practice of Investment Management* (2nd ed.), Chapter 1. John Wiley & Sons.
+- Smart, S. B., Gitman, L. J., & Joehnk, M. D. (2017). *Fundamentals of Investing* (13th ed.), Chapter 1. Pearson.
+- Reilly, F. K., & Brown, K. C. (2015). *Investment Analysis and Portfolio Management* (10th ed.), Chapters 1–2. Cengage Learning.

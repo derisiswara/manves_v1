@@ -1,0 +1,1760 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="id" xml:lang="id"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Pertemuan 11: Valuasi Saham – Manajemen Investasi — EKM 19608</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-597958c53c93a607afca12fd375c57ed.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-7ac2f9da8c2617a4fdd15004b4601015.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-597958c53c93a607afca12fd375c57ed.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-7e5b54916349f3e3ac0a4b69b610fb13.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-c249eed7ddef9cecbef6d31ce12e065b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-7e5b54916349f3e3ac0a4b69b610fb13.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Tidak ada hasil",
+    "search-matching-documents-text": "dokumen cocok",
+    "search-copy-link-title": "Salin tautan untuk mencari",
+    "search-hide-matches-text": "Sembunyikan kecocokan lainnya",
+    "search-more-match-text": "kecocokan lainnya di dokumen ini",
+    "search-more-matches-text": "kecocokan lainnya di dokumen ini",
+    "search-clear-button-title": "Hapus",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Batal",
+    "search-submit-button-title": "Kirim",
+    "search-label": "Mencari"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Manajemen Investasi — EKM 19608</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Mencari"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Alihkan navigasi" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Beranda</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-materi" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Materi</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-materi">    
+        <li>
+    <a class="dropdown-item" href="../pertemuan/01-overview.html">
+ <span class="dropdown-text">01 — Overview Manajemen Investasi</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pertemuan/02-aset-investasi.html">
+ <span class="dropdown-text">02 — Kelas Aset &amp; Perusahaan Investasi</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pertemuan/03-seleksi-portofolio.html">
+ <span class="dropdown-text">03 — Seleksi Portofolio</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pertemuan/04-capm.html">
+ <span class="dropdown-text">04 — Capital Asset Pricing Model</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pertemuan/05-model-faktor.html">
+ <span class="dropdown-text">05 — Model Faktor &amp; Pengantar Multifaktor</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pertemuan/06-dinamika-harga.html">
+ <span class="dropdown-text">06 — Dinamika Harga Aset</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pertemuan/07-alokasi-aset.html">
+ <span class="dropdown-text">07 — Alokasi Aset &amp; Konstruksi Portofolio</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../pertemuan/09-saham-biasa.html">
+ <span class="dropdown-text">09 — Dasar-Dasar Saham Biasa</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pertemuan/10-manajemen-portofolio-ekuitas.html">
+ <span class="dropdown-text">10 — Manajemen Portofolio Ekuitas</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pertemuan/11-valuasi-saham.html">
+ <span class="dropdown-text">11 — Valuasi Saham</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pertemuan/12-portofolio-kuantitatif.html">
+ <span class="dropdown-text">12 — Reksa Dana &amp; ETF</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pertemuan/13-long-short.html">
+ <span class="dropdown-text">13 — Obligasi &amp; Pendapatan Tetap</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pertemuan/14-risiko-derivatif.html">
+ <span class="dropdown-text">14 — Derivatif Ekuitas &amp; Hedging</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-latihan" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Latihan</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-latihan">    
+        <li>
+    <a class="dropdown-item" href="../latihan/latihan-uts.html">
+ <span class="dropdown-text">Latihan UTS</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../latihan/latihan-uas.html">
+ <span class="dropdown-text">Latihan UAS</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../referensi.html"> 
+<span class="menu-text">Referensi</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Alihkan mode gelap"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Di halaman ini</h2>
+   
+  <ul>
+  <li><a href="#tujuan-pembelajaran" id="toc-tujuan-pembelajaran" class="nav-link active" data-scroll-target="#tujuan-pembelajaran"><span class="header-section-number">1</span> Tujuan Pembelajaran</a></li>
+  <li><a href="#intrinsic-value-dan-keputusan-investasi" id="toc-intrinsic-value-dan-keputusan-investasi" class="nav-link" data-scroll-target="#intrinsic-value-dan-keputusan-investasi"><span class="header-section-number">2</span> Intrinsic Value dan Keputusan Investasi</a>
+  <ul class="collapse">
+  <li><a href="#konsep" id="toc-konsep" class="nav-link" data-scroll-target="#konsep"><span class="header-section-number">2.1</span> Konsep</a></li>
+  </ul></li>
+  <li><a href="#dividend-discount-model-ddm" id="toc-dividend-discount-model-ddm" class="nav-link" data-scroll-target="#dividend-discount-model-ddm"><span class="header-section-number">3</span> Dividend Discount Model (DDM)</a>
+  <ul class="collapse">
+  <li><a href="#model-umum" id="toc-model-umum" class="nav-link" data-scroll-target="#model-umum"><span class="header-section-number">3.1</span> Model Umum</a></li>
+  <li><a href="#gordon-growth-model-constant-growth-ddm" id="toc-gordon-growth-model-constant-growth-ddm" class="nav-link" data-scroll-target="#gordon-growth-model-constant-growth-ddm"><span class="header-section-number">3.2</span> Gordon Growth Model (Constant Growth DDM)</a></li>
+  <li><a href="#contoh-perhitungan-ddm-constant-growth" id="toc-contoh-perhitungan-ddm-constant-growth" class="nav-link" data-scroll-target="#contoh-perhitungan-ddm-constant-growth"><span class="header-section-number">3.3</span> Contoh Perhitungan DDM — Constant Growth</a></li>
+  <li><a href="#two-stage-ddm" id="toc-two-stage-ddm" class="nav-link" data-scroll-target="#two-stage-ddm"><span class="header-section-number">3.4</span> Two-Stage DDM</a></li>
+  <li><a href="#contoh-two-stage-ddm" id="toc-contoh-two-stage-ddm" class="nav-link" data-scroll-target="#contoh-two-stage-ddm"><span class="header-section-number">3.5</span> Contoh Two-Stage DDM</a></li>
+  </ul></li>
+  <li><a href="#free-cash-flow-to-equity-fcfe-model" id="toc-free-cash-flow-to-equity-fcfe-model" class="nav-link" data-scroll-target="#free-cash-flow-to-equity-fcfe-model"><span class="header-section-number">4</span> Free Cash Flow to Equity (FCFE) Model</a>
+  <ul class="collapse">
+  <li><a href="#konsep-1" id="toc-konsep-1" class="nav-link" data-scroll-target="#konsep-1"><span class="header-section-number">4.1</span> Konsep</a></li>
+  <li><a href="#valuasi-dengan-fcfe" id="toc-valuasi-dengan-fcfe" class="nav-link" data-scroll-target="#valuasi-dengan-fcfe"><span class="header-section-number">4.2</span> Valuasi dengan FCFE</a></li>
+  <li><a href="#contoh-perhitungan-fcfe" id="toc-contoh-perhitungan-fcfe" class="nav-link" data-scroll-target="#contoh-perhitungan-fcfe"><span class="header-section-number">4.3</span> Contoh Perhitungan FCFE</a></li>
+  </ul></li>
+  <li><a href="#valuasi-relatif-pendekatan-multiples" id="toc-valuasi-relatif-pendekatan-multiples" class="nav-link" data-scroll-target="#valuasi-relatif-pendekatan-multiples"><span class="header-section-number">5</span> Valuasi Relatif (Pendekatan Multiples)</a>
+  <ul class="collapse">
+  <li><a href="#konsep-2" id="toc-konsep-2" class="nav-link" data-scroll-target="#konsep-2"><span class="header-section-number">5.1</span> Konsep</a></li>
+  <li><a href="#price-to-earnings-ratio-pe" id="toc-price-to-earnings-ratio-pe" class="nav-link" data-scroll-target="#price-to-earnings-ratio-pe"><span class="header-section-number">5.2</span> Price-to-Earnings Ratio (P/E)</a></li>
+  <li><a href="#contoh-valuasi-dengan-pe" id="toc-contoh-valuasi-dengan-pe" class="nav-link" data-scroll-target="#contoh-valuasi-dengan-pe"><span class="header-section-number">5.3</span> Contoh Valuasi dengan P/E</a></li>
+  <li><a href="#price-to-book-ratio-pb" id="toc-price-to-book-ratio-pb" class="nav-link" data-scroll-target="#price-to-book-ratio-pb"><span class="header-section-number">5.4</span> Price-to-Book Ratio (P/B)</a></li>
+  <li><a href="#enterprise-value-ebitda" id="toc-enterprise-value-ebitda" class="nav-link" data-scroll-target="#enterprise-value-ebitda"><span class="header-section-number">5.5</span> Enterprise Value / EBITDA</a></li>
+  <li><a href="#perbandingan-metode-valuasi-relatif" id="toc-perbandingan-metode-valuasi-relatif" class="nav-link" data-scroll-target="#perbandingan-metode-valuasi-relatif"><span class="header-section-number">5.6</span> Perbandingan Metode Valuasi Relatif</a></li>
+  <li><a href="#contoh-komparasi" id="toc-contoh-komparasi" class="nav-link" data-scroll-target="#contoh-komparasi"><span class="header-section-number">5.7</span> Contoh Komparasi</a></li>
+  </ul></li>
+  <li><a href="#ringkasan" id="toc-ringkasan" class="nav-link" data-scroll-target="#ringkasan"><span class="header-section-number">6</span> Ringkasan</a></li>
+  <li><a href="#latihan-soal" id="toc-latihan-soal" class="nav-link" data-scroll-target="#latihan-soal"><span class="header-section-number">7</span> Latihan Soal</a></li>
+  <li><a href="#referensi" id="toc-referensi" class="nav-link" data-scroll-target="#referensi"><span class="header-section-number">8</span> Referensi</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title">Pertemuan 11: Valuasi Saham</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Kode</button></div></div>
+<p class="subtitle lead">Manajemen Investasi — EKM 19608</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="tujuan-pembelajaran" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="tujuan-pembelajaran"><span class="header-section-number">1</span> Tujuan Pembelajaran</h2>
+<p>Setelah mengikuti pertemuan ini, mahasiswa diharapkan mampu:</p>
+<ol type="1">
+<li>Menjelaskan konsep <em>intrinsic value</em> dan hubungannya dengan keputusan investasi.</li>
+<li>Menghitung nilai saham menggunakan <strong>Dividend Discount Model</strong> (DDM).</li>
+<li>Menerapkan <strong>Free Cash Flow to Equity</strong> (FCFE) model untuk valuasi saham.</li>
+<li>Menggunakan pendekatan <strong>valuasi relatif</strong> (P/E, P/B, EV/EBITDA).</li>
+<li>Membandingkan kelebihan dan keterbatasan setiap metode valuasi.</li>
+</ol>
+</section>
+<section id="intrinsic-value-dan-keputusan-investasi" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="intrinsic-value-dan-keputusan-investasi"><span class="header-section-number">2</span> Intrinsic Value dan Keputusan Investasi</h2>
+<section id="konsep" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="konsep"><span class="header-section-number">2.1</span> Konsep</h3>
+<p><strong>Intrinsic value</strong> (nilai intrinsik) adalah estimasi nilai “sebenarnya” suatu saham berdasarkan analisis fundamental — terlepas dari harga pasar saat ini.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Penting</span>Aturan Keputusan
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Jika <strong>Intrinsic Value &gt; Market Price</strong> → saham <em>undervalued</em> → <strong>Beli</strong></li>
+<li>Jika <strong>Intrinsic Value &lt; Market Price</strong> → saham <em>overvalued</em> → <strong>Jual/Hindari</strong></li>
+<li>Jika <strong>Intrinsic Value ≈ Market Price</strong> → saham <em>fairly valued</em> → <strong>Hold</strong></li>
+</ul>
+</div>
+</div>
+<p><strong>Margin of Safety</strong> (konsep Benjamin Graham): investor sebaiknya hanya membeli jika harga pasar <em>significanly below</em> intrinsic value — sebagai buffer terhadap kesalahan estimasi.</p>
+<p><span class="math display">\[
+\text{Margin of Safety} = \frac{V_0 - P_0}{V_0}
+\]</span></p>
+<blockquote class="blockquote">
+<p><em>Sumber: Fabozzi &amp; Markowitz (2011), Ch. 11; Reilly &amp; Brown (2015), Ch. 11</em></p>
+</blockquote>
+</section>
+</section>
+<section id="dividend-discount-model-ddm" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="dividend-discount-model-ddm"><span class="header-section-number">3</span> Dividend Discount Model (DDM)</h2>
+<section id="model-umum" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="model-umum"><span class="header-section-number">3.1</span> Model Umum</h3>
+<p>Nilai intrinsik saham = present value dari semua dividen masa depan:</p>
+<p><span class="math display">\[
+V_0 = \sum_{t=1}^{\infty} \frac{D_t}{(1+k)^t}
+\]</span></p>
+<p>di mana <span class="math inline">\(D_t\)</span> = dividen pada periode <span class="math inline">\(t\)</span>, <span class="math inline">\(k\)</span> = required rate of return (cost of equity).</p>
+</section>
+<section id="gordon-growth-model-constant-growth-ddm" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="gordon-growth-model-constant-growth-ddm"><span class="header-section-number">3.2</span> Gordon Growth Model (Constant Growth DDM)</h3>
+<p>Jika dividen tumbuh dengan rate konstan <span class="math inline">\(g\)</span> selamanya:</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Penting</span>Formula Kunci — Gordon Growth Model
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span class="math display">\[
+V_0 = \frac{D_1}{k - g} = \frac{D_0(1+g)}{k - g}
+\]</span></p>
+<p>Syarat: <span class="math inline">\(k &gt; g\)</span> (required return harus lebih besar dari growth rate).</p>
+</div>
+</div>
+</section>
+<section id="contoh-perhitungan-ddm-constant-growth" class="level3" data-number="3.3">
+<h3 data-number="3.3" class="anchored" data-anchor-id="contoh-perhitungan-ddm-constant-growth"><span class="header-section-number">3.3</span> Contoh Perhitungan DDM — Constant Growth</h3>
+<p><strong>PT Bank ABC</strong> baru saja membayar dividen <span class="math inline">\(D_0 = \text{Rp 200}\)</span> per saham. Dividen diperkirakan tumbuh 8% per tahun secara permanen. Required return investor: 14%.</p>
+<p><strong>Langkah 1:</strong> Hitung <span class="math inline">\(D_1\)</span></p>
+<p><span class="math display">\[
+D_1 = D_0(1+g) = 200(1+0{,}08) = \text{Rp 216}
+\]</span></p>
+<p><strong>Langkah 2:</strong> Hitung intrinsic value</p>
+<p><span class="math display">\[
+V_0 = \frac{216}{0{,}14 - 0{,}08} = \frac{216}{0{,}06} = \text{Rp 3.600}
+\]</span></p>
+<p><strong>Langkah 3:</strong> Keputusan — jika harga pasar Rp 3.200, maka saham <em>undervalued</em> (margin of safety = 11,1%).</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Peringatan</span>Kesalahan Umum
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Gordon Growth Model sangat sensitif terhadap <strong><span class="math inline">\(g\)</span> dan <span class="math inline">\(k\)</span></strong>. Perubahan kecil di kedua parameter ini menghasilkan perubahan besar di <span class="math inline">\(V_0\)</span>:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Skenario</th>
+<th style="text-align: center;"><span class="math inline">\(g\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(k\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(V_0\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base case</td>
+<td style="text-align: center;">8%</td>
+<td style="text-align: center;">14%</td>
+<td style="text-align: center;">Rp 3.600</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(g\)</span> naik 1%</td>
+<td style="text-align: center;">9%</td>
+<td style="text-align: center;">14%</td>
+<td style="text-align: center;">Rp 4.360 (+21%)</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(k\)</span> turun 1%</td>
+<td style="text-align: center;">8%</td>
+<td style="text-align: center;">13%</td>
+<td style="text-align: center;">Rp 4.320 (+20%)</td>
+</tr>
+</tbody>
+</table>
+<p>Perubahan 1% pada <span class="math inline">\(g\)</span> atau <span class="math inline">\(k\)</span> mengubah valuasi lebih dari 20%.</p>
+</div>
+</div>
+</section>
+<section id="two-stage-ddm" class="level3" data-number="3.4">
+<h3 data-number="3.4" class="anchored" data-anchor-id="two-stage-ddm"><span class="header-section-number">3.4</span> Two-Stage DDM</h3>
+<p>Untuk perusahaan dengan pertumbuhan tinggi yang diperkirakan melambat:</p>
+<p><span class="math display">\[
+V_0 = \sum_{t=1}^{n} \frac{D_0(1+g_1)^t}{(1+k)^t} + \frac{V_n}{(1+k)^n}
+\]</span></p>
+<p>di mana <span class="math inline">\(V_n = \frac{D_{n+1}}{k - g_2}\)</span> = <em>terminal value</em> pada akhir fase pertumbuhan tinggi.</p>
+</section>
+<section id="contoh-two-stage-ddm" class="level3" data-number="3.5">
+<h3 data-number="3.5" class="anchored" data-anchor-id="contoh-two-stage-ddm"><span class="header-section-number">3.5</span> Contoh Two-Stage DDM</h3>
+<p><strong>PT Tech Maju</strong>: <span class="math inline">\(D_0 = \text{Rp 100}\)</span>, pertumbuhan 20% selama 3 tahun, lalu melambat ke 6% selamanya. <span class="math inline">\(k = 15\%\)</span>.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Tahun</th>
+<th style="text-align: center;">Dividen</th>
+<th style="text-align: center;">PV Factor</th>
+<th style="text-align: center;">PV Dividen</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">Rp 120</td>
+<td style="text-align: center;">0,8696</td>
+<td style="text-align: center;">Rp 104,35</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">Rp 144</td>
+<td style="text-align: center;">0,7561</td>
+<td style="text-align: center;">Rp 108,88</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">Rp 172,80</td>
+<td style="text-align: center;">0,6575</td>
+<td style="text-align: center;">Rp 113,62</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Terminal value</strong> pada akhir tahun 3:</p>
+<p><span class="math display">\[
+V_3 = \frac{D_4}{k - g_2} = \frac{172{,}80 \times 1{,}06}{0{,}15 - 0{,}06} = \frac{183{,}17}{0{,}09} = \text{Rp 2.035,22}
+\]</span></p>
+<p><strong>PV of terminal value:</strong></p>
+<p><span class="math display">\[
+\text{PV}(V_3) = \frac{2.035{,}22}{(1{,}15)^3} = \frac{2.035{,}22}{1{,}5209} = \text{Rp 1.338,14}
+\]</span></p>
+<p><strong>Intrinsic value:</strong></p>
+<p><span class="math display">\[
+V_0 = 104{,}35 + 108{,}88 + 113{,}62 + 1.338{,}14 = \text{Rp 1.664,99}
+\]</span></p>
+<blockquote class="blockquote">
+<p><em>Sumber: Fabozzi &amp; Markowitz (2011), Ch. 11</em></p>
+</blockquote>
+</section>
+</section>
+<section id="free-cash-flow-to-equity-fcfe-model" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="free-cash-flow-to-equity-fcfe-model"><span class="header-section-number">4</span> Free Cash Flow to Equity (FCFE) Model</h2>
+<section id="konsep-1" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="konsep-1"><span class="header-section-number">4.1</span> Konsep</h3>
+<p>FCFE model digunakan ketika perusahaan <strong>tidak membayar dividen</strong> atau dividen tidak mencerminkan kapasitas pembayaran sesungguhnya.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Catatan</span>Definisi — FCFE
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span class="math display">\[
+\text{FCFE} = \text{Net Income} + \text{Depreciation} - \text{CapEx} - \Delta\text{Working Capital} + \text{Net Borrowing}
+\]</span></p>
+<p>FCFE adalah kas yang tersedia bagi pemegang saham <strong>setelah</strong> perusahaan memenuhi semua kewajiban operasional dan investasi.</p>
+</div>
+</div>
+</section>
+<section id="valuasi-dengan-fcfe" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="valuasi-dengan-fcfe"><span class="header-section-number">4.2</span> Valuasi dengan FCFE</h3>
+<p><span class="math display">\[
+V_0 = \sum_{t=1}^{\infty} \frac{\text{FCFE}_t}{(1+k)^t}
+\]</span></p>
+<p>Dengan asumsi pertumbuhan konstan:</p>
+<p><span class="math display">\[
+V_0 = \frac{\text{FCFE}_1}{k - g}
+\]</span></p>
+</section>
+<section id="contoh-perhitungan-fcfe" class="level3" data-number="4.3">
+<h3 data-number="4.3" class="anchored" data-anchor-id="contoh-perhitungan-fcfe"><span class="header-section-number">4.3</span> Contoh Perhitungan FCFE</h3>
+<p>PT Manufaktur XYZ (dalam miliar Rp):</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Komponen</th>
+<th style="text-align: right;">Nilai</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Net Income</td>
+<td style="text-align: right;">500</td>
+</tr>
+<tr class="even">
+<td>Depreciation</td>
+<td style="text-align: right;">120</td>
+</tr>
+<tr class="odd">
+<td>Capital Expenditure</td>
+<td style="text-align: right;">200</td>
+</tr>
+<tr class="even">
+<td>ΔWorking Capital</td>
+<td style="text-align: right;">50</td>
+</tr>
+<tr class="odd">
+<td>Net Borrowing</td>
+<td style="text-align: right;">80</td>
+</tr>
+</tbody>
+</table>
+<p><span class="math display">\[
+\text{FCFE} = 500 + 120 - 200 - 50 + 80 = \text{Rp 450 miliar}
+\]</span></p>
+<p>Jumlah saham beredar: 2 miliar lembar → FCFE per saham = Rp 225.</p>
+<p>Jika pertumbuhan FCFE 7% per tahun dan <span class="math inline">\(k = 13\%\)</span>:</p>
+<p><span class="math display">\[
+V_0 = \frac{225 \times 1{,}07}{0{,}13 - 0{,}07} = \frac{240{,}75}{0{,}06} = \text{Rp 4.012,50}
+\]</span></p>
+<blockquote class="blockquote">
+<p><em>Sumber: Fabozzi &amp; Markowitz (2011), Ch. 11; Reilly &amp; Brown (2015), Ch. 11</em></p>
+</blockquote>
+</section>
+</section>
+<section id="valuasi-relatif-pendekatan-multiples" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="valuasi-relatif-pendekatan-multiples"><span class="header-section-number">5</span> Valuasi Relatif (Pendekatan Multiples)</h2>
+<section id="konsep-2" class="level3" data-number="5.1">
+<h3 data-number="5.1" class="anchored" data-anchor-id="konsep-2"><span class="header-section-number">5.1</span> Konsep</h3>
+<p>Valuasi relatif membandingkan <strong>rasio harga</strong> saham target dengan saham-saham sejenis (<em>comparable companies</em>) atau rata-rata industri.</p>
+</section>
+<section id="price-to-earnings-ratio-pe" class="level3" data-number="5.2">
+<h3 data-number="5.2" class="anchored" data-anchor-id="price-to-earnings-ratio-pe"><span class="header-section-number">5.2</span> Price-to-Earnings Ratio (P/E)</h3>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Penting</span>Formula Kunci — Justified P/E
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Dari Gordon Growth Model:</p>
+<p><span class="math display">\[
+\frac{P_0}{E_1} = \frac{D_1/E_1}{k - g} = \frac{\text{Payout Ratio}}{k - g}
+\]</span></p>
+<p>P/E dipengaruhi oleh: (1) payout ratio, (2) required return, (3) growth rate.</p>
+</div>
+</div>
+<p><strong>Trailing P/E</strong> = <span class="math inline">\(P_0 / \text{EPS}_{12 \text{ bulan terakhir}}\)</span></p>
+<p><strong>Forward P/E</strong> = <span class="math inline">\(P_0 / \text{EPS}_{12 \text{ bulan mendatang}}\)</span></p>
+</section>
+<section id="contoh-valuasi-dengan-pe" class="level3" data-number="5.3">
+<h3 data-number="5.3" class="anchored" data-anchor-id="contoh-valuasi-dengan-pe"><span class="header-section-number">5.3</span> Contoh Valuasi dengan P/E</h3>
+<p>Saham PT Retail ABC memiliki EPS = Rp 350 (trailing). Rata-rata P/E industri ritel = 18×.</p>
+<p><span class="math display">\[
+V_0 = \text{EPS} \times \text{P/E industri} = 350 \times 18 = \text{Rp 6.300}
+\]</span></p>
+<p>Jika harga pasar Rp 5.800 → saham <em>undervalued</em> sebesar ~8%.</p>
+</section>
+<section id="price-to-book-ratio-pb" class="level3" data-number="5.4">
+<h3 data-number="5.4" class="anchored" data-anchor-id="price-to-book-ratio-pb"><span class="header-section-number">5.4</span> Price-to-Book Ratio (P/B)</h3>
+<p><span class="math display">\[
+\text{P/B} = \frac{\text{Harga Saham}}{\text{Book Value per Share}}
+\]</span></p>
+<p><strong>Kegunaan:</strong> Cocok untuk perusahaan padat aset (bank, properti, manufaktur). Saham dengan P/B &lt; 1 berarti pasar menilai perusahaan di bawah nilai bukunya.</p>
+</section>
+<section id="enterprise-value-ebitda" class="level3" data-number="5.5">
+<h3 data-number="5.5" class="anchored" data-anchor-id="enterprise-value-ebitda"><span class="header-section-number">5.5</span> Enterprise Value / EBITDA</h3>
+<p><span class="math display">\[
+\text{EV/EBITDA} = \frac{\text{Market Cap} + \text{Debt} - \text{Cash}}{\text{EBITDA}}
+\]</span></p>
+<p><strong>Kegunaan:</strong> Menghilangkan pengaruh struktur modal dan pajak — berguna untuk membandingkan perusahaan dengan leverage berbeda.</p>
+</section>
+<section id="perbandingan-metode-valuasi-relatif" class="level3" data-number="5.6">
+<h3 data-number="5.6" class="anchored" data-anchor-id="perbandingan-metode-valuasi-relatif"><span class="header-section-number">5.6</span> Perbandingan Metode Valuasi Relatif</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 32%">
+<col style="width: 41%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Metrik</th>
+<th>Kelebihan</th>
+<th>Keterbatasan</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>P/E</strong></td>
+<td>Intuitif, mudah dihitung</td>
+<td>Tidak bermakna jika EPS negatif</td>
+</tr>
+<tr class="even">
+<td><strong>P/B</strong></td>
+<td>Stabil, cocok untuk aset-intensive</td>
+<td>Kurang relevan untuk perusahaan tech</td>
+</tr>
+<tr class="odd">
+<td><strong>EV/EBITDA</strong></td>
+<td>Netral terhadap leverage</td>
+<td>Mengabaikan CapEx dan working capital</td>
+</tr>
+<tr class="even">
+<td><strong>P/S</strong> (Price/Sales)</td>
+<td>Selalu positif (sales &gt; 0)</td>
+<td>Mengabaikan profitabilitas</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="contoh-komparasi" class="level3" data-number="5.7">
+<h3 data-number="5.7" class="anchored" data-anchor-id="contoh-komparasi"><span class="header-section-number">5.7</span> Contoh Komparasi</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Saham</th>
+<th style="text-align: center;">P/E</th>
+<th style="text-align: center;">P/B</th>
+<th style="text-align: center;">EV/EBITDA</th>
+<th>Kesimpulan</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Bank A</td>
+<td style="text-align: center;">12×</td>
+<td style="text-align: center;">1,8×</td>
+<td style="text-align: center;">8×</td>
+<td><em>Fairly valued</em></td>
+</tr>
+<tr class="even">
+<td>Bank B</td>
+<td style="text-align: center;">8×</td>
+<td style="text-align: center;">1,1×</td>
+<td style="text-align: center;">6×</td>
+<td>Potensi <em>undervalued</em></td>
+</tr>
+<tr class="odd">
+<td>Bank C</td>
+<td style="text-align: center;">18×</td>
+<td style="text-align: center;">2,5×</td>
+<td style="text-align: center;">12×</td>
+<td>Relatif mahal</td>
+</tr>
+<tr class="even">
+<td><strong>Median industri</strong></td>
+<td style="text-align: center;"><strong>11×</strong></td>
+<td style="text-align: center;"><strong>1,6×</strong></td>
+<td style="text-align: center;"><strong>7,5×</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Bank B terlihat <em>undervalued</em> di semua metrik → kandidat untuk analisis lebih lanjut (pastikan bukan <em>value trap</em>).</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Insight Praktis
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Investor profesional umumnya <strong>tidak mengandalkan satu metode</strong> saja. Praktik terbaik: gunakan <strong>multiple valuation methods</strong> dan bandingkan hasilnya (<em>triangulation</em>). Jika semua metode menunjukkan saham <em>undervalued</em>, keyakinan (conviction) lebih tinggi.</p>
+</div>
+</div>
+<blockquote class="blockquote">
+<p><em>Sumber: Reilly &amp; Brown (2015), Ch. 11; Smart, Gitman &amp; Joehnk (2017), Ch. 8</em></p>
+</blockquote>
+</section>
+</section>
+<section id="ringkasan" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="ringkasan"><span class="header-section-number">6</span> Ringkasan</h2>
+<ol type="1">
+<li><strong>Intrinsic value</strong> dibandingkan dengan harga pasar untuk menentukan apakah saham <em>undervalued</em> atau <em>overvalued</em>.</li>
+<li><strong>DDM (Gordon Growth Model)</strong> menghitung <span class="math inline">\(V_0 = D_1/(k-g)\)</span> — sangat sensitif terhadap asumsi <span class="math inline">\(g\)</span> dan <span class="math inline">\(k\)</span>.</li>
+<li><strong>Two-stage DDM</strong> cocok untuk perusahaan yang diperkirakan mengalami pertumbuhan tinggi sementara sebelum stabil.</li>
+<li><strong>FCFE model</strong> digunakan saat dividen tidak mencerminkan kapasitas pembayaran sebenarnya; <span class="math inline">\(V_0 = \text{FCFE}_1 / (k-g)\)</span>.</li>
+<li><strong>Valuasi relatif</strong> (P/E, P/B, EV/EBITDA) membandingkan saham dengan <em>peers</em> dan rata-rata industri — cepat dan intuitif tetapi mengasumsikan <em>comparables</em> dinilai tepat.</li>
+</ol>
+</section>
+<section id="latihan-soal" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="latihan-soal"><span class="header-section-number">7</span> Latihan Soal</h2>
+<p><strong>Soal 1 — Gordon Growth Model</strong></p>
+<p>PT Agri Nusantara membayar dividen <span class="math inline">\(D_0 = \text{Rp 150}\)</span> per saham. Pertumbuhan dividen 10% per tahun. (a) Hitung intrinsic value jika <span class="math inline">\(k = 16\%\)</span>. (b) Jika harga pasar Rp 2.500, apakah saham layak dibeli? Berapa margin of safety? (c) Berapa harga wajar jika <span class="math inline">\(g\)</span> turun menjadi 7%?</p>
+<p><strong>Soal 2 — Two-Stage DDM</strong></p>
+<p>PT Digital Indo: <span class="math inline">\(D_0 = \text{Rp 80}\)</span>. Pertumbuhan dividen 25% selama 4 tahun, kemudian 5% selamanya. <span class="math inline">\(k = 18\%\)</span>. Hitung intrinsic value.</p>
+<p><strong>Soal 3 — FCFE Valuation</strong></p>
+<p>Data PT Infrastruktur Bersama (miliar Rp): Net Income = 800, Depreciation = 250, CapEx = 400, ΔWC = 100, Net Borrowing = 150. Saham beredar: 4 miliar lembar. Pertumbuhan FCFE: 8%, <span class="math inline">\(k = 14\%\)</span>. Hitung FCFE per saham dan intrinsic value.</p>
+<p><strong>Soal 4 — Valuasi Relatif</strong></p>
+<p>Tiga perusahaan farmasi:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 6%">
+<col style="width: 12%">
+<col style="width: 16%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 9%">
+<col style="width: 18%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Saham</th>
+<th style="text-align: center;">EPS</th>
+<th style="text-align: center;">BV/Share</th>
+<th style="text-align: center;">EBITDA (M)</th>
+<th style="text-align: center;">Debt (M)</th>
+<th style="text-align: center;">Cash (M)</th>
+<th style="text-align: center;">Harga</th>
+<th style="text-align: center;">Saham Beredar</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Pharma A</td>
+<td style="text-align: center;">Rp 250</td>
+<td style="text-align: center;">Rp 1.800</td>
+<td style="text-align: center;">600</td>
+<td style="text-align: center;">400</td>
+<td style="text-align: center;">200</td>
+<td style="text-align: center;">Rp 4.000</td>
+<td style="text-align: center;">1 miliar</td>
+</tr>
+<tr class="even">
+<td>Pharma B</td>
+<td style="text-align: center;">Rp 180</td>
+<td style="text-align: center;">Rp 1.200</td>
+<td style="text-align: center;">350</td>
+<td style="text-align: center;">300</td>
+<td style="text-align: center;">100</td>
+<td style="text-align: center;">Rp 2.400</td>
+<td style="text-align: center;">1,5 miliar</td>
+</tr>
+<tr class="odd">
+<td>Pharma C</td>
+<td style="text-align: center;">Rp 300</td>
+<td style="text-align: center;">Rp 2.500</td>
+<td style="text-align: center;">800</td>
+<td style="text-align: center;">200</td>
+<td style="text-align: center;">400</td>
+<td style="text-align: center;">Rp 6.000</td>
+<td style="text-align: center;">0,8 miliar</td>
+</tr>
+</tbody>
+</table>
+<p>Hitung P/E, P/B, dan EV/EBITDA untuk ketiga saham. Saham mana yang paling menarik berdasarkan valuasi relatif?</p>
+</section>
+<section id="referensi" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="referensi"><span class="header-section-number">8</span> Referensi</h2>
+<ul>
+<li>Fabozzi, F. J., &amp; Markowitz, H. M. (2011). <em>The Theory and Practice of Investment Management</em> (2nd ed.), Chapter 11. John Wiley &amp; Sons.</li>
+<li>Reilly, F. K., &amp; Brown, K. C. (2015). <em>Investment Analysis and Portfolio Management</em> (10th ed.), Chapter 11. Cengage Learning.</li>
+<li>Smart, S. B., Gitman, L. J., &amp; Joehnk, M. D. (2017). <em>Fundamentals of Investing</em> (13th ed.), Chapter 8. Pearson.</li>
+</ul>
+
+
+<!-- -->
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Disalin!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Disalin!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+    const viewSource = window.document.getElementById('quarto-view-source') ||
+                       window.document.getElementById('quarto-code-tools-source');
+    if (viewSource) {
+      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+      viewSource.addEventListener("click", function(e) {
+        if (sourceUrl) {
+          // rstudio viewer pane
+          if (/\bcapabilities=\b/.test(window.location)) {
+            window.open(sourceUrl);
+          } else {
+            window.location.href = sourceUrl;
+          }
+        } else {
+          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+          modal.show();
+        }
+        return false;
+      });
+    }
+    function toggleCodeHandler(show) {
+      return function(e) {
+        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+        for (let i=0; i<detailsSrc.length; i++) {
+          const details = detailsSrc[i].parentElement;
+          if (show) {
+            details.open = true;
+          } else {
+            details.removeAttribute("open");
+          }
+        }
+        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+        const fromCls = show ? "hidden" : "unhidden";
+        const toCls = show ? "unhidden" : "hidden";
+        for (let i=0; i<cellCodeDivs.length; i++) {
+          const codeDiv = cellCodeDivs[i];
+          if (codeDiv.classList.contains(fromCls)) {
+            codeDiv.classList.remove(fromCls);
+            codeDiv.classList.add(toCls);
+          } 
+        }
+        return false;
+      }
+    }
+    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+    if (hideAllCode) {
+      hideAllCode.addEventListener("click", toggleCodeHandler(false));
+    }
+    const showAllCode = window.document.getElementById("quarto-show-all-code");
+    if (showAllCode) {
+      showAllCode.addEventListener("click", toggleCodeHandler(true));
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Kode Sumber</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Pertemuan 11: Valuasi Saham"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "Manajemen Investasi — EKM 19608"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">## Tujuan Pembelajaran</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>Setelah mengikuti pertemuan ini, mahasiswa diharapkan mampu:</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Menjelaskan konsep *intrinsic value* dan hubungannya dengan keputusan investasi.</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Menghitung nilai saham menggunakan **Dividend Discount Model** (DDM).</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Menerapkan **Free Cash Flow to Equity** (FCFE) model untuk valuasi saham.</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Menggunakan pendekatan **valuasi relatif** (P/E, P/B, EV/EBITDA).</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>Membandingkan kelebihan dan keterbatasan setiap metode valuasi.</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="fu">## Intrinsic Value dan Keputusan Investasi</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="fu">### Konsep</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>**Intrinsic value** (nilai intrinsik) adalah estimasi nilai "sebenarnya" suatu saham berdasarkan analisis fundamental — terlepas dari harga pasar saat ini.</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>::: {.callout-important}</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="fu">## Aturan Keputusan</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Jika **Intrinsic Value &gt; Market Price** → saham *undervalued* → **Beli**</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Jika **Intrinsic Value &lt; Market Price** → saham *overvalued* → **Jual/Hindari**</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Jika **Intrinsic Value ≈ Market Price** → saham *fairly valued* → **Hold**</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>**Margin of Safety** (konsep Benjamin Graham): investor sebaiknya hanya membeli jika harga pasar *significanly below* intrinsic value — sebagai buffer terhadap kesalahan estimasi.</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>\text{Margin of Safety} = \frac{V_0 - P_0}{V_0}</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; *Sumber: Fabozzi &amp; Markowitz (2011), Ch. 11; Reilly &amp; Brown (2015), Ch. 11*</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="fu">## Dividend Discount Model (DDM)</span></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="fu">### Model Umum</span></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>Nilai intrinsik saham = present value dari semua dividen masa depan:</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>V_0 = \sum_{t=1}^{\infty} \frac{D_t}{(1+k)^t}</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>di mana $D_t$ = dividen pada periode $t$, $k$ = required rate of return (cost of equity).</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="fu">### Gordon Growth Model (Constant Growth DDM)</span></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>Jika dividen tumbuh dengan rate konstan $g$ selamanya:</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>::: {.callout-important}</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="fu">## Formula Kunci — Gordon Growth Model</span></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>V_0 = \frac{D_1}{k - g} = \frac{D_0(1+g)}{k - g}</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>Syarat: $k &gt; g$ (required return harus lebih besar dari growth rate).</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a><span class="fu">### Contoh Perhitungan DDM — Constant Growth</span></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>**PT Bank ABC** baru saja membayar dividen $D_0 = \text{Rp 200}$ per saham. Dividen diperkirakan tumbuh 8% per tahun secara permanen. Required return investor: 14%.</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>**Langkah 1:** Hitung $D_1$</span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>D_1 = D_0(1+g) = 200(1+0{,}08) = \text{Rp 216}</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>**Langkah 2:** Hitung intrinsic value</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>V_0 = \frac{216}{0{,}14 - 0{,}08} = \frac{216}{0{,}06} = \text{Rp 3.600}</span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>**Langkah 3:** Keputusan — jika harga pasar Rp 3.200, maka saham *undervalued* (margin of safety = 11,1%).</span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>::: {.callout-warning}</span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a><span class="fu">## Kesalahan Umum</span></span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>Gordon Growth Model sangat sensitif terhadap **$g$ dan $k$**. Perubahan kecil di kedua parameter ini menghasilkan perubahan besar di $V_0$:</span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Skenario <span class="pp">|</span> $g$ <span class="pp">|</span> $k$ <span class="pp">|</span> $V_0$ <span class="pp">|</span></span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a><span class="pp">|----------|:---:|:---:|:-----:|</span></span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Base case <span class="pp">|</span> 8% <span class="pp">|</span> 14% <span class="pp">|</span> Rp 3.600 <span class="pp">|</span></span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> $g$ naik 1% <span class="pp">|</span> 9% <span class="pp">|</span> 14% <span class="pp">|</span> Rp 4.360 (+21%) <span class="pp">|</span></span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> $k$ turun 1% <span class="pp">|</span> 8% <span class="pp">|</span> 13% <span class="pp">|</span> Rp 4.320 (+20%) <span class="pp">|</span></span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a>Perubahan 1% pada $g$ atau $k$ mengubah valuasi lebih dari 20%.</span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a><span class="fu">### Two-Stage DDM</span></span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a>Untuk perusahaan dengan pertumbuhan tinggi yang diperkirakan melambat:</span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a>V_0 = \sum_{t=1}^{n} \frac{D_0(1+g_1)^t}{(1+k)^t} + \frac{V_n}{(1+k)^n}</span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a>di mana $V_n = \frac{D_{n+1}}{k - g_2}$ = *terminal value* pada akhir fase pertumbuhan tinggi.</span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a><span class="fu">### Contoh Two-Stage DDM</span></span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a>**PT Tech Maju**: $D_0 = \text{Rp 100}$, pertumbuhan 20% selama 3 tahun, lalu melambat ke 6% selamanya. $k = 15\%$.</span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Tahun <span class="pp">|</span> Dividen <span class="pp">|</span> PV Factor <span class="pp">|</span> PV Dividen <span class="pp">|</span></span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a><span class="pp">|:-----:|:------:|:---------:|:----------:|</span></span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 1 <span class="pp">|</span> Rp 120 <span class="pp">|</span> 0,8696 <span class="pp">|</span> Rp 104,35 <span class="pp">|</span></span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 2 <span class="pp">|</span> Rp 144 <span class="pp">|</span> 0,7561 <span class="pp">|</span> Rp 108,88 <span class="pp">|</span></span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 3 <span class="pp">|</span> Rp 172,80 <span class="pp">|</span> 0,6575 <span class="pp">|</span> Rp 113,62 <span class="pp">|</span></span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a>**Terminal value** pada akhir tahun 3:</span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a>V_3 = \frac{D_4}{k - g_2} = \frac{172{,}80 \times 1{,}06}{0{,}15 - 0{,}06} = \frac{183{,}17}{0{,}09} = \text{Rp 2.035,22}</span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a>**PV of terminal value:**</span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a>\text{PV}(V_3) = \frac{2.035{,}22}{(1{,}15)^3} = \frac{2.035{,}22}{1{,}5209} = \text{Rp 1.338,14}</span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a>**Intrinsic value:**</span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a>V_0 = 104{,}35 + 108{,}88 + 113{,}62 + 1.338{,}14 = \text{Rp 1.664,99}</span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; *Sumber: Fabozzi &amp; Markowitz (2011), Ch. 11*</span></span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a><span class="fu">## Free Cash Flow to Equity (FCFE) Model</span></span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a><span class="fu">### Konsep</span></span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a>FCFE model digunakan ketika perusahaan **tidak membayar dividen** atau dividen tidak mencerminkan kapasitas pembayaran sesungguhnya.</span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a><span class="fu">## Definisi — FCFE</span></span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a>\text{FCFE} = \text{Net Income} + \text{Depreciation} - \text{CapEx} - \Delta\text{Working Capital} + \text{Net Borrowing}</span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a>FCFE adalah kas yang tersedia bagi pemegang saham **setelah** perusahaan memenuhi semua kewajiban operasional dan investasi.</span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a><span class="fu">### Valuasi dengan FCFE</span></span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a>V_0 = \sum_{t=1}^{\infty} \frac{\text{FCFE}_t}{(1+k)^t}</span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a>Dengan asumsi pertumbuhan konstan:</span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a>V_0 = \frac{\text{FCFE}_1}{k - g}</span>
+<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a><span class="fu">### Contoh Perhitungan FCFE</span></span>
+<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a>PT Manufaktur XYZ (dalam miliar Rp):</span>
+<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Komponen <span class="pp">|</span> Nilai <span class="pp">|</span></span>
+<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a><span class="pp">|----------|------:|</span></span>
+<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Net Income <span class="pp">|</span> 500 <span class="pp">|</span></span>
+<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Depreciation <span class="pp">|</span> 120 <span class="pp">|</span></span>
+<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Capital Expenditure <span class="pp">|</span> 200 <span class="pp">|</span></span>
+<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> ΔWorking Capital <span class="pp">|</span> 50 <span class="pp">|</span></span>
+<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Net Borrowing <span class="pp">|</span> 80 <span class="pp">|</span></span>
+<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a>\text{FCFE} = 500 + 120 - 200 - 50 + 80 = \text{Rp 450 miliar}</span>
+<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a>Jumlah saham beredar: 2 miliar lembar → FCFE per saham = Rp 225.</span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a>Jika pertumbuhan FCFE 7% per tahun dan $k = 13\%$:</span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a>V_0 = \frac{225 \times 1{,}07}{0{,}13 - 0{,}07} = \frac{240{,}75}{0{,}06} = \text{Rp 4.012,50}</span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; *Sumber: Fabozzi &amp; Markowitz (2011), Ch. 11; Reilly &amp; Brown (2015), Ch. 11*</span></span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a><span class="fu">## Valuasi Relatif (Pendekatan Multiples)</span></span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a><span class="fu">### Konsep</span></span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a>Valuasi relatif membandingkan **rasio harga** saham target dengan saham-saham sejenis (*comparable companies*) atau rata-rata industri.</span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a><span class="fu">### Price-to-Earnings Ratio (P/E)</span></span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a>::: {.callout-important}</span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a><span class="fu">## Formula Kunci — Justified P/E</span></span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a>Dari Gordon Growth Model:</span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a>\frac{P_0}{E_1} = \frac{D_1/E_1}{k - g} = \frac{\text{Payout Ratio}}{k - g}</span>
+<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a>P/E dipengaruhi oleh: (1) payout ratio, (2) required return, (3) growth rate.</span>
+<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a>**Trailing P/E** = $P_0 / \text{EPS}_{12 \text{ bulan terakhir}}$</span>
+<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a>**Forward P/E** = $P_0 / \text{EPS}_{12 \text{ bulan mendatang}}$</span>
+<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a><span class="fu">### Contoh Valuasi dengan P/E</span></span>
+<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a>Saham PT Retail ABC memiliki EPS = Rp 350 (trailing). Rata-rata P/E industri ritel = 18×.</span>
+<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a>V_0 = \text{EPS} \times \text{P/E industri} = 350 \times 18 = \text{Rp 6.300}</span>
+<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a>Jika harga pasar Rp 5.800 → saham *undervalued* sebesar ~8%.</span>
+<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a><span class="fu">### Price-to-Book Ratio (P/B)</span></span>
+<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a>\text{P/B} = \frac{\text{Harga Saham}}{\text{Book Value per Share}}</span>
+<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a>**Kegunaan:** Cocok untuk perusahaan padat aset (bank, properti, manufaktur). Saham dengan P/B &lt; 1 berarti pasar menilai perusahaan di bawah nilai bukunya.</span>
+<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a><span class="fu">### Enterprise Value / EBITDA</span></span>
+<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a>\text{EV/EBITDA} = \frac{\text{Market Cap} + \text{Debt} - \text{Cash}}{\text{EBITDA}}</span>
+<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a>**Kegunaan:** Menghilangkan pengaruh struktur modal dan pajak — berguna untuk membandingkan perusahaan dengan leverage berbeda.</span>
+<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a><span class="fu">### Perbandingan Metode Valuasi Relatif</span></span>
+<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Metrik <span class="pp">|</span> Kelebihan <span class="pp">|</span> Keterbatasan <span class="pp">|</span></span>
+<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a><span class="pp">|--------|----------|-------------|</span></span>
+<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **P/E** <span class="pp">|</span> Intuitif, mudah dihitung <span class="pp">|</span> Tidak bermakna jika EPS negatif <span class="pp">|</span></span>
+<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **P/B** <span class="pp">|</span> Stabil, cocok untuk aset-intensive <span class="pp">|</span> Kurang relevan untuk perusahaan tech <span class="pp">|</span></span>
+<span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **EV/EBITDA** <span class="pp">|</span> Netral terhadap leverage <span class="pp">|</span> Mengabaikan CapEx dan working capital <span class="pp">|</span></span>
+<span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **P/S** (Price/Sales) <span class="pp">|</span> Selalu positif (sales &gt; 0) <span class="pp">|</span> Mengabaikan profitabilitas <span class="pp">|</span></span>
+<span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a><span class="fu">### Contoh Komparasi</span></span>
+<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Saham <span class="pp">|</span> P/E <span class="pp">|</span> P/B <span class="pp">|</span> EV/EBITDA <span class="pp">|</span> Kesimpulan <span class="pp">|</span></span>
+<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a><span class="pp">|-------|:---:|:---:|:---------:|-----------|</span></span>
+<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Bank A <span class="pp">|</span> 12× <span class="pp">|</span> 1,8× <span class="pp">|</span> 8× <span class="pp">|</span> *Fairly valued* <span class="pp">|</span></span>
+<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Bank B <span class="pp">|</span> 8× <span class="pp">|</span> 1,1× <span class="pp">|</span> 6× <span class="pp">|</span> Potensi *undervalued* <span class="pp">|</span></span>
+<span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Bank C <span class="pp">|</span> 18× <span class="pp">|</span> 2,5× <span class="pp">|</span> 12× <span class="pp">|</span> Relatif mahal <span class="pp">|</span></span>
+<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Median industri** | **11×** | **1,6×** | **7,5×** <span class="pp">|</span> <span class="pp">|</span></span>
+<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a>Bank B terlihat *undervalued* di semua metrik → kandidat untuk analisis lebih lanjut (pastikan bukan *value trap*).</span>
+<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a><span class="fu">## Insight Praktis</span></span>
+<span id="cb1-257"><a href="#cb1-257" aria-hidden="true" tabindex="-1"></a>Investor profesional umumnya **tidak mengandalkan satu metode** saja. Praktik terbaik: gunakan **multiple valuation methods** dan bandingkan hasilnya (*triangulation*). Jika semua metode menunjukkan saham *undervalued*, keyakinan (conviction) lebih tinggi.</span>
+<span id="cb1-258"><a href="#cb1-258" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-260"><a href="#cb1-260" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; *Sumber: Reilly &amp; Brown (2015), Ch. 11; Smart, Gitman &amp; Joehnk (2017), Ch. 8*</span></span>
+<span id="cb1-261"><a href="#cb1-261" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-262"><a href="#cb1-262" aria-hidden="true" tabindex="-1"></a><span class="fu">## Ringkasan</span></span>
+<span id="cb1-263"><a href="#cb1-263" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-264"><a href="#cb1-264" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Intrinsic value** dibandingkan dengan harga pasar untuk menentukan apakah saham *undervalued* atau *overvalued*.</span>
+<span id="cb1-265"><a href="#cb1-265" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**DDM (Gordon Growth Model)** menghitung $V_0 = D_1/(k-g)$ — sangat sensitif terhadap asumsi $g$ dan $k$.</span>
+<span id="cb1-266"><a href="#cb1-266" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Two-stage DDM** cocok untuk perusahaan yang diperkirakan mengalami pertumbuhan tinggi sementara sebelum stabil.</span>
+<span id="cb1-267"><a href="#cb1-267" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**FCFE model** digunakan saat dividen tidak mencerminkan kapasitas pembayaran sebenarnya; $V_0 = \text{FCFE}_1 / (k-g)$.</span>
+<span id="cb1-268"><a href="#cb1-268" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>**Valuasi relatif** (P/E, P/B, EV/EBITDA) membandingkan saham dengan *peers* dan rata-rata industri — cepat dan intuitif tetapi mengasumsikan *comparables* dinilai tepat.</span>
+<span id="cb1-269"><a href="#cb1-269" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-270"><a href="#cb1-270" aria-hidden="true" tabindex="-1"></a><span class="fu">## Latihan Soal</span></span>
+<span id="cb1-271"><a href="#cb1-271" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-272"><a href="#cb1-272" aria-hidden="true" tabindex="-1"></a>**Soal 1 — Gordon Growth Model**</span>
+<span id="cb1-273"><a href="#cb1-273" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-274"><a href="#cb1-274" aria-hidden="true" tabindex="-1"></a>PT Agri Nusantara membayar dividen $D_0 = \text{Rp 150}$ per saham. Pertumbuhan dividen 10% per tahun. (a) Hitung intrinsic value jika $k = 16\%$. (b) Jika harga pasar Rp 2.500, apakah saham layak dibeli? Berapa margin of safety? (c) Berapa harga wajar jika $g$ turun menjadi 7%?</span>
+<span id="cb1-275"><a href="#cb1-275" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-276"><a href="#cb1-276" aria-hidden="true" tabindex="-1"></a>**Soal 2 — Two-Stage DDM**</span>
+<span id="cb1-277"><a href="#cb1-277" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-278"><a href="#cb1-278" aria-hidden="true" tabindex="-1"></a>PT Digital Indo: $D_0 = \text{Rp 80}$. Pertumbuhan dividen 25% selama 4 tahun, kemudian 5% selamanya. $k = 18\%$. Hitung intrinsic value.</span>
+<span id="cb1-279"><a href="#cb1-279" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-280"><a href="#cb1-280" aria-hidden="true" tabindex="-1"></a>**Soal 3 — FCFE Valuation**</span>
+<span id="cb1-281"><a href="#cb1-281" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-282"><a href="#cb1-282" aria-hidden="true" tabindex="-1"></a>Data PT Infrastruktur Bersama (miliar Rp): Net Income = 800, Depreciation = 250, CapEx = 400, ΔWC = 100, Net Borrowing = 150. Saham beredar: 4 miliar lembar. Pertumbuhan FCFE: 8%, $k = 14\%$. Hitung FCFE per saham dan intrinsic value.</span>
+<span id="cb1-283"><a href="#cb1-283" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-284"><a href="#cb1-284" aria-hidden="true" tabindex="-1"></a>**Soal 4 — Valuasi Relatif**</span>
+<span id="cb1-285"><a href="#cb1-285" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-286"><a href="#cb1-286" aria-hidden="true" tabindex="-1"></a>Tiga perusahaan farmasi:</span>
+<span id="cb1-287"><a href="#cb1-287" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-288"><a href="#cb1-288" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Saham <span class="pp">|</span> EPS <span class="pp">|</span> BV/Share <span class="pp">|</span> EBITDA (M) <span class="pp">|</span> Debt (M) <span class="pp">|</span> Cash (M) <span class="pp">|</span> Harga <span class="pp">|</span> Saham Beredar <span class="pp">|</span></span>
+<span id="cb1-289"><a href="#cb1-289" aria-hidden="true" tabindex="-1"></a><span class="pp">|-------|:---:|:-------:|:----------:|:--------:|:--------:|:-----:|:------------:|</span></span>
+<span id="cb1-290"><a href="#cb1-290" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Pharma A <span class="pp">|</span> Rp 250 <span class="pp">|</span> Rp 1.800 <span class="pp">|</span> 600 <span class="pp">|</span> 400 <span class="pp">|</span> 200 <span class="pp">|</span> Rp 4.000 <span class="pp">|</span> 1 miliar <span class="pp">|</span></span>
+<span id="cb1-291"><a href="#cb1-291" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Pharma B <span class="pp">|</span> Rp 180 <span class="pp">|</span> Rp 1.200 <span class="pp">|</span> 350 <span class="pp">|</span> 300 <span class="pp">|</span> 100 <span class="pp">|</span> Rp 2.400 <span class="pp">|</span> 1,5 miliar <span class="pp">|</span></span>
+<span id="cb1-292"><a href="#cb1-292" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Pharma C <span class="pp">|</span> Rp 300 <span class="pp">|</span> Rp 2.500 <span class="pp">|</span> 800 <span class="pp">|</span> 200 <span class="pp">|</span> 400 <span class="pp">|</span> Rp 6.000 <span class="pp">|</span> 0,8 miliar <span class="pp">|</span></span>
+<span id="cb1-293"><a href="#cb1-293" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-294"><a href="#cb1-294" aria-hidden="true" tabindex="-1"></a>Hitung P/E, P/B, dan EV/EBITDA untuk ketiga saham. Saham mana yang paling menarik berdasarkan valuasi relatif?</span>
+<span id="cb1-295"><a href="#cb1-295" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-296"><a href="#cb1-296" aria-hidden="true" tabindex="-1"></a><span class="fu">## Referensi</span></span>
+<span id="cb1-297"><a href="#cb1-297" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-298"><a href="#cb1-298" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Fabozzi, F. J., &amp; Markowitz, H. M. (2011). *The Theory and Practice of Investment Management* (2nd ed.), Chapter 11. John Wiley &amp; Sons.</span>
+<span id="cb1-299"><a href="#cb1-299" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Reilly, F. K., &amp; Brown, K. C. (2015). *Investment Analysis and Portfolio Management* (10th ed.), Chapter 11. Cengage Learning.</span>
+<span id="cb1-300"><a href="#cb1-300" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Smart, S. B., Gitman, L. J., &amp; Joehnk, M. D. (2017). *Fundamentals of Investing* (13th ed.), Chapter 8. Pearson.</span></code></pre></div><button title="Salin ke Papan Klip" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

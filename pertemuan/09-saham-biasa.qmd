@@ -1,0 +1,242 @@
+---
+title: "Pertemuan 9: Dasar-Dasar Saham Biasa"
+subtitle: "Manajemen Investasi — EKM 19608"
+---
+
+## Tujuan Pembelajaran
+
+Setelah mengikuti pertemuan ini, mahasiswa diharapkan mampu:
+
+1. Menjelaskan karakteristik dan hak-hak pemegang saham biasa.
+2. Membedakan jenis-jenis saham berdasarkan *style* dan kapitalisasi pasar.
+3. Memahami mekanisme perdagangan saham di pasar modal Indonesia.
+4. Menghitung indeks saham menggunakan berbagai metode pembobotan.
+5. Memahami peran pasar primer dan sekunder dalam penerbitan saham.
+
+## Karakteristik Saham Biasa
+
+### Definisi
+
+**Saham biasa** (*common stock*) merepresentasikan kepemilikan residual (*residual ownership*) dalam suatu perusahaan. Pemegang saham biasa memiliki klaim terakhir atas aset dan pendapatan perusahaan — setelah kreditur dan pemegang saham preferen.
+
+### Hak-Hak Pemegang Saham Biasa
+
+| Hak | Penjelasan |
+|-----|-----------|
+| **Hak suara** (*voting rights*) | Satu saham = satu suara dalam RUPS; memilih dewan komisaris dan direksi |
+| **Hak atas dividen** | Menerima distribusi laba jika dewan memutuskan pembagian dividen |
+| **Hak klaim residual** | Klaim atas aset perusahaan setelah semua kewajiban dilunasi (saat likuidasi) |
+| **Hak pre-emptive** | Prioritas membeli saham baru (*rights issue*) untuk menjaga proporsi kepemilikan |
+| **Hak transferability** | Dapat menjual/mentransfer saham di pasar sekunder |
+
+::: {.callout-note}
+## Definisi — Limited Liability
+Tanggung jawab pemegang saham **terbatas** pada jumlah investasi. Jika perusahaan bangkrut, pemegang saham kehilangan maksimal sebesar nilai investasinya — tidak lebih.
+:::
+
+### Saham Biasa vs. Saham Preferen
+
+| Aspek | Saham Biasa | Saham Preferen |
+|-------|-----------|---------------|
+| **Dividen** | Tidak dijamin, variabel | Dijamin (*fixed*), dibayar lebih dulu |
+| **Hak suara** | Ada | Biasanya tidak ada |
+| **Klaim likuidasi** | Terakhir (residual) | Sebelum saham biasa |
+| **Potensi *capital gain*** | Tidak terbatas | Terbatas |
+| **Sensitivitas terhadap kinerja** | Tinggi | Rendah |
+
+> *Sumber: Smart, Gitman & Joehnk (2017), Ch. 6*
+
+## Klasifikasi Saham
+
+### Berdasarkan Kapitalisasi Pasar
+
+::: {.callout-note}
+## Definisi — Kapitalisasi Pasar (Market Capitalization)
+$$
+\text{Market Cap} = \text{Harga Saham} \times \text{Jumlah Saham Beredar}
+$$
+:::
+
+| Kategori | Kapitalisasi Pasar | Karakteristik |
+|----------|:------------------:|-------------|
+| **Large-cap** (*blue chips*) | > Rp 40 triliun (atau >$10B) | Stabil, likuid, dividennya konsisten |
+| **Mid-cap** | Rp 10–40 triliun ($2–10B) | Pertumbuhan moderat, likuiditas cukup |
+| **Small-cap** | Rp 1–10 triliun ($300M–2B) | Potensi pertumbuhan tinggi, volatil |
+| **Micro-cap** | < Rp 1 triliun (<$300M) | Sangat volatil, likuiditas rendah |
+
+### Berdasarkan Style Investasi
+
+| Style | Karakteristik | Metrik Kunci |
+|-------|-------------|-------------|
+| **Value stocks** | P/E rendah, P/B rendah, *dividend yield* tinggi | P/E < rata-rata sektor |
+| **Growth stocks** | Pertumbuhan EPS tinggi, P/E tinggi, *dividend yield* rendah | Pertumbuhan EPS > 15%/tahun |
+| **Income stocks** | Dividen stabil dan tinggi; *payout ratio* besar | *Dividend yield* > 4% |
+| **Cyclical stocks** | Kinerja mengikuti siklus ekonomi | Sektor: properti, otomotif, komoditas |
+| **Defensive stocks** | Stabil di berbagai kondisi ekonomi | Sektor: konsumer, utilitas, kesehatan |
+
+### Contoh Klasifikasi di BEI
+
+| Saham | Kategori Cap | Style | Sektor |
+|-------|:-----------:|:-----:|--------|
+| BBCA (Bank Central Asia) | Large-cap | Growth/Value | Keuangan |
+| TLKM (Telkom Indonesia) | Large-cap | Income/Defensive | Telekomunikasi |
+| ASII (Astra International) | Large-cap | Cyclical | Konglomerasi |
+| ACES (Ace Hardware) | Mid-cap | Growth | Ritel |
+
+> *Sumber: Smart, Gitman & Joehnk (2017), Ch. 6; Fabozzi & Markowitz (2011), Ch. 9*
+
+## Pasar Modal dan Mekanisme Perdagangan
+
+### Pasar Primer vs. Pasar Sekunder
+
+| Aspek | Pasar Primer | Pasar Sekunder |
+|-------|-------------|---------------|
+| **Fungsi** | Penerbitan saham baru | Perdagangan saham yang sudah beredar |
+| **Pihak terlibat** | Emiten ↔ Investor (via underwriter) | Investor ↔ Investor (via broker) |
+| **Mekanisme** | IPO, Rights Issue, Private Placement | Order matching di bursa |
+| **Penerima dana** | Emiten (perusahaan) | Investor penjual |
+| **Contoh** | IPO GoTo (GOTO) 2022 | Jual-beli BBCA di BEI |
+
+### Mekanisme Perdagangan di BEI
+
+Bursa Efek Indonesia (BEI) menggunakan sistem **JATS** (*Jakarta Automated Trading System*):
+
+- **Sesi perdagangan**: Sesi I (09.00–12.00) dan Sesi II (13.30–16.00) WIB
+- **Satuan lot**: 100 lembar saham per lot
+- **Tick size**: Fraksi harga tergantung level harga (Rp 1, Rp 2, Rp 5, Rp 10, Rp 25)
+- **Settlement**: T+2 (dua hari kerja setelah transaksi)
+- **Auto rejection**: ±20–35% dari harga sebelumnya (tergantung board)
+
+### Biaya Transaksi
+
+| Komponen | Beli | Jual |
+|----------|:----:|:----:|
+| Komisi broker | 0,10–0,30% | 0,10–0,30% |
+| Pajak final | 0% | 0,10% |
+| **Total estimasi** | **~0,15–0,30%** | **~0,25–0,40%** |
+
+::: {.callout-tip}
+## Insight Praktis
+Biaya transaksi mungkin terlihat kecil, tetapi bagi investor aktif (*frequent trader*), total biaya bisa terakumulasi secara signifikan. Investor dengan portofolio Rp 100 juta yang melakukan *turnover* 300% per tahun bisa membayar biaya transaksi ~Rp 1,5–2 juta per tahun.
+:::
+
+> *Sumber: Smart, Gitman & Joehnk (2017), Ch. 6*
+
+## Indeks Saham
+
+### Fungsi Indeks
+
+Indeks saham berfungsi sebagai:
+
+1. **Barometer pasar** — mengukur arah dan magnitude pergerakan pasar secara keseluruhan
+2. **Benchmark** — tolok ukur kinerja portofolio
+3. **Basis produk investasi** — dasar ETF, index fund, dan derivatif
+
+### Metode Pembobotan Indeks
+
+| Metode | Formula | Contoh Indeks |
+|--------|---------|-------------|
+| **Price-weighted** | Rata-rata harga saham | Dow Jones Industrial Average |
+| **Value-weighted** (cap-weighted) | Bobot = market cap / total market cap | IHSG, S&P 500 |
+| **Equal-weighted** | Setiap saham berbobot sama (1/N) | S&P 500 Equal Weight |
+
+### Contoh Perhitungan — Price-Weighted Index
+
+Tiga saham dalam indeks:
+
+| Saham | Harga ($t_0$) | Harga ($t_1$) |
+|-------|:-------------:|:-------------:|
+| A | Rp 2.000 | Rp 2.200 |
+| B | Rp 5.000 | Rp 4.800 |
+| C | Rp 3.000 | Rp 3.300 |
+
+**Indeks awal** (basis = 100):
+
+$$
+\text{Divisor}_0 = \frac{2.000 + 5.000 + 3.000}{100} = 100
+$$
+
+$$
+\text{Indeks}_1 = \frac{2.200 + 4.800 + 3.300}{100} = 103
+$$
+
+**Return indeks:** $\frac{103 - 100}{100} = 3\%$
+
+::: {.callout-warning}
+## Kesalahan Umum
+Pada *price-weighted index*, saham dengan **harga lebih tinggi** memiliki pengaruh lebih besar terhadap indeks — *bukan* saham dengan market cap terbesar. Ini menjadi kelemahan utama Dow Jones: saham berharga $300 mempengaruhi indeks 10× lebih besar dari saham $30, terlepas dari ukuran perusahaan.
+:::
+
+### Contoh Perhitungan — Value-Weighted Index
+
+| Saham | Harga ($t_0$) | Saham Beredar | Market Cap ($t_0$) | Harga ($t_1$) | Market Cap ($t_1$) |
+|-------|:---:|:---:|:---:|:---:|:---:|
+| X | Rp 1.000 | 10 juta | Rp 10 M | Rp 1.100 | Rp 11 M |
+| Y | Rp 500 | 40 juta | Rp 20 M | Rp 480 | Rp 19,2 M |
+| Z | Rp 2.000 | 5 juta | Rp 10 M | Rp 2.100 | Rp 10,5 M |
+
+**Total market cap:** $t_0 = \text{Rp 40 M}$, $t_1 = \text{Rp 40,7 M}$
+
+$$
+\text{Indeks}_1 = \frac{40{,}7}{40{,}0} \times 100 = 101{,}75
+$$
+
+**Return indeks:** $1{,}75\%$ — didominasi oleh saham Y karena market cap terbesar.
+
+### Indeks di Indonesia
+
+| Indeks | Metode | Cakupan |
+|--------|--------|---------|
+| **IHSG** (Jakarta Composite Index) | Value-weighted | Semua saham tercatat di BEI |
+| **LQ45** | Value-weighted | 45 saham paling likuid |
+| **IDX30** | Value-weighted | 30 saham paling likuid & berkapitalisasi besar |
+| **IDX80** | Value-weighted | 80 saham likuiditas & fundamentals baik |
+| **Jakarta Islamic Index (JII)** | Value-weighted | 30 saham syariah paling likuid |
+
+> *Sumber: Fabozzi & Markowitz (2011), Ch. 9; Reilly & Brown (2015), Ch. 5*
+
+## Ringkasan
+
+1. **Saham biasa** memberikan kepemilikan residual dengan hak suara, hak dividen, dan *limited liability*.
+2. Saham diklasifikasikan berdasarkan **kapitalisasi pasar** (large/mid/small-cap) dan **style** (value, growth, income, cyclical, defensive).
+3. **Pasar primer** untuk penerbitan baru (IPO), **pasar sekunder** untuk perdagangan antar investor.
+4. **Indeks saham** mengukur pergerakan pasar; metode pembobotan (*price-weighted*, *value-weighted*, *equal-weighted*) menghasilkan return indeks yang berbeda.
+5. Di Indonesia, IHSG menggunakan metode *value-weighted* dan mencakup seluruh saham tercatat di BEI.
+
+## Latihan Soal
+
+**Soal 1 — Hak Pemegang Saham**
+
+PT ABC akan melakukan *rights issue* dengan rasio 5:1 (setiap 5 saham lama berhak membeli 1 saham baru) di harga Rp 4.000. Harga pasar saat ini Rp 5.500. Investor A memiliki 10.000 saham. (a) Berapa saham baru yang boleh dibeli? (b) Hitung nilai teoritis *right* per saham. (c) Berapa *theoretical ex-rights price* (TERP)?
+
+**Soal 2 — Klasifikasi Saham**
+
+Berikan klasifikasi (cap size dan style) untuk saham-saham berikut berdasarkan data:
+
+| Saham | Market Cap | P/E | Pertumbuhan EPS | Dividend Yield |
+|-------|:---:|:---:|:---:|:---:|
+| P | Rp 250 T | 12× | 8% | 5,2% |
+| Q | Rp 8 T | 35× | 25% | 0,5% |
+| R | Rp 500 M | 8× | 3% | 7,1% |
+
+**Soal 3 — Indeks Harga Saham**
+
+Hitung return indeks menggunakan metode *price-weighted* dan *value-weighted*:
+
+| Saham | Harga Awal | Harga Akhir | Saham Beredar |
+|-------|:---:|:---:|:---:|
+| D | Rp 3.000 | Rp 3.300 | 5 juta |
+| E | Rp 1.500 | Rp 1.425 | 20 juta |
+| F | Rp 6.000 | Rp 6.600 | 2 juta |
+
+Bandingkan hasilnya dan jelaskan mengapa berbeda.
+
+**Soal 4 — Biaya Transaksi**
+
+Investor membeli 50 lot saham BBCA di harga Rp 9.000 dan menjualnya sebulan kemudian di Rp 9.500. Komisi broker: 0,15% (beli) dan 0,20% (jual). Pajak jual: 0,10%. Hitung: (a) Total biaya transaksi (beli + jual). (b) *Net profit* setelah semua biaya. (c) *Effective return* (%).
+
+## Referensi
+
+- Fabozzi, F. J., & Markowitz, H. M. (2011). *The Theory and Practice of Investment Management* (2nd ed.), Chapter 9. John Wiley & Sons.
+- Reilly, F. K., & Brown, K. C. (2015). *Investment Analysis and Portfolio Management* (10th ed.), Chapter 5. Cengage Learning.
+- Smart, S. B., Gitman, L. J., & Joehnk, M. D. (2017). *Fundamentals of Investing* (13th ed.), Chapter 6. Pearson.

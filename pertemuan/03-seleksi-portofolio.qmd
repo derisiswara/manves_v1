@@ -1,0 +1,507 @@
+---
+title: "Pertemuan 3: Seleksi Portofolio"
+subtitle: "Manajemen Investasi — EKM 19608"
+---
+
+## Tujuan Pembelajaran
+
+Setelah mengikuti pertemuan ini, mahasiswa diharapkan mampu:
+
+1. Menghitung *expected return* portofolio dari dua atau lebih aset.
+2. Menghitung *variance* dan *standard deviation* portofolio menggunakan konsep *covariance* dan *correlation*.
+3. Menjelaskan efek diversifikasi dan mengapa diversifikasi mampu mengurangi risiko.
+4. Menggambarkan *efficient frontier* dan menjelaskan maknanya bagi investor.
+5. Menghitung bobot *minimum variance portfolio* (MVP) untuk kasus dua aset.
+
+## Pendahuluan: Teori Portofolio Markowitz
+
+Pada tahun 1952, Harry Markowitz mempublikasikan artikel revolusioner berjudul *"Portfolio Selection"* di *Journal of Finance*. Kontribusi utamanya adalah formalisasi ide bahwa investor **tidak seharusnya hanya melihat return** suatu aset secara individual, tetapi juga mempertimbangkan bagaimana aset tersebut **berinteraksi dengan aset lain** dalam portofolio.
+
+Inti teori Markowitz dapat diringkas dalam satu kalimat: **diversifikasi mengurangi risiko** — tetapi hanya jika aset-aset dalam portofolio tidak berkorelasi sempurna positif.
+
+Pendekatan Markowitz sering disebut ***mean-variance framework*** karena investor membuat keputusan berdasarkan dua parameter: **mean** (*expected return*) dan **variance** (risiko).
+
+> *Sumber: Fabozzi & Markowitz (2011), Ch. 3; Reilly & Brown (2015), Ch. 7*
+
+## Expected Return Portofolio
+
+### Konsep
+
+*Expected return* portofolio adalah **rata-rata tertimbang** dari *expected return* masing-masing aset pembentuknya, di mana bobot (*weight*) adalah proporsi dana yang dialokasikan ke setiap aset.
+
+### Formula
+
+::: {.callout-important}
+## Formula Kunci — Expected Return Portofolio
+$$
+E(R_p) = \sum_{i=1}^{n} w_i \cdot E(R_i)
+$$
+
+di mana:
+
+- $E(R_p)$ = expected return portofolio
+- $w_i$ = bobot (proporsi) aset ke-$i$ dalam portofolio, dengan $\sum w_i = 1$
+- $E(R_i)$ = expected return aset ke-$i$
+- $n$ = jumlah aset dalam portofolio
+:::
+
+Perhatikan bahwa formula ini **linear** — expected return portofolio selalu merupakan rata-rata tertimbang dari expected return individual. Tidak ada efek diversifikasi pada expected return; diversifikasi hanya memengaruhi **risiko**.
+
+### Contoh Perhitungan — Portofolio 2 Aset
+
+Seorang investor mengalokasikan dananya ke dua saham:
+
+| Saham | Bobot ($w_i$) | Expected Return $E(R_i)$ |
+|:-----:|:------------:|:------------------------:|
+| BBCA | 60% | 14% |
+| TLKM | 40% | 10% |
+
+**Perhitungan:**
+
+$$
+E(R_p) = w_1 \cdot E(R_1) + w_2 \cdot E(R_2)
+$$
+
+$$
+E(R_p) = (0{,}60)(0{,}14) + (0{,}40)(0{,}10)
+$$
+
+$$
+E(R_p) = 0{,}084 + 0{,}040 = 0{,}124 = 12{,}4\%
+$$
+
+::: {.callout-tip}
+## Interpretasi
+Portofolio ini diharapkan memberikan return 12,4% — nilainya berada di antara return kedua saham individual (10% dan 14%), sesuai dengan prinsip rata-rata tertimbang. Semakin besar bobot BBCA (yang memiliki expected return lebih tinggi), semakin tinggi expected return portofolio.
+:::
+
+### Contoh Perhitungan — Portofolio 3 Aset
+
+| Saham | Bobot ($w_i$) | Expected Return $E(R_i)$ |
+|:-----:|:------------:|:------------------------:|
+| BBCA | 50% | 14% |
+| TLKM | 30% | 10% |
+| ASII | 20% | 16% |
+
+$$
+E(R_p) = (0{,}50)(0{,}14) + (0{,}30)(0{,}10) + (0{,}20)(0{,}16)
+$$
+
+$$
+= 0{,}070 + 0{,}030 + 0{,}032 = 0{,}132 = 13{,}2\%
+$$
+
+> *Sumber: Fabozzi & Markowitz (2011), Ch. 3*
+
+## Risiko Portofolio: Variance dan Standard Deviation
+
+### Konsep
+
+Berbeda dengan *expected return* yang bersifat linear, **risiko portofolio tidak** sekadar rata-rata tertimbang dari risiko individual. Risiko portofolio bergantung pada tiga faktor:
+
+1. **Bobot** masing-masing aset ($w_i$)
+2. **Variance** (risiko individual) masing-masing aset ($\sigma_i^2$)
+3. ***Covariance*** antar pasangan aset ($\text{Cov}(R_i, R_j)$)
+
+Faktor ketiga inilah yang membuat diversifikasi dimungkinkan — jika aset-aset tidak bergerak searah sempurna, risiko portofolio bisa **lebih kecil** dari rata-rata tertimbang risiko individual.
+
+### Covariance dan Correlation
+
+Sebelum menghitung risiko portofolio, kita perlu memahami dua ukuran keterkaitan antar aset:
+
+::: {.callout-note}
+## Definisi: Covariance
+*Covariance* mengukur **arah dan besaran** hubungan linier antara return dua aset:
+$$
+\text{Cov}(R_i, R_j) = E\left[(R_i - E(R_i))(R_j - E(R_j))\right]
+$$
+
+- $\text{Cov} > 0$: Kedua aset cenderung bergerak **searah**.
+- $\text{Cov} < 0$: Kedua aset cenderung bergerak **berlawanan arah**.
+- $\text{Cov} = 0$: Tidak ada hubungan linier.
+:::
+
+::: {.callout-note}
+## Definisi: Correlation
+*Correlation coefficient* adalah versi **terstandardisasi** dari covariance, dengan range $[-1, +1]$:
+$$
+\rho_{ij} = \frac{\text{Cov}(R_i, R_j)}{\sigma_i \cdot \sigma_j}
+$$
+
+- $\rho = +1$: Korelasi positif sempurna (bergerak searah 100%).
+- $\rho = -1$: Korelasi negatif sempurna (bergerak berlawanan 100%).
+- $\rho = 0$: Tidak berkorelasi.
+:::
+
+Hubungan antara keduanya:
+
+$$
+\text{Cov}(R_i, R_j) = \rho_{ij} \cdot \sigma_i \cdot \sigma_j
+$$
+
+### Formula Variance Portofolio — 2 Aset
+
+::: {.callout-important}
+## Formula Kunci — Variance Portofolio (2 Aset)
+$$
+\sigma_p^2 = w_1^2 \sigma_1^2 + w_2^2 \sigma_2^2 + 2 w_1 w_2 \text{Cov}(R_1, R_2)
+$$
+
+Atau equivalen menggunakan korelasi:
+
+$$
+\sigma_p^2 = w_1^2 \sigma_1^2 + w_2^2 \sigma_2^2 + 2 w_1 w_2 \rho_{12} \sigma_1 \sigma_2
+$$
+
+*Standard deviation* portofolio:
+$$
+\sigma_p = \sqrt{\sigma_p^2}
+$$
+:::
+
+### Contoh Perhitungan — Risiko Portofolio 2 Aset
+
+Melanjutkan contoh sebelumnya, berikut data lengkap kedua saham:
+
+| Parameter | BBCA | TLKM |
+|----------|:----:|:----:|
+| Bobot ($w$) | 60% | 40% |
+| Expected Return | 14% | 10% |
+| Std. Deviation ($\sigma$) | 20% | 15% |
+| Korelasi ($\rho_{12}$) | | 0,30 |
+
+**Langkah 1:** Hitung setiap komponen variance.
+
+- Komponen 1 (BBCA): $w_1^2 \sigma_1^2 = (0{,}60)^2 (0{,}20)^2 = (0{,}36)(0{,}04) = 0{,}0144$
+- Komponen 2 (TLKM): $w_2^2 \sigma_2^2 = (0{,}40)^2 (0{,}15)^2 = (0{,}16)(0{,}0225) = 0{,}0036$
+- Komponen 3 (Kovarians): $2 w_1 w_2 \rho_{12} \sigma_1 \sigma_2 = 2(0{,}60)(0{,}40)(0{,}30)(0{,}20)(0{,}15) = 0{,}00432$
+
+**Langkah 2:** Jumlahkan ketiga komponen.
+
+$$
+\sigma_p^2 = 0{,}0144 + 0{,}0036 + 0{,}00432 = 0{,}02232
+$$
+
+**Langkah 3:** Hitung standard deviation.
+
+$$
+\sigma_p = \sqrt{0{,}02232} = 0{,}1494 = 14{,}94\%
+$$
+
+**Langkah 4:** Bandingkan dengan rata-rata tertimbang risiko individual.
+
+$$
+\bar{\sigma} = (0{,}60)(0{,}20) + (0{,}40)(0{,}15) = 0{,}12 + 0{,}06 = 0{,}18 = 18\%
+$$
+
+::: {.callout-tip}
+## Interpretasi
+Risiko portofolio (14,94%) **lebih rendah** dari rata-rata tertimbang risiko individual (18%). Selisih sebesar 3,06 percentage point ini adalah **efek diversifikasi**. Efek ini dimungkinkan karena korelasi antara BBCA dan TLKM tidak sempurna ($\rho = 0{,}30 < 1$). Semakin rendah korelasi, semakin besar manfaat diversifikasi.
+:::
+
+> *Sumber: Fabozzi & Markowitz (2011), Ch. 3; Reilly & Brown (2015), Ch. 7*
+
+## Efek Korelasi terhadap Risiko Portofolio
+
+Untuk memahami peran korelasi secara lebih mendalam, mari kita hitung risiko portofolio dengan berbagai skenario korelasi (menggunakan data yang sama: $w_1=0{,}6$, $w_2=0{,}4$, $\sigma_1=20\%$, $\sigma_2=15\%$):
+
+| Korelasi ($\rho$) | $\sigma_p^2$ | $\sigma_p$ | Efek Diversifikasi |
+|:-----------------:|:----------:|:--------:|:-----------------:|
+| $+1{,}0$ | $0{,}0324$ | $18{,}00\%$ | Tidak ada |
+| $+0{,}5$ | $0{,}0252$ | $15{,}87\%$ | Moderat |
+| $+0{,}3$ | $0{,}0223$ | $14{,}94\%$ | Signifikan |
+| $\phantom{+}0{,}0$ | $0{,}0180$ | $13{,}42\%$ | Besar |
+| $-0{,}5$ | $0{,}0108$ | $10{,}39\%$ | Sangat besar |
+| $-1{,}0$ | $0{,}0036$ | $6{,}00\%$ | Maksimal |
+
+::: {.callout-warning}
+## Kesalahan Umum
+Banyak mahasiswa mengira bahwa diversifikasi membutuhkan korelasi **negatif**. Ini keliru — diversifikasi bermanfaat selama korelasi **kurang dari +1**. Bahkan dengan korelasi positif 0,5, risiko portofolio masih lebih rendah dari rata-rata tertimbang. Hanya pada $\rho = +1$ diversifikasi benar-benar tidak bermanfaat.
+:::
+
+### Kasus Khusus: Korelasi = +1
+
+Jika $\rho = +1$:
+
+$$
+\sigma_p = w_1 \sigma_1 + w_2 \sigma_2 = (0{,}60)(0{,}20) + (0{,}40)(0{,}15) = 18\%
+$$
+
+Risiko portofolio = rata-rata tertimbang → **tidak ada diversifikasi**.
+
+### Kasus Khusus: Korelasi = −1
+
+Jika $\rho = -1$, risiko dapat dieliminasi sepenuhnya dengan bobot tertentu:
+
+$$
+\sigma_p = |w_1 \sigma_1 - w_2 \sigma_2|
+$$
+
+Risiko nol tercapai jika: $w_1 = \frac{\sigma_2}{\sigma_1 + \sigma_2} = \frac{0{,}15}{0{,}20 + 0{,}15} = \frac{0{,}15}{0{,}35} = 42{,}86\%$
+
+> *Sumber: Fabozzi & Markowitz (2011), Ch. 3*
+
+## Diversifikasi
+
+### Risiko Sistematis vs. Risiko Tidak Sistematis
+
+Total risiko suatu aset terdiri dari dua komponen:
+
+$$
+\text{Total Risk} = \text{Systematic Risk} + \text{Unsystematic Risk}
+$$
+
+| Komponen | Nama Lain | Sumber | Dapat Didiversifikasi? |
+|----------|----------|--------|:---------------------:|
+| **Risiko Sistematis** | *Market risk*, *non-diversifiable risk* | Faktor makro: inflasi, suku bunga, resesi | ❌ Tidak |
+| **Risiko Tidak Sistematis** | *Idiosyncratic risk*, *diversifiable risk* | Faktor spesifik perusahaan: manajemen, produk | ✅ Ya |
+
+### Berapa Banyak Aset untuk Diversifikasi Efektif?
+
+Studi empiris menunjukkan bahwa sebagian besar manfaat diversifikasi tercapai dengan **20–30 saham** yang dipilih secara acak dari berbagai sektor. Penambahan aset di luar angka ini memberikan *marginal benefit* yang semakin kecil.
+
+| Jumlah Saham | Perkiraan $\sigma_p$ | % Risiko Tersisa |
+|:------------:|:-------------------:|:----------------:|
+| 1 | 49% | 100% |
+| 5 | 27% | 55% |
+| 10 | 23% | 47% |
+| 20 | 21% | 43% |
+| 30 | 20% | 41% |
+| 100 | 19,5% | 40% |
+| 1000+ | ~19,2% (market risk) | ~39% |
+
+::: {.callout-warning}
+## Kesalahan Umum
+Diversifikasi **bukan sekadar menambah jumlah aset**. Membeli 30 saham perbankan tidak memberikan diversifikasi efektif karena semuanya terekspos risiko yang sama (sektor perbankan). Diversifikasi efektif membutuhkan aset dengan **korelasi rendah** — idealnya dari sektor, industri, atau kelas aset yang berbeda.
+:::
+
+> *Sumber: Fabozzi & Markowitz (2011), Ch. 3; Reilly & Brown (2015), Ch. 7*
+
+## Efficient Frontier
+
+### Konsep
+
+*Efficient frontier* adalah **kurva** dalam ruang risiko-return ($\sigma$ vs. $E(R)$) yang menghubungkan semua portofolio yang **efisien** — yaitu portofolio yang memberikan:
+
+- *Expected return* **tertinggi** untuk setiap tingkat risiko tertentu, ATAU
+- Risiko **terendah** untuk setiap tingkat *expected return* tertentu.
+
+Portofolio yang berada **di bawah** *efficient frontier* disebut **inefficient** (tidak optimal) — selalu ada portofolio lain yang lebih baik (return lebih tinggi dengan risiko sama, atau risiko lebih rendah dengan return sama).
+
+### Opportunity Set dan Efficient Frontier — Ilustrasi 2 Aset
+
+Dengan mengvariasikan bobot $w_1$ dari 0 hingga 1 (dan $w_2 = 1 - w_1$), kita mendapatkan **opportunity set** — yaitu himpunan semua kombinasi portofolio yang mungkin.
+
+Menggunakan data BBCA-TLKM sebelumnya ($E(R_1)=14\%$, $\sigma_1=20\%$, $E(R_2)=10\%$, $\sigma_2=15\%$, $\rho=0{,}30$):
+
+| $w_{\text{BBCA}}$ | $w_{\text{TLKM}}$ | $E(R_p)$ | $\sigma_p$ |
+|:-:|:-:|:-:|:-:|
+| 0% | 100% | 10,00% | 15,00% |
+| 20% | 80% | 10,80% | 13,27% |
+| 30% | 70% | 11,20% | 13,03% |
+| 40% | 60% | 11,60% | 13,13% |
+| 60% | 40% | 12,40% | 14,94% |
+| 80% | 20% | 13,20% | 17,19% |
+| 100% | 0% | 14,00% | 20,00% |
+
+Perhatikan bahwa pada $w_{\text{BBCA}} \approx 30\%$, risiko portofolio mencapai **titik minimum** ($\sigma_p \approx 13{,}03\%$). Portofolio ini disebut ***Minimum Variance Portfolio*** (MVP).
+
+*Efficient frontier* adalah bagian **atas** dari kurva ini — dari MVP ke atas. Bagian bawah (di bawah MVP) adalah *inefficient* karena untuk tingkat risiko yang sama, ada portofolio dengan return lebih tinggi.
+
+> *Sumber: Fabozzi & Markowitz (2011), Ch. 3*
+
+## Minimum Variance Portfolio (MVP)
+
+### Konsep
+
+*Minimum Variance Portfolio* adalah portofolio dengan **risiko terendah** di antara semua kemungkinan kombinasi aset. MVP menjadi titik ujung kiri *efficient frontier*.
+
+### Formula MVP — 2 Aset
+
+::: {.callout-important}
+## Formula Kunci — Bobot MVP (2 Aset)
+$$
+w_1^* = \frac{\sigma_2^2 - \text{Cov}(R_1, R_2)}{\sigma_1^2 + \sigma_2^2 - 2\text{Cov}(R_1, R_2)}
+$$
+
+$$
+w_2^* = 1 - w_1^*
+$$
+:::
+
+### Contoh Perhitungan MVP
+
+Menggunakan data BBCA dan TLKM:
+
+- $\sigma_1^2 = (0{,}20)^2 = 0{,}04$
+- $\sigma_2^2 = (0{,}15)^2 = 0{,}0225$
+- $\text{Cov}(R_1, R_2) = \rho_{12}\sigma_1\sigma_2 = (0{,}30)(0{,}20)(0{,}15) = 0{,}009$
+
+**Langkah 1:** Substitusi ke formula.
+
+$$
+w_1^* = \frac{0{,}0225 - 0{,}009}{0{,}04 + 0{,}0225 - 2(0{,}009)}
+$$
+
+$$
+= \frac{0{,}0135}{0{,}0445} = 0{,}3034 = 30{,}34\%
+$$
+
+$$
+w_2^* = 1 - 0{,}3034 = 0{,}6966 = 69{,}66\%
+$$
+
+**Langkah 2:** Hitung expected return MVP.
+
+$$
+E(R_{MVP}) = (0{,}3034)(0{,}14) + (0{,}6966)(0{,}10) = 0{,}04248 + 0{,}06966 = 0{,}11214 = 11{,}21\%
+$$
+
+**Langkah 3:** Hitung risiko MVP.
+
+$$
+\sigma_{MVP}^2 = (0{,}3034)^2(0{,}04) + (0{,}6966)^2(0{,}0225) + 2(0{,}3034)(0{,}6966)(0{,}009)
+$$
+
+$$
+= 0{,}003682 + 0{,}010921 + 0{,}003802 = 0{,}018405
+$$
+
+$$
+\sigma_{MVP} = \sqrt{0{,}018405} = 0{,}1357 = 13{,}57\%
+$$
+
+::: {.callout-tip}
+## Interpretasi
+MVP mengalokasikan lebih banyak dana ke TLKM (69,66%) yang memiliki risiko lebih rendah ($\sigma = 15\%$), dan lebih sedikit ke BBCA (30,34%) yang lebih berisiko ($\sigma = 20\%$). Portofolio ini menghasilkan expected return 11,21% dengan risiko minimum 13,57% — lebih rendah dari risiko TLKM saja (15%) berkat diversifikasi.
+:::
+
+> *Sumber: Fabozzi & Markowitz (2011), Ch. 3; Reilly & Brown (2015), Ch. 8*
+
+## Menghitung Covariance dari Data Historis
+
+### Formula
+
+Dalam praktik, *covariance* dihitung dari data return historis:
+
+$$
+\text{Cov}(R_i, R_j) = \frac{1}{T-1} \sum_{t=1}^{T} (R_{i,t} - \bar{R}_i)(R_{j,t} - \bar{R}_j)
+$$
+
+### Contoh Perhitungan
+
+Data return bulanan selama 5 bulan untuk dua saham:
+
+| Bulan | Return BBCA ($R_1$) | Return TLKM ($R_2$) |
+|:-----:|:------------------:|:-------------------:|
+| 1 | 3% | 2% |
+| 2 | −1% | 1% |
+| 3 | 5% | −2% |
+| 4 | 2% | 3% |
+| 5 | 1% | 1% |
+
+**Langkah 1:** Hitung rata-rata return.
+
+$$
+\bar{R}_1 = \frac{3 + (-1) + 5 + 2 + 1}{5} = \frac{10}{5} = 2\%
+$$
+
+$$
+\bar{R}_2 = \frac{2 + 1 + (-2) + 3 + 1}{5} = \frac{5}{5} = 1\%
+$$
+
+**Langkah 2:** Hitung deviasi dan produk deviasi.
+
+| Bulan | $R_1 - \bar{R}_1$ | $R_2 - \bar{R}_2$ | Produk |
+|:-----:|:-----------------:|:-----------------:|:------:|
+| 1 | $3-2 = 1$ | $2-1 = 1$ | $1 \times 1 = 1$ |
+| 2 | $-1-2 = -3$ | $1-1 = 0$ | $-3 \times 0 = 0$ |
+| 3 | $5-2 = 3$ | $-2-1 = -3$ | $3 \times (-3) = -9$ |
+| 4 | $2-2 = 0$ | $3-1 = 2$ | $0 \times 2 = 0$ |
+| 5 | $1-2 = -1$ | $1-1 = 0$ | $-1 \times 0 = 0$ |
+| | | **Jumlah** | **−8** |
+
+**Langkah 3:** Hitung covariance.
+
+$$
+\text{Cov}(R_1, R_2) = \frac{-8}{5-1} = \frac{-8}{4} = -2{,}0 \text{ (%}^2\text{)}
+$$
+
+**Langkah 4:** Hitung variance masing-masing untuk mencari korelasi.
+
+$\sigma_1^2 = \frac{(1)^2 + (-3)^2 + (3)^2 + (0)^2 + (-1)^2}{4} = \frac{1+9+9+0+1}{4} = \frac{20}{4} = 5{,}0$
+
+$\sigma_2^2 = \frac{(1)^2 + (0)^2 + (-3)^2 + (2)^2 + (0)^2}{4} = \frac{1+0+9+4+0}{4} = \frac{14}{4} = 3{,}5$
+
+$$
+\rho_{12} = \frac{-2{,}0}{\sqrt{5{,}0} \times \sqrt{3{,}5}} = \frac{-2{,}0}{2{,}236 \times 1{,}871} = \frac{-2{,}0}{4{,}183} = -0{,}478
+$$
+
+::: {.callout-tip}
+## Interpretasi
+Covariance negatif (−2,0) dan korelasi negatif (−0,478) menunjukkan bahwa BBCA dan TLKM cenderung bergerak **berlawanan arah** dalam sampel ini. Kombinasi kedua saham ini akan memberikan **efek diversifikasi yang kuat** — risiko portofolio akan jauh di bawah rata-rata tertimbang risiko individual.
+:::
+
+> *Sumber: Reilly & Brown (2015), Ch. 7*
+
+## Ringkasan
+
+1. ***Expected return* portofolio** adalah rata-rata tertimbang *expected return* individual: $E(R_p) = \sum w_i E(R_i)$. Diversifikasi tidak memengaruhi return, hanya risiko.
+2. **Risiko portofolio** bergantung pada variance individual **dan** covariance antar aset. Risiko portofolio umumnya **lebih rendah** dari rata-rata tertimbang risiko individual.
+3. ***Covariance*** mengukur arah dan besaran hubungan antar return; ***correlation*** adalah versi terstandardisasi ($-1 \leq \rho \leq +1$).
+4. **Diversifikasi bermanfaat** selama $\rho < +1$ — tidak harus negatif. Sebagian besar manfaat tercapai dengan 20–30 saham dari berbagai sektor.
+5. ***Efficient frontier*** adalah kurva portofolio optimal dalam ruang $\sigma$–$E(R)$. Portofolio di bawah frontier adalah *inefficient*.
+6. ***Minimum Variance Portfolio*** (MVP) memiliki risiko terendah di antara semua kombinasi; bobotnya dihitung dengan formula analitik untuk kasus 2 aset.
+
+## Latihan Soal
+
+**Soal 1 — Expected Return Portofolio**
+
+Seorang investor membangun portofolio yang terdiri dari tiga reksa dana:
+
+| Reksa Dana | Bobot | Expected Return |
+|:----------:|:-----:|:--------------:|
+| Saham A | 45% | 15% |
+| Obligasi B | 35% | 8% |
+| Pasar Uang C | 20% | 5% |
+
+Hitung expected return portofolio.
+
+**Soal 2 — Variance dan Standard Deviation Portofolio**
+
+Dua saham memiliki data berikut:
+
+- Saham X: $E(R) = 12\%$, $\sigma = 18\%$
+- Saham Y: $E(R) = 8\%$, $\sigma = 12\%$
+- $\rho_{XY} = 0{,}25$
+
+Untuk portofolio dengan bobot 70% Saham X dan 30% Saham Y, hitung: (a) $E(R_p)$, (b) $\sigma_p^2$, (c) $\sigma_p$, dan (d) bandingkan $\sigma_p$ dengan rata-rata tertimbang $\sigma$ individual.
+
+**Soal 3 — Minimum Variance Portfolio**
+
+Menggunakan data Soal 2, hitung: (a) bobot MVP, (b) expected return MVP, dan (c) standard deviation MVP.
+
+**Soal 4 — Covariance dari Data Historis**
+
+Berikut return bulanan dua saham selama 6 bulan:
+
+| Bulan | Saham P | Saham Q |
+|:-----:|:-------:|:-------:|
+| 1 | 4% | −1% |
+| 2 | −2% | 3% |
+| 3 | 6% | 1% |
+| 4 | 1% | 2% |
+| 5 | −3% | 4% |
+| 6 | 6% | −1% |
+
+Hitung: (a) rata-rata return masing-masing saham, (b) variance masing-masing, (c) covariance, dan (d) koefisien korelasi. Apakah kedua saham ini cocok digabung dalam portofolio? Jelaskan.
+
+**Soal 5 — Efek Korelasi**
+
+Dua aset memiliki $\sigma_1 = 25\%$ dan $\sigma_2 = 15\%$ dengan bobot masing-masing 50%. Hitung $\sigma_p$ untuk $\rho = +1{,}0$; $+0{,}5$; $0$; $-0{,}5$; $-1{,}0$. Gambarkan kesimpulan tentang hubungan korelasi dan diversifikasi.
+
+## Referensi
+
+- Fabozzi, F. J., & Markowitz, H. M. (2011). *The Theory and Practice of Investment Management* (2nd ed.), Chapter 3. John Wiley & Sons.
+- Reilly, F. K., & Brown, K. C. (2015). *Investment Analysis and Portfolio Management* (10th ed.), Chapters 7–8. Cengage Learning.
+- Markowitz, H. (1952). Portfolio Selection. *Journal of Finance*, 7(1), 77–91.

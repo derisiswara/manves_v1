@@ -1,0 +1,78 @@
+---
+title: "Referensi"
+subtitle: "Daftar Pustaka Mata Kuliah Manajemen Investasi"
+number-sections: false
+---
+
+## Referensi Utama
+
+Berikut adalah buku-buku referensi utama yang menjadi acuan seluruh materi perkuliahan. Mahasiswa **sangat disarankan** untuk membaca chapter yang relevan sebelum setiap pertemuan.
+
+### 1. Fabozzi & Markowitz (2011)
+
+> Fabozzi, F. J., & Markowitz, H. M. (2011). *The Theory and Practice of Investment Management: Asset Allocation, Valuation, Portfolio Construction, and Strategies* (2nd ed.). John Wiley & Sons.
+
+Buku ini merupakan **rujukan utama** untuk hampir seluruh topik dalam mata kuliah ini. Ditulis oleh dua tokoh besar di bidang keuangan — Frank Fabozzi dan Harry Markowitz (penerima Nobel Ekonomi 1990 untuk teori portofolio) — buku ini mencakup landasan teori dan implementasi praktis manajemen investasi secara komprehensif.
+
+**Topik yang dicakup:** Proses manajemen investasi, kelas aset, teori portofolio, CAPM, model faktor, alokasi aset, valuasi ekuitas, manajemen portofolio kuantitatif, strategi long-short, dan derivatif.
+
+---
+
+### 2. Avramov (2015)
+
+> Avramov, D. (2015). *Investment Management*. Hebrew University of Jerusalem.
+
+Referensi pelengkap yang memberikan penjelasan mendalam tentang model *asset pricing* dan pendekatan kuantitatif dalam manajemen investasi. Sangat berguna untuk memahami derivasi matematis CAPM, APT, dan model multifaktor.
+
+**Topik yang dicakup:** CAPM, model faktor, APT, dinamika harga aset, portofolio kuantitatif.
+
+---
+
+### 3. Reilly & Brown (2015)
+
+> Reilly, F. K., & Brown, K. C. (2015). *Investment Analysis and Portfolio Management* (10th ed.). Cengage Learning.
+
+Buku teks klasik yang menyajikan teori investasi dengan pendekatan yang terstruktur dan dilengkapi banyak contoh perhitungan. Digunakan sebagai alternatif penjelasan untuk topik seleksi portofolio, valuasi saham, dan manajemen portofolio.
+
+**Topik yang dicakup:** Analisis sekuritas, seleksi portofolio, valuasi saham (DCF & relative), manajemen portofolio ekuitas, derivatif.
+
+---
+
+### 4. Smart, Gitman & Joehnk (2017)
+
+> Smart, S. B., Gitman, L. J., & Joehnk, M. D. (2017). *Fundamentals of Investing* (13th ed.). Pearson.
+
+Buku pengantar yang memberikan konteks pasar keuangan dan instrumen investasi secara accessible. Cocok sebagai bacaan pendahuluan sebelum masuk ke materi yang lebih teknis.
+
+**Topik yang dicakup:** Lingkungan investasi, instrumen pasar keuangan, reksa dana, ETF, saham biasa, dasar-dasar analisis fundamental.
+
+---
+
+## Referensi Tambahan
+
+Berikut adalah referensi tambahan yang dapat digunakan untuk memperdalam pemahaman topik tertentu:
+
+- Bodie, Z., Kane, A., & Marcus, A. J. (2021). *Investments* (12th ed.). McGraw-Hill Education.
+- Elton, E. J., Gruber, M. J., Brown, S. J., & Goetzmann, W. N. (2014). *Modern Portfolio Theory and Investment Analysis* (9th ed.). John Wiley & Sons.
+- Sharpe, W. F., Alexander, G. J., & Bailey, J. V. (1999). *Investments* (6th ed.). Prentice Hall.
+- Damodaran, A. (2012). *Investment Valuation: Tools and Techniques for Determining the Value of Any Asset* (3rd ed.). John Wiley & Sons.
+
+## Peta Referensi per Pertemuan
+
+Tabel berikut merangkum referensi utama yang digunakan di setiap pertemuan:
+
+| Pertemuan | Topik | Referensi |
+|:---------:|-------|-----------|
+| 1 | Overview Manajemen Investasi | Fabozzi & Markowitz Ch.1; Smart et al. Ch.1 |
+| 2 | Kelas Aset & Perusahaan Investasi | Fabozzi & Markowitz Ch.2; Smart et al. Ch.4–5 |
+| 3 | Seleksi Portofolio | Fabozzi & Markowitz Ch.3; Reilly & Brown Ch.7–8 |
+| 4 | CAPM | Fabozzi & Markowitz Ch.4; Avramov Ch.3–4 |
+| 5 | Model Faktor & APT | Fabozzi & Markowitz Ch.5; Avramov Ch.5 |
+| 6 | Dinamika Harga Aset | Fabozzi & Markowitz Ch.6; Avramov Ch.6 |
+| 7 | Alokasi Aset & Konstruksi Portofolio | Fabozzi & Markowitz Ch.7; Reilly & Brown Ch.16 |
+| 9 | Dasar-Dasar Saham Biasa | Fabozzi & Markowitz Ch.9; Smart et al. Ch.6 |
+| 10 | Manajemen Portofolio Ekuitas | Fabozzi & Markowitz Ch.10; Reilly & Brown Ch.16 |
+| 11 | Valuasi Saham | Fabozzi & Markowitz Ch.11; Reilly & Brown Ch.11 |
+| 12 | Portofolio Ekuitas Kuantitatif | Fabozzi & Markowitz Ch.12; Avramov Ch.7 |
+| 13 | Long-Short Equity | Fabozzi & Markowitz Ch.13 |
+| 14 | Risiko Multifaktor & Derivatif | Fabozzi & Markowitz Ch.14; Reilly & Brown Ch.20 |

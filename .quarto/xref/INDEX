@@ -1,0 +1,53 @@
+{
+  "index.qmd": {
+    "index.html": "b5c758dd"
+  },
+  "latihan/latihan-uas.qmd": {
+    "latihan-uas.html": "74185280"
+  },
+  "latihan/latihan-uts.qmd": {
+    "latihan-uts.html": "e0d84c5f"
+  },
+  "pertemuan/01-overview.qmd": {
+    "01-overview.html": "d4ba00f2"
+  },
+  "pertemuan/02-aset-investasi.qmd": {
+    "02-aset-investasi.html": "c248150e"
+  },
+  "pertemuan/03-seleksi-portofolio.qmd": {
+    "03-seleksi-portofolio.html": "b3d99c41"
+  },
+  "pertemuan/04-capm.qmd": {
+    "04-capm.html": "2f117935"
+  },
+  "pertemuan/05-model-faktor.qmd": {
+    "05-model-faktor.html": "c73ec287"
+  },
+  "pertemuan/06-dinamika-harga.qmd": {
+    "06-dinamika-harga.html": "09863d7e"
+  },
+  "pertemuan/07-alokasi-aset.qmd": {
+    "07-alokasi-aset.html": "860b0453"
+  },
+  "pertemuan/09-saham-biasa.qmd": {
+    "09-saham-biasa.html": "cf56fe89"
+  },
+  "pertemuan/10-manajemen-portofolio-ekuitas.qmd": {
+    "10-manajemen-portofolio-ekuitas.html": "e696fb81"
+  },
+  "pertemuan/11-valuasi-saham.qmd": {
+    "11-valuasi-saham.html": "581cfbd6"
+  },
+  "pertemuan/12-portofolio-kuantitatif.qmd": {
+    "12-portofolio-kuantitatif.html": "293dd503"
+  },
+  "pertemuan/13-long-short.qmd": {
+    "13-long-short.html": "f7bda443"
+  },
+  "pertemuan/14-risiko-derivatif.qmd": {
+    "14-risiko-derivatif.html": "380ea0f9"
+  },
+  "referensi.qmd": {
+    "referensi.html": "8be0691d"
+  }
+}

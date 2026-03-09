@@ -1,0 +1,2587 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="id" xml:lang="id"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Pertemuan 5: Model Faktor &amp; Pengantar Multifaktor – Manajemen Investasi — EKM 19608</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-597958c53c93a607afca12fd375c57ed.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-7ac2f9da8c2617a4fdd15004b4601015.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-597958c53c93a607afca12fd375c57ed.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-7e5b54916349f3e3ac0a4b69b610fb13.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-c249eed7ddef9cecbef6d31ce12e065b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-7e5b54916349f3e3ac0a4b69b610fb13.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Tidak ada hasil",
+    "search-matching-documents-text": "dokumen cocok",
+    "search-copy-link-title": "Salin tautan untuk mencari",
+    "search-hide-matches-text": "Sembunyikan kecocokan lainnya",
+    "search-more-match-text": "kecocokan lainnya di dokumen ini",
+    "search-more-matches-text": "kecocokan lainnya di dokumen ini",
+    "search-clear-button-title": "Hapus",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Batal",
+    "search-submit-button-title": "Kirim",
+    "search-label": "Mencari"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Manajemen Investasi — EKM 19608</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Mencari"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Alihkan navigasi" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Beranda</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-materi" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Materi</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-materi">    
+        <li>
+    <a class="dropdown-item" href="../pertemuan/01-overview.html">
+ <span class="dropdown-text">01 — Overview Manajemen Investasi</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pertemuan/02-aset-investasi.html">
+ <span class="dropdown-text">02 — Kelas Aset &amp; Perusahaan Investasi</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pertemuan/03-seleksi-portofolio.html">
+ <span class="dropdown-text">03 — Seleksi Portofolio</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pertemuan/04-capm.html">
+ <span class="dropdown-text">04 — Capital Asset Pricing Model</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pertemuan/05-model-faktor.html">
+ <span class="dropdown-text">05 — Model Faktor &amp; Pengantar Multifaktor</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pertemuan/06-dinamika-harga.html">
+ <span class="dropdown-text">06 — Dinamika Harga Aset</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pertemuan/07-alokasi-aset.html">
+ <span class="dropdown-text">07 — Alokasi Aset &amp; Konstruksi Portofolio</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../pertemuan/09-saham-biasa.html">
+ <span class="dropdown-text">09 — Dasar-Dasar Saham Biasa</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pertemuan/10-manajemen-portofolio-ekuitas.html">
+ <span class="dropdown-text">10 — Manajemen Portofolio Ekuitas</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pertemuan/11-valuasi-saham.html">
+ <span class="dropdown-text">11 — Valuasi Saham</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pertemuan/12-portofolio-kuantitatif.html">
+ <span class="dropdown-text">12 — Reksa Dana &amp; ETF</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pertemuan/13-long-short.html">
+ <span class="dropdown-text">13 — Obligasi &amp; Pendapatan Tetap</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pertemuan/14-risiko-derivatif.html">
+ <span class="dropdown-text">14 — Derivatif Ekuitas &amp; Hedging</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-latihan" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Latihan</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-latihan">    
+        <li>
+    <a class="dropdown-item" href="../latihan/latihan-uts.html">
+ <span class="dropdown-text">Latihan UTS</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../latihan/latihan-uas.html">
+ <span class="dropdown-text">Latihan UAS</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../referensi.html"> 
+<span class="menu-text">Referensi</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Alihkan mode gelap"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Di halaman ini</h2>
+   
+  <ul>
+  <li><a href="#tujuan-pembelajaran" id="toc-tujuan-pembelajaran" class="nav-link active" data-scroll-target="#tujuan-pembelajaran"><span class="header-section-number">1</span> Tujuan Pembelajaran</a></li>
+  <li><a href="#pendahuluan-mengapa-satu-faktor-tidak-cukup" id="toc-pendahuluan-mengapa-satu-faktor-tidak-cukup" class="nav-link" data-scroll-target="#pendahuluan-mengapa-satu-faktor-tidak-cukup"><span class="header-section-number">2</span> Pendahuluan: Mengapa Satu Faktor Tidak Cukup?</a></li>
+  <li><a href="#model-faktor-tunggal-market-model" id="toc-model-faktor-tunggal-market-model" class="nav-link" data-scroll-target="#model-faktor-tunggal-market-model"><span class="header-section-number">3</span> Model Faktor Tunggal (<em>Market Model</em>)</a>
+  <ul class="collapse">
+  <li><a href="#konsep" id="toc-konsep" class="nav-link" data-scroll-target="#konsep"><span class="header-section-number">3.1</span> Konsep</a></li>
+  <li><a href="#dekomposisi-risiko" id="toc-dekomposisi-risiko" class="nav-link" data-scroll-target="#dekomposisi-risiko"><span class="header-section-number">3.2</span> Dekomposisi Risiko</a></li>
+  <li><a href="#contoh-perhitungan-dekomposisi-risiko" id="toc-contoh-perhitungan-dekomposisi-risiko" class="nav-link" data-scroll-target="#contoh-perhitungan-dekomposisi-risiko"><span class="header-section-number">3.3</span> Contoh Perhitungan — Dekomposisi Risiko</a></li>
+  <li><a href="#contoh-lain-saham-dengan-r2-berbeda" id="toc-contoh-lain-saham-dengan-r2-berbeda" class="nav-link" data-scroll-target="#contoh-lain-saham-dengan-r2-berbeda"><span class="header-section-number">3.4</span> Contoh Lain — Saham dengan <span class="math inline">\(R^2\)</span> Berbeda</a></li>
+  </ul></li>
+  <li><a href="#keunggulan-market-model-dalam-praktik" id="toc-keunggulan-market-model-dalam-praktik" class="nav-link" data-scroll-target="#keunggulan-market-model-dalam-praktik"><span class="header-section-number">4</span> Keunggulan Market Model dalam Praktik</a></li>
+  <li><a href="#model-multifaktor-ide-dasar" id="toc-model-multifaktor-ide-dasar" class="nav-link" data-scroll-target="#model-multifaktor-ide-dasar"><span class="header-section-number">5</span> Model Multifaktor: Ide Dasar</a>
+  <ul class="collapse">
+  <li><a href="#motivasi" id="toc-motivasi" class="nav-link" data-scroll-target="#motivasi"><span class="header-section-number">5.1</span> Motivasi</a></li>
+  <li><a href="#fama-french-three-factor-model-1993" id="toc-fama-french-three-factor-model-1993" class="nav-link" data-scroll-target="#fama-french-three-factor-model-1993"><span class="header-section-number">5.2</span> Fama-French Three-Factor Model (1993)</a></li>
+  <li><a href="#contoh-perhitungan-expected-return-dengan-ff-three-factor" id="toc-contoh-perhitungan-expected-return-dengan-ff-three-factor" class="nav-link" data-scroll-target="#contoh-perhitungan-expected-return-dengan-ff-three-factor"><span class="header-section-number">5.3</span> Contoh Perhitungan — Expected Return dengan FF Three-Factor</a></li>
+  </ul></li>
+  <li><a href="#ringkasan" id="toc-ringkasan" class="nav-link" data-scroll-target="#ringkasan"><span class="header-section-number">6</span> Ringkasan</a></li>
+  <li><a href="#latihan-soal" id="toc-latihan-soal" class="nav-link" data-scroll-target="#latihan-soal"><span class="header-section-number">7</span> Latihan Soal</a></li>
+  <li><a href="#referensi" id="toc-referensi" class="nav-link" data-scroll-target="#referensi"><span class="header-section-number">8</span> Referensi</a></li>
+  <li><a href="#tujuan-pembelajaran-1" id="toc-tujuan-pembelajaran-1" class="nav-link" data-scroll-target="#tujuan-pembelajaran-1"><span class="header-section-number">9</span> Tujuan Pembelajaran</a></li>
+  <li><a href="#pendahuluan-keterbatasan-capm-dan-kebutuhan-model-faktor" id="toc-pendahuluan-keterbatasan-capm-dan-kebutuhan-model-faktor" class="nav-link" data-scroll-target="#pendahuluan-keterbatasan-capm-dan-kebutuhan-model-faktor"><span class="header-section-number">10</span> Pendahuluan: Keterbatasan CAPM dan Kebutuhan Model Faktor</a></li>
+  <li><a href="#model-faktor-tunggal-single-factor-model" id="toc-model-faktor-tunggal-single-factor-model" class="nav-link" data-scroll-target="#model-faktor-tunggal-single-factor-model"><span class="header-section-number">11</span> Model Faktor Tunggal (<em>Single-Factor Model</em>)</a>
+  <ul class="collapse">
+  <li><a href="#konsep-1" id="toc-konsep-1" class="nav-link" data-scroll-target="#konsep-1"><span class="header-section-number">11.1</span> Konsep</a></li>
+  <li><a href="#formula" id="toc-formula" class="nav-link" data-scroll-target="#formula"><span class="header-section-number">11.2</span> Formula</a></li>
+  <li><a href="#dekomposisi-risiko-dalam-market-model" id="toc-dekomposisi-risiko-dalam-market-model" class="nav-link" data-scroll-target="#dekomposisi-risiko-dalam-market-model"><span class="header-section-number">11.3</span> Dekomposisi Risiko dalam Market Model</a></li>
+  <li><a href="#contoh-perhitungan" id="toc-contoh-perhitungan" class="nav-link" data-scroll-target="#contoh-perhitungan"><span class="header-section-number">11.4</span> Contoh Perhitungan</a></li>
+  <li><a href="#penyederhanaan-perhitungan-portofolio" id="toc-penyederhanaan-perhitungan-portofolio" class="nav-link" data-scroll-target="#penyederhanaan-perhitungan-portofolio"><span class="header-section-number">11.5</span> Penyederhanaan Perhitungan Portofolio</a></li>
+  </ul></li>
+  <li><a href="#model-multifaktor" id="toc-model-multifaktor" class="nav-link" data-scroll-target="#model-multifaktor"><span class="header-section-number">12</span> Model Multifaktor</a>
+  <ul class="collapse">
+  <li><a href="#konsep-2" id="toc-konsep-2" class="nav-link" data-scroll-target="#konsep-2"><span class="header-section-number">12.1</span> Konsep</a></li>
+  <li><a href="#fama-french-three-factor-model" id="toc-fama-french-three-factor-model" class="nav-link" data-scroll-target="#fama-french-three-factor-model"><span class="header-section-number">12.2</span> Fama-French Three-Factor Model</a></li>
+  <li><a href="#contoh-perhitungan-expected-return-multifaktor" id="toc-contoh-perhitungan-expected-return-multifaktor" class="nav-link" data-scroll-target="#contoh-perhitungan-expected-return-multifaktor"><span class="header-section-number">12.3</span> Contoh Perhitungan — Expected Return Multifaktor</a></li>
+  <li><a href="#ekstensi-fama-french-five-factor-model-carhart" id="toc-ekstensi-fama-french-five-factor-model-carhart" class="nav-link" data-scroll-target="#ekstensi-fama-french-five-factor-model-carhart"><span class="header-section-number">12.4</span> Ekstensi: Fama-French Five-Factor Model &amp; Carhart</a></li>
+  </ul></li>
+  <li><a href="#arbitrage-pricing-theory-apt" id="toc-arbitrage-pricing-theory-apt" class="nav-link" data-scroll-target="#arbitrage-pricing-theory-apt"><span class="header-section-number">13</span> Arbitrage Pricing Theory (APT)</a>
+  <ul class="collapse">
+  <li><a href="#konsep-3" id="toc-konsep-3" class="nav-link" data-scroll-target="#konsep-3"><span class="header-section-number">13.1</span> Konsep</a></li>
+  <li><a href="#formula-apt" id="toc-formula-apt" class="nav-link" data-scroll-target="#formula-apt"><span class="header-section-number">13.2</span> Formula APT</a></li>
+  <li><a href="#perbedaan-apt-vs.-capm" id="toc-perbedaan-apt-vs.-capm" class="nav-link" data-scroll-target="#perbedaan-apt-vs.-capm"><span class="header-section-number">13.3</span> Perbedaan APT vs.&nbsp;CAPM</a></li>
+  <li><a href="#contoh-perhitungan-apt" id="toc-contoh-perhitungan-apt" class="nav-link" data-scroll-target="#contoh-perhitungan-apt"><span class="header-section-number">13.4</span> Contoh Perhitungan APT</a></li>
+  </ul></li>
+  <li><a href="#argumen-no-arbitrage" id="toc-argumen-no-arbitrage" class="nav-link" data-scroll-target="#argumen-no-arbitrage"><span class="header-section-number">14</span> Argumen No-Arbitrage</a>
+  <ul class="collapse">
+  <li><a href="#konsep-arbitrase" id="toc-konsep-arbitrase" class="nav-link" data-scroll-target="#konsep-arbitrase"><span class="header-section-number">14.1</span> Konsep Arbitrase</a></li>
+  <li><a href="#contoh-pelanggaran-apt" id="toc-contoh-pelanggaran-apt" class="nav-link" data-scroll-target="#contoh-pelanggaran-apt"><span class="header-section-number">14.2</span> Contoh Pelanggaran APT</a></li>
+  </ul></li>
+  <li><a href="#ringkasan-1" id="toc-ringkasan-1" class="nav-link" data-scroll-target="#ringkasan-1"><span class="header-section-number">15</span> Ringkasan</a></li>
+  <li><a href="#latihan-soal-1" id="toc-latihan-soal-1" class="nav-link" data-scroll-target="#latihan-soal-1"><span class="header-section-number">16</span> Latihan Soal</a></li>
+  <li><a href="#referensi-1" id="toc-referensi-1" class="nav-link" data-scroll-target="#referensi-1"><span class="header-section-number">17</span> Referensi</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title">Pertemuan 5: Model Faktor &amp; Pengantar Multifaktor</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Kode</button></div></div>
+<p class="subtitle lead">Manajemen Investasi — EKM 19608</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="tujuan-pembelajaran" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="tujuan-pembelajaran"><span class="header-section-number">1</span> Tujuan Pembelajaran</h2>
+<p>Setelah mengikuti pertemuan ini, mahasiswa diharapkan mampu:</p>
+<ol type="1">
+<li>Menjelaskan konsep <em>market model</em> (model faktor tunggal) dan kegunaannya.</li>
+<li>Mendekomposisi return aset menjadi komponen sistematis dan komponen spesifik perusahaan.</li>
+<li>Menghitung proporsi risiko sistematis dan idiosinkratik suatu saham.</li>
+<li>Menjelaskan mengapa CAPM satu faktor mungkin tidak cukup untuk menjelaskan return.</li>
+<li>Memahami prinsip dasar model multifaktor Fama-French secara konseptual.</li>
+</ol>
+</section>
+<section id="pendahuluan-mengapa-satu-faktor-tidak-cukup" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="pendahuluan-mengapa-satu-faktor-tidak-cukup"><span class="header-section-number">2</span> Pendahuluan: Mengapa Satu Faktor Tidak Cukup?</h2>
+<p>Di <a href="../pertemuan/04-capm.html">Pertemuan 4</a>, kita belajar bahwa CAPM menggunakan <strong>satu faktor risiko</strong> — return pasar — untuk menjelaskan expected return. Meskipun CAPM sederhana dan elegan, bukti empiris menunjukkan bahwa beta pasar saja tidak sepenuhnya menjelaskan perbedaan return antar saham.</p>
+<p>Dua anomali terkenal yang sulit dijelaskan oleh CAPM:</p>
+<ol type="1">
+<li><strong>Efek ukuran (<em>size effect</em>)</strong>: Saham perusahaan kecil (<em>small-cap</em>) cenderung memberikan return lebih tinggi daripada yang diprediksi CAPM.</li>
+<li><strong>Efek nilai (<em>value effect</em>)</strong>: Saham “murah” (P/B rendah, P/E rendah) cenderung <em>outperform</em> saham “mahal” (<em>growth stocks</em>).</li>
+</ol>
+<p>Temuan ini mendorong para ahli untuk mengembangkan model yang menggunakan <strong>lebih dari satu faktor risiko</strong>.</p>
+<blockquote class="blockquote">
+<p><em>Sumber: Fabozzi &amp; Markowitz (2011), Ch. 5</em></p>
+</blockquote>
+</section>
+<section id="model-faktor-tunggal-market-model" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="model-faktor-tunggal-market-model"><span class="header-section-number">3</span> Model Faktor Tunggal (<em>Market Model</em>)</h2>
+<section id="konsep" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="konsep"><span class="header-section-number">3.1</span> Konsep</h3>
+<p><em>Market model</em> adalah versi paling sederhana dari model faktor. Model ini menyatakan bahwa return suatu saham dipengaruhi oleh <strong>satu faktor bersama</strong> — return pasar — ditambah komponen yang unik untuk saham tersebut.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Penting</span>Formula Kunci — Market Model
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span class="math display">\[
+R_i = \alpha_i + \beta_i R_m + \varepsilon_i
+\]</span></p>
+<p>di mana:</p>
+<ul>
+<li><span class="math inline">\(R_i\)</span> = return saham ke-<span class="math inline">\(i\)</span></li>
+<li><span class="math inline">\(\alpha_i\)</span> = <em>intercept</em> (return rata-rata saat return pasar = 0)</li>
+<li><span class="math inline">\(\beta_i\)</span> = sensitivitas terhadap pasar (beta, sama seperti CAPM)</li>
+<li><span class="math inline">\(R_m\)</span> = return pasar</li>
+<li><span class="math inline">\(\varepsilon_i\)</span> = komponen spesifik perusahaan (<em>error term</em>), dengan <span class="math inline">\(E(\varepsilon_i) = 0\)</span></li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Catatan</span>Market Model vs.&nbsp;CAPM
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Keduanya menggunakan beta, tetapi <strong>berbeda secara konseptual</strong>:</p>
+<ul>
+<li><strong>CAPM</strong> adalah model <em>ekuilibrium</em> — menjelaskan berapa <em>expected return</em> yang <em>seharusnya</em> diterima investor.</li>
+<li><strong>Market model</strong> adalah model <em>deskriptif/statistik</em> — menjelaskan bagaimana return aktual suatu saham <em>bergerak</em> relatif terhadap pasar.</li>
+</ul>
+<p>Dalam praktik, beta yang digunakan sama, namun tujuannya berbeda.</p>
+</div>
+</div>
+</section>
+<section id="dekomposisi-risiko" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="dekomposisi-risiko"><span class="header-section-number">3.2</span> Dekomposisi Risiko</h3>
+<p>Dengan market model, total variance saham dapat dipisah menjadi dua komponen:</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Penting</span>Formula Kunci — Dekomposisi Risiko
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span class="math display">\[
+\underbrace{\sigma_i^2}_{\text{Total Risk}} = \underbrace{\beta_i^2 \sigma_m^2}_{\text{Systematic Risk}} + \underbrace{\sigma_{\varepsilon_i}^2}_{\text{Idiosyncratic Risk}}
+\]</span></p>
+</div>
+</div>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 19%">
+<col style="width: 15%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Komponen</th>
+<th>Nama Lain</th>
+<th>Sumber</th>
+<th style="text-align: center;">Dapat Didiversifikasi?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(\beta_i^2 \sigma_m^2\)</span></td>
+<td><em>Systematic / Market Risk</em></td>
+<td>Faktor makro: suku bunga, GDP, inflasi</td>
+<td style="text-align: center;">❌ Tidak</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\sigma_{\varepsilon_i}^2\)</span></td>
+<td><em>Idiosyncratic / Specific Risk</em></td>
+<td>Faktor spesifik: manajemen, produk, kompetitor</td>
+<td style="text-align: center;">✅ Ya</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Proporsi risiko sistematis</strong> diukur oleh <span class="math inline">\(R^2\)</span>:</p>
+<p><span class="math display">\[
+R^2 = \frac{\beta_i^2 \sigma_m^2}{\sigma_i^2}
+\]</span></p>
+<p>Semakin tinggi <span class="math inline">\(R^2\)</span>, semakin besar pergerakan saham “mengikuti” pasar.</p>
+</section>
+<section id="contoh-perhitungan-dekomposisi-risiko" class="level3" data-number="3.3">
+<h3 data-number="3.3" class="anchored" data-anchor-id="contoh-perhitungan-dekomposisi-risiko"><span class="header-section-number">3.3</span> Contoh Perhitungan — Dekomposisi Risiko</h3>
+<p>Saham BBCA memiliki: <span class="math inline">\(\beta = 1{,}2\)</span>, <span class="math inline">\(\sigma_m = 15\%\)</span> (volatilitas pasar), dan <span class="math inline">\(\sigma_\varepsilon = 18\%\)</span> (risiko spesifik).</p>
+<p><strong>Langkah 1:</strong> Hitung risiko sistematis.</p>
+<p><span class="math display">\[
+\beta^2 \sigma_m^2 = (1{,}2)^2 (0{,}15)^2 = (1{,}44)(0{,}0225) = 0{,}0324
+\]</span></p>
+<p><strong>Langkah 2:</strong> Hitung risiko idiosinkratik.</p>
+<p><span class="math display">\[
+\sigma_\varepsilon^2 = (0{,}18)^2 = 0{,}0324
+\]</span></p>
+<p><strong>Langkah 3:</strong> Hitung total risiko.</p>
+<p><span class="math display">\[
+\sigma_i^2 = 0{,}0324 + 0{,}0324 = 0{,}0648
+\]</span></p>
+<p><span class="math display">\[
+\sigma_i = \sqrt{0{,}0648} = 0{,}2546 = 25{,}46\%
+\]</span></p>
+<p><strong>Langkah 4:</strong> Hitung <span class="math inline">\(R^2\)</span>.</p>
+<p><span class="math display">\[
+R^2 = \frac{0{,}0324}{0{,}0648} = 0{,}50 = 50\%
+\]</span></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Interpretasi
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Sebesar 50% variasi return BBCA dijelaskan oleh pergerakan pasar, dan 50% sisanya berasal dari faktor spesifik perusahaan. Karena <span class="math inline">\(R^2\)</span> tidak terlalu tinggi, BBCA masih memiliki komponen idiosinkratik yang cukup besar — menunjukkan bahwa saham ini tidak sekadar mengikuti pasar.</p>
+</div>
+</div>
+</section>
+<section id="contoh-lain-saham-dengan-r2-berbeda" class="level3" data-number="3.4">
+<h3 data-number="3.4" class="anchored" data-anchor-id="contoh-lain-saham-dengan-r2-berbeda"><span class="header-section-number">3.4</span> Contoh Lain — Saham dengan <span class="math inline">\(R^2\)</span> Berbeda</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 10%">
+<col style="width: 16%">
+<col style="width: 27%">
+<col style="width: 14%">
+<col style="width: 9%">
+<col style="width: 12%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Saham</th>
+<th style="text-align: center;"><span class="math inline">\(\beta\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(\sigma_m\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(\sigma_\varepsilon\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(\sigma_i\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(R^2\)</span></th>
+<th>Karakter</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">TLKM</td>
+<td style="text-align: center;">0,7</td>
+<td style="text-align: center;">15%</td>
+<td style="text-align: center;">10%</td>
+<td style="text-align: center;">17,46%</td>
+<td style="text-align: center;">36%</td>
+<td>Lebih dipengaruhi faktor spesifik</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">BBRI</td>
+<td style="text-align: center;">1,3</td>
+<td style="text-align: center;">15%</td>
+<td style="text-align: center;">12%</td>
+<td style="text-align: center;">22,47%</td>
+<td style="text-align: center;">71%</td>
+<td>Lebih mengikuti pasar</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">UNVR</td>
+<td style="text-align: center;">0,4</td>
+<td style="text-align: center;">15%</td>
+<td style="text-align: center;">20%</td>
+<td style="text-align: center;">20,59%</td>
+<td style="text-align: center;">9%</td>
+<td>Sangat dipengaruhi faktor spesifik</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Catatan</span>Implikasi untuk Diversifikasi
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Saham dengan <span class="math inline">\(R^2\)</span> rendah (seperti UNVR di atas) memiliki banyak <em>idiosyncratic risk</em> yang bisa dieliminasi melalui diversifikasi. Setelah portofolio cukup terdiversifikasi, hanya <strong>systematic risk</strong> (<span class="math inline">\(\beta^2 \sigma_m^2\)</span>) yang tersisa.</p>
+</div>
+</div>
+<blockquote class="blockquote">
+<p><em>Sumber: Fabozzi &amp; Markowitz (2011), Ch. 5</em></p>
+</blockquote>
+</section>
+</section>
+<section id="keunggulan-market-model-dalam-praktik" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="keunggulan-market-model-dalam-praktik"><span class="header-section-number">4</span> Keunggulan Market Model dalam Praktik</h2>
+<p>Market model juga <strong>menyederhanakan perhitungan covariance</strong> antar saham:</p>
+<p><span class="math display">\[
+\text{Cov}(R_i, R_j) = \beta_i \beta_j \sigma_m^2
+\]</span></p>
+<p>Artinya, covariance antara dua saham bisa diestimasi hanya dari <strong>beta masing-masing dan variance pasar</strong> — tanpa perlu menghitung langsung dari data historis.</p>
+<p><strong>Contoh:</strong></p>
+<ul>
+<li><span class="math inline">\(\beta_{\text{BBCA}} = 1{,}2\)</span>, <span class="math inline">\(\beta_{\text{TLKM}} = 0{,}7\)</span>, <span class="math inline">\(\sigma_m = 15\%\)</span></li>
+<li><span class="math inline">\(\text{Cov}(\text{BBCA}, \text{TLKM}) = (1{,}2)(0{,}7)(0{,}15)^2 = (1{,}2)(0{,}7)(0{,}0225) = 0{,}0189\)</span></li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Manfaat Praktis
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Untuk portofolio 50 saham, mengestimasi covariance secara langsung memerlukan 1.225 estimasi. Dengan market model, hanya perlu 50 beta + 1 variance pasar = <strong>51 parameter</strong>. Jauh lebih efisien.</p>
+</div>
+</div>
+<blockquote class="blockquote">
+<p><em>Sumber: Fabozzi &amp; Markowitz (2011), Ch. 5</em></p>
+</blockquote>
+</section>
+<section id="model-multifaktor-ide-dasar" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="model-multifaktor-ide-dasar"><span class="header-section-number">5</span> Model Multifaktor: Ide Dasar</h2>
+<section id="motivasi" class="level3" data-number="5.1">
+<h3 data-number="5.1" class="anchored" data-anchor-id="motivasi"><span class="header-section-number">5.1</span> Motivasi</h3>
+<p>Model multifaktor memperluas <em>market model</em> dengan menambahkan faktor risiko lain selain return pasar:</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Penting</span>Formula Kunci — Model Multifaktor
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span class="math display">\[
+R_i = \alpha_i + \beta_{i,1} F_1 + \beta_{i,2} F_2 + \cdots + \beta_{i,K} F_K + \varepsilon_i
+\]</span></p>
+<p>di mana <span class="math inline">\(F_k\)</span> adalah faktor risiko ke-<span class="math inline">\(k\)</span> dan <span class="math inline">\(\beta_{i,k}\)</span> adalah sensitivitas saham <span class="math inline">\(i\)</span> terhadap faktor <span class="math inline">\(k\)</span>.</p>
+</div>
+</div>
+</section>
+<section id="fama-french-three-factor-model-1993" class="level3" data-number="5.2">
+<h3 data-number="5.2" class="anchored" data-anchor-id="fama-french-three-factor-model-1993"><span class="header-section-number">5.2</span> Fama-French Three-Factor Model (1993)</h3>
+<p>Model multifaktor paling terkenal adalah model tiga faktor Fama &amp; French:</p>
+<p><span class="math display">\[
+R_i - R_f = \alpha_i + \beta_{i,\text{MKT}}(R_m - R_f) + \beta_{i,\text{SMB}} \cdot SMB + \beta_{i,\text{HML}} \cdot HML + \varepsilon_i
+\]</span></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 26%">
+<col style="width: 23%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Faktor</th>
+<th>Singkatan</th>
+<th>Definisi</th>
+<th>Interpretasi</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Return pasar</td>
+<td>MKT</td>
+<td><span class="math inline">\(R_m - R_f\)</span></td>
+<td>Premi atas risiko pasar (sama seperti CAPM)</td>
+</tr>
+<tr class="even">
+<td><em>Small Minus Big</em></td>
+<td>SMB</td>
+<td>Return saham kecil − return saham besar</td>
+<td>Premi atas risiko ukuran perusahaan</td>
+</tr>
+<tr class="odd">
+<td><em>High Minus Low</em></td>
+<td>HML</td>
+<td>Return <em>value stocks</em> − return <em>growth stocks</em></td>
+<td>Premi atas risiko “nilai”</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Catatan</span>Intuisi Ekonomi
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Mengapa <em>small-cap</em> dan <em>value stocks</em> mendapat premi lebih tinggi?</p>
+<ol type="1">
+<li><strong>Penjelasan risiko</strong>: Perusahaan kecil dan perusahaan dengan rasio nilai buku tinggi lebih rentan dalam kondisi ekonomi buruk — investor meminta kompensasi lebih tinggi.</li>
+<li><strong>Penjelasan perilaku</strong>: Investor cenderung mengabaikan saham “membosankan” yang murah, sehingga harganya terdepresi di bawah nilai wajar dan menawarkan return lebih tinggi.</li>
+</ol>
+</div>
+</div>
+</section>
+<section id="contoh-perhitungan-expected-return-dengan-ff-three-factor" class="level3" data-number="5.3">
+<h3 data-number="5.3" class="anchored" data-anchor-id="contoh-perhitungan-expected-return-dengan-ff-three-factor"><span class="header-section-number">5.3</span> Contoh Perhitungan — Expected Return dengan FF Three-Factor</h3>
+<p>Diketahui: - <span class="math inline">\(R_f = 5\%\)</span> - <span class="math inline">\(E(R_m - R_f) = 7\%\)</span>, <span class="math inline">\(E(SMB) = 3\%\)</span>, <span class="math inline">\(E(HML) = 4\%\)</span></p>
+<p>Saham PT Maju Jaya: <span class="math inline">\(\beta_{\text{MKT}} = 1{,}1\)</span>, <span class="math inline">\(\beta_{\text{SMB}} = 0{,}8\)</span>, <span class="math inline">\(\beta_{\text{HML}} = 0{,}5\)</span></p>
+<p><span class="math display">\[
+E(R) = 5\% + (1{,}1)(7\%) + (0{,}8)(3\%) + (0{,}5)(4\%) = 5\% + 7{,}7\% + 2{,}4\% + 2{,}0\% = 17{,}1\%
+\]</span></p>
+<p><strong>Bandingkan CAPM:</strong> <span class="math inline">\(E(R)_{\text{CAPM}} = 5\% + 1{,}1 \times 7\% = 12{,}7\%\)</span></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Interpretasi
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Model Fama-French menghasilkan 17,1% vs CAPM 12,7%. Selisihnya besar karena saham ini <em>small-cap</em> (<span class="math inline">\(\beta_{\text{SMB}} = 0{,}8\)</span>) dan <em>value stock</em> (<span class="math inline">\(\beta_{\text{HML}} = 0{,}5\)</span>) — dua karakteristik yang membawa premi risiko tambahan yang tidak ditangkap CAPM.</p>
+</div>
+</div>
+<blockquote class="blockquote">
+<p><em>Sumber: Fabozzi &amp; Markowitz (2011), Ch. 5; Fama &amp; French (1993)</em></p>
+</blockquote>
+</section>
+</section>
+<section id="ringkasan" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="ringkasan"><span class="header-section-number">6</span> Ringkasan</h2>
+<ol type="1">
+<li><strong><em>Market model</em></strong> (<span class="math inline">\(R_i = \alpha_i + \beta_i R_m + \varepsilon_i\)</span>) mendekomposisi return menjadi komponen sistematis dan idiosinkratik.</li>
+<li><strong>Total risiko</strong> = Risiko sistematis (<span class="math inline">\(\beta^2\sigma_m^2\)</span>) + Risiko idiosinkratik (<span class="math inline">\(\sigma_\varepsilon^2\)</span>). Hanya sistematis yang tidak terdiversifikasi.</li>
+<li><strong><span class="math inline">\(R^2\)</span></strong> = <span class="math inline">\(\beta^2\sigma_m^2 / \sigma_i^2\)</span> mengukur seberapa besar suatu saham “mengikuti” pergerakan pasar.</li>
+<li><strong>Market model menyederhanakan covariance</strong>: <span class="math inline">\(\text{Cov}(R_i, R_j) = \beta_i \beta_j \sigma_m^2\)</span>.</li>
+<li><strong>Model Fama-French</strong> menambahkan faktor <em>size</em> (SMB) dan <em>value</em> (HML) — memberikan estimasi expected return yang lebih akurat dari CAPM untuk saham <em>small-cap</em> dan <em>value stocks</em>.</li>
+</ol>
+</section>
+<section id="latihan-soal" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="latihan-soal"><span class="header-section-number">7</span> Latihan Soal</h2>
+<p><strong>Soal 1 — Dekomposisi Risiko</strong></p>
+<p>Saham ASII memiliki <span class="math inline">\(\beta = 1{,}1\)</span>, <span class="math inline">\(\sigma_m = 16\%\)</span>, dan <span class="math inline">\(\sigma_\varepsilon = 20\%\)</span>. Hitung: (a) risiko sistematis, (b) total variance dan standard deviation, (c) <span class="math inline">\(R^2\)</span>. Jelaskan artinya.</p>
+<p><strong>Soal 2 — Perbandingan Saham</strong></p>
+<p>Dua saham memiliki data berikut (<span class="math inline">\(\sigma_m = 15\%\)</span>):</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Saham</th>
+<th style="text-align: center;"><span class="math inline">\(\beta\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(\sigma_\varepsilon\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">P</td>
+<td style="text-align: center;">1,5</td>
+<td style="text-align: center;">15%</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Q</td>
+<td style="text-align: center;">0,6</td>
+<td style="text-align: center;">25%</td>
+</tr>
+</tbody>
+</table>
+<p>Hitung: (a) total risk masing-masing, (b) <span class="math inline">\(R^2\)</span> masing-masing, (c) saham mana yang lebih cocok untuk investor yang sudah memiliki portofolio terdiversifikasi? Jelaskan.</p>
+<p><strong>Soal 3 — Covariance via Market Model</strong></p>
+<p>Diketahui: <span class="math inline">\(\beta_{\text{BBCA}} = 1{,}2\)</span>, <span class="math inline">\(\beta_{\text{BBRI}} = 1{,}4\)</span>, <span class="math inline">\(\beta_{\text{TLKM}} = 0{,}6\)</span>, <span class="math inline">\(\sigma_m = 15\%\)</span>. Hitung covariance antara: (a) BBCA dan BBRI, (b) BBCA dan TLKM, (c) BBRI dan TLKM. Pasangan saham mana yang paling saling terkait?</p>
+<p><strong>Soal 4 — Expected Return Fama-French</strong></p>
+<p>Diketahui: <span class="math inline">\(R_f = 4\%\)</span>, <span class="math inline">\(E(R_m - R_f) = 6\%\)</span>, <span class="math inline">\(E(SMB) = 3{,}5\%\)</span>, <span class="math inline">\(E(HML) = 4{,}5\%\)</span>.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 30%">
+<col style="width: 30%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Saham</th>
+<th style="text-align: center;"><span class="math inline">\(\beta_{\text{MKT}}\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(\beta_{\text{SMB}}\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(\beta_{\text{HML}}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">0,8</td>
+<td style="text-align: center;">−0,3</td>
+<td style="text-align: center;">1,2</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Y</td>
+<td style="text-align: center;">1,2</td>
+<td style="text-align: center;">0,9</td>
+<td style="text-align: center;">−0,2</td>
+</tr>
+</tbody>
+</table>
+<ol type="a">
+<li>Hitung expected return masing-masing menurut Fama-French. (b) Hitung expected return menurut CAPM. (c) Saham mana yang paling besar selisihnya? Mengapa?</li>
+</ol>
+</section>
+<section id="referensi" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="referensi"><span class="header-section-number">8</span> Referensi</h2>
+<ul>
+<li>Fabozzi, F. J., &amp; Markowitz, H. M. (2011). <em>The Theory and Practice of Investment Management</em> (2nd ed.), Chapter 5. John Wiley &amp; Sons.</li>
+<li>Fama, E. F., &amp; French, K. R. (1993). Common Risk Factors in the Returns on Stocks and Bonds. <em>Journal of Financial Economics</em>, 33(1), 3–56.</li>
+<li>Reilly, F. K., &amp; Brown, K. C. (2015). <em>Investment Analysis and Portfolio Management</em> (10th ed.), Chapter 9. Cengage Learning.</li>
+</ul>
+</section>
+<section id="tujuan-pembelajaran-1" class="level2" data-number="9">
+<h2 data-number="9" class="anchored" data-anchor-id="tujuan-pembelajaran-1"><span class="header-section-number">9</span> Tujuan Pembelajaran</h2>
+<p>Setelah mengikuti pertemuan ini, mahasiswa diharapkan mampu:</p>
+<ol type="1">
+<li>Menjelaskan konsep model faktor tunggal (<em>single-factor model</em>) dan hubungannya dengan CAPM.</li>
+<li>Mendekomposisi return aset menjadi komponen sistematis dan idiosinkratik.</li>
+<li>Memahami dan menerapkan model multifaktor (Fama-French Three-Factor Model).</li>
+<li>Menjelaskan prinsip dasar <em>Arbitrage Pricing Theory</em> (APT) dan perbedaannya dengan CAPM.</li>
+<li>Menghitung <em>expected return</em> menggunakan model multifaktor.</li>
+</ol>
+</section>
+<section id="pendahuluan-keterbatasan-capm-dan-kebutuhan-model-faktor" class="level2" data-number="10">
+<h2 data-number="10" class="anchored" data-anchor-id="pendahuluan-keterbatasan-capm-dan-kebutuhan-model-faktor"><span class="header-section-number">10</span> Pendahuluan: Keterbatasan CAPM dan Kebutuhan Model Faktor</h2>
+<p>Di <a href="../pertemuan/04-capm.html">Pertemuan 4</a>, kita mempelajari bahwa CAPM menggunakan <strong>satu faktor risiko</strong> — return portofolio pasar — untuk menjelaskan <em>expected return</em>. Namun bukti empiris menunjukkan bahwa satu faktor saja tidak cukup. Fama &amp; French (1993) mendokumentasikan bahwa:</p>
+<ul>
+<li>Saham <strong>berkapitalisasi kecil</strong> (<em>small-cap</em>) cenderung menghasilkan return lebih tinggi dari prediksi CAPM.</li>
+<li>Saham <strong>bernilai</strong> (<em>value stocks</em>, P/B rendah) cenderung <em>outperform</em> saham <em>growth</em>.</li>
+</ul>
+<p>Temuan ini memotivasi pengembangan <strong>model multifaktor</strong> — model yang menggunakan beberapa sumber risiko sistematis untuk menjelaskan <em>expected return</em> secara lebih akurat.</p>
+<blockquote class="blockquote">
+<p><em>Sumber: Fabozzi &amp; Markowitz (2011), Ch. 5; Avramov (2015), Ch. 5</em></p>
+</blockquote>
+</section>
+<section id="model-faktor-tunggal-single-factor-model" class="level2" data-number="11">
+<h2 data-number="11" class="anchored" data-anchor-id="model-faktor-tunggal-single-factor-model"><span class="header-section-number">11</span> Model Faktor Tunggal (<em>Single-Factor Model</em>)</h2>
+<section id="konsep-1" class="level3" data-number="11.1">
+<h3 data-number="11.1" class="anchored" data-anchor-id="konsep-1"><span class="header-section-number">11.1</span> Konsep</h3>
+<p>Model faktor tunggal — sering disebut <strong><em>market model</em></strong> — mengasumsikan bahwa return suatu aset dipengaruhi oleh <strong>satu faktor bersama</strong> (biasanya return pasar) ditambah komponen spesifik perusahaan.</p>
+</section>
+<section id="formula" class="level3" data-number="11.2">
+<h3 data-number="11.2" class="anchored" data-anchor-id="formula"><span class="header-section-number">11.2</span> Formula</h3>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Penting</span>Formula Kunci — Market Model
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span class="math display">\[
+R_i = \alpha_i + \beta_i R_m + \varepsilon_i
+\]</span></p>
+<p>di mana:</p>
+<ul>
+<li><span class="math inline">\(R_i\)</span> = return aktual aset ke-<span class="math inline">\(i\)</span></li>
+<li><span class="math inline">\(\alpha_i\)</span> = <em>intercept</em> (return saat <span class="math inline">\(R_m = 0\)</span>)</li>
+<li><span class="math inline">\(\beta_i\)</span> = sensitivitas terhadap faktor pasar</li>
+<li><span class="math inline">\(R_m\)</span> = return pasar (faktor tunggal)</li>
+<li><span class="math inline">\(\varepsilon_i\)</span> = <em>error term</em> (komponen idiosinkratik), dengan <span class="math inline">\(E(\varepsilon_i) = 0\)</span> dan <span class="math inline">\(\text{Cov}(\varepsilon_i, R_m) = 0\)</span></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="dekomposisi-risiko-dalam-market-model" class="level3" data-number="11.3">
+<h3 data-number="11.3" class="anchored" data-anchor-id="dekomposisi-risiko-dalam-market-model"><span class="header-section-number">11.3</span> Dekomposisi Risiko dalam Market Model</h3>
+<p>Dari model di atas, total variance aset dapat didekomposisi:</p>
+<p><span class="math display">\[
+\sigma_i^2 = \beta_i^2 \sigma_m^2 + \sigma_{\varepsilon_i}^2
+\]</span></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 16%">
+<col style="width: 25%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Komponen</th>
+<th>Nama</th>
+<th>Formula</th>
+<th>Keterangan</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Risiko sistematis</td>
+<td><em>Systematic risk</em></td>
+<td><span class="math inline">\(\beta_i^2 \sigma_m^2\)</span></td>
+<td>Berasal dari faktor pasar</td>
+</tr>
+<tr class="even">
+<td>Risiko idiosinkratik</td>
+<td><em>Idiosyncratic risk</em></td>
+<td><span class="math inline">\(\sigma_{\varepsilon_i}^2\)</span></td>
+<td>Spesifik perusahaan, dapat didiversifikasi</td>
+</tr>
+<tr class="odd">
+<td>Total risiko</td>
+<td><em>Total risk</em></td>
+<td><span class="math inline">\(\sigma_i^2\)</span></td>
+<td>Jumlah kedua komponen</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Proporsi risiko sistematis</strong> diukur oleh <span class="math inline">\(R^2\)</span>:</p>
+<p><span class="math display">\[
+R^2 = \frac{\beta_i^2 \sigma_m^2}{\sigma_i^2}
+\]</span></p>
+</section>
+<section id="contoh-perhitungan" class="level3" data-number="11.4">
+<h3 data-number="11.4" class="anchored" data-anchor-id="contoh-perhitungan"><span class="header-section-number">11.4</span> Contoh Perhitungan</h3>
+<p>Saham ABC memiliki <span class="math inline">\(\beta = 1{,}3\)</span>, <span class="math inline">\(\sigma_m = 16\%\)</span>, dan <span class="math inline">\(\sigma_{\varepsilon} = 22\%\)</span>.</p>
+<p><strong>Langkah 1:</strong> Hitung risiko sistematis.</p>
+<p><span class="math display">\[
+\beta^2 \sigma_m^2 = (1{,}3)^2 (0{,}16)^2 = (1{,}69)(0{,}0256) = 0{,}043264
+\]</span></p>
+<p><strong>Langkah 2:</strong> Hitung risiko idiosinkratik.</p>
+<p><span class="math display">\[
+\sigma_{\varepsilon}^2 = (0{,}22)^2 = 0{,}0484
+\]</span></p>
+<p><strong>Langkah 3:</strong> Hitung total risiko.</p>
+<p><span class="math display">\[
+\sigma_i^2 = 0{,}043264 + 0{,}0484 = 0{,}091664
+\]</span></p>
+<p><span class="math display">\[
+\sigma_i = \sqrt{0{,}091664} = 0{,}3028 = 30{,}28\%
+\]</span></p>
+<p><strong>Langkah 4:</strong> Hitung <span class="math inline">\(R^2\)</span>.</p>
+<p><span class="math display">\[
+R^2 = \frac{0{,}043264}{0{,}091664} = 0{,}472 = 47{,}2\%
+\]</span></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Interpretasi
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Sebesar 47,2% variasi return Saham ABC dijelaskan oleh pergerakan pasar (<em>systematic risk</em>), sedangkan 52,8% sisanya berasal dari faktor-faktor spesifik perusahaan (<em>idiosyncratic risk</em>). Semakin tinggi <span class="math inline">\(R^2\)</span>, semakin besar pergerakan saham tersebut “mengikuti pasar”.</p>
+</div>
+</div>
+</section>
+<section id="penyederhanaan-perhitungan-portofolio" class="level3" data-number="11.5">
+<h3 data-number="11.5" class="anchored" data-anchor-id="penyederhanaan-perhitungan-portofolio"><span class="header-section-number">11.5</span> Penyederhanaan Perhitungan Portofolio</h3>
+<p>Salah satu keunggulan utama <em>market model</em> adalah <strong>menyederhanakan perhitungan covariance</strong>. Dalam model faktor tunggal:</p>
+<p><span class="math display">\[
+\text{Cov}(R_i, R_j) = \beta_i \beta_j \sigma_m^2
+\]</span></p>
+<p>Ini berarti kita tidak perlu mengestimasi setiap covariance secara individual — cukup mengestimasi <span class="math inline">\(\beta\)</span> masing-masing aset dan <span class="math inline">\(\sigma_m^2\)</span>. Untuk <span class="math inline">\(n\)</span> aset, parameter yang diperlukan berkurang dari <span class="math inline">\(\frac{n(n+3)}{2}\)</span> menjadi hanya <span class="math inline">\(3n + 1\)</span>.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Jumlah Aset</th>
+<th style="text-align: center;">Parameter (Markowitz)</th>
+<th style="text-align: center;">Parameter (Market Model)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">65</td>
+<td style="text-align: center;">31</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">50</td>
+<td style="text-align: center;">1.325</td>
+<td style="text-align: center;">151</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">100</td>
+<td style="text-align: center;">5.150</td>
+<td style="text-align: center;">301</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="blockquote">
+<p><em>Sumber: Fabozzi &amp; Markowitz (2011), Ch. 5</em></p>
+</blockquote>
+</section>
+</section>
+<section id="model-multifaktor" class="level2" data-number="12">
+<h2 data-number="12" class="anchored" data-anchor-id="model-multifaktor"><span class="header-section-number">12</span> Model Multifaktor</h2>
+<section id="konsep-2" class="level3" data-number="12.1">
+<h3 data-number="12.1" class="anchored" data-anchor-id="konsep-2"><span class="header-section-number">12.1</span> Konsep</h3>
+<p>Model multifaktor memperluas <em>market model</em> dengan menambahkan <strong>beberapa faktor risiko sistematis</strong>:</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Penting</span>Formula Kunci — Model Multifaktor
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span class="math display">\[
+R_i = \alpha_i + \beta_{i1} F_1 + \beta_{i2} F_2 + \cdots + \beta_{iK} F_K + \varepsilon_i
+\]</span></p>
+<p>di mana <span class="math inline">\(F_k\)</span> adalah faktor risiko ke-<span class="math inline">\(k\)</span> dan <span class="math inline">\(\beta_{ik}\)</span> adalah sensitivitas aset <span class="math inline">\(i\)</span> terhadap faktor <span class="math inline">\(k\)</span>.</p>
+</div>
+</div>
+</section>
+<section id="fama-french-three-factor-model" class="level3" data-number="12.2">
+<h3 data-number="12.2" class="anchored" data-anchor-id="fama-french-three-factor-model"><span class="header-section-number">12.2</span> Fama-French Three-Factor Model</h3>
+<p>Model tiga faktor Fama-French (1993) adalah model multifaktor yang paling terkenal dan banyak digunakan:</p>
+<p><span class="math display">\[
+R_i - R_f = \alpha_i + \beta_{i,\text{MKT}}(R_m - R_f) + \beta_{i,\text{SMB}} \cdot SMB + \beta_{i,\text{HML}} \cdot HML + \varepsilon_i
+\]</span></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 16%">
+<col style="width: 27%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Faktor</th>
+<th>Nama</th>
+<th>Definisi</th>
+<th>Interpretasi</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(R_m - R_f\)</span></td>
+<td><em>Market</em> (MKT)</td>
+<td>Excess return pasar</td>
+<td>Sama seperti CAPM</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(SMB\)</span></td>
+<td><em>Small Minus Big</em></td>
+<td>Return small-cap − return large-cap</td>
+<td>Premi ukuran (<em>size premium</em>)</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(HML\)</span></td>
+<td><em>High Minus Low</em></td>
+<td>Return value stocks − return growth stocks</td>
+<td>Premi nilai (<em>value premium</em>)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="contoh-perhitungan-expected-return-multifaktor" class="level3" data-number="12.3">
+<h3 data-number="12.3" class="anchored" data-anchor-id="contoh-perhitungan-expected-return-multifaktor"><span class="header-section-number">12.3</span> Contoh Perhitungan — Expected Return Multifaktor</h3>
+<p>Diketahui:</p>
+<ul>
+<li><span class="math inline">\(R_f = 5\%\)</span></li>
+<li><span class="math inline">\(E(R_m) - R_f = 7\%\)</span> (market risk premium)</li>
+<li><span class="math inline">\(E(SMB) = 3\%\)</span> (size premium)</li>
+<li><span class="math inline">\(E(HML) = 4\%\)</span> (value premium)</li>
+</ul>
+<p>Saham DEF memiliki: <span class="math inline">\(\beta_{\text{MKT}} = 1{,}1\)</span>, <span class="math inline">\(\beta_{\text{SMB}} = 0{,}8\)</span>, <span class="math inline">\(\beta_{\text{HML}} = 0{,}5\)</span></p>
+<p><strong>Perhitungan:</strong></p>
+<p><span class="math display">\[
+E(R_{\text{DEF}}) = R_f + \beta_{\text{MKT}} \cdot E(R_m - R_f) + \beta_{\text{SMB}} \cdot E(SMB) + \beta_{\text{HML}} \cdot E(HML)
+\]</span></p>
+<p><span class="math display">\[
+= 5\% + (1{,}1)(7\%) + (0{,}8)(3\%) + (0{,}5)(4\%)
+\]</span></p>
+<p><span class="math display">\[
+= 5\% + 7{,}7\% + 2{,}4\% + 2{,}0\% = 17{,}1\%
+\]</span></p>
+<p><strong>Bandingkan dengan CAPM:</strong></p>
+<p><span class="math display">\[
+E(R_{\text{CAPM}}) = 5\% + 1{,}1 \times 7\% = 12{,}7\%
+\]</span></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Interpretasi
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Model Fama-French menghasilkan <em>expected return</em> 17,1% — lebih tinggi dari CAPM (12,7%) — karena Saham DEF memiliki eksposur positif terhadap faktor <em>size</em> (<span class="math inline">\(\beta_{\text{SMB}} = 0{,}8\)</span>, cenderung <em>small-cap</em>) dan faktor <em>value</em> (<span class="math inline">\(\beta_{\text{HML}} = 0{,}5\)</span>, cenderung <em>value stock</em>). Kedua karakteristik ini membawa risiko tambahan yang memerlukan kompensasi.</p>
+</div>
+</div>
+</section>
+<section id="ekstensi-fama-french-five-factor-model-carhart" class="level3" data-number="12.4">
+<h3 data-number="12.4" class="anchored" data-anchor-id="ekstensi-fama-french-five-factor-model-carhart"><span class="header-section-number">12.4</span> Ekstensi: Fama-French Five-Factor Model &amp; Carhart</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 47%">
+<col style="width: 32%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Model</th>
+<th>Faktor Tambahan</th>
+<th>Keterangan</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Carhart (1997)</strong></td>
+<td><em>Momentum</em> (WML: Winners Minus Losers)</td>
+<td>Saham dengan return masa lalu tinggi cenderung lanjut naik</td>
+</tr>
+<tr class="even">
+<td><strong>Fama-French (2015)</strong></td>
+<td><em>Profitability</em> (RMW) + <em>Investment</em> (CMA)</td>
+<td>Perusahaan profitabel dan konservatif cenderung <em>outperform</em></td>
+</tr>
+</tbody>
+</table>
+<blockquote class="blockquote">
+<p><em>Sumber: Fabozzi &amp; Markowitz (2011), Ch. 5; Avramov (2015), Ch. 5</em></p>
+</blockquote>
+</section>
+</section>
+<section id="arbitrage-pricing-theory-apt" class="level2" data-number="13">
+<h2 data-number="13" class="anchored" data-anchor-id="arbitrage-pricing-theory-apt"><span class="header-section-number">13</span> Arbitrage Pricing Theory (APT)</h2>
+<section id="konsep-3" class="level3" data-number="13.1">
+<h3 data-number="13.1" class="anchored" data-anchor-id="konsep-3"><span class="header-section-number">13.1</span> Konsep</h3>
+<p><em>Arbitrage Pricing Theory</em> (APT), dikembangkan oleh Stephen Ross (1976), adalah alternatif dari CAPM yang menggunakan <strong>asumsi lebih lemah</strong>. APT tidak memerlukan:</p>
+<ul>
+<li>Portofolio pasar yang <em>observable</em></li>
+<li>Ekspektasi homogen</li>
+<li><em>Mean-variance framework</em></li>
+</ul>
+<p>APT hanya mengasumsikan bahwa <strong>tidak ada peluang arbitrase</strong> (<em>no arbitrage</em>) — yaitu tidak mungkin memperoleh profit tanpa risiko dan tanpa investasi awal.</p>
+</section>
+<section id="formula-apt" class="level3" data-number="13.2">
+<h3 data-number="13.2" class="anchored" data-anchor-id="formula-apt"><span class="header-section-number">13.2</span> Formula APT</h3>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Penting</span>Formula Kunci — APT
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span class="math display">\[
+E(R_i) = R_f + \beta_{i1}\lambda_1 + \beta_{i2}\lambda_2 + \cdots + \beta_{iK}\lambda_K
+\]</span></p>
+<p>di mana:</p>
+<ul>
+<li><span class="math inline">\(\beta_{ik}\)</span> = sensitivitas aset <span class="math inline">\(i\)</span> terhadap faktor <span class="math inline">\(k\)</span></li>
+<li><span class="math inline">\(\lambda_k\)</span> = <em>risk premium</em> faktor <span class="math inline">\(k\)</span> (harga risiko per unit eksposur)</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="perbedaan-apt-vs.-capm" class="level3" data-number="13.3">
+<h3 data-number="13.3" class="anchored" data-anchor-id="perbedaan-apt-vs.-capm"><span class="header-section-number">13.3</span> Perbedaan APT vs.&nbsp;CAPM</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 38%">
+<col style="width: 33%">
+<col style="width: 27%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspek</th>
+<th>CAPM</th>
+<th>APT</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Jumlah faktor</strong></td>
+<td>Satu (pasar)</td>
+<td>Multiple (tidak ditentukan)</td>
+</tr>
+<tr class="even">
+<td><strong>Asumsi utilitas</strong></td>
+<td>Mean-variance optimizer</td>
+<td>Tidak memerlukan</td>
+</tr>
+<tr class="odd">
+<td><strong>Asumsi distribusi</strong></td>
+<td>Return normal</td>
+<td>Tidak memerlukan</td>
+</tr>
+<tr class="even">
+<td><strong>Identifikasi faktor</strong></td>
+<td>Pasar (ditentukan)</td>
+<td>Tidak dispesifikasikan oleh teori</td>
+</tr>
+<tr class="odd">
+<td><strong>Basis teori</strong></td>
+<td>Ekuilibrium pasar</td>
+<td>No-arbitrage</td>
+</tr>
+<tr class="even">
+<td><strong>Testability</strong></td>
+<td>Sulit (Roll’s Critique)</td>
+<td>Lebih mudah (tidak perlu market portfolio)</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Peringatan</span>Kesalahan Umum
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>APT <strong>tidak menentukan</strong> faktor-faktor apa yang relevan — ini diserahkan kepada peneliti dan praktisi. Ini merupakan kelemahan sekaligus keunggulan: APT lebih fleksibel, tetapi memerlukan analisis empiris untuk mengidentifikasi faktor yang tepat. Faktor-faktor yang umum digunakan meliputi: pertumbuhan GDP, inflasi, <em>term spread</em>, <em>credit spread</em>, dan harga minyak.</p>
+</div>
+</div>
+</section>
+<section id="contoh-perhitungan-apt" class="level3" data-number="13.4">
+<h3 data-number="13.4" class="anchored" data-anchor-id="contoh-perhitungan-apt"><span class="header-section-number">13.4</span> Contoh Perhitungan APT</h3>
+<p>Diketahui dua faktor risiko makroekonomi:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Faktor</th>
+<th>Deskripsi</th>
+<th style="text-align: center;"><span class="math inline">\(\lambda\)</span> (risk premium)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(F_1\)</span></td>
+<td>Pertumbuhan GDP tak terduga</td>
+<td style="text-align: center;">4%</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(F_2\)</span></td>
+<td>Perubahan inflasi tak terduga</td>
+<td style="text-align: center;">2%</td>
+</tr>
+</tbody>
+</table>
+<p><span class="math inline">\(R_f = 5\%\)</span></p>
+<p>Tiga saham memiliki sensitivitas faktor:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 37%">
+<col style="width: 9%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Saham</th>
+<th style="text-align: center;"><span class="math inline">\(\beta_1\)</span> (GDP)</th>
+<th style="text-align: center;"><span class="math inline">\(\beta_2\)</span> (Inflasi)</th>
+<th>Perhitungan</th>
+<th style="text-align: center;"><span class="math inline">\(E(R_i)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">1,5</td>
+<td style="text-align: center;">0,8</td>
+<td><span class="math inline">\(5 + 1{,}5(4) + 0{,}8(2)\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(12{,}6\%\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Y</td>
+<td style="text-align: center;">0,5</td>
+<td style="text-align: center;">1,2</td>
+<td><span class="math inline">\(5 + 0{,}5(4) + 1{,}2(2)\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(9{,}4\%\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Z</td>
+<td style="text-align: center;">1,0</td>
+<td style="text-align: center;">−0,3</td>
+<td><span class="math inline">\(5 + 1{,}0(4) + (-0{,}3)(2)\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(8{,}4\%\)</span></td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Interpretasi
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Saham X</strong> sangat sensitif terhadap pertumbuhan GDP (<span class="math inline">\(\beta_1 = 1{,}5\)</span>) → saham siklikal yang akan <em>outperform</em> saat ekonomi tumbuh kuat.</li>
+<li><strong>Saham Y</strong> sensitif terhadap inflasi (<span class="math inline">\(\beta_2 = 1{,}2\)</span>) → mungkin saham komoditas yang diuntungkan saat inflasi naik.</li>
+<li><strong>Saham Z</strong> memiliki <span class="math inline">\(\beta_2 &lt; 0\)</span>: return-nya cenderung turun saat inflasi naik → mungkin saham teknologi/growth yang terdampak negatif oleh kenaikan suku bunga.</li>
+</ul>
+</div>
+</div>
+<blockquote class="blockquote">
+<p><em>Sumber: Fabozzi &amp; Markowitz (2011), Ch. 5; Avramov (2015), Ch. 5</em></p>
+</blockquote>
+</section>
+</section>
+<section id="argumen-no-arbitrage" class="level2" data-number="14">
+<h2 data-number="14" class="anchored" data-anchor-id="argumen-no-arbitrage"><span class="header-section-number">14</span> Argumen No-Arbitrage</h2>
+<section id="konsep-arbitrase" class="level3" data-number="14.1">
+<h3 data-number="14.1" class="anchored" data-anchor-id="konsep-arbitrase"><span class="header-section-number">14.1</span> Konsep Arbitrase</h3>
+<p>Arbitrase adalah strategi yang menghasilkan <strong>profit tanpa risiko dan tanpa investasi neto</strong>. Dalam pasar yang efisien, peluang arbitrase akan segera hilang karena pelaku pasar yang rasional akan mengeksploitasinya.</p>
+</section>
+<section id="contoh-pelanggaran-apt" class="level3" data-number="14.2">
+<h3 data-number="14.2" class="anchored" data-anchor-id="contoh-pelanggaran-apt"><span class="header-section-number">14.2</span> Contoh Pelanggaran APT</h3>
+<p>Misalkan terdapat satu faktor dengan <span class="math inline">\(\lambda = 6\%\)</span> dan <span class="math inline">\(R_f = 4\%\)</span>. Dua portofolio well-diversified:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Portofolio</th>
+<th style="text-align: center;"><span class="math inline">\(\beta\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(E(R)\)</span> menurut APT</th>
+<th style="text-align: center;"><span class="math inline">\(E(R)\)</span> aktual</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">1,0</td>
+<td style="text-align: center;"><span class="math inline">\(4 + 1{,}0(6) = 10\%\)</span></td>
+<td style="text-align: center;">10% ✓</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">1,0</td>
+<td style="text-align: center;"><span class="math inline">\(4 + 1{,}0(6) = 10\%\)</span></td>
+<td style="text-align: center;">12% ✗</td>
+</tr>
+</tbody>
+</table>
+<p>Portofolio B menawarkan return 12% padahal seharusnya 10% berdasarkan beta-nya. Ini menciptakan <strong>peluang arbitrase</strong>:</p>
+<ol type="1">
+<li><strong>Short sell</strong> Portofolio A (terima 10%)</li>
+<li><strong>Beli</strong> Portofolio B (dapatkan 12%)</li>
+<li><strong>Profit tanpa risiko</strong> = 12% − 10% = 2% (dengan investasi neto = 0 dan beta neto = 0)</li>
+</ol>
+<p>Aksi arbitrase ini akan menekan harga B naik (sehingga return turun) dan harga A turun (return naik) hingga keduanya konvergen di 10%.</p>
+<blockquote class="blockquote">
+<p><em>Sumber: Avramov (2015), Ch. 5</em></p>
+</blockquote>
+</section>
+</section>
+<section id="ringkasan-1" class="level2" data-number="15">
+<h2 data-number="15" class="anchored" data-anchor-id="ringkasan-1"><span class="header-section-number">15</span> Ringkasan</h2>
+<ol type="1">
+<li><strong><em>Market model</em></strong> (<span class="math inline">\(R_i = \alpha_i + \beta_i R_m + \varepsilon_i\)</span>) mendekomposisi return menjadi komponen sistematis dan idiosinkratik, serta menyederhanakan perhitungan covariance.</li>
+<li><strong>Proporsi risiko sistematis</strong> diukur oleh <span class="math inline">\(R^2 = \frac{\beta^2\sigma_m^2}{\sigma_i^2}\)</span>.</li>
+<li><strong>Model multifaktor</strong> (Fama-French) menggunakan beberapa faktor risiko — <em>market</em>, <em>size</em> (SMB), <em>value</em> (HML) — untuk menjelaskan <em>expected return</em> lebih akurat daripada CAPM.</li>
+<li><strong>APT</strong> menyatakan bahwa <em>expected return</em> ditentukan oleh eksposur terhadap berbagai faktor risiko, berdasarkan prinsip <em>no-arbitrage</em>.</li>
+<li>APT lebih <strong>fleksibel</strong> dari CAPM (asumsi lebih lemah, multiple factors), namun <strong>tidak menentukan</strong> faktor apa yang relevan.</li>
+<li>Dalam praktik, model multifaktor digunakan untuk <strong>atribusi kinerja</strong>, <strong>manajemen risiko</strong>, dan <strong>konstruksi portofolio</strong>.</li>
+</ol>
+</section>
+<section id="latihan-soal-1" class="level2" data-number="16">
+<h2 data-number="16" class="anchored" data-anchor-id="latihan-soal-1"><span class="header-section-number">16</span> Latihan Soal</h2>
+<p><strong>Soal 1 — Dekomposisi Risiko</strong></p>
+<p>Saham PQR memiliki <span class="math inline">\(\beta = 0{,}9\)</span> dan total <span class="math inline">\(\sigma = 35\%\)</span>. Standar deviasi pasar <span class="math inline">\(\sigma_m = 18\%\)</span>. Hitung: (a) risiko sistematis, (b) risiko idiosinkratik, dan (c) <span class="math inline">\(R^2\)</span>. Apakah saham ini lebih dipengaruhi pasar atau faktor spesifik?</p>
+<p><strong>Soal 2 — Fama-French Three-Factor</strong></p>
+<p>Diketahui: <span class="math inline">\(R_f = 4\%\)</span>, <span class="math inline">\(E(R_m - R_f) = 6\%\)</span>, <span class="math inline">\(E(SMB) = 3{,}5\%\)</span>, <span class="math inline">\(E(HML) = 4{,}5\%\)</span>. Saham GHI memiliki <span class="math inline">\(\beta_{\text{MKT}} = 0{,}8\)</span>, <span class="math inline">\(\beta_{\text{SMB}} = -0{,}3\)</span>, <span class="math inline">\(\beta_{\text{HML}} = 1{,}2\)</span>. (a) Hitung expected return. (b) Apakah saham ini cenderung <em>large-cap</em> atau <em>small-cap</em>? <em>Growth</em> atau <em>value</em>? Jelaskan.</p>
+<p><strong>Soal 3 — APT</strong></p>
+<p>Dalam model APT dua faktor, <span class="math inline">\(R_f = 5\%\)</span>, <span class="math inline">\(\lambda_1 = 4\%\)</span> (industrial production), <span class="math inline">\(\lambda_2 = 2\%\)</span> (unexpected inflation). Portofolio P memiliki <span class="math inline">\(\beta_1 = 1{,}2\)</span> dan <span class="math inline">\(\beta_2 = -0{,}5\)</span>. (a) Hitung <span class="math inline">\(E(R_P)\)</span>. (b) Jika return aktual yang diharapkan analis adalah 12%, apakah ada peluang arbitrase?</p>
+<p><strong>Soal 4 — Perbandingan CAPM vs Multifaktor</strong></p>
+<p>Saham JKL memiliki CAPM beta = 1,1 terhadap pasar. Analisis Fama-French menunjukkan <span class="math inline">\(\beta_{\text{MKT}} = 0{,}9\)</span>, <span class="math inline">\(\beta_{\text{SMB}} = 0{,}6\)</span>, <span class="math inline">\(\beta_{\text{HML}} = 0{,}4\)</span>. Dengan <span class="math inline">\(R_f = 4\%\)</span>, MRP = 7%, <span class="math inline">\(E(SMB) = 3\%\)</span>, <span class="math inline">\(E(HML) = 5\%\)</span>, hitung expected return menurut kedua model. Jelaskan mengapa hasilnya berbeda.</p>
+</section>
+<section id="referensi-1" class="level2" data-number="17">
+<h2 data-number="17" class="anchored" data-anchor-id="referensi-1"><span class="header-section-number">17</span> Referensi</h2>
+<ul>
+<li>Fabozzi, F. J., &amp; Markowitz, H. M. (2011). <em>The Theory and Practice of Investment Management</em> (2nd ed.), Chapter 5. John Wiley &amp; Sons.</li>
+<li>Avramov, D. (2015). <em>Investment Management</em>, Chapter 5. Hebrew University of Jerusalem.</li>
+<li>Fama, E. F., &amp; French, K. R. (1993). Common Risk Factors in the Returns on Stocks and Bonds. <em>Journal of Financial Economics</em>, 33(1), 3–56.</li>
+<li>Ross, S. A. (1976). The Arbitrage Theory of Capital Asset Pricing. <em>Journal of Economic Theory</em>, 13(3), 341–360.</li>
+</ul>
+
+
+<!-- -->
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Disalin!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Disalin!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+    const viewSource = window.document.getElementById('quarto-view-source') ||
+                       window.document.getElementById('quarto-code-tools-source');
+    if (viewSource) {
+      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+      viewSource.addEventListener("click", function(e) {
+        if (sourceUrl) {
+          // rstudio viewer pane
+          if (/\bcapabilities=\b/.test(window.location)) {
+            window.open(sourceUrl);
+          } else {
+            window.location.href = sourceUrl;
+          }
+        } else {
+          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+          modal.show();
+        }
+        return false;
+      });
+    }
+    function toggleCodeHandler(show) {
+      return function(e) {
+        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+        for (let i=0; i<detailsSrc.length; i++) {
+          const details = detailsSrc[i].parentElement;
+          if (show) {
+            details.open = true;
+          } else {
+            details.removeAttribute("open");
+          }
+        }
+        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+        const fromCls = show ? "hidden" : "unhidden";
+        const toCls = show ? "unhidden" : "hidden";
+        for (let i=0; i<cellCodeDivs.length; i++) {
+          const codeDiv = cellCodeDivs[i];
+          if (codeDiv.classList.contains(fromCls)) {
+            codeDiv.classList.remove(fromCls);
+            codeDiv.classList.add(toCls);
+          } 
+        }
+        return false;
+      }
+    }
+    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+    if (hideAllCode) {
+      hideAllCode.addEventListener("click", toggleCodeHandler(false));
+    }
+    const showAllCode = window.document.getElementById("quarto-show-all-code");
+    if (showAllCode) {
+      showAllCode.addEventListener("click", toggleCodeHandler(true));
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Kode Sumber</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Pertemuan 5: Model Faktor &amp; Pengantar Multifaktor"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "Manajemen Investasi — EKM 19608"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">## Tujuan Pembelajaran</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>Setelah mengikuti pertemuan ini, mahasiswa diharapkan mampu:</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Menjelaskan konsep *market model* (model faktor tunggal) dan kegunaannya.</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Mendekomposisi return aset menjadi komponen sistematis dan komponen spesifik perusahaan.</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Menghitung proporsi risiko sistematis dan idiosinkratik suatu saham.</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Menjelaskan mengapa CAPM satu faktor mungkin tidak cukup untuk menjelaskan return.</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>Memahami prinsip dasar model multifaktor Fama-French secara konseptual.</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="fu">## Pendahuluan: Mengapa Satu Faktor Tidak Cukup?</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>Di <span class="co">[</span><span class="ot">Pertemuan 4</span><span class="co">](04-capm.qmd)</span>, kita belajar bahwa CAPM menggunakan **satu faktor risiko** — return pasar — untuk menjelaskan expected return. Meskipun CAPM sederhana dan elegan, bukti empiris menunjukkan bahwa beta pasar saja tidak sepenuhnya menjelaskan perbedaan return antar saham.</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>Dua anomali terkenal yang sulit dijelaskan oleh CAPM:</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Efek ukuran (*size effect*)**: Saham perusahaan kecil (*small-cap*) cenderung memberikan return lebih tinggi daripada yang diprediksi CAPM.</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Efek nilai (*value effect*)**: Saham "murah" (P/B rendah, P/E rendah) cenderung *outperform* saham "mahal" (*growth stocks*).</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>Temuan ini mendorong para ahli untuk mengembangkan model yang menggunakan **lebih dari satu faktor risiko**.</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; *Sumber: Fabozzi &amp; Markowitz (2011), Ch. 5*</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="fu">## Model Faktor Tunggal (*Market Model*)</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="fu">### Konsep</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>*Market model* adalah versi paling sederhana dari model faktor. Model ini menyatakan bahwa return suatu saham dipengaruhi oleh **satu faktor bersama** — return pasar — ditambah komponen yang unik untuk saham tersebut.</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>::: {.callout-important}</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="fu">## Formula Kunci — Market Model</span></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>R_i = \alpha_i + \beta_i R_m + \varepsilon_i</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>di mana:</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$R_i$ = return saham ke-$i$</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$\alpha_i$ = *intercept* (return rata-rata saat return pasar = 0)</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$\beta_i$ = sensitivitas terhadap pasar (beta, sama seperti CAPM)</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$R_m$ = return pasar</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$\varepsilon_i$ = komponen spesifik perusahaan (*error term*), dengan $E(\varepsilon_i) = 0$</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="fu">## Market Model vs. CAPM</span></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>Keduanya menggunakan beta, tetapi **berbeda secara konseptual**:</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**CAPM** adalah model *ekuilibrium* — menjelaskan berapa *expected return* yang *seharusnya* diterima investor.</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Market model** adalah model *deskriptif/statistik* — menjelaskan bagaimana return aktual suatu saham *bergerak* relatif terhadap pasar.</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>Dalam praktik, beta yang digunakan sama, namun tujuannya berbeda.</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="fu">### Dekomposisi Risiko</span></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>Dengan market model, total variance saham dapat dipisah menjadi dua komponen:</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>::: {.callout-important}</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="fu">## Formula Kunci — Dekomposisi Risiko</span></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>\underbrace{\sigma_i^2}_{\text{Total Risk}} = \underbrace{\beta_i^2 \sigma_m^2}_{\text{Systematic Risk}} + \underbrace{\sigma_{\varepsilon_i}^2}_{\text{Idiosyncratic Risk}}</span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Komponen <span class="pp">|</span> Nama Lain <span class="pp">|</span> Sumber <span class="pp">|</span> Dapat Didiversifikasi? <span class="pp">|</span></span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a><span class="pp">|----------|----------|--------|:---------------------:|</span></span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> $\beta_i^2 \sigma_m^2$ <span class="pp">|</span> *Systematic / Market Risk* <span class="pp">|</span> Faktor makro: suku bunga, GDP, inflasi <span class="pp">|</span> ❌ Tidak <span class="pp">|</span></span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> $\sigma_{\varepsilon_i}^2$ <span class="pp">|</span> *Idiosyncratic / Specific Risk* <span class="pp">|</span> Faktor spesifik: manajemen, produk, kompetitor <span class="pp">|</span> ✅ Ya <span class="pp">|</span></span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>**Proporsi risiko sistematis** diukur oleh $R^2$:</span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a>R^2 = \frac{\beta_i^2 \sigma_m^2}{\sigma_i^2}</span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>Semakin tinggi $R^2$, semakin besar pergerakan saham "mengikuti" pasar.</span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a><span class="fu">### Contoh Perhitungan — Dekomposisi Risiko</span></span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>Saham BBCA memiliki: $\beta = 1{,}2$, $\sigma_m = 15\%$ (volatilitas pasar), dan $\sigma_\varepsilon = 18\%$ (risiko spesifik).</span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a>**Langkah 1:** Hitung risiko sistematis.</span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a>\beta^2 \sigma_m^2 = (1{,}2)^2 (0{,}15)^2 = (1{,}44)(0{,}0225) = 0{,}0324</span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a>**Langkah 2:** Hitung risiko idiosinkratik.</span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a>\sigma_\varepsilon^2 = (0{,}18)^2 = 0{,}0324</span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a>**Langkah 3:** Hitung total risiko.</span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a>\sigma_i^2 = 0{,}0324 + 0{,}0324 = 0{,}0648</span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a>\sigma_i = \sqrt{0{,}0648} = 0{,}2546 = 25{,}46\%</span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a>**Langkah 4:** Hitung $R^2$.</span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a>R^2 = \frac{0{,}0324}{0{,}0648} = 0{,}50 = 50\%</span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a><span class="fu">## Interpretasi</span></span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a>Sebesar 50% variasi return BBCA dijelaskan oleh pergerakan pasar, dan 50% sisanya berasal dari faktor spesifik perusahaan. Karena $R^2$ tidak terlalu tinggi, BBCA masih memiliki komponen idiosinkratik yang cukup besar — menunjukkan bahwa saham ini tidak sekadar mengikuti pasar.</span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a><span class="fu">### Contoh Lain — Saham dengan $R^2$ Berbeda</span></span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Saham <span class="pp">|</span> $\beta$ <span class="pp">|</span> $\sigma_m$ <span class="pp">|</span> $\sigma_\varepsilon$ <span class="pp">|</span> $\sigma_i$ <span class="pp">|</span> $R^2$ <span class="pp">|</span> Karakter <span class="pp">|</span></span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a><span class="pp">|:-----:|:------:|:----------:|:------------------:|:---------:|:-----:|---------|</span></span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> TLKM <span class="pp">|</span> 0,7 <span class="pp">|</span> 15% <span class="pp">|</span> 10% <span class="pp">|</span> 17,46% <span class="pp">|</span> 36% <span class="pp">|</span> Lebih dipengaruhi faktor spesifik <span class="pp">|</span></span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> BBRI <span class="pp">|</span> 1,3 <span class="pp">|</span> 15% <span class="pp">|</span> 12% <span class="pp">|</span> 22,47% <span class="pp">|</span> 71% <span class="pp">|</span> Lebih mengikuti pasar <span class="pp">|</span></span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> UNVR <span class="pp">|</span> 0,4 <span class="pp">|</span> 15% <span class="pp">|</span> 20% <span class="pp">|</span> 20,59% <span class="pp">|</span> 9% <span class="pp">|</span> Sangat dipengaruhi faktor spesifik <span class="pp">|</span></span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a><span class="fu">## Implikasi untuk Diversifikasi</span></span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a>Saham dengan $R^2$ rendah (seperti UNVR di atas) memiliki banyak *idiosyncratic risk* yang bisa dieliminasi melalui diversifikasi. Setelah portofolio cukup terdiversifikasi, hanya **systematic risk** ($\beta^2 \sigma_m^2$) yang tersisa.</span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; *Sumber: Fabozzi &amp; Markowitz (2011), Ch. 5*</span></span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a><span class="fu">## Keunggulan Market Model dalam Praktik</span></span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a>Market model juga **menyederhanakan perhitungan covariance** antar saham:</span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a>\text{Cov}(R_i, R_j) = \beta_i \beta_j \sigma_m^2</span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a>Artinya, covariance antara dua saham bisa diestimasi hanya dari **beta masing-masing dan variance pasar** — tanpa perlu menghitung langsung dari data historis.</span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a>**Contoh:**</span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$\beta_{\text{BBCA}} = 1{,}2$, $\beta_{\text{TLKM}} = 0{,}7$, $\sigma_m = 15\%$</span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$\text{Cov}(\text{BBCA}, \text{TLKM}) = (1{,}2)(0{,}7)(0{,}15)^2 = (1{,}2)(0{,}7)(0{,}0225) = 0{,}0189$</span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a><span class="fu">## Manfaat Praktis</span></span>
+<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a>Untuk portofolio 50 saham, mengestimasi covariance secara langsung memerlukan 1.225 estimasi. Dengan market model, hanya perlu 50 beta + 1 variance pasar = **51 parameter**. Jauh lebih efisien.</span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; *Sumber: Fabozzi &amp; Markowitz (2011), Ch. 5*</span></span>
+<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a><span class="fu">## Model Multifaktor: Ide Dasar</span></span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a><span class="fu">### Motivasi</span></span>
+<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a>Model multifaktor memperluas *market model* dengan menambahkan faktor risiko lain selain return pasar:</span>
+<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a>::: {.callout-important}</span>
+<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a><span class="fu">## Formula Kunci — Model Multifaktor</span></span>
+<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a>R_i = \alpha_i + \beta_{i,1} F_1 + \beta_{i,2} F_2 + \cdots + \beta_{i,K} F_K + \varepsilon_i</span>
+<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a>di mana $F_k$ adalah faktor risiko ke-$k$ dan $\beta_{i,k}$ adalah sensitivitas saham $i$ terhadap faktor $k$.</span>
+<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a><span class="fu">### Fama-French Three-Factor Model (1993)</span></span>
+<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a>Model multifaktor paling terkenal adalah model tiga faktor Fama &amp; French:</span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a>R_i - R_f = \alpha_i + \beta_{i,\text{MKT}}(R_m - R_f) + \beta_{i,\text{SMB}} \cdot SMB + \beta_{i,\text{HML}} \cdot HML + \varepsilon_i</span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Faktor <span class="pp">|</span> Singkatan <span class="pp">|</span> Definisi <span class="pp">|</span> Interpretasi <span class="pp">|</span></span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a><span class="pp">|--------|-----------|----------|-------------|</span></span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Return pasar <span class="pp">|</span> MKT <span class="pp">|</span> $R_m - R_f$ <span class="pp">|</span> Premi atas risiko pasar (sama seperti CAPM) <span class="pp">|</span></span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> *Small Minus Big* <span class="pp">|</span> SMB <span class="pp">|</span> Return saham kecil − return saham besar <span class="pp">|</span> Premi atas risiko ukuran perusahaan <span class="pp">|</span></span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> *High Minus Low* | HML | Return *value stocks* − return *growth stocks* <span class="pp">|</span> Premi atas risiko "nilai" <span class="pp">|</span></span>
+<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a><span class="fu">## Intuisi Ekonomi</span></span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a>Mengapa *small-cap* dan *value stocks* mendapat premi lebih tinggi?</span>
+<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Penjelasan risiko**: Perusahaan kecil dan perusahaan dengan rasio nilai buku tinggi lebih rentan dalam kondisi ekonomi buruk — investor meminta kompensasi lebih tinggi.</span>
+<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Penjelasan perilaku**: Investor cenderung mengabaikan saham "membosankan" yang murah, sehingga harganya terdepresi di bawah nilai wajar dan menawarkan return lebih tinggi.</span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a><span class="fu">### Contoh Perhitungan — Expected Return dengan FF Three-Factor</span></span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a>Diketahui:</span>
+<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$R_f = 5\%$</span>
+<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$E(R_m - R_f) = 7\%$, $E(SMB) = 3\%$, $E(HML) = 4\%$</span>
+<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a>Saham PT Maju Jaya: $\beta_{\text{MKT}} = 1{,}1$, $\beta_{\text{SMB}} = 0{,}8$, $\beta_{\text{HML}} = 0{,}5$</span>
+<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a>E(R) = 5\% + (1{,}1)(7\%) + (0{,}8)(3\%) + (0{,}5)(4\%) = 5\% + 7{,}7\% + 2{,}4\% + 2{,}0\% = 17{,}1\%</span>
+<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a>**Bandingkan CAPM:**  $E(R)_{\text{CAPM}} = 5\% + 1{,}1 \times 7\% = 12{,}7\%$</span>
+<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a><span class="fu">## Interpretasi</span></span>
+<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a>Model Fama-French menghasilkan 17,1% vs CAPM 12,7%. Selisihnya besar karena saham ini *small-cap* ($\beta_{\text{SMB}} = 0{,}8$) dan *value stock* ($\beta_{\text{HML}} = 0{,}5$) — dua karakteristik yang membawa premi risiko tambahan yang tidak ditangkap CAPM.</span>
+<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; *Sumber: Fabozzi &amp; Markowitz (2011), Ch. 5; Fama &amp; French (1993)*</span></span>
+<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a><span class="fu">## Ringkasan</span></span>
+<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>***Market model*** ($R_i = \alpha_i + \beta_i R_m + \varepsilon_i$) mendekomposisi return menjadi komponen sistematis dan idiosinkratik.</span>
+<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Total risiko** = Risiko sistematis ($\beta^2\sigma_m^2$) + Risiko idiosinkratik ($\sigma_\varepsilon^2$). Hanya sistematis yang tidak terdiversifikasi.</span>
+<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**$R^2$** = $\beta^2\sigma_m^2 / \sigma_i^2$ mengukur seberapa besar suatu saham "mengikuti" pergerakan pasar.</span>
+<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Market model menyederhanakan covariance**: $\text{Cov}(R_i, R_j) = \beta_i \beta_j \sigma_m^2$.</span>
+<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>**Model Fama-French** menambahkan faktor *size* (SMB) dan *value* (HML) — memberikan estimasi expected return yang lebih akurat dari CAPM untuk saham *small-cap* dan *value stocks*.</span>
+<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a><span class="fu">## Latihan Soal</span></span>
+<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a>**Soal 1 — Dekomposisi Risiko**</span>
+<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a>Saham ASII memiliki $\beta = 1{,}1$, $\sigma_m = 16\%$, dan $\sigma_\varepsilon = 20\%$. Hitung: (a) risiko sistematis, (b) total variance dan standard deviation, (c) $R^2$. Jelaskan artinya.</span>
+<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a>**Soal 2 — Perbandingan Saham**</span>
+<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a>Dua saham memiliki data berikut ($\sigma_m = 15\%$):</span>
+<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Saham <span class="pp">|</span> $\beta$ <span class="pp">|</span> $\sigma_\varepsilon$ <span class="pp">|</span></span>
+<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a><span class="pp">|:-----:|:------:|:------------------:|</span></span>
+<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> P <span class="pp">|</span> 1,5 <span class="pp">|</span> 15% <span class="pp">|</span></span>
+<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Q <span class="pp">|</span> 0,6 <span class="pp">|</span> 25% <span class="pp">|</span></span>
+<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a>Hitung: (a) total risk masing-masing, (b) $R^2$ masing-masing, (c) saham mana yang lebih cocok untuk investor yang sudah memiliki portofolio terdiversifikasi? Jelaskan.</span>
+<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a>**Soal 3 — Covariance via Market Model**</span>
+<span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a>Diketahui: $\beta_{\text{BBCA}} = 1{,}2$, $\beta_{\text{BBRI}} = 1{,}4$, $\beta_{\text{TLKM}} = 0{,}6$, $\sigma_m = 15\%$. Hitung covariance antara: (a) BBCA dan BBRI, (b) BBCA dan TLKM, (c) BBRI dan TLKM. Pasangan saham mana yang paling saling terkait?</span>
+<span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a>**Soal 4 — Expected Return Fama-French**</span>
+<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a>Diketahui: $R_f = 4\%$, $E(R_m - R_f) = 6\%$, $E(SMB) = 3{,}5\%$, $E(HML) = 4{,}5\%$.</span>
+<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Saham <span class="pp">|</span> $\beta_{\text{MKT}}$ <span class="pp">|</span> $\beta_{\text{SMB}}$ <span class="pp">|</span> $\beta_{\text{HML}}$ <span class="pp">|</span></span>
+<span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a><span class="pp">|:-----:|:--------------------:|:--------------------:|:--------------------:|</span></span>
+<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> X <span class="pp">|</span> 0,8 <span class="pp">|</span> −0,3 <span class="pp">|</span> 1,2 <span class="pp">|</span></span>
+<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Y <span class="pp">|</span> 1,2 <span class="pp">|</span> 0,9 <span class="pp">|</span> −0,2 <span class="pp">|</span></span>
+<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a>(a) Hitung expected return masing-masing menurut Fama-French. (b) Hitung expected return menurut CAPM. (c) Saham mana yang paling besar selisihnya? Mengapa?</span>
+<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a><span class="fu">## Referensi</span></span>
+<span id="cb1-257"><a href="#cb1-257" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-258"><a href="#cb1-258" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Fabozzi, F. J., &amp; Markowitz, H. M. (2011). *The Theory and Practice of Investment Management* (2nd ed.), Chapter 5. John Wiley &amp; Sons.</span>
+<span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Fama, E. F., &amp; French, K. R. (1993). Common Risk Factors in the Returns on Stocks and Bonds. *Journal of Financial Economics*, 33(1), 3–56.</span>
+<span id="cb1-260"><a href="#cb1-260" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Reilly, F. K., &amp; Brown, K. C. (2015). *Investment Analysis and Portfolio Management* (10th ed.), Chapter 9. Cengage Learning.</span>
+<span id="cb1-261"><a href="#cb1-261" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-262"><a href="#cb1-262" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-263"><a href="#cb1-263" aria-hidden="true" tabindex="-1"></a><span class="fu">## Tujuan Pembelajaran</span></span>
+<span id="cb1-264"><a href="#cb1-264" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-265"><a href="#cb1-265" aria-hidden="true" tabindex="-1"></a>Setelah mengikuti pertemuan ini, mahasiswa diharapkan mampu:</span>
+<span id="cb1-266"><a href="#cb1-266" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-267"><a href="#cb1-267" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Menjelaskan konsep model faktor tunggal (*single-factor model*) dan hubungannya dengan CAPM.</span>
+<span id="cb1-268"><a href="#cb1-268" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Mendekomposisi return aset menjadi komponen sistematis dan idiosinkratik.</span>
+<span id="cb1-269"><a href="#cb1-269" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Memahami dan menerapkan model multifaktor (Fama-French Three-Factor Model).</span>
+<span id="cb1-270"><a href="#cb1-270" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Menjelaskan prinsip dasar *Arbitrage Pricing Theory* (APT) dan perbedaannya dengan CAPM.</span>
+<span id="cb1-271"><a href="#cb1-271" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>Menghitung *expected return* menggunakan model multifaktor.</span>
+<span id="cb1-272"><a href="#cb1-272" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-273"><a href="#cb1-273" aria-hidden="true" tabindex="-1"></a><span class="fu">## Pendahuluan: Keterbatasan CAPM dan Kebutuhan Model Faktor</span></span>
+<span id="cb1-274"><a href="#cb1-274" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-275"><a href="#cb1-275" aria-hidden="true" tabindex="-1"></a>Di <span class="co">[</span><span class="ot">Pertemuan 4</span><span class="co">](04-capm.qmd)</span>, kita mempelajari bahwa CAPM menggunakan **satu faktor risiko** — return portofolio pasar — untuk menjelaskan *expected return*. Namun bukti empiris menunjukkan bahwa satu faktor saja tidak cukup. Fama &amp; French (1993) mendokumentasikan bahwa:</span>
+<span id="cb1-276"><a href="#cb1-276" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-277"><a href="#cb1-277" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Saham **berkapitalisasi kecil** (*small-cap*) cenderung menghasilkan return lebih tinggi dari prediksi CAPM.</span>
+<span id="cb1-278"><a href="#cb1-278" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Saham **bernilai** (*value stocks*, P/B rendah) cenderung *outperform* saham *growth*.</span>
+<span id="cb1-279"><a href="#cb1-279" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-280"><a href="#cb1-280" aria-hidden="true" tabindex="-1"></a>Temuan ini memotivasi pengembangan **model multifaktor** — model yang menggunakan beberapa sumber risiko sistematis untuk menjelaskan *expected return* secara lebih akurat.</span>
+<span id="cb1-281"><a href="#cb1-281" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-282"><a href="#cb1-282" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; *Sumber: Fabozzi &amp; Markowitz (2011), Ch. 5; Avramov (2015), Ch. 5*</span></span>
+<span id="cb1-283"><a href="#cb1-283" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-284"><a href="#cb1-284" aria-hidden="true" tabindex="-1"></a><span class="fu">## Model Faktor Tunggal (*Single-Factor Model*)</span></span>
+<span id="cb1-285"><a href="#cb1-285" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-286"><a href="#cb1-286" aria-hidden="true" tabindex="-1"></a><span class="fu">### Konsep</span></span>
+<span id="cb1-287"><a href="#cb1-287" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-288"><a href="#cb1-288" aria-hidden="true" tabindex="-1"></a>Model faktor tunggal — sering disebut ***market model*** — mengasumsikan bahwa return suatu aset dipengaruhi oleh **satu faktor bersama** (biasanya return pasar) ditambah komponen spesifik perusahaan.</span>
+<span id="cb1-289"><a href="#cb1-289" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-290"><a href="#cb1-290" aria-hidden="true" tabindex="-1"></a><span class="fu">### Formula</span></span>
+<span id="cb1-291"><a href="#cb1-291" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-292"><a href="#cb1-292" aria-hidden="true" tabindex="-1"></a>::: {.callout-important}</span>
+<span id="cb1-293"><a href="#cb1-293" aria-hidden="true" tabindex="-1"></a><span class="fu">## Formula Kunci — Market Model</span></span>
+<span id="cb1-294"><a href="#cb1-294" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-295"><a href="#cb1-295" aria-hidden="true" tabindex="-1"></a>R_i = \alpha_i + \beta_i R_m + \varepsilon_i</span>
+<span id="cb1-296"><a href="#cb1-296" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-297"><a href="#cb1-297" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-298"><a href="#cb1-298" aria-hidden="true" tabindex="-1"></a>di mana:</span>
+<span id="cb1-299"><a href="#cb1-299" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-300"><a href="#cb1-300" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$R_i$ = return aktual aset ke-$i$</span>
+<span id="cb1-301"><a href="#cb1-301" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$\alpha_i$ = *intercept* (return saat $R_m = 0$)</span>
+<span id="cb1-302"><a href="#cb1-302" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$\beta_i$ = sensitivitas terhadap faktor pasar</span>
+<span id="cb1-303"><a href="#cb1-303" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$R_m$ = return pasar (faktor tunggal)</span>
+<span id="cb1-304"><a href="#cb1-304" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$\varepsilon_i$ = *error term* (komponen idiosinkratik), dengan $E(\varepsilon_i) = 0$ dan $\text{Cov}(\varepsilon_i, R_m) = 0$</span>
+<span id="cb1-305"><a href="#cb1-305" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-306"><a href="#cb1-306" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-307"><a href="#cb1-307" aria-hidden="true" tabindex="-1"></a><span class="fu">### Dekomposisi Risiko dalam Market Model</span></span>
+<span id="cb1-308"><a href="#cb1-308" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-309"><a href="#cb1-309" aria-hidden="true" tabindex="-1"></a>Dari model di atas, total variance aset dapat didekomposisi:</span>
+<span id="cb1-310"><a href="#cb1-310" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-311"><a href="#cb1-311" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-312"><a href="#cb1-312" aria-hidden="true" tabindex="-1"></a>\sigma_i^2 = \beta_i^2 \sigma_m^2 + \sigma_{\varepsilon_i}^2</span>
+<span id="cb1-313"><a href="#cb1-313" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-314"><a href="#cb1-314" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-315"><a href="#cb1-315" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Komponen <span class="pp">|</span> Nama <span class="pp">|</span> Formula <span class="pp">|</span> Keterangan <span class="pp">|</span></span>
+<span id="cb1-316"><a href="#cb1-316" aria-hidden="true" tabindex="-1"></a><span class="pp">|----------|------|---------|-----------|</span></span>
+<span id="cb1-317"><a href="#cb1-317" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Risiko sistematis <span class="pp">|</span> *Systematic risk* <span class="pp">|</span> $\beta_i^2 \sigma_m^2$ <span class="pp">|</span> Berasal dari faktor pasar <span class="pp">|</span></span>
+<span id="cb1-318"><a href="#cb1-318" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Risiko idiosinkratik <span class="pp">|</span> *Idiosyncratic risk* <span class="pp">|</span> $\sigma_{\varepsilon_i}^2$ <span class="pp">|</span> Spesifik perusahaan, dapat didiversifikasi <span class="pp">|</span></span>
+<span id="cb1-319"><a href="#cb1-319" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Total risiko <span class="pp">|</span> *Total risk* <span class="pp">|</span> $\sigma_i^2$ <span class="pp">|</span> Jumlah kedua komponen <span class="pp">|</span></span>
+<span id="cb1-320"><a href="#cb1-320" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-321"><a href="#cb1-321" aria-hidden="true" tabindex="-1"></a>**Proporsi risiko sistematis** diukur oleh $R^2$:</span>
+<span id="cb1-322"><a href="#cb1-322" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-323"><a href="#cb1-323" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-324"><a href="#cb1-324" aria-hidden="true" tabindex="-1"></a>R^2 = \frac{\beta_i^2 \sigma_m^2}{\sigma_i^2}</span>
+<span id="cb1-325"><a href="#cb1-325" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-326"><a href="#cb1-326" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-327"><a href="#cb1-327" aria-hidden="true" tabindex="-1"></a><span class="fu">### Contoh Perhitungan</span></span>
+<span id="cb1-328"><a href="#cb1-328" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-329"><a href="#cb1-329" aria-hidden="true" tabindex="-1"></a>Saham ABC memiliki $\beta = 1{,}3$, $\sigma_m = 16\%$, dan $\sigma_{\varepsilon} = 22\%$.</span>
+<span id="cb1-330"><a href="#cb1-330" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-331"><a href="#cb1-331" aria-hidden="true" tabindex="-1"></a>**Langkah 1:** Hitung risiko sistematis.</span>
+<span id="cb1-332"><a href="#cb1-332" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-333"><a href="#cb1-333" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-334"><a href="#cb1-334" aria-hidden="true" tabindex="-1"></a>\beta^2 \sigma_m^2 = (1{,}3)^2 (0{,}16)^2 = (1{,}69)(0{,}0256) = 0{,}043264</span>
+<span id="cb1-335"><a href="#cb1-335" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-336"><a href="#cb1-336" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-337"><a href="#cb1-337" aria-hidden="true" tabindex="-1"></a>**Langkah 2:** Hitung risiko idiosinkratik.</span>
+<span id="cb1-338"><a href="#cb1-338" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-339"><a href="#cb1-339" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-340"><a href="#cb1-340" aria-hidden="true" tabindex="-1"></a>\sigma_{\varepsilon}^2 = (0{,}22)^2 = 0{,}0484</span>
+<span id="cb1-341"><a href="#cb1-341" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-342"><a href="#cb1-342" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-343"><a href="#cb1-343" aria-hidden="true" tabindex="-1"></a>**Langkah 3:** Hitung total risiko.</span>
+<span id="cb1-344"><a href="#cb1-344" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-345"><a href="#cb1-345" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-346"><a href="#cb1-346" aria-hidden="true" tabindex="-1"></a>\sigma_i^2 = 0{,}043264 + 0{,}0484 = 0{,}091664</span>
+<span id="cb1-347"><a href="#cb1-347" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-348"><a href="#cb1-348" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-349"><a href="#cb1-349" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-350"><a href="#cb1-350" aria-hidden="true" tabindex="-1"></a>\sigma_i = \sqrt{0{,}091664} = 0{,}3028 = 30{,}28\%</span>
+<span id="cb1-351"><a href="#cb1-351" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-352"><a href="#cb1-352" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-353"><a href="#cb1-353" aria-hidden="true" tabindex="-1"></a>**Langkah 4:** Hitung $R^2$.</span>
+<span id="cb1-354"><a href="#cb1-354" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-355"><a href="#cb1-355" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-356"><a href="#cb1-356" aria-hidden="true" tabindex="-1"></a>R^2 = \frac{0{,}043264}{0{,}091664} = 0{,}472 = 47{,}2\%</span>
+<span id="cb1-357"><a href="#cb1-357" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-358"><a href="#cb1-358" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-359"><a href="#cb1-359" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb1-360"><a href="#cb1-360" aria-hidden="true" tabindex="-1"></a><span class="fu">## Interpretasi</span></span>
+<span id="cb1-361"><a href="#cb1-361" aria-hidden="true" tabindex="-1"></a>Sebesar 47,2% variasi return Saham ABC dijelaskan oleh pergerakan pasar (*systematic risk*), sedangkan 52,8% sisanya berasal dari faktor-faktor spesifik perusahaan (*idiosyncratic risk*). Semakin tinggi $R^2$, semakin besar pergerakan saham tersebut "mengikuti pasar".</span>
+<span id="cb1-362"><a href="#cb1-362" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-363"><a href="#cb1-363" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-364"><a href="#cb1-364" aria-hidden="true" tabindex="-1"></a><span class="fu">### Penyederhanaan Perhitungan Portofolio</span></span>
+<span id="cb1-365"><a href="#cb1-365" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-366"><a href="#cb1-366" aria-hidden="true" tabindex="-1"></a>Salah satu keunggulan utama *market model* adalah **menyederhanakan perhitungan covariance**. Dalam model faktor tunggal:</span>
+<span id="cb1-367"><a href="#cb1-367" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-368"><a href="#cb1-368" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-369"><a href="#cb1-369" aria-hidden="true" tabindex="-1"></a>\text{Cov}(R_i, R_j) = \beta_i \beta_j \sigma_m^2</span>
+<span id="cb1-370"><a href="#cb1-370" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-371"><a href="#cb1-371" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-372"><a href="#cb1-372" aria-hidden="true" tabindex="-1"></a>Ini berarti kita tidak perlu mengestimasi setiap covariance secara individual — cukup mengestimasi $\beta$ masing-masing aset dan $\sigma_m^2$. Untuk $n$ aset, parameter yang diperlukan berkurang dari $\frac{n(n+3)}{2}$ menjadi hanya $3n + 1$.</span>
+<span id="cb1-373"><a href="#cb1-373" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-374"><a href="#cb1-374" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Jumlah Aset <span class="pp">|</span> Parameter (Markowitz) <span class="pp">|</span> Parameter (Market Model) <span class="pp">|</span></span>
+<span id="cb1-375"><a href="#cb1-375" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span>:-:<span class="pp">|</span>:-:<span class="pp">|</span>:-:<span class="pp">|</span></span>
+<span id="cb1-376"><a href="#cb1-376" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 10 <span class="pp">|</span> 65 <span class="pp">|</span> 31 <span class="pp">|</span></span>
+<span id="cb1-377"><a href="#cb1-377" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 50 <span class="pp">|</span> 1.325 <span class="pp">|</span> 151 <span class="pp">|</span></span>
+<span id="cb1-378"><a href="#cb1-378" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 100 <span class="pp">|</span> 5.150 <span class="pp">|</span> 301 <span class="pp">|</span></span>
+<span id="cb1-379"><a href="#cb1-379" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-380"><a href="#cb1-380" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; *Sumber: Fabozzi &amp; Markowitz (2011), Ch. 5*</span></span>
+<span id="cb1-381"><a href="#cb1-381" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-382"><a href="#cb1-382" aria-hidden="true" tabindex="-1"></a><span class="fu">## Model Multifaktor</span></span>
+<span id="cb1-383"><a href="#cb1-383" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-384"><a href="#cb1-384" aria-hidden="true" tabindex="-1"></a><span class="fu">### Konsep</span></span>
+<span id="cb1-385"><a href="#cb1-385" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-386"><a href="#cb1-386" aria-hidden="true" tabindex="-1"></a>Model multifaktor memperluas *market model* dengan menambahkan **beberapa faktor risiko sistematis**:</span>
+<span id="cb1-387"><a href="#cb1-387" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-388"><a href="#cb1-388" aria-hidden="true" tabindex="-1"></a>::: {.callout-important}</span>
+<span id="cb1-389"><a href="#cb1-389" aria-hidden="true" tabindex="-1"></a><span class="fu">## Formula Kunci — Model Multifaktor</span></span>
+<span id="cb1-390"><a href="#cb1-390" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-391"><a href="#cb1-391" aria-hidden="true" tabindex="-1"></a>R_i = \alpha_i + \beta_{i1} F_1 + \beta_{i2} F_2 + \cdots + \beta_{iK} F_K + \varepsilon_i</span>
+<span id="cb1-392"><a href="#cb1-392" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-393"><a href="#cb1-393" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-394"><a href="#cb1-394" aria-hidden="true" tabindex="-1"></a>di mana $F_k$ adalah faktor risiko ke-$k$ dan $\beta_{ik}$ adalah sensitivitas aset $i$ terhadap faktor $k$.</span>
+<span id="cb1-395"><a href="#cb1-395" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-396"><a href="#cb1-396" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-397"><a href="#cb1-397" aria-hidden="true" tabindex="-1"></a><span class="fu">### Fama-French Three-Factor Model</span></span>
+<span id="cb1-398"><a href="#cb1-398" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-399"><a href="#cb1-399" aria-hidden="true" tabindex="-1"></a>Model tiga faktor Fama-French (1993) adalah model multifaktor yang paling terkenal dan banyak digunakan:</span>
+<span id="cb1-400"><a href="#cb1-400" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-401"><a href="#cb1-401" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-402"><a href="#cb1-402" aria-hidden="true" tabindex="-1"></a>R_i - R_f = \alpha_i + \beta_{i,\text{MKT}}(R_m - R_f) + \beta_{i,\text{SMB}} \cdot SMB + \beta_{i,\text{HML}} \cdot HML + \varepsilon_i</span>
+<span id="cb1-403"><a href="#cb1-403" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-404"><a href="#cb1-404" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-405"><a href="#cb1-405" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Faktor <span class="pp">|</span> Nama <span class="pp">|</span> Definisi <span class="pp">|</span> Interpretasi <span class="pp">|</span></span>
+<span id="cb1-406"><a href="#cb1-406" aria-hidden="true" tabindex="-1"></a><span class="pp">|--------|------|----------|-------------|</span></span>
+<span id="cb1-407"><a href="#cb1-407" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> $R_m - R_f$ <span class="pp">|</span> *Market* (MKT) <span class="pp">|</span> Excess return pasar <span class="pp">|</span> Sama seperti CAPM <span class="pp">|</span></span>
+<span id="cb1-408"><a href="#cb1-408" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> $SMB$ <span class="pp">|</span> *Small Minus Big* | Return small-cap − return large-cap | Premi ukuran (*size premium*) <span class="pp">|</span></span>
+<span id="cb1-409"><a href="#cb1-409" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> $HML$ <span class="pp">|</span> *High Minus Low* | Return value stocks − return growth stocks | Premi nilai (*value premium*) <span class="pp">|</span></span>
+<span id="cb1-410"><a href="#cb1-410" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-411"><a href="#cb1-411" aria-hidden="true" tabindex="-1"></a><span class="fu">### Contoh Perhitungan — Expected Return Multifaktor</span></span>
+<span id="cb1-412"><a href="#cb1-412" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-413"><a href="#cb1-413" aria-hidden="true" tabindex="-1"></a>Diketahui:</span>
+<span id="cb1-414"><a href="#cb1-414" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-415"><a href="#cb1-415" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$R_f = 5\%$</span>
+<span id="cb1-416"><a href="#cb1-416" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$E(R_m) - R_f = 7\%$ (market risk premium)</span>
+<span id="cb1-417"><a href="#cb1-417" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$E(SMB) = 3\%$ (size premium)</span>
+<span id="cb1-418"><a href="#cb1-418" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$E(HML) = 4\%$ (value premium)</span>
+<span id="cb1-419"><a href="#cb1-419" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-420"><a href="#cb1-420" aria-hidden="true" tabindex="-1"></a>Saham DEF memiliki: $\beta_{\text{MKT}} = 1{,}1$, $\beta_{\text{SMB}} = 0{,}8$, $\beta_{\text{HML}} = 0{,}5$</span>
+<span id="cb1-421"><a href="#cb1-421" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-422"><a href="#cb1-422" aria-hidden="true" tabindex="-1"></a>**Perhitungan:**</span>
+<span id="cb1-423"><a href="#cb1-423" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-424"><a href="#cb1-424" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-425"><a href="#cb1-425" aria-hidden="true" tabindex="-1"></a>E(R_{\text{DEF}}) = R_f + \beta_{\text{MKT}} \cdot E(R_m - R_f) + \beta_{\text{SMB}} \cdot E(SMB) + \beta_{\text{HML}} \cdot E(HML)</span>
+<span id="cb1-426"><a href="#cb1-426" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-427"><a href="#cb1-427" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-428"><a href="#cb1-428" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-429"><a href="#cb1-429" aria-hidden="true" tabindex="-1"></a>= 5\% + (1{,}1)(7\%) + (0{,}8)(3\%) + (0{,}5)(4\%)</span>
+<span id="cb1-430"><a href="#cb1-430" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-431"><a href="#cb1-431" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-432"><a href="#cb1-432" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-433"><a href="#cb1-433" aria-hidden="true" tabindex="-1"></a>= 5\% + 7{,}7\% + 2{,}4\% + 2{,}0\% = 17{,}1\%</span>
+<span id="cb1-434"><a href="#cb1-434" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-435"><a href="#cb1-435" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-436"><a href="#cb1-436" aria-hidden="true" tabindex="-1"></a>**Bandingkan dengan CAPM:**</span>
+<span id="cb1-437"><a href="#cb1-437" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-438"><a href="#cb1-438" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-439"><a href="#cb1-439" aria-hidden="true" tabindex="-1"></a>E(R_{\text{CAPM}}) = 5\% + 1{,}1 \times 7\% = 12{,}7\%</span>
+<span id="cb1-440"><a href="#cb1-440" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-441"><a href="#cb1-441" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-442"><a href="#cb1-442" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb1-443"><a href="#cb1-443" aria-hidden="true" tabindex="-1"></a><span class="fu">## Interpretasi</span></span>
+<span id="cb1-444"><a href="#cb1-444" aria-hidden="true" tabindex="-1"></a>Model Fama-French menghasilkan *expected return* 17,1% — lebih tinggi dari CAPM (12,7%) — karena Saham DEF memiliki eksposur positif terhadap faktor *size* ($\beta_{\text{SMB}} = 0{,}8$, cenderung *small-cap*) dan faktor *value* ($\beta_{\text{HML}} = 0{,}5$, cenderung *value stock*). Kedua karakteristik ini membawa risiko tambahan yang memerlukan kompensasi.</span>
+<span id="cb1-445"><a href="#cb1-445" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-446"><a href="#cb1-446" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-447"><a href="#cb1-447" aria-hidden="true" tabindex="-1"></a><span class="fu">### Ekstensi: Fama-French Five-Factor Model &amp; Carhart</span></span>
+<span id="cb1-448"><a href="#cb1-448" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-449"><a href="#cb1-449" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Model <span class="pp">|</span> Faktor Tambahan <span class="pp">|</span> Keterangan <span class="pp">|</span></span>
+<span id="cb1-450"><a href="#cb1-450" aria-hidden="true" tabindex="-1"></a><span class="pp">|-------|----------------|-----------|</span></span>
+<span id="cb1-451"><a href="#cb1-451" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Carhart (1997)** <span class="pp">|</span> *Momentum* (WML: Winners Minus Losers) <span class="pp">|</span> Saham dengan return masa lalu tinggi cenderung lanjut naik <span class="pp">|</span></span>
+<span id="cb1-452"><a href="#cb1-452" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Fama-French (2015)** <span class="pp">|</span> *Profitability* (RMW) + *Investment* (CMA) | Perusahaan profitabel dan konservatif cenderung *outperform* <span class="pp">|</span></span>
+<span id="cb1-453"><a href="#cb1-453" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-454"><a href="#cb1-454" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; *Sumber: Fabozzi &amp; Markowitz (2011), Ch. 5; Avramov (2015), Ch. 5*</span></span>
+<span id="cb1-455"><a href="#cb1-455" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-456"><a href="#cb1-456" aria-hidden="true" tabindex="-1"></a><span class="fu">## Arbitrage Pricing Theory (APT)</span></span>
+<span id="cb1-457"><a href="#cb1-457" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-458"><a href="#cb1-458" aria-hidden="true" tabindex="-1"></a><span class="fu">### Konsep</span></span>
+<span id="cb1-459"><a href="#cb1-459" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-460"><a href="#cb1-460" aria-hidden="true" tabindex="-1"></a>*Arbitrage Pricing Theory* (APT), dikembangkan oleh Stephen Ross (1976), adalah alternatif dari CAPM yang menggunakan **asumsi lebih lemah**. APT tidak memerlukan:</span>
+<span id="cb1-461"><a href="#cb1-461" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-462"><a href="#cb1-462" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Portofolio pasar yang *observable*</span>
+<span id="cb1-463"><a href="#cb1-463" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Ekspektasi homogen</span>
+<span id="cb1-464"><a href="#cb1-464" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>*Mean-variance framework*</span>
+<span id="cb1-465"><a href="#cb1-465" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-466"><a href="#cb1-466" aria-hidden="true" tabindex="-1"></a>APT hanya mengasumsikan bahwa **tidak ada peluang arbitrase** (*no arbitrage*) — yaitu tidak mungkin memperoleh profit tanpa risiko dan tanpa investasi awal.</span>
+<span id="cb1-467"><a href="#cb1-467" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-468"><a href="#cb1-468" aria-hidden="true" tabindex="-1"></a><span class="fu">### Formula APT</span></span>
+<span id="cb1-469"><a href="#cb1-469" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-470"><a href="#cb1-470" aria-hidden="true" tabindex="-1"></a>::: {.callout-important}</span>
+<span id="cb1-471"><a href="#cb1-471" aria-hidden="true" tabindex="-1"></a><span class="fu">## Formula Kunci — APT</span></span>
+<span id="cb1-472"><a href="#cb1-472" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-473"><a href="#cb1-473" aria-hidden="true" tabindex="-1"></a>E(R_i) = R_f + \beta_{i1}\lambda_1 + \beta_{i2}\lambda_2 + \cdots + \beta_{iK}\lambda_K</span>
+<span id="cb1-474"><a href="#cb1-474" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-475"><a href="#cb1-475" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-476"><a href="#cb1-476" aria-hidden="true" tabindex="-1"></a>di mana:</span>
+<span id="cb1-477"><a href="#cb1-477" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-478"><a href="#cb1-478" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$\beta_{ik}$ = sensitivitas aset $i$ terhadap faktor $k$</span>
+<span id="cb1-479"><a href="#cb1-479" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$\lambda_k$ = *risk premium* faktor $k$ (harga risiko per unit eksposur)</span>
+<span id="cb1-480"><a href="#cb1-480" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-481"><a href="#cb1-481" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-482"><a href="#cb1-482" aria-hidden="true" tabindex="-1"></a><span class="fu">### Perbedaan APT vs. CAPM</span></span>
+<span id="cb1-483"><a href="#cb1-483" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-484"><a href="#cb1-484" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Aspek <span class="pp">|</span> CAPM <span class="pp">|</span> APT <span class="pp">|</span></span>
+<span id="cb1-485"><a href="#cb1-485" aria-hidden="true" tabindex="-1"></a><span class="pp">|-------|------|-----|</span></span>
+<span id="cb1-486"><a href="#cb1-486" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Jumlah faktor** <span class="pp">|</span> Satu (pasar) <span class="pp">|</span> Multiple (tidak ditentukan) <span class="pp">|</span></span>
+<span id="cb1-487"><a href="#cb1-487" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Asumsi utilitas** <span class="pp">|</span> Mean-variance optimizer <span class="pp">|</span> Tidak memerlukan <span class="pp">|</span></span>
+<span id="cb1-488"><a href="#cb1-488" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Asumsi distribusi** <span class="pp">|</span> Return normal <span class="pp">|</span> Tidak memerlukan <span class="pp">|</span></span>
+<span id="cb1-489"><a href="#cb1-489" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Identifikasi faktor** <span class="pp">|</span> Pasar (ditentukan) <span class="pp">|</span> Tidak dispesifikasikan oleh teori <span class="pp">|</span></span>
+<span id="cb1-490"><a href="#cb1-490" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Basis teori** <span class="pp">|</span> Ekuilibrium pasar <span class="pp">|</span> No-arbitrage <span class="pp">|</span></span>
+<span id="cb1-491"><a href="#cb1-491" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Testability** <span class="pp">|</span> Sulit (Roll's Critique) <span class="pp">|</span> Lebih mudah (tidak perlu market portfolio) <span class="pp">|</span></span>
+<span id="cb1-492"><a href="#cb1-492" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-493"><a href="#cb1-493" aria-hidden="true" tabindex="-1"></a>::: {.callout-warning}</span>
+<span id="cb1-494"><a href="#cb1-494" aria-hidden="true" tabindex="-1"></a><span class="fu">## Kesalahan Umum</span></span>
+<span id="cb1-495"><a href="#cb1-495" aria-hidden="true" tabindex="-1"></a>APT **tidak menentukan** faktor-faktor apa yang relevan — ini diserahkan kepada peneliti dan praktisi. Ini merupakan kelemahan sekaligus keunggulan: APT lebih fleksibel, tetapi memerlukan analisis empiris untuk mengidentifikasi faktor yang tepat. Faktor-faktor yang umum digunakan meliputi: pertumbuhan GDP, inflasi, *term spread*, *credit spread*, dan harga minyak.</span>
+<span id="cb1-496"><a href="#cb1-496" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-497"><a href="#cb1-497" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-498"><a href="#cb1-498" aria-hidden="true" tabindex="-1"></a><span class="fu">### Contoh Perhitungan APT</span></span>
+<span id="cb1-499"><a href="#cb1-499" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-500"><a href="#cb1-500" aria-hidden="true" tabindex="-1"></a>Diketahui dua faktor risiko makroekonomi:</span>
+<span id="cb1-501"><a href="#cb1-501" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-502"><a href="#cb1-502" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Faktor <span class="pp">|</span> Deskripsi <span class="pp">|</span> $\lambda$ (risk premium) <span class="pp">|</span></span>
+<span id="cb1-503"><a href="#cb1-503" aria-hidden="true" tabindex="-1"></a><span class="pp">|--------|----------|:----------------------:|</span></span>
+<span id="cb1-504"><a href="#cb1-504" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> $F_1$ <span class="pp">|</span> Pertumbuhan GDP tak terduga <span class="pp">|</span> 4% <span class="pp">|</span></span>
+<span id="cb1-505"><a href="#cb1-505" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> $F_2$ <span class="pp">|</span> Perubahan inflasi tak terduga <span class="pp">|</span> 2% <span class="pp">|</span></span>
+<span id="cb1-506"><a href="#cb1-506" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-507"><a href="#cb1-507" aria-hidden="true" tabindex="-1"></a>$R_f = 5\%$</span>
+<span id="cb1-508"><a href="#cb1-508" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-509"><a href="#cb1-509" aria-hidden="true" tabindex="-1"></a>Tiga saham memiliki sensitivitas faktor:</span>
+<span id="cb1-510"><a href="#cb1-510" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-511"><a href="#cb1-511" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Saham <span class="pp">|</span> $\beta_1$ (GDP) <span class="pp">|</span> $\beta_2$ (Inflasi) <span class="pp">|</span> Perhitungan <span class="pp">|</span> $E(R_i)$ <span class="pp">|</span></span>
+<span id="cb1-512"><a href="#cb1-512" aria-hidden="true" tabindex="-1"></a><span class="pp">|:-----:|:---:|:---:|------------|</span>:-:<span class="pp">|</span></span>
+<span id="cb1-513"><a href="#cb1-513" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> X <span class="pp">|</span> 1,5 <span class="pp">|</span> 0,8 <span class="pp">|</span> $5 + 1{,}5(4) + 0{,}8(2)$ <span class="pp">|</span> $12{,}6\%$ <span class="pp">|</span></span>
+<span id="cb1-514"><a href="#cb1-514" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Y <span class="pp">|</span> 0,5 <span class="pp">|</span> 1,2 <span class="pp">|</span> $5 + 0{,}5(4) + 1{,}2(2)$ <span class="pp">|</span> $9{,}4\%$ <span class="pp">|</span></span>
+<span id="cb1-515"><a href="#cb1-515" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Z <span class="pp">|</span> 1,0 <span class="pp">|</span> −0,3 <span class="pp">|</span> $5 + 1{,}0(4) + (-0{,}3)(2)$ <span class="pp">|</span> $8{,}4\%$ <span class="pp">|</span></span>
+<span id="cb1-516"><a href="#cb1-516" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-517"><a href="#cb1-517" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb1-518"><a href="#cb1-518" aria-hidden="true" tabindex="-1"></a><span class="fu">## Interpretasi</span></span>
+<span id="cb1-519"><a href="#cb1-519" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Saham X** sangat sensitif terhadap pertumbuhan GDP ($\beta_1 = 1{,}5$) → saham siklikal yang akan *outperform* saat ekonomi tumbuh kuat.</span>
+<span id="cb1-520"><a href="#cb1-520" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Saham Y** sensitif terhadap inflasi ($\beta_2 = 1{,}2$) → mungkin saham komoditas yang diuntungkan saat inflasi naik.</span>
+<span id="cb1-521"><a href="#cb1-521" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Saham Z** memiliki $\beta_2 &lt; 0$: return-nya cenderung turun saat inflasi naik → mungkin saham teknologi/growth yang terdampak negatif oleh kenaikan suku bunga.</span>
+<span id="cb1-522"><a href="#cb1-522" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-523"><a href="#cb1-523" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-524"><a href="#cb1-524" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; *Sumber: Fabozzi &amp; Markowitz (2011), Ch. 5; Avramov (2015), Ch. 5*</span></span>
+<span id="cb1-525"><a href="#cb1-525" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-526"><a href="#cb1-526" aria-hidden="true" tabindex="-1"></a><span class="fu">## Argumen No-Arbitrage</span></span>
+<span id="cb1-527"><a href="#cb1-527" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-528"><a href="#cb1-528" aria-hidden="true" tabindex="-1"></a><span class="fu">### Konsep Arbitrase</span></span>
+<span id="cb1-529"><a href="#cb1-529" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-530"><a href="#cb1-530" aria-hidden="true" tabindex="-1"></a>Arbitrase adalah strategi yang menghasilkan **profit tanpa risiko dan tanpa investasi neto**. Dalam pasar yang efisien, peluang arbitrase akan segera hilang karena pelaku pasar yang rasional akan mengeksploitasinya.</span>
+<span id="cb1-531"><a href="#cb1-531" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-532"><a href="#cb1-532" aria-hidden="true" tabindex="-1"></a><span class="fu">### Contoh Pelanggaran APT</span></span>
+<span id="cb1-533"><a href="#cb1-533" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-534"><a href="#cb1-534" aria-hidden="true" tabindex="-1"></a>Misalkan terdapat satu faktor dengan $\lambda = 6\%$ dan $R_f = 4\%$. Dua portofolio well-diversified:</span>
+<span id="cb1-535"><a href="#cb1-535" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-536"><a href="#cb1-536" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Portofolio <span class="pp">|</span> $\beta$ <span class="pp">|</span> $E(R)$ menurut APT <span class="pp">|</span> $E(R)$ aktual <span class="pp">|</span></span>
+<span id="cb1-537"><a href="#cb1-537" aria-hidden="true" tabindex="-1"></a><span class="pp">|:----------:|:------:|:------------------:|:-------------:|</span></span>
+<span id="cb1-538"><a href="#cb1-538" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> A <span class="pp">|</span> 1,0 <span class="pp">|</span> $4 + 1{,}0(6) = 10\%$ <span class="pp">|</span> 10% ✓ <span class="pp">|</span></span>
+<span id="cb1-539"><a href="#cb1-539" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> B <span class="pp">|</span> 1,0 <span class="pp">|</span> $4 + 1{,}0(6) = 10\%$ <span class="pp">|</span> 12% ✗ <span class="pp">|</span></span>
+<span id="cb1-540"><a href="#cb1-540" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-541"><a href="#cb1-541" aria-hidden="true" tabindex="-1"></a>Portofolio B menawarkan return 12% padahal seharusnya 10% berdasarkan beta-nya. Ini menciptakan **peluang arbitrase**:</span>
+<span id="cb1-542"><a href="#cb1-542" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-543"><a href="#cb1-543" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Short sell** Portofolio A (terima 10%)</span>
+<span id="cb1-544"><a href="#cb1-544" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Beli** Portofolio B (dapatkan 12%)</span>
+<span id="cb1-545"><a href="#cb1-545" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Profit tanpa risiko** = 12% − 10% = 2% (dengan investasi neto = 0 dan beta neto = 0)</span>
+<span id="cb1-546"><a href="#cb1-546" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-547"><a href="#cb1-547" aria-hidden="true" tabindex="-1"></a>Aksi arbitrase ini akan menekan harga B naik (sehingga return turun) dan harga A turun (return naik) hingga keduanya konvergen di 10%.</span>
+<span id="cb1-548"><a href="#cb1-548" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-549"><a href="#cb1-549" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; *Sumber: Avramov (2015), Ch. 5*</span></span>
+<span id="cb1-550"><a href="#cb1-550" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-551"><a href="#cb1-551" aria-hidden="true" tabindex="-1"></a><span class="fu">## Ringkasan</span></span>
+<span id="cb1-552"><a href="#cb1-552" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-553"><a href="#cb1-553" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>***Market model*** ($R_i = \alpha_i + \beta_i R_m + \varepsilon_i$) mendekomposisi return menjadi komponen sistematis dan idiosinkratik, serta menyederhanakan perhitungan covariance.</span>
+<span id="cb1-554"><a href="#cb1-554" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Proporsi risiko sistematis** diukur oleh $R^2 = \frac{\beta^2\sigma_m^2}{\sigma_i^2}$.</span>
+<span id="cb1-555"><a href="#cb1-555" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Model multifaktor** (Fama-French) menggunakan beberapa faktor risiko — *market*, *size* (SMB), *value* (HML) — untuk menjelaskan *expected return* lebih akurat daripada CAPM.</span>
+<span id="cb1-556"><a href="#cb1-556" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**APT** menyatakan bahwa *expected return* ditentukan oleh eksposur terhadap berbagai faktor risiko, berdasarkan prinsip *no-arbitrage*.</span>
+<span id="cb1-557"><a href="#cb1-557" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>APT lebih **fleksibel** dari CAPM (asumsi lebih lemah, multiple factors), namun **tidak menentukan** faktor apa yang relevan.</span>
+<span id="cb1-558"><a href="#cb1-558" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>Dalam praktik, model multifaktor digunakan untuk **atribusi kinerja**, **manajemen risiko**, dan **konstruksi portofolio**.</span>
+<span id="cb1-559"><a href="#cb1-559" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-560"><a href="#cb1-560" aria-hidden="true" tabindex="-1"></a><span class="fu">## Latihan Soal</span></span>
+<span id="cb1-561"><a href="#cb1-561" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-562"><a href="#cb1-562" aria-hidden="true" tabindex="-1"></a>**Soal 1 — Dekomposisi Risiko**</span>
+<span id="cb1-563"><a href="#cb1-563" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-564"><a href="#cb1-564" aria-hidden="true" tabindex="-1"></a>Saham PQR memiliki $\beta = 0{,}9$ dan total $\sigma = 35\%$. Standar deviasi pasar $\sigma_m = 18\%$. Hitung: (a) risiko sistematis, (b) risiko idiosinkratik, dan (c) $R^2$. Apakah saham ini lebih dipengaruhi pasar atau faktor spesifik?</span>
+<span id="cb1-565"><a href="#cb1-565" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-566"><a href="#cb1-566" aria-hidden="true" tabindex="-1"></a>**Soal 2 — Fama-French Three-Factor**</span>
+<span id="cb1-567"><a href="#cb1-567" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-568"><a href="#cb1-568" aria-hidden="true" tabindex="-1"></a>Diketahui: $R_f = 4\%$, $E(R_m - R_f) = 6\%$, $E(SMB) = 3{,}5\%$, $E(HML) = 4{,}5\%$. Saham GHI memiliki $\beta_{\text{MKT}} = 0{,}8$, $\beta_{\text{SMB}} = -0{,}3$, $\beta_{\text{HML}} = 1{,}2$. (a) Hitung expected return. (b) Apakah saham ini cenderung *large-cap* atau *small-cap*? *Growth* atau *value*? Jelaskan.</span>
+<span id="cb1-569"><a href="#cb1-569" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-570"><a href="#cb1-570" aria-hidden="true" tabindex="-1"></a>**Soal 3 — APT**</span>
+<span id="cb1-571"><a href="#cb1-571" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-572"><a href="#cb1-572" aria-hidden="true" tabindex="-1"></a>Dalam model APT dua faktor, $R_f = 5\%$, $\lambda_1 = 4\%$ (industrial production), $\lambda_2 = 2\%$ (unexpected inflation). Portofolio P memiliki $\beta_1 = 1{,}2$ dan $\beta_2 = -0{,}5$. (a) Hitung $E(R_P)$. (b) Jika return aktual yang diharapkan analis adalah 12%, apakah ada peluang arbitrase?</span>
+<span id="cb1-573"><a href="#cb1-573" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-574"><a href="#cb1-574" aria-hidden="true" tabindex="-1"></a>**Soal 4 — Perbandingan CAPM vs Multifaktor**</span>
+<span id="cb1-575"><a href="#cb1-575" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-576"><a href="#cb1-576" aria-hidden="true" tabindex="-1"></a>Saham JKL memiliki CAPM beta = 1,1 terhadap pasar. Analisis Fama-French menunjukkan $\beta_{\text{MKT}} = 0{,}9$, $\beta_{\text{SMB}} = 0{,}6$, $\beta_{\text{HML}} = 0{,}4$. Dengan $R_f = 4\%$, MRP = 7%, $E(SMB) = 3\%$, $E(HML) = 5\%$, hitung expected return menurut kedua model. Jelaskan mengapa hasilnya berbeda.</span>
+<span id="cb1-577"><a href="#cb1-577" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-578"><a href="#cb1-578" aria-hidden="true" tabindex="-1"></a><span class="fu">## Referensi</span></span>
+<span id="cb1-579"><a href="#cb1-579" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-580"><a href="#cb1-580" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Fabozzi, F. J., &amp; Markowitz, H. M. (2011). *The Theory and Practice of Investment Management* (2nd ed.), Chapter 5. John Wiley &amp; Sons.</span>
+<span id="cb1-581"><a href="#cb1-581" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Avramov, D. (2015). *Investment Management*, Chapter 5. Hebrew University of Jerusalem.</span>
+<span id="cb1-582"><a href="#cb1-582" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Fama, E. F., &amp; French, K. R. (1993). Common Risk Factors in the Returns on Stocks and Bonds. *Journal of Financial Economics*, 33(1), 3–56.</span>
+<span id="cb1-583"><a href="#cb1-583" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Ross, S. A. (1976). The Arbitrage Theory of Capital Asset Pricing. *Journal of Economic Theory*, 13(3), 341–360.</span></code></pre></div><button title="Salin ke Papan Klip" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

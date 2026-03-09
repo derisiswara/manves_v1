@@ -1,0 +1,155 @@
+/* ============================================
+   Manajemen Investasi — Custom Styles
+   EKM 19608 — Perbanas Institute
+   ============================================ */
+
+/* --- Typography --- */
+body {
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 600;
+}
+
+h1 {
+  border-bottom: 2px solid var(--bs-primary);
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.2rem;
+}
+
+/* --- Tables --- */
+table {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  border-collapse: collapse;
+}
+
+thead th {
+  background-color: var(--bs-primary);
+  color: #fff;
+  padding: 0.6rem 0.8rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+tbody td {
+  padding: 0.5rem 0.8rem;
+  border-bottom: 1px solid #dee2e6;
+}
+
+tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+/* Dark mode table header */
+[data-bs-theme="dark"] thead th {
+  background-color: #375a7f;
+}
+
+[data-bs-theme="dark"] tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* --- Callout enhancements --- */
+.callout {
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+  border-radius: 6px;
+}
+
+.callout-title {
+  font-weight: 700;
+}
+
+/* Formula callout — important */
+.callout-important {
+  border-left-width: 4px;
+}
+
+.callout-important .callout-body {
+  font-size: 1.05rem;
+}
+
+/* --- Math display --- */
+.MathJax, mjx-container {
+  font-size: 1.1em !important;
+  overflow-x: auto;
+}
+
+/* --- Code blocks --- */
+div.sourceCode {
+  border-radius: 6px;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+pre code {
+  font-size: 0.92rem;
+}
+
+/* --- Navbar subtitle --- */
+.navbar-brand .navbar-title {
+  font-weight: 700;
+}
+
+/* --- TOC --- */
+nav#TOC {
+  font-size: 0.92rem;
+}
+
+/* --- Landing page hero --- */
+.hero-section {
+  background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+  color: #fff;
+  padding: 3rem 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.hero-section h2 {
+  color: #fff;
+  border-bottom: none;
+}
+
+.hero-section p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* --- Schedule table accent --- */
+.schedule-table tbody tr:nth-child(8) {
+  background-color: rgba(231, 76, 60, 0.1);
+  font-weight: 600;
+}
+
+.schedule-table tbody tr:nth-child(15),
+.schedule-table tbody tr:nth-child(16) {
+  background-color: rgba(231, 76, 60, 0.1);
+  font-weight: 600;
+}
+
+/* --- Grading card --- */
+.grading-card {
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.grading-card h3 {
+  margin-top: 0;
+}
+
+/* --- Print styles --- */
+@media print {
+  .callout {
+    break-inside: avoid;
+  }
+  table {
+    break-inside: avoid;
+  }
+  nav, .navbar {
+    display: none !important;
+  }
+}

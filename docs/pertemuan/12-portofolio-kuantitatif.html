@@ -1,0 +1,1743 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="id" xml:lang="id"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Pertemuan 12: Reksa Dana &amp; ETF – Manajemen Investasi — EKM 19608</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-597958c53c93a607afca12fd375c57ed.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-7ac2f9da8c2617a4fdd15004b4601015.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-597958c53c93a607afca12fd375c57ed.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-7e5b54916349f3e3ac0a4b69b610fb13.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-c249eed7ddef9cecbef6d31ce12e065b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-7e5b54916349f3e3ac0a4b69b610fb13.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Tidak ada hasil",
+    "search-matching-documents-text": "dokumen cocok",
+    "search-copy-link-title": "Salin tautan untuk mencari",
+    "search-hide-matches-text": "Sembunyikan kecocokan lainnya",
+    "search-more-match-text": "kecocokan lainnya di dokumen ini",
+    "search-more-matches-text": "kecocokan lainnya di dokumen ini",
+    "search-clear-button-title": "Hapus",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Batal",
+    "search-submit-button-title": "Kirim",
+    "search-label": "Mencari"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Manajemen Investasi — EKM 19608</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Mencari"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Alihkan navigasi" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Beranda</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-materi" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Materi</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-materi">    
+        <li>
+    <a class="dropdown-item" href="../pertemuan/01-overview.html">
+ <span class="dropdown-text">01 — Overview Manajemen Investasi</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pertemuan/02-aset-investasi.html">
+ <span class="dropdown-text">02 — Kelas Aset &amp; Perusahaan Investasi</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pertemuan/03-seleksi-portofolio.html">
+ <span class="dropdown-text">03 — Seleksi Portofolio</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pertemuan/04-capm.html">
+ <span class="dropdown-text">04 — Capital Asset Pricing Model</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pertemuan/05-model-faktor.html">
+ <span class="dropdown-text">05 — Model Faktor &amp; Pengantar Multifaktor</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pertemuan/06-dinamika-harga.html">
+ <span class="dropdown-text">06 — Dinamika Harga Aset</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pertemuan/07-alokasi-aset.html">
+ <span class="dropdown-text">07 — Alokasi Aset &amp; Konstruksi Portofolio</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../pertemuan/09-saham-biasa.html">
+ <span class="dropdown-text">09 — Dasar-Dasar Saham Biasa</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pertemuan/10-manajemen-portofolio-ekuitas.html">
+ <span class="dropdown-text">10 — Manajemen Portofolio Ekuitas</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pertemuan/11-valuasi-saham.html">
+ <span class="dropdown-text">11 — Valuasi Saham</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pertemuan/12-portofolio-kuantitatif.html">
+ <span class="dropdown-text">12 — Reksa Dana &amp; ETF</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pertemuan/13-long-short.html">
+ <span class="dropdown-text">13 — Obligasi &amp; Pendapatan Tetap</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pertemuan/14-risiko-derivatif.html">
+ <span class="dropdown-text">14 — Derivatif Ekuitas &amp; Hedging</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-latihan" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Latihan</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-latihan">    
+        <li>
+    <a class="dropdown-item" href="../latihan/latihan-uts.html">
+ <span class="dropdown-text">Latihan UTS</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../latihan/latihan-uas.html">
+ <span class="dropdown-text">Latihan UAS</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../referensi.html"> 
+<span class="menu-text">Referensi</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Alihkan mode gelap"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Di halaman ini</h2>
+   
+  <ul>
+  <li><a href="#tujuan-pembelajaran" id="toc-tujuan-pembelajaran" class="nav-link active" data-scroll-target="#tujuan-pembelajaran"><span class="header-section-number">1</span> Tujuan Pembelajaran</a></li>
+  <li><a href="#pendahuluan-reksa-dana-sebagai-solusi-investasi" id="toc-pendahuluan-reksa-dana-sebagai-solusi-investasi" class="nav-link" data-scroll-target="#pendahuluan-reksa-dana-sebagai-solusi-investasi"><span class="header-section-number">2</span> Pendahuluan: Reksa Dana sebagai Solusi Investasi</a></li>
+  <li><a href="#cara-kerja-reksa-dana" id="toc-cara-kerja-reksa-dana" class="nav-link" data-scroll-target="#cara-kerja-reksa-dana"><span class="header-section-number">3</span> Cara Kerja Reksa Dana</a>
+  <ul class="collapse">
+  <li><a href="#mekanisme" id="toc-mekanisme" class="nav-link" data-scroll-target="#mekanisme"><span class="header-section-number">3.1</span> Mekanisme</a></li>
+  <li><a href="#nilai-aktiva-bersih-nab" id="toc-nilai-aktiva-bersih-nab" class="nav-link" data-scroll-target="#nilai-aktiva-bersih-nab"><span class="header-section-number">3.2</span> Nilai Aktiva Bersih (NAB)</a></li>
+  </ul></li>
+  <li><a href="#jenis-jenis-reksa-dana" id="toc-jenis-jenis-reksa-dana" class="nav-link" data-scroll-target="#jenis-jenis-reksa-dana"><span class="header-section-number">4</span> Jenis-Jenis Reksa Dana</a>
+  <ul class="collapse">
+  <li><a href="#berdasarkan-portofolio" id="toc-berdasarkan-portofolio" class="nav-link" data-scroll-target="#berdasarkan-portofolio"><span class="header-section-number">4.1</span> Berdasarkan Portofolio</a></li>
+  <li><a href="#berdasarkan-mekanisme-pengelolaan" id="toc-berdasarkan-mekanisme-pengelolaan" class="nav-link" data-scroll-target="#berdasarkan-mekanisme-pengelolaan"><span class="header-section-number">4.2</span> Berdasarkan Mekanisme Pengelolaan</a></li>
+  </ul></li>
+  <li><a href="#exchange-traded-funds-etf" id="toc-exchange-traded-funds-etf" class="nav-link" data-scroll-target="#exchange-traded-funds-etf"><span class="header-section-number">5</span> Exchange-Traded Funds (ETF)</a>
+  <ul class="collapse">
+  <li><a href="#konsep" id="toc-konsep" class="nav-link" data-scroll-target="#konsep"><span class="header-section-number">5.1</span> Konsep</a></li>
+  <li><a href="#etf-vs.-reksa-dana-konvensional" id="toc-etf-vs.-reksa-dana-konvensional" class="nav-link" data-scroll-target="#etf-vs.-reksa-dana-konvensional"><span class="header-section-number">5.2</span> ETF vs.&nbsp;Reksa Dana Konvensional</a></li>
+  </ul></li>
+  <li><a href="#biaya-reksa-dana" id="toc-biaya-reksa-dana" class="nav-link" data-scroll-target="#biaya-reksa-dana"><span class="header-section-number">6</span> Biaya Reksa Dana</a>
+  <ul class="collapse">
+  <li><a href="#jenis-biaya" id="toc-jenis-biaya" class="nav-link" data-scroll-target="#jenis-biaya"><span class="header-section-number">6.1</span> Jenis Biaya</a></li>
+  </ul></li>
+  <li><a href="#cara-memilih-reksa-dana" id="toc-cara-memilih-reksa-dana" class="nav-link" data-scroll-target="#cara-memilih-reksa-dana"><span class="header-section-number">7</span> Cara Memilih Reksa Dana</a>
+  <ul class="collapse">
+  <li><a href="#langkah-sistematis" id="toc-langkah-sistematis" class="nav-link" data-scroll-target="#langkah-sistematis"><span class="header-section-number">7.1</span> Langkah Sistematis</a></li>
+  <li><a href="#metrik-kinerja-reksa-dana" id="toc-metrik-kinerja-reksa-dana" class="nav-link" data-scroll-target="#metrik-kinerja-reksa-dana"><span class="header-section-number">7.2</span> Metrik Kinerja Reksa Dana</a></li>
+  </ul></li>
+  <li><a href="#ringkasan" id="toc-ringkasan" class="nav-link" data-scroll-target="#ringkasan"><span class="header-section-number">8</span> Ringkasan</a></li>
+  <li><a href="#latihan-soal" id="toc-latihan-soal" class="nav-link" data-scroll-target="#latihan-soal"><span class="header-section-number">9</span> Latihan Soal</a></li>
+  <li><a href="#referensi" id="toc-referensi" class="nav-link" data-scroll-target="#referensi"><span class="header-section-number">10</span> Referensi</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title">Pertemuan 12: Reksa Dana &amp; ETF</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Kode</button></div></div>
+<p class="subtitle lead">Manajemen Investasi — EKM 19608</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="tujuan-pembelajaran" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="tujuan-pembelajaran"><span class="header-section-number">1</span> Tujuan Pembelajaran</h2>
+<p>Setelah mengikuti pertemuan ini, mahasiswa diharapkan mampu:</p>
+<ol type="1">
+<li>Menjelaskan konsep reksa dana dan cara kerjanya.</li>
+<li>Membedakan jenis-jenis reksa dana berdasarkan portofolio dan mekanismenya.</li>
+<li>Menghitung dan menginterpretasikan Nilai Aktiva Bersih (NAB).</li>
+<li>Membandingkan reksa dana aktif dan pasif, serta reksa dana konvensional dan ETF.</li>
+<li>Menerapkan kriteria pemilihan reksa dana yang tepat sesuai profil investor.</li>
+</ol>
+</section>
+<section id="pendahuluan-reksa-dana-sebagai-solusi-investasi" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="pendahuluan-reksa-dana-sebagai-solusi-investasi"><span class="header-section-number">2</span> Pendahuluan: Reksa Dana sebagai Solusi Investasi</h2>
+<p>Kebanyakan investor individual tidak memiliki waktu, keahlian, atau modal yang cukup untuk membangun portofolio yang terdiversifikasi sendiri. <strong>Reksa dana</strong> hadir sebagai solusi — memungkinkan investor kecil mengakses portofolio yang dikelola secara profesional dengan biaya yang terjangkau.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Catatan</span>Definisi — Reksa Dana
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Reksa dana</strong> (<em>mutual fund</em>) adalah wadah yang menghimpun dana dari banyak investor untuk diinvestasikan bersama dalam portofolio efek (saham, obligasi, pasar uang) oleh Manajer Investasi (MI) yang profesional, diawasi oleh OJK.</p>
+</div>
+</div>
+<p>Tiga keunggulan utama reksa dana bagi investor individu:</p>
+<ol type="1">
+<li><strong>Diversifikasi instan</strong>: Dengan Rp 100.000 pun, investor memiliki “bagian” dari portofolio berisi puluhan hingga ratusan efek.</li>
+<li><strong>Manajemen profesional</strong>: Dikelola oleh MI berlisensi yang melakukan riset dan memantau pasar setiap hari.</li>
+<li><strong>Likuiditas</strong>: Dapat dicairkan (redemption) kapan saja pada NAB hari itu (T+2 untuk reksa dana konvensional).</li>
+</ol>
+<blockquote class="blockquote">
+<p><em>Sumber: OJK (2023); Reilly &amp; Brown (2015), Ch. 24</em></p>
+</blockquote>
+</section>
+<section id="cara-kerja-reksa-dana" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="cara-kerja-reksa-dana"><span class="header-section-number">3</span> Cara Kerja Reksa Dana</h2>
+<section id="mekanisme" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="mekanisme"><span class="header-section-number">3.1</span> Mekanisme</h3>
+<p>Ketika investor membeli reksa dana, mereka membeli <strong>unit penyertaan</strong> (UP). Uang terkumpul dari semua investor diinvestasikan oleh MI ke dalam portofolio efek. Bank Kustodian menyimpan aset tersebut secara terpisah dari aset MI.</p>
+<pre><code>Investor A ─┐
+Investor B ─┼──► REKSA DANA ──► Bank Kustodian ──► Portofolio Efek
+Investor C ─┘       (MI)          (Penyimpan)       (Saham/Obligasi)</code></pre>
+<p><strong>Pihak yang terlibat:</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Pihak</th>
+<th>Peran</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Manajer Investasi (MI)</strong></td>
+<td>Mengelola portofolio, membuat keputusan beli/jual</td>
+</tr>
+<tr class="even">
+<td><strong>Bank Kustodian</strong></td>
+<td>Menyimpan aset, menghitung NAB, administrasi</td>
+</tr>
+<tr class="odd">
+<td><strong>OJK</strong></td>
+<td>Mengatur dan mengawasi seluruh industri reksa dana</td>
+</tr>
+<tr class="even">
+<td><strong>Agen Penjual</strong></td>
+<td>Bank, perusahaan sekuritas, platform digital yang menjual unit penyertaan</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="nilai-aktiva-bersih-nab" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="nilai-aktiva-bersih-nab"><span class="header-section-number">3.2</span> Nilai Aktiva Bersih (NAB)</h3>
+<p><strong>NAB</strong> adalah nilai total aset reksa dana dikurangi liabilitas, dibagi jumlah unit penyertaan yang beredar.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Penting</span>Formula Kunci — NAB per Unit
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span class="math display">\[
+\text{NAB per unit} = \frac{\text{Total Nilai Aset Portofolio} - \text{Liabilitas}}{\text{Jumlah Unit Penyertaan Beredar}}
+\]</span></p>
+</div>
+</div>
+<p><strong>Contoh Perhitungan NAB:</strong></p>
+<p>Reksa dana “Maju Sejahtera” memiliki: - Total nilai saham dalam portofolio: Rp 500 miliar - Total nilai obligasi: Rp 200 miliar - Kas: Rp 10 miliar - Liabilitas (fee terutang dll.): Rp 5 miliar - Jumlah unit beredar: 350 juta unit</p>
+<p><span class="math display">\[
+\text{NAB per unit} = \frac{(500 + 200 + 10 - 5) \text{ miliar}}{350 \text{ juta unit}} = \frac{705 \text{ miliar}}{350 \text{ juta}} = \text{Rp } 2.014
+\]</span></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Interpretasi
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Jika investor membeli 1.000 unit pada NAB Rp 2.014, mereka membayar Rp 2.014.000. Jika 6 bulan kemudian NAB menjadi Rp 2.200, nilai investasinya menjadi Rp 2.200.000 — imbal hasil 9,2%.</p>
+</div>
+</div>
+<blockquote class="blockquote">
+<p><em>Sumber: OJK (2023); Reilly &amp; Brown (2015), Ch. 24</em></p>
+</blockquote>
+</section>
+</section>
+<section id="jenis-jenis-reksa-dana" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="jenis-jenis-reksa-dana"><span class="header-section-number">4</span> Jenis-Jenis Reksa Dana</h2>
+<section id="berdasarkan-portofolio" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="berdasarkan-portofolio"><span class="header-section-number">4.1</span> Berdasarkan Portofolio</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 37%">
+<col style="width: 17%">
+<col style="width: 28%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Jenis</th>
+<th>Portofolio Utama</th>
+<th style="text-align: center;">Risiko</th>
+<th>Cocok untuk</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Reksa Dana Pasar Uang (RDPU)</strong></td>
+<td>Deposito, SBI, obligasi &lt; 1 tahun</td>
+<td style="text-align: center;">Sangat rendah</td>
+<td>Dana darurat, investasi jangka pendek (&lt; 1 tahun)</td>
+</tr>
+<tr class="even">
+<td><strong>Reksa Dana Pendapatan Tetap (RDPT)</strong></td>
+<td>Obligasi &gt; 80%</td>
+<td style="text-align: center;">Rendah–menengah</td>
+<td>Tujuan 1–3 tahun, konservatif</td>
+</tr>
+<tr class="odd">
+<td><strong>Reksa Dana Saham (RDS)</strong></td>
+<td>Saham &gt; 80%</td>
+<td style="text-align: center;">Tinggi</td>
+<td>Tujuan &gt; 5 tahun, agresif</td>
+</tr>
+<tr class="even">
+<td><strong>Reksa Dana Campuran (RDC)</strong></td>
+<td>Mix saham + obligasi</td>
+<td style="text-align: center;">Menengah</td>
+<td>Tujuan 3–5 tahun, moderat</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Catatan</span>RDPU vs.&nbsp;Deposito
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>RDPU sering dibandingkan deposito karena risikonya sangat rendah. Perbedaan utama: RDPU <strong>tidak ada jaminan LPS</strong> (berbeda dari deposito yang dijamin s.d. Rp 2 miliar), namun umumnya lebih likuid (tidak ada penalti pencairan dini) dan bisa dimulai dari nominal sangat kecil.</p>
+</div>
+</div>
+</section>
+<section id="berdasarkan-mekanisme-pengelolaan" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="berdasarkan-mekanisme-pengelolaan"><span class="header-section-number">4.2</span> Berdasarkan Mekanisme Pengelolaan</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 34%">
+<col style="width: 52%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspek</th>
+<th>Reksa Dana Aktif</th>
+<th>Reksa Dana Pasif / Indeks</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Tujuan</strong></td>
+<td><em>Outperform</em> benchmark (alpha)</td>
+<td>Mereplikasi kinerja indeks</td>
+</tr>
+<tr class="even">
+<td><strong>Pengelolaan</strong></td>
+<td>MI aktif beli/jual, riset intensif</td>
+<td>Mengikuti komposisi indeks</td>
+</tr>
+<tr class="odd">
+<td><strong>Biaya (expense ratio)</strong></td>
+<td>Tinggi (1–3% per tahun)</td>
+<td>Rendah (0,1–0,5% per tahun)</td>
+</tr>
+<tr class="even">
+<td><strong>Turnover</strong></td>
+<td>Tinggi</td>
+<td>Sangat rendah</td>
+</tr>
+<tr class="odd">
+<td><strong>Kinerja historis</strong></td>
+<td>Sebagian besar gagal <em>outperform</em> jangka panjang</td>
+<td>Mengikuti pasar</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Peringatan</span>Fakta Penting — Reksa Dana Aktif vs.&nbsp;Pasif
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Riset S&amp;P Dow Jones (<em>SPIVA Scorecard</em>) secara konsisten menunjukkan bahwa <strong>lebih dari 80% reksa dana saham aktif gagal mengalahkan indeks</strong> dalam jangka 10–15 tahun, terutama setelah memperhitungkan biaya. Ini menjadi argumen kuat untuk reksa dana pasif/indeks bagi investor jangka panjang.</p>
+</div>
+</div>
+<blockquote class="blockquote">
+<p><em>Sumber: OJK (2023); Reilly &amp; Brown (2015), Ch. 24; S&amp;P SPIVA (2023)</em></p>
+</blockquote>
+</section>
+</section>
+<section id="exchange-traded-funds-etf" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="exchange-traded-funds-etf"><span class="header-section-number">5</span> Exchange-Traded Funds (ETF)</h2>
+<section id="konsep" class="level3" data-number="5.1">
+<h3 data-number="5.1" class="anchored" data-anchor-id="konsep"><span class="header-section-number">5.1</span> Konsep</h3>
+<p><strong>ETF</strong> adalah reksa dana yang diperdagangkan di bursa efek seperti saham biasa. Seperti reksa dana indeks, ETF umumnya mereplikasi kinerja suatu indeks (misal: LQ45, IDX30, IDX80).</p>
+</section>
+<section id="etf-vs.-reksa-dana-konvensional" class="level3" data-number="5.2">
+<h3 data-number="5.2" class="anchored" data-anchor-id="etf-vs.-reksa-dana-konvensional"><span class="header-section-number">5.2</span> ETF vs.&nbsp;Reksa Dana Konvensional</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 66%">
+<col style="width: 13%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspek</th>
+<th>Reksa Dana Konvensional</th>
+<th>ETF</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Cara membeli</strong></td>
+<td>Lewat MI, agen penjual, atau platform</td>
+<td>Lewat broker di bursa efek (seperti beli saham)</td>
+</tr>
+<tr class="even">
+<td><strong>Harga</strong></td>
+<td>Ditetapkan 1× sehari (NAB akhir hari)</td>
+<td>Berubah real-time sepanjang jam bursa</td>
+</tr>
+<tr class="odd">
+<td><strong>Transaksi minimum</strong></td>
+<td>Sering Rp 10.000–100.000</td>
+<td>Minimal 1 lot (100 unit)</td>
+</tr>
+<tr class="even">
+<td><strong>Biaya</strong></td>
+<td>Management fee + subscription/redemption fee</td>
+<td>Management fee (lebih rendah) + biaya broker</td>
+</tr>
+<tr class="odd">
+<td><strong>Likuiditas</strong></td>
+<td>T+2 (dari NAB)</td>
+<td>Intraday (bisa jual kapan saja)</td>
+</tr>
+<tr class="even">
+<td><strong>Transparansi portofolio</strong></td>
+<td>Dipublikasikan bulanan</td>
+<td>Dipublikasikan harian</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Catatan</span>Contoh ETF di Indonesia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>ETF yang tersedia di BEI antara lain: <strong>ETF LQ45</strong> (XIIT), <strong>ETF IDX30</strong>, <strong>ETF Sri-Kehati</strong>, dan beberapa ETF berbasis obligasi pemerintah. Ticker ETF di BEI umumnya diawali dengan “X”.</p>
+</div>
+</div>
+<blockquote class="blockquote">
+<p><em>Sumber: BEI (2023); OJK (2023)</em></p>
+</blockquote>
+</section>
+</section>
+<section id="biaya-reksa-dana" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="biaya-reksa-dana"><span class="header-section-number">6</span> Biaya Reksa Dana</h2>
+<section id="jenis-biaya" class="level3" data-number="6.1">
+<h3 data-number="6.1" class="anchored" data-anchor-id="jenis-biaya"><span class="header-section-number">6.1</span> Jenis Biaya</h3>
+<p>Biaya adalah faktor kritis yang sering diabaikan investor pemula. Biaya langsung mengurangi return.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 30%">
+<col style="width: 48%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Biaya</th>
+<th>Definisi</th>
+<th>Kapan Dikenakan</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Management fee</strong></td>
+<td>Biaya pengelolaan MI per tahun</td>
+<td>Dipotong dari NAB setiap hari (termasuk dalam NAB)</td>
+</tr>
+<tr class="even">
+<td><strong>Biaya kustodian</strong></td>
+<td>Fee bank kustodian</td>
+<td>Dipotong dari NAB</td>
+</tr>
+<tr class="odd">
+<td><strong>Subscription fee (front-load)</strong></td>
+<td>% biaya saat membeli</td>
+<td>Saat beli unit</td>
+</tr>
+<tr class="even">
+<td><strong>Redemption fee (back-load)</strong></td>
+<td>% biaya saat jual</td>
+<td>Saat jual unit</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Contoh Dampak Biaya:</strong></p>
+<p>Investasi Rp 100 juta, return portofolio 10% per tahun, selama 20 tahun.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Skenario</th>
+<th style="text-align: center;">Expense Ratio</th>
+<th style="text-align: center;">Nilai Akhir (20 tahun)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Tanpa biaya</td>
+<td style="text-align: center;">0%</td>
+<td style="text-align: center;">Rp 672,7 juta</td>
+</tr>
+<tr class="even">
+<td>ETF / Reksa Dana Indeks</td>
+<td style="text-align: center;">0,3%</td>
+<td style="text-align: center;">Rp 612,3 juta</td>
+</tr>
+<tr class="odd">
+<td>Reksa Dana Aktif</td>
+<td style="text-align: center;">2,0%</td>
+<td style="text-align: center;">Rp 457,0 juta</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Peringatan</span>Dampak Biaya Jangka Panjang
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Selisih expense ratio 1,7% per tahun mengurangi nilai akhir sekitar Rp 155 juta — lebih dari 25% dari nilai total. Biaya kecil yang tampak tidak signifikan dalam jangka pendek menjadi sangat material dalam jangka panjang karena efek <strong>compounding biaya</strong>.</p>
+</div>
+</div>
+<blockquote class="blockquote">
+<p><em>Sumber: Reilly &amp; Brown (2015), Ch. 24; OJK (2023)</em></p>
+</blockquote>
+</section>
+</section>
+<section id="cara-memilih-reksa-dana" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="cara-memilih-reksa-dana"><span class="header-section-number">7</span> Cara Memilih Reksa Dana</h2>
+<section id="langkah-sistematis" class="level3" data-number="7.1">
+<h3 data-number="7.1" class="anchored" data-anchor-id="langkah-sistematis"><span class="header-section-number">7.1</span> Langkah Sistematis</h3>
+<ol type="1">
+<li><strong>Tentukan tujuan investasi dan horizon waktu</strong> → menentukan jenis reksa dana yang tepat.</li>
+<li><strong>Sesuaikan dengan profil risiko</strong> → konservatif (RDPU/RDPT), moderat (RDC), agresif (RDS).</li>
+<li><strong>Periksa rekam jejak kinerja</strong> → minimal 3–5 tahun, bandingkan dengan benchmark.</li>
+<li><strong>Perhatikan biaya</strong> → cek expense ratio, subscription/redemption fee.</li>
+<li><strong>Cek reputasi MI</strong> → AUM (aset kelolaan), pengalaman, rekam jejak MI.</li>
+<li><strong>Pastikan legal OJK</strong> → cek di <a href="https://pengawasan.ojk.go.id">pengawasan.ojk.go.id</a> — waspada reksa dana ilegal!</li>
+</ol>
+</section>
+<section id="metrik-kinerja-reksa-dana" class="level3" data-number="7.2">
+<h3 data-number="7.2" class="anchored" data-anchor-id="metrik-kinerja-reksa-dana"><span class="header-section-number">7.2</span> Metrik Kinerja Reksa Dana</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 30%">
+<col style="width: 43%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Metrik</th>
+<th>Formula</th>
+<th>Interpretasi</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Return</strong></td>
+<td><span class="math inline">\(\frac{\text{NAB}_t - \text{NAB}_0}{\text{NAB}_0}\)</span></td>
+<td>Imbal hasil absolut</td>
+</tr>
+<tr class="even">
+<td><strong>Sharpe Ratio</strong></td>
+<td><span class="math inline">\(\frac{R_p - R_f}{\sigma_p}\)</span></td>
+<td>Return per unit risiko</td>
+</tr>
+<tr class="odd">
+<td><strong>Alpha (Jensen’s)</strong></td>
+<td><span class="math inline">\(R_p - [R_f + \beta(R_m - R_f)]\)</span></td>
+<td>Return di atas/bawah benchmark</td>
+</tr>
+<tr class="even">
+<td><strong>Tracking Error</strong></td>
+<td><span class="math inline">\(\sigma(R_p - R_{\text{idx}})\)</span></td>
+<td>Penyimpangan dari indeks (reksa dana indeks/ETF)</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Tips Praktis
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Untuk investor pemula dengan jangka panjang (&gt;5 tahun), pertimbangkan reksa dana indeks atau ETF terlebih dahulu. Biayanya rendah, transparan, dan secara historis sulit dikalahkan oleh reksa dana aktif dalam jangka panjang. Setelah lebih berpengalaman, dapat mempertimbangkan reksa dana aktif yang konsisten menghasilkan alpha.</p>
+</div>
+</div>
+<blockquote class="blockquote">
+<p><em>Sumber: OJK (2023); Reilly &amp; Brown (2015), Ch. 24</em></p>
+</blockquote>
+</section>
+</section>
+<section id="ringkasan" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="ringkasan"><span class="header-section-number">8</span> Ringkasan</h2>
+<ol type="1">
+<li><strong>Reksa dana</strong> menghimpun dana dari banyak investor untuk dikelola secara kolektif oleh Manajer Investasi, diawasi OJK.</li>
+<li><strong>NAB per unit</strong> = (Total Aset − Liabilitas) / Jumlah Unit Beredar — nilai inilah yang mencerminkan harga reksa dana.</li>
+<li><strong>Empat jenis utama</strong>: Pasar Uang (risiko terendah) → Pendapatan Tetap → Campuran → Saham (risiko tertinggi), sesuaikan dengan horizon waktu dan toleransi risiko.</li>
+<li><strong>Reksa dana aktif vs.&nbsp;pasif</strong>: Aktif bertujuan <em>outperform</em> dengan biaya lebih tinggi; pasif mengikuti indeks dengan biaya rendah. Mayoritas reksa dana aktif gagal <em>outperform</em> indeks jangka panjang.</li>
+<li><strong>ETF</strong> adalah reksa dana indeks yang diperdagangkan di bursa secara real-time — lebih likuid dan transparan dibanding reksa dana konvensional.</li>
+<li><strong>Biaya adalah faktor kritis</strong> — perbedaan 1–2% expense ratio per tahun sangat signifikan dalam jangka 10–20 tahun karena efek compounding.</li>
+</ol>
+</section>
+<section id="latihan-soal" class="level2" data-number="9">
+<h2 data-number="9" class="anchored" data-anchor-id="latihan-soal"><span class="header-section-number">9</span> Latihan Soal</h2>
+<p><strong>Soal 1 — Perhitungan NAB</strong></p>
+<p>Reksa dana “Nusantara Growth” memiliki portofolio: - Saham senilai Rp 800 miliar - Obligasi senilai Rp 150 miliar - Kas Rp 20 miliar - Liabilitas (fee terutang, dll.) Rp 8 miliar - Jumlah unit beredar: 500 juta unit</p>
+<ol type="a">
+<li>Hitung NAB per unit. (b) Investor Budi memiliki 10.000 unit — berapa nilai investasinya? (c) Bulan depan portofolio naik 5%, sementara liabilitas tetap dan unit beredar bertambah 10 juta (karena investor baru masuk). Hitung NAB baru per unit.</li>
+</ol>
+<p><strong>Soal 2 — Pemilihan Jenis Reksa Dana</strong></p>
+<p>Cocokkan profil investor berikut dengan jenis reksa dana yang paling tepat dan jelaskan alasannya:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 55%">
+<col style="width: 44%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Investor</th>
+<th>Profil</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Andi</td>
+<td>Menabung untuk dana pensiun 25 tahun lagi, bisa menerima fluktuasi jangka pendek</td>
+</tr>
+<tr class="even">
+<td>Budi</td>
+<td>Dana darurat yang perlu bisa dicairkan kapan saja tanpa risiko turun</td>
+</tr>
+<tr class="odd">
+<td>Citra</td>
+<td>Menabung untuk uang muka rumah 3 tahun lagi, tidak suka risiko tinggi</td>
+</tr>
+<tr class="even">
+<td>Dian</td>
+<td>Investor berpengalaman, tujuan jangka panjang 10 tahun, tapi ingin ada alokasi defensif</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Soal 3 — Dampak Biaya</strong></p>
+<p>Investor menanamkan Rp 50 juta selama 15 tahun. Return portofolio bruto 9% per tahun. Bandingkan dua pilihan: - Reksa Dana A (aktif): expense ratio 2,2% per tahun - Reksa Dana B (indeks/ETF): expense ratio 0,3% per tahun</p>
+<ol type="a">
+<li>Hitung nilai akhir masing-masing (gunakan rumus compound: <span class="math inline">\(V = P(1+r)^n\)</span>, dengan <span class="math inline">\(r\)</span> = return net of fees). (b) Berapa selisih nilai akhirnya? (c) Berapa % dari nilai akhir Reksa Dana B yang “hilang” akibat fee tinggi di Reksa Dana A?</li>
+</ol>
+<p><strong>Soal 4 — Evaluasi Kinerja</strong></p>
+<p>Reksa dana saham ABC membukukan return 3 tahun terakhir: +12%, +8%, −3%. Benchmark IHSG: +10%, +5%, −5%. <span class="math inline">\(R_f = 4\%\)</span> per tahun (rata-rata), <span class="math inline">\(\sigma_p = 15\%\)</span>, <span class="math inline">\(\beta = 1{,}1\)</span>.</p>
+<ol type="a">
+<li>Hitung rata-rata return geometrik reksa dana dan IHSG. (b) Hitung Sharpe Ratio reksa dana. (c) Hitung alpha Jensen — apakah manajer menambah nilai atau tidak? (d) Apakah reksa dana ini layak dipilih? Pertimbangkan semua metrik.</li>
+</ol>
+</section>
+<section id="referensi" class="level2" data-number="10">
+<h2 data-number="10" class="anchored" data-anchor-id="referensi"><span class="header-section-number">10</span> Referensi</h2>
+<ul>
+<li>OJK. (2023). <em>Reksa Dana: Panduan untuk Investor</em>. Otoritas Jasa Keuangan.</li>
+<li>Reilly, F. K., &amp; Brown, K. C. (2015). <em>Investment Analysis and Portfolio Management</em> (10th ed.), Chapter 24. Cengage Learning.</li>
+<li>Fabozzi, F. J., &amp; Markowitz, H. M. (2011). <em>The Theory and Practice of Investment Management</em> (2nd ed.), Chapter 3. John Wiley &amp; Sons.</li>
+<li>S&amp;P Dow Jones Indices. (2023). <em>SPIVA Indonesia Scorecard</em>. S&amp;P Global.</li>
+</ul>
+
+
+<!-- -->
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Disalin!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Disalin!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+    const viewSource = window.document.getElementById('quarto-view-source') ||
+                       window.document.getElementById('quarto-code-tools-source');
+    if (viewSource) {
+      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+      viewSource.addEventListener("click", function(e) {
+        if (sourceUrl) {
+          // rstudio viewer pane
+          if (/\bcapabilities=\b/.test(window.location)) {
+            window.open(sourceUrl);
+          } else {
+            window.location.href = sourceUrl;
+          }
+        } else {
+          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+          modal.show();
+        }
+        return false;
+      });
+    }
+    function toggleCodeHandler(show) {
+      return function(e) {
+        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+        for (let i=0; i<detailsSrc.length; i++) {
+          const details = detailsSrc[i].parentElement;
+          if (show) {
+            details.open = true;
+          } else {
+            details.removeAttribute("open");
+          }
+        }
+        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+        const fromCls = show ? "hidden" : "unhidden";
+        const toCls = show ? "unhidden" : "hidden";
+        for (let i=0; i<cellCodeDivs.length; i++) {
+          const codeDiv = cellCodeDivs[i];
+          if (codeDiv.classList.contains(fromCls)) {
+            codeDiv.classList.remove(fromCls);
+            codeDiv.classList.add(toCls);
+          } 
+        }
+        return false;
+      }
+    }
+    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+    if (hideAllCode) {
+      hideAllCode.addEventListener("click", toggleCodeHandler(false));
+    }
+    const showAllCode = window.document.getElementById("quarto-show-all-code");
+    if (showAllCode) {
+      showAllCode.addEventListener("click", toggleCodeHandler(true));
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Kode Sumber</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Pertemuan 12: Reksa Dana &amp; ETF"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "Manajemen Investasi — EKM 19608"</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="fu">## Tujuan Pembelajaran</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>Setelah mengikuti pertemuan ini, mahasiswa diharapkan mampu:</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Menjelaskan konsep reksa dana dan cara kerjanya.</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Membedakan jenis-jenis reksa dana berdasarkan portofolio dan mekanismenya.</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Menghitung dan menginterpretasikan Nilai Aktiva Bersih (NAB).</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Membandingkan reksa dana aktif dan pasif, serta reksa dana konvensional dan ETF.</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>Menerapkan kriteria pemilihan reksa dana yang tepat sesuai profil investor.</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="fu">## Pendahuluan: Reksa Dana sebagai Solusi Investasi</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>Kebanyakan investor individual tidak memiliki waktu, keahlian, atau modal yang cukup untuk membangun portofolio yang terdiversifikasi sendiri. **Reksa dana** hadir sebagai solusi — memungkinkan investor kecil mengakses portofolio yang dikelola secara profesional dengan biaya yang terjangkau.</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="fu">## Definisi — Reksa Dana</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>**Reksa dana** (*mutual fund*) adalah wadah yang menghimpun dana dari banyak investor untuk diinvestasikan bersama dalam portofolio efek (saham, obligasi, pasar uang) oleh Manajer Investasi (MI) yang profesional, diawasi oleh OJK.</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>Tiga keunggulan utama reksa dana bagi investor individu:</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Diversifikasi instan**: Dengan Rp 100.000 pun, investor memiliki "bagian" dari portofolio berisi puluhan hingga ratusan efek.</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Manajemen profesional**: Dikelola oleh MI berlisensi yang melakukan riset dan memantau pasar setiap hari.</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Likuiditas**: Dapat dicairkan (redemption) kapan saja pada NAB hari itu (T+2 untuk reksa dana konvensional).</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; *Sumber: OJK (2023); Reilly &amp; Brown (2015), Ch. 24*</span></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a><span class="fu">## Cara Kerja Reksa Dana</span></span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a><span class="fu">### Mekanisme</span></span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>Ketika investor membeli reksa dana, mereka membeli **unit penyertaan** (UP). Uang terkumpul dari semua investor diinvestasikan oleh MI ke dalam portofolio efek. Bank Kustodian menyimpan aset tersebut secara terpisah dari aset MI.</span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a><span class="in">Investor A ─┐</span></span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a><span class="in">Investor B ─┼──► REKSA DANA ──► Bank Kustodian ──► Portofolio Efek</span></span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a><span class="in">Investor C ─┘       (MI)          (Penyimpan)       (Saham/Obligasi)</span></span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>**Pihak yang terlibat:**</span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Pihak <span class="pp">|</span> Peran <span class="pp">|</span></span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a><span class="pp">|-------|-------|</span></span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Manajer Investasi (MI)** <span class="pp">|</span> Mengelola portofolio, membuat keputusan beli/jual <span class="pp">|</span></span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Bank Kustodian** <span class="pp">|</span> Menyimpan aset, menghitung NAB, administrasi <span class="pp">|</span></span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **OJK** <span class="pp">|</span> Mengatur dan mengawasi seluruh industri reksa dana <span class="pp">|</span></span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Agen Penjual** <span class="pp">|</span> Bank, perusahaan sekuritas, platform digital yang menjual unit penyertaan <span class="pp">|</span></span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a><span class="fu">### Nilai Aktiva Bersih (NAB)</span></span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a>**NAB** adalah nilai total aset reksa dana dikurangi liabilitas, dibagi jumlah unit penyertaan yang beredar.</span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a>::: {.callout-important}</span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a><span class="fu">## Formula Kunci — NAB per Unit</span></span>
+<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a>\text{NAB per unit} = \frac{\text{Total Nilai Aset Portofolio} - \text{Liabilitas}}{\text{Jumlah Unit Penyertaan Beredar}}</span>
+<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a>**Contoh Perhitungan NAB:**</span>
+<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a>Reksa dana "Maju Sejahtera" memiliki:</span>
+<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Total nilai saham dalam portofolio: Rp 500 miliar</span>
+<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Total nilai obligasi: Rp 200 miliar</span>
+<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Kas: Rp 10 miliar</span>
+<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Liabilitas (fee terutang dll.): Rp 5 miliar</span>
+<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Jumlah unit beredar: 350 juta unit</span>
+<span id="cb2-73"><a href="#cb2-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb2-75"><a href="#cb2-75" aria-hidden="true" tabindex="-1"></a>\text{NAB per unit} = \frac{(500 + 200 + 10 - 5) \text{ miliar}}{350 \text{ juta unit}} = \frac{705 \text{ miliar}}{350 \text{ juta}} = \text{Rp } 2.014</span>
+<span id="cb2-76"><a href="#cb2-76" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb2-77"><a href="#cb2-77" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-78"><a href="#cb2-78" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb2-79"><a href="#cb2-79" aria-hidden="true" tabindex="-1"></a><span class="fu">## Interpretasi</span></span>
+<span id="cb2-80"><a href="#cb2-80" aria-hidden="true" tabindex="-1"></a>Jika investor membeli 1.000 unit pada NAB Rp 2.014, mereka membayar Rp 2.014.000. Jika 6 bulan kemudian NAB menjadi Rp 2.200, nilai investasinya menjadi Rp 2.200.000 — imbal hasil 9,2%.</span>
+<span id="cb2-81"><a href="#cb2-81" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb2-82"><a href="#cb2-82" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-83"><a href="#cb2-83" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; *Sumber: OJK (2023); Reilly &amp; Brown (2015), Ch. 24*</span></span>
+<span id="cb2-84"><a href="#cb2-84" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-85"><a href="#cb2-85" aria-hidden="true" tabindex="-1"></a><span class="fu">## Jenis-Jenis Reksa Dana</span></span>
+<span id="cb2-86"><a href="#cb2-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-87"><a href="#cb2-87" aria-hidden="true" tabindex="-1"></a><span class="fu">### Berdasarkan Portofolio</span></span>
+<span id="cb2-88"><a href="#cb2-88" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-89"><a href="#cb2-89" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Jenis <span class="pp">|</span> Portofolio Utama <span class="pp">|</span> Risiko <span class="pp">|</span> Cocok untuk <span class="pp">|</span></span>
+<span id="cb2-90"><a href="#cb2-90" aria-hidden="true" tabindex="-1"></a><span class="pp">|-------|-----------------|:------:|-------------|</span></span>
+<span id="cb2-91"><a href="#cb2-91" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Reksa Dana Pasar Uang (RDPU)** <span class="pp">|</span> Deposito, SBI, obligasi &lt; 1 tahun <span class="pp">|</span> Sangat rendah <span class="pp">|</span> Dana darurat, investasi jangka pendek (&lt; 1 tahun) <span class="pp">|</span></span>
+<span id="cb2-92"><a href="#cb2-92" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Reksa Dana Pendapatan Tetap (RDPT)** <span class="pp">|</span> Obligasi &gt; 80% <span class="pp">|</span> Rendah–menengah <span class="pp">|</span> Tujuan 1–3 tahun, konservatif <span class="pp">|</span></span>
+<span id="cb2-93"><a href="#cb2-93" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Reksa Dana Saham (RDS)** <span class="pp">|</span> Saham &gt; 80% <span class="pp">|</span> Tinggi <span class="pp">|</span> Tujuan &gt; 5 tahun, agresif <span class="pp">|</span></span>
+<span id="cb2-94"><a href="#cb2-94" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Reksa Dana Campuran (RDC)** <span class="pp">|</span> Mix saham + obligasi <span class="pp">|</span> Menengah <span class="pp">|</span> Tujuan 3–5 tahun, moderat <span class="pp">|</span></span>
+<span id="cb2-95"><a href="#cb2-95" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-96"><a href="#cb2-96" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb2-97"><a href="#cb2-97" aria-hidden="true" tabindex="-1"></a><span class="fu">## RDPU vs. Deposito</span></span>
+<span id="cb2-98"><a href="#cb2-98" aria-hidden="true" tabindex="-1"></a>RDPU sering dibandingkan deposito karena risikonya sangat rendah. Perbedaan utama: RDPU **tidak ada jaminan LPS** (berbeda dari deposito yang dijamin s.d. Rp 2 miliar), namun umumnya lebih likuid (tidak ada penalti pencairan dini) dan bisa dimulai dari nominal sangat kecil.</span>
+<span id="cb2-99"><a href="#cb2-99" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb2-100"><a href="#cb2-100" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-101"><a href="#cb2-101" aria-hidden="true" tabindex="-1"></a><span class="fu">### Berdasarkan Mekanisme Pengelolaan</span></span>
+<span id="cb2-102"><a href="#cb2-102" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-103"><a href="#cb2-103" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Aspek <span class="pp">|</span> Reksa Dana Aktif <span class="pp">|</span> Reksa Dana Pasif / Indeks <span class="pp">|</span></span>
+<span id="cb2-104"><a href="#cb2-104" aria-hidden="true" tabindex="-1"></a><span class="pp">|-------|-----------------|--------------------------|</span></span>
+<span id="cb2-105"><a href="#cb2-105" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Tujuan** <span class="pp">|</span> *Outperform* benchmark (alpha) <span class="pp">|</span> Mereplikasi kinerja indeks <span class="pp">|</span></span>
+<span id="cb2-106"><a href="#cb2-106" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Pengelolaan** <span class="pp">|</span> MI aktif beli/jual, riset intensif <span class="pp">|</span> Mengikuti komposisi indeks <span class="pp">|</span></span>
+<span id="cb2-107"><a href="#cb2-107" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Biaya (expense ratio)** <span class="pp">|</span> Tinggi (1–3% per tahun) <span class="pp">|</span> Rendah (0,1–0,5% per tahun) <span class="pp">|</span></span>
+<span id="cb2-108"><a href="#cb2-108" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Turnover** <span class="pp">|</span> Tinggi <span class="pp">|</span> Sangat rendah <span class="pp">|</span></span>
+<span id="cb2-109"><a href="#cb2-109" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Kinerja historis** <span class="pp">|</span> Sebagian besar gagal *outperform* jangka panjang <span class="pp">|</span> Mengikuti pasar <span class="pp">|</span></span>
+<span id="cb2-110"><a href="#cb2-110" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-111"><a href="#cb2-111" aria-hidden="true" tabindex="-1"></a>::: {.callout-warning}</span>
+<span id="cb2-112"><a href="#cb2-112" aria-hidden="true" tabindex="-1"></a><span class="fu">## Fakta Penting — Reksa Dana Aktif vs. Pasif</span></span>
+<span id="cb2-113"><a href="#cb2-113" aria-hidden="true" tabindex="-1"></a>Riset S&amp;P Dow Jones (*SPIVA Scorecard*) secara konsisten menunjukkan bahwa **lebih dari 80% reksa dana saham aktif gagal mengalahkan indeks** dalam jangka 10–15 tahun, terutama setelah memperhitungkan biaya. Ini menjadi argumen kuat untuk reksa dana pasif/indeks bagi investor jangka panjang.</span>
+<span id="cb2-114"><a href="#cb2-114" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb2-115"><a href="#cb2-115" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-116"><a href="#cb2-116" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; *Sumber: OJK (2023); Reilly &amp; Brown (2015), Ch. 24; S&amp;P SPIVA (2023)*</span></span>
+<span id="cb2-117"><a href="#cb2-117" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-118"><a href="#cb2-118" aria-hidden="true" tabindex="-1"></a><span class="fu">## Exchange-Traded Funds (ETF)</span></span>
+<span id="cb2-119"><a href="#cb2-119" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-120"><a href="#cb2-120" aria-hidden="true" tabindex="-1"></a><span class="fu">### Konsep</span></span>
+<span id="cb2-121"><a href="#cb2-121" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-122"><a href="#cb2-122" aria-hidden="true" tabindex="-1"></a>**ETF** adalah reksa dana yang diperdagangkan di bursa efek seperti saham biasa. Seperti reksa dana indeks, ETF umumnya mereplikasi kinerja suatu indeks (misal: LQ45, IDX30, IDX80).</span>
+<span id="cb2-123"><a href="#cb2-123" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-124"><a href="#cb2-124" aria-hidden="true" tabindex="-1"></a><span class="fu">### ETF vs. Reksa Dana Konvensional</span></span>
+<span id="cb2-125"><a href="#cb2-125" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-126"><a href="#cb2-126" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Aspek <span class="pp">|</span> Reksa Dana Konvensional <span class="pp">|</span> ETF <span class="pp">|</span></span>
+<span id="cb2-127"><a href="#cb2-127" aria-hidden="true" tabindex="-1"></a><span class="pp">|-------|------------------------|-----|</span></span>
+<span id="cb2-128"><a href="#cb2-128" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Cara membeli** <span class="pp">|</span> Lewat MI, agen penjual, atau platform <span class="pp">|</span> Lewat broker di bursa efek (seperti beli saham) <span class="pp">|</span></span>
+<span id="cb2-129"><a href="#cb2-129" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Harga** <span class="pp">|</span> Ditetapkan 1× sehari (NAB akhir hari) <span class="pp">|</span> Berubah real-time sepanjang jam bursa <span class="pp">|</span></span>
+<span id="cb2-130"><a href="#cb2-130" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Transaksi minimum** <span class="pp">|</span> Sering Rp 10.000–100.000 <span class="pp">|</span> Minimal 1 lot (100 unit) <span class="pp">|</span></span>
+<span id="cb2-131"><a href="#cb2-131" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Biaya** <span class="pp">|</span> Management fee + subscription/redemption fee <span class="pp">|</span> Management fee (lebih rendah) + biaya broker <span class="pp">|</span></span>
+<span id="cb2-132"><a href="#cb2-132" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Likuiditas** <span class="pp">|</span> T+2 (dari NAB) <span class="pp">|</span> Intraday (bisa jual kapan saja) <span class="pp">|</span></span>
+<span id="cb2-133"><a href="#cb2-133" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Transparansi portofolio** <span class="pp">|</span> Dipublikasikan bulanan <span class="pp">|</span> Dipublikasikan harian <span class="pp">|</span></span>
+<span id="cb2-134"><a href="#cb2-134" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-135"><a href="#cb2-135" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb2-136"><a href="#cb2-136" aria-hidden="true" tabindex="-1"></a><span class="fu">## Contoh ETF di Indonesia</span></span>
+<span id="cb2-137"><a href="#cb2-137" aria-hidden="true" tabindex="-1"></a>ETF yang tersedia di BEI antara lain: **ETF LQ45** (XIIT), **ETF IDX30**, **ETF Sri-Kehati**, dan beberapa ETF berbasis obligasi pemerintah. Ticker ETF di BEI umumnya diawali dengan "X".</span>
+<span id="cb2-138"><a href="#cb2-138" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb2-139"><a href="#cb2-139" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-140"><a href="#cb2-140" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; *Sumber: BEI (2023); OJK (2023)*</span></span>
+<span id="cb2-141"><a href="#cb2-141" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-142"><a href="#cb2-142" aria-hidden="true" tabindex="-1"></a><span class="fu">## Biaya Reksa Dana</span></span>
+<span id="cb2-143"><a href="#cb2-143" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-144"><a href="#cb2-144" aria-hidden="true" tabindex="-1"></a><span class="fu">### Jenis Biaya</span></span>
+<span id="cb2-145"><a href="#cb2-145" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-146"><a href="#cb2-146" aria-hidden="true" tabindex="-1"></a>Biaya adalah faktor kritis yang sering diabaikan investor pemula. Biaya langsung mengurangi return.</span>
+<span id="cb2-147"><a href="#cb2-147" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-148"><a href="#cb2-148" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Biaya <span class="pp">|</span> Definisi <span class="pp">|</span> Kapan Dikenakan <span class="pp">|</span></span>
+<span id="cb2-149"><a href="#cb2-149" aria-hidden="true" tabindex="-1"></a><span class="pp">|-------|----------|----------------|</span></span>
+<span id="cb2-150"><a href="#cb2-150" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Management fee** <span class="pp">|</span> Biaya pengelolaan MI per tahun <span class="pp">|</span> Dipotong dari NAB setiap hari (termasuk dalam NAB) <span class="pp">|</span></span>
+<span id="cb2-151"><a href="#cb2-151" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Biaya kustodian** <span class="pp">|</span> Fee bank kustodian <span class="pp">|</span> Dipotong dari NAB <span class="pp">|</span></span>
+<span id="cb2-152"><a href="#cb2-152" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Subscription fee (front-load)** <span class="pp">|</span> % biaya saat membeli <span class="pp">|</span> Saat beli unit <span class="pp">|</span></span>
+<span id="cb2-153"><a href="#cb2-153" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Redemption fee (back-load)** <span class="pp">|</span> % biaya saat jual <span class="pp">|</span> Saat jual unit <span class="pp">|</span></span>
+<span id="cb2-154"><a href="#cb2-154" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-155"><a href="#cb2-155" aria-hidden="true" tabindex="-1"></a>**Contoh Dampak Biaya:**</span>
+<span id="cb2-156"><a href="#cb2-156" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-157"><a href="#cb2-157" aria-hidden="true" tabindex="-1"></a>Investasi Rp 100 juta, return portofolio 10% per tahun, selama 20 tahun.</span>
+<span id="cb2-158"><a href="#cb2-158" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-159"><a href="#cb2-159" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Skenario <span class="pp">|</span> Expense Ratio <span class="pp">|</span> Nilai Akhir (20 tahun) <span class="pp">|</span></span>
+<span id="cb2-160"><a href="#cb2-160" aria-hidden="true" tabindex="-1"></a><span class="pp">|----------|:------------:|:---------------------:|</span></span>
+<span id="cb2-161"><a href="#cb2-161" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Tanpa biaya <span class="pp">|</span> 0% <span class="pp">|</span> Rp 672,7 juta <span class="pp">|</span></span>
+<span id="cb2-162"><a href="#cb2-162" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> ETF / Reksa Dana Indeks <span class="pp">|</span> 0,3% <span class="pp">|</span> Rp 612,3 juta <span class="pp">|</span></span>
+<span id="cb2-163"><a href="#cb2-163" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Reksa Dana Aktif <span class="pp">|</span> 2,0% <span class="pp">|</span> Rp 457,0 juta <span class="pp">|</span></span>
+<span id="cb2-164"><a href="#cb2-164" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-165"><a href="#cb2-165" aria-hidden="true" tabindex="-1"></a>::: {.callout-warning}</span>
+<span id="cb2-166"><a href="#cb2-166" aria-hidden="true" tabindex="-1"></a><span class="fu">## Dampak Biaya Jangka Panjang</span></span>
+<span id="cb2-167"><a href="#cb2-167" aria-hidden="true" tabindex="-1"></a>Selisih expense ratio 1,7% per tahun mengurangi nilai akhir sekitar Rp 155 juta — lebih dari 25% dari nilai total. Biaya kecil yang tampak tidak signifikan dalam jangka pendek menjadi sangat material dalam jangka panjang karena efek **compounding biaya**.</span>
+<span id="cb2-168"><a href="#cb2-168" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb2-169"><a href="#cb2-169" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-170"><a href="#cb2-170" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; *Sumber: Reilly &amp; Brown (2015), Ch. 24; OJK (2023)*</span></span>
+<span id="cb2-171"><a href="#cb2-171" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-172"><a href="#cb2-172" aria-hidden="true" tabindex="-1"></a><span class="fu">## Cara Memilih Reksa Dana</span></span>
+<span id="cb2-173"><a href="#cb2-173" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-174"><a href="#cb2-174" aria-hidden="true" tabindex="-1"></a><span class="fu">### Langkah Sistematis</span></span>
+<span id="cb2-175"><a href="#cb2-175" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-176"><a href="#cb2-176" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Tentukan tujuan investasi dan horizon waktu** → menentukan jenis reksa dana yang tepat.</span>
+<span id="cb2-177"><a href="#cb2-177" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Sesuaikan dengan profil risiko** → konservatif (RDPU/RDPT), moderat (RDC), agresif (RDS).</span>
+<span id="cb2-178"><a href="#cb2-178" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Periksa rekam jejak kinerja** → minimal 3–5 tahun, bandingkan dengan benchmark.</span>
+<span id="cb2-179"><a href="#cb2-179" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Perhatikan biaya** → cek expense ratio, subscription/redemption fee.</span>
+<span id="cb2-180"><a href="#cb2-180" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>**Cek reputasi MI** → AUM (aset kelolaan), pengalaman, rekam jejak MI.</span>
+<span id="cb2-181"><a href="#cb2-181" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>**Pastikan legal OJK** → cek di <span class="co">[</span><span class="ot">pengawasan.ojk.go.id</span><span class="co">](https://pengawasan.ojk.go.id)</span> — waspada reksa dana ilegal!</span>
+<span id="cb2-182"><a href="#cb2-182" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-183"><a href="#cb2-183" aria-hidden="true" tabindex="-1"></a><span class="fu">### Metrik Kinerja Reksa Dana</span></span>
+<span id="cb2-184"><a href="#cb2-184" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-185"><a href="#cb2-185" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Metrik <span class="pp">|</span> Formula <span class="pp">|</span> Interpretasi <span class="pp">|</span></span>
+<span id="cb2-186"><a href="#cb2-186" aria-hidden="true" tabindex="-1"></a><span class="pp">|--------|---------|-------------|</span></span>
+<span id="cb2-187"><a href="#cb2-187" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Return** <span class="pp">|</span> $\frac{\text{NAB}_t - \text{NAB}_0}{\text{NAB}_0}$ <span class="pp">|</span> Imbal hasil absolut <span class="pp">|</span></span>
+<span id="cb2-188"><a href="#cb2-188" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Sharpe Ratio** <span class="pp">|</span> $\frac{R_p - R_f}{\sigma_p}$ <span class="pp">|</span> Return per unit risiko <span class="pp">|</span></span>
+<span id="cb2-189"><a href="#cb2-189" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Alpha (Jensen's)** <span class="pp">|</span> $R_p - <span class="co">[</span><span class="ot">R_f + \beta(R_m - R_f)</span><span class="co">]</span>$ <span class="pp">|</span> Return di atas/bawah benchmark <span class="pp">|</span></span>
+<span id="cb2-190"><a href="#cb2-190" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Tracking Error** <span class="pp">|</span> $\sigma(R_p - R_{\text{idx}})$ <span class="pp">|</span> Penyimpangan dari indeks (reksa dana indeks/ETF) <span class="pp">|</span></span>
+<span id="cb2-191"><a href="#cb2-191" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-192"><a href="#cb2-192" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb2-193"><a href="#cb2-193" aria-hidden="true" tabindex="-1"></a><span class="fu">## Tips Praktis</span></span>
+<span id="cb2-194"><a href="#cb2-194" aria-hidden="true" tabindex="-1"></a>Untuk investor pemula dengan jangka panjang (&gt;5 tahun), pertimbangkan reksa dana indeks atau ETF terlebih dahulu. Biayanya rendah, transparan, dan secara historis sulit dikalahkan oleh reksa dana aktif dalam jangka panjang. Setelah lebih berpengalaman, dapat mempertimbangkan reksa dana aktif yang konsisten menghasilkan alpha.</span>
+<span id="cb2-195"><a href="#cb2-195" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb2-196"><a href="#cb2-196" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-197"><a href="#cb2-197" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; *Sumber: OJK (2023); Reilly &amp; Brown (2015), Ch. 24*</span></span>
+<span id="cb2-198"><a href="#cb2-198" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-199"><a href="#cb2-199" aria-hidden="true" tabindex="-1"></a><span class="fu">## Ringkasan</span></span>
+<span id="cb2-200"><a href="#cb2-200" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-201"><a href="#cb2-201" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Reksa dana** menghimpun dana dari banyak investor untuk dikelola secara kolektif oleh Manajer Investasi, diawasi OJK.</span>
+<span id="cb2-202"><a href="#cb2-202" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**NAB per unit** = (Total Aset − Liabilitas) / Jumlah Unit Beredar — nilai inilah yang mencerminkan harga reksa dana.</span>
+<span id="cb2-203"><a href="#cb2-203" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Empat jenis utama**: Pasar Uang (risiko terendah) → Pendapatan Tetap → Campuran → Saham (risiko tertinggi), sesuaikan dengan horizon waktu dan toleransi risiko.</span>
+<span id="cb2-204"><a href="#cb2-204" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Reksa dana aktif vs. pasif**: Aktif bertujuan *outperform* dengan biaya lebih tinggi; pasif mengikuti indeks dengan biaya rendah. Mayoritas reksa dana aktif gagal *outperform* indeks jangka panjang.</span>
+<span id="cb2-205"><a href="#cb2-205" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>**ETF** adalah reksa dana indeks yang diperdagangkan di bursa secara real-time — lebih likuid dan transparan dibanding reksa dana konvensional.</span>
+<span id="cb2-206"><a href="#cb2-206" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>**Biaya adalah faktor kritis** — perbedaan 1–2% expense ratio per tahun sangat signifikan dalam jangka 10–20 tahun karena efek compounding.</span>
+<span id="cb2-207"><a href="#cb2-207" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-208"><a href="#cb2-208" aria-hidden="true" tabindex="-1"></a><span class="fu">## Latihan Soal</span></span>
+<span id="cb2-209"><a href="#cb2-209" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-210"><a href="#cb2-210" aria-hidden="true" tabindex="-1"></a>**Soal 1 — Perhitungan NAB**</span>
+<span id="cb2-211"><a href="#cb2-211" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-212"><a href="#cb2-212" aria-hidden="true" tabindex="-1"></a>Reksa dana "Nusantara Growth" memiliki portofolio:</span>
+<span id="cb2-213"><a href="#cb2-213" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Saham senilai Rp 800 miliar</span>
+<span id="cb2-214"><a href="#cb2-214" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Obligasi senilai Rp 150 miliar</span>
+<span id="cb2-215"><a href="#cb2-215" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Kas Rp 20 miliar</span>
+<span id="cb2-216"><a href="#cb2-216" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Liabilitas (fee terutang, dll.) Rp 8 miliar</span>
+<span id="cb2-217"><a href="#cb2-217" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Jumlah unit beredar: 500 juta unit</span>
+<span id="cb2-218"><a href="#cb2-218" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-219"><a href="#cb2-219" aria-hidden="true" tabindex="-1"></a>(a) Hitung NAB per unit. (b) Investor Budi memiliki 10.000 unit — berapa nilai investasinya? (c) Bulan depan portofolio naik 5%, sementara liabilitas tetap dan unit beredar bertambah 10 juta (karena investor baru masuk). Hitung NAB baru per unit.</span>
+<span id="cb2-220"><a href="#cb2-220" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-221"><a href="#cb2-221" aria-hidden="true" tabindex="-1"></a>**Soal 2 — Pemilihan Jenis Reksa Dana**</span>
+<span id="cb2-222"><a href="#cb2-222" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-223"><a href="#cb2-223" aria-hidden="true" tabindex="-1"></a>Cocokkan profil investor berikut dengan jenis reksa dana yang paling tepat dan jelaskan alasannya:</span>
+<span id="cb2-224"><a href="#cb2-224" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-225"><a href="#cb2-225" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Investor <span class="pp">|</span> Profil <span class="pp">|</span></span>
+<span id="cb2-226"><a href="#cb2-226" aria-hidden="true" tabindex="-1"></a><span class="pp">|----------|--------|</span></span>
+<span id="cb2-227"><a href="#cb2-227" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Andi <span class="pp">|</span> Menabung untuk dana pensiun 25 tahun lagi, bisa menerima fluktuasi jangka pendek <span class="pp">|</span></span>
+<span id="cb2-228"><a href="#cb2-228" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Budi <span class="pp">|</span> Dana darurat yang perlu bisa dicairkan kapan saja tanpa risiko turun <span class="pp">|</span></span>
+<span id="cb2-229"><a href="#cb2-229" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Citra <span class="pp">|</span> Menabung untuk uang muka rumah 3 tahun lagi, tidak suka risiko tinggi <span class="pp">|</span></span>
+<span id="cb2-230"><a href="#cb2-230" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Dian <span class="pp">|</span> Investor berpengalaman, tujuan jangka panjang 10 tahun, tapi ingin ada alokasi defensif <span class="pp">|</span></span>
+<span id="cb2-231"><a href="#cb2-231" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-232"><a href="#cb2-232" aria-hidden="true" tabindex="-1"></a>**Soal 3 — Dampak Biaya**</span>
+<span id="cb2-233"><a href="#cb2-233" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-234"><a href="#cb2-234" aria-hidden="true" tabindex="-1"></a>Investor menanamkan Rp 50 juta selama 15 tahun. Return portofolio bruto 9% per tahun. Bandingkan dua pilihan:</span>
+<span id="cb2-235"><a href="#cb2-235" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Reksa Dana A (aktif): expense ratio 2,2% per tahun</span>
+<span id="cb2-236"><a href="#cb2-236" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Reksa Dana B (indeks/ETF): expense ratio 0,3% per tahun</span>
+<span id="cb2-237"><a href="#cb2-237" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-238"><a href="#cb2-238" aria-hidden="true" tabindex="-1"></a>(a) Hitung nilai akhir masing-masing (gunakan rumus compound: $V = P(1+r)^n$, dengan $r$ = return net of fees). (b) Berapa selisih nilai akhirnya? (c) Berapa % dari nilai akhir Reksa Dana B yang "hilang" akibat fee tinggi di Reksa Dana A?</span>
+<span id="cb2-239"><a href="#cb2-239" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-240"><a href="#cb2-240" aria-hidden="true" tabindex="-1"></a>**Soal 4 — Evaluasi Kinerja**</span>
+<span id="cb2-241"><a href="#cb2-241" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-242"><a href="#cb2-242" aria-hidden="true" tabindex="-1"></a>Reksa dana saham ABC membukukan return 3 tahun terakhir: +12%, +8%, −3%. Benchmark IHSG: +10%, +5%, −5%. $R_f = 4\%$ per tahun (rata-rata), $\sigma_p = 15\%$, $\beta = 1{,}1$.</span>
+<span id="cb2-243"><a href="#cb2-243" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-244"><a href="#cb2-244" aria-hidden="true" tabindex="-1"></a>(a) Hitung rata-rata return geometrik reksa dana dan IHSG. (b) Hitung Sharpe Ratio reksa dana. (c) Hitung alpha Jensen — apakah manajer menambah nilai atau tidak? (d) Apakah reksa dana ini layak dipilih? Pertimbangkan semua metrik.</span>
+<span id="cb2-245"><a href="#cb2-245" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-246"><a href="#cb2-246" aria-hidden="true" tabindex="-1"></a><span class="fu">## Referensi</span></span>
+<span id="cb2-247"><a href="#cb2-247" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-248"><a href="#cb2-248" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>OJK. (2023). *Reksa Dana: Panduan untuk Investor*. Otoritas Jasa Keuangan.</span>
+<span id="cb2-249"><a href="#cb2-249" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Reilly, F. K., &amp; Brown, K. C. (2015). *Investment Analysis and Portfolio Management* (10th ed.), Chapter 24. Cengage Learning.</span>
+<span id="cb2-250"><a href="#cb2-250" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Fabozzi, F. J., &amp; Markowitz, H. M. (2011). *The Theory and Practice of Investment Management* (2nd ed.), Chapter 3. John Wiley &amp; Sons.</span>
+<span id="cb2-251"><a href="#cb2-251" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>S&amp;P Dow Jones Indices. (2023). *SPIVA Indonesia Scorecard*. S&amp;P Global.</span></code></pre></div><button title="Salin ke Papan Klip" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

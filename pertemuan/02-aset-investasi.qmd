@@ -1,0 +1,342 @@
+---
+title: "Pertemuan 2: Kelas Aset & Perusahaan Investasi"
+subtitle: "Manajemen Investasi — EKM 19608"
+---
+
+## Tujuan Pembelajaran
+
+Setelah mengikuti pertemuan ini, mahasiswa diharapkan mampu:
+
+1. Mengidentifikasi dan membandingkan kelas aset utama (*asset classes*) yang tersedia bagi investor.
+2. Menjelaskan karakteristik risiko dan return masing-masing kelas aset.
+3. Membedakan jenis-jenis perusahaan investasi (*investment companies*): open-end vs. closed-end.
+4. Menghitung *Net Asset Value* (NAV) dan *expense ratio* reksa dana.
+5. Membandingkan reksa dana (*mutual fund*) dengan *Exchange-Traded Fund* (ETF).
+
+## Kelas Aset (*Asset Classes*)
+
+Kelas aset adalah kelompok instrumen investasi yang memiliki **karakteristik risiko-return serupa** dan berperilaku mirip dalam berbagai kondisi ekonomi. Pemahaman tentang kelas aset menjadi fondasi bagi keputusan **alokasi aset** — yang menurut berbagai studi empiris merupakan determinan utama kinerja portofolio jangka panjang (berkontribusi sekitar 90% variasi return portofolio).
+
+### Kelas Aset Tradisional
+
+#### 1. Ekuitas (*Equity / Stocks*)
+
+Ekuitas merepresentasikan **kepemilikan** (*ownership*) atas perusahaan. Pemegang saham berhak atas dividen dan sisa kekayaan perusahaan setelah seluruh kewajiban dilunasi (*residual claim*).
+
+**Karakteristik utama:**
+
+- **Return historis**: Tertinggi di antara kelas aset tradisional (~10–12% nominal per tahun di pasar AS).
+- **Risiko**: Tinggi — *standard deviation* historis ~15–20% per tahun.
+- **Sumber return**: *Capital gain* + *dividend yield*.
+- **Likuiditas**: Tinggi untuk saham *large-cap* yang terdaftar di bursa.
+
+Subkategori ekuitas meliputi:
+
+| Subkategori | Karakteristik | Contoh |
+|------------|--------------|--------|
+| *Large-cap* | Kapitalisasi pasar > Rp 100 T | BBCA, TLKM, ASII |
+| *Mid-cap* | Rp 10 T – Rp 100 T | ACES, MAPI |
+| *Small-cap* | < Rp 10 T | Banyak saham di papan pengembangan |
+| *Growth stocks* | Pertumbuhan laba tinggi, P/E tinggi | Saham teknologi |
+| *Value stocks* | P/E rendah, *undervalued* | Saham sektor komoditas saat harga rendah |
+
+#### 2. Instrumen Pendapatan Tetap (*Fixed Income / Bonds*)
+
+Obligasi adalah instrumen utang di mana investor **meminjamkan dana** kepada penerbit (*issuer*) — bisa pemerintah atau korporasi — dengan imbalan pembayaran bunga (*coupon*) secara periodik dan pengembalian pokok (*principal*) saat jatuh tempo.
+
+**Karakteristik utama:**
+
+- **Return historis**: Moderat (~4–6% nominal per tahun).
+- **Risiko**: Lebih rendah dari ekuitas, namun terekspos *interest rate risk* dan *credit risk*.
+- **Sumber return**: *Coupon income* + *capital gain/loss* (jika dijual sebelum jatuh tempo).
+
+Jenis-jenis utama:
+
+| Jenis | Penerbit | Risiko Kredit | Contoh |
+|-------|---------|:------------:|--------|
+| Obligasi pemerintah (*government bonds*) | Pemerintah pusat | Sangat rendah | SUN, ORI, SBR |
+| Obligasi korporasi (*corporate bonds*) | Perusahaan | Menengah–Tinggi | Obligasi TLKM, ADHI |
+| Obligasi daerah (*municipal bonds*) | Pemerintah daerah | Rendah–Menengah | Relatif jarang di Indonesia |
+| *High-yield bonds* ("junk bonds") | Perusahaan rating rendah | Tinggi | Rating di bawah BBB |
+
+#### 3. Instrumen Pasar Uang (*Money Market*)
+
+Instrumen pasar uang adalah sekuritas utang **jangka pendek** (jatuh tempo ≤ 1 tahun) dengan risiko rendah dan likuiditas tinggi. Kelas aset ini berfungsi sebagai tempat "parkir" dana sementara.
+
+**Contoh:** Sertifikat Bank Indonesia (SBI), deposito, *commercial paper*, *repurchase agreement* (repo).
+
+**Return**: Rendah, mendekati *risk-free rate* (~4–6% di Indonesia).
+
+### Kelas Aset Alternatif
+
+Selain kelas aset tradisional, investor institusional semakin banyak mengalokasikan dana ke **aset alternatif** untuk tujuan diversifikasi:
+
+| Kelas Aset Alternatif | Karakteristik | Keunggulan | Kelemahan |
+|-----------------------|--------------|-----------|----------|
+| **Real Estate** | Properti fisik atau REIT | Lindung inflasi, *income* stabil | Tidak likuid, biaya transaksi tinggi |
+| **Komoditas** (*Commodities*) | Emas, minyak, CPO | Lindung inflasi, diversifikasi | Tidak menghasilkan *cash flow* |
+| **Private Equity** | Investasi di perusahaan non-publik | Return potensial tinggi | Sangat tidak likuid, horison panjang |
+| **Hedge Funds** | Strategi investasi fleksibel | *Absolute return*, diversifikasi | Biaya tinggi, kompleks, kurang transparan |
+| **Infrastruktur** | Jalan tol, bandara, pembangkit listrik | *Cash flow* stabil, jangka panjang | Tidak likuid, regulasi ketat |
+
+::: {.callout-note}
+## Korelasi Antar Kelas Aset
+Salah satu alasan utama diversifikasi ke berbagai kelas aset adalah **korelasi yang tidak sempurna** (*imperfect correlation*) di antara mereka. Misalnya, emas cenderung berkorelasi negatif atau rendah dengan ekuitas — ketika pasar saham turun, harga emas sering naik. Konsep korelasi ini akan dibahas lebih mendalam di [Pertemuan 3: Seleksi Portofolio](03-seleksi-portofolio.qmd).
+:::
+
+> *Sumber: Fabozzi & Markowitz (2011), Ch. 2; Smart, Gitman & Joehnk (2017), Ch. 4*
+
+## Perbandingan Risiko-Return Kelas Aset
+
+Hubungan fundamental dalam investasi adalah ***risk-return trade-off***: kelas aset dengan *expected return* lebih tinggi cenderung memiliki risiko (volatilitas) yang lebih tinggi pula.
+
+Berikut ilustrasi data historis (perkiraan berdasarkan pasar global):
+
+| Kelas Aset | Return Rata-Rata (Nominal) | Standar Deviasi | Sharpe Ratio |
+|-----------|:-------------------------:|:---------------:|:------------:|
+| Pasar Uang | 3–5% | 1–2% | — |
+| Obligasi Pemerintah | 5–7% | 5–8% | 0,3–0,5 |
+| Obligasi Korporasi | 6–8% | 7–10% | 0,3–0,5 |
+| Ekuitas Large-Cap | 10–12% | 15–20% | 0,3–0,4 |
+| Ekuitas Small-Cap | 12–15% | 20–30% | 0,3–0,4 |
+| Real Estate | 8–10% | 12–18% | 0,3–0,5 |
+
+::: {.callout-important}
+## Prinsip Fundamental
+$$
+\text{Expected Return} = R_f + \text{Risk Premium}
+$$
+Setiap kelas aset memiliki *risk premium* yang berbeda. Semakin tinggi risiko yang ditanggung, semakin besar kompensasi (*risk premium*) yang diminta investor.
+:::
+
+> *Sumber: Fabozzi & Markowitz (2011), Ch. 2; Reilly & Brown (2015), Ch. 3*
+
+## Perusahaan Investasi (*Investment Companies*)
+
+Perusahaan investasi adalah entitas yang **mengumpulkan dana dari banyak investor** dan menginvestasikannya secara kolektif dalam portofolio sekuritas. Model bisnis ini memberikan keuntungan bagi investor kecil berupa diversifikasi, manajemen profesional, dan efisiensi biaya transaksi.
+
+### Open-End Fund (Reksa Dana)
+
+Reksa dana (*mutual fund*) adalah perusahaan investasi **open-end** yang karakteristik utamanya:
+
+- **Menerbitkan unit penyertaan baru** setiap ada investor yang ingin membeli.
+- **Membeli kembali (*redeem*) unit** dari investor yang ingin menjual.
+- Harga jual-beli ditentukan oleh ***Net Asset Value*** (NAV) yang dihitung **sekali sehari** (biasanya di akhir hari perdagangan).
+- Tidak diperdagangkan di bursa.
+
+### Closed-End Fund
+
+Berbeda dengan reksa dana, *closed-end fund*:
+
+- Menerbitkan **jumlah saham tetap** melalui IPO (*Initial Public Offering*).
+- Setelah IPO, saham diperdagangkan di **bursa** seperti saham biasa.
+- Harga pasar bisa berbeda dari NAV — bisa diperdagangkan pada ***premium*** (harga > NAV) atau ***discount*** (harga < NAV).
+
+| Aspek | Open-End (Reksa Dana) | Closed-End Fund |
+|-------|:--------------------:|:--------------:|
+| Jumlah unit/saham | Tidak tetap (bisa bertambah/berkurang) | Tetap setelah IPO |
+| Cara transaksi | Beli/jual langsung ke manajer investasi | Jual-beli di bursa |
+| Harga | Selalu = NAV | Bisa ≠ NAV (premium/discount) |
+| Likuiditas | Dijamin oleh MI (T+3 s/d T+7) | Tergantung likuiditas pasar |
+| Frekuensi harga | Sekali sehari | Real-time (selama jam bursa) |
+
+### Net Asset Value (NAV)
+
+NAV adalah nilai bersih per unit penyertaan reksa dana, yang menunjukkan berapa nilai setiap unit jika seluruh aset dijual dan seluruh kewajiban dilunasi.
+
+::: {.callout-important}
+## Formula Kunci
+$$
+NAV = \frac{\text{Total Aset} - \text{Total Kewajiban}}{\text{Jumlah Unit Beredar}}
+$$
+:::
+
+### Contoh Perhitungan NAV
+
+Reksa Dana Maju Bersama memiliki data berikut pada akhir hari perdagangan:
+
+| Komponen | Nilai |
+|----------|------:|
+| Total nilai pasar saham dalam portofolio | Rp 500.000.000.000 |
+| Total nilai pasar obligasi dalam portofolio | Rp 200.000.000.000 |
+| Kas dan setara kas | Rp 50.000.000.000 |
+| *Accrued fees* dan kewajiban lainnya | Rp 5.000.000.000 |
+| Jumlah unit penyertaan beredar | 500.000.000 unit |
+
+**Langkah 1:** Hitung total aset.
+
+$$
+\text{Total Aset} = 500 + 200 + 50 = \text{Rp } 750 \text{ miliar}
+$$
+
+**Langkah 2:** Hitung NAV.
+
+$$
+NAV = \frac{750.000.000.000 - 5.000.000.000}{500.000.000} = \frac{745.000.000.000}{500.000.000}
+$$
+
+$$
+NAV = \text{Rp } 1.490 \text{ per unit}
+$$
+
+::: {.callout-tip}
+## Interpretasi
+NAV sebesar Rp 1.490 berarti jika seorang investor ingin membeli atau menjual unit reksa dana ini hari itu, harga per unit adalah Rp 1.490. Jika NAV kemarin adalah Rp 1.475, maka return harian reksa dana ini adalah $\frac{1.490 - 1.475}{1.475} = 1,02\%$.
+:::
+
+> *Sumber: Fabozzi & Markowitz (2011), Ch. 2; Smart, Gitman & Joehnk (2017), Ch. 4*
+
+## Biaya Investasi: Expense Ratio
+
+Investor reksa dana menanggung berbagai biaya yang secara kolektif disebut ***expense ratio*** — yaitu persentase total aset yang dipotong setiap tahun untuk menutup biaya operasional.
+
+### Komponen Expense Ratio
+
+$$
+\text{Expense Ratio} = \frac{\text{Total Biaya Operasional Tahunan}}{\text{Rata-Rata Total Aset Bersih}} \times 100\%
+$$
+
+Komponen biaya meliputi:
+
+| Komponen | Penjelasan | Besaran Tipikal |
+|----------|-----------|:--------------:|
+| *Management fee* | Imbalan manajer investasi | 0,5%–2,0% |
+| *Custodian fee* | Biaya bank kustodian | 0,1%–0,25% |
+| *Administrative expenses* | Biaya administrasi, audit, hukum | 0,05%–0,2% |
+| *12b-1 fee* (jika ada) | Biaya distribusi/pemasaran | 0–0,75% |
+
+### Contoh Perhitungan Expense Ratio
+
+Reksa Dana Alpha memiliki rata-rata total aset bersih Rp 2 triliun selama satu tahun. Biaya operasional tahun tersebut:
+
+| Komponen Biaya | Nilai |
+|---------------|------:|
+| *Management fee* | Rp 30.000.000.000 |
+| *Custodian fee* | Rp 3.000.000.000 |
+| Biaya administrasi | Rp 2.000.000.000 |
+| **Total** | **Rp 35.000.000.000** |
+
+$$
+\text{Expense Ratio} = \frac{35.000.000.000}{2.000.000.000.000} \times 100\% = 1,75\%
+$$
+
+### Dampak Expense Ratio terhadap Return
+
+*Expense ratio* mungkin terlihat kecil, namun efeknya bersifat **compounding** dan sangat signifikan dalam jangka panjang.
+
+**Contoh:** Dua reksa dana identik kecuali *expense ratio* — Fund A (ER = 0,5%) dan Fund B (ER = 2,0%). Keduanya menghasilkan *gross return* 10% per tahun. Investasi awal Rp 100 juta selama 20 tahun:
+
+| | Fund A (ER 0,5%) | Fund B (ER 2,0%) |
+|--|:-:|:-:|
+| *Net annual return* | 9,5% | 8,0% |
+| Nilai setelah 20 tahun | Rp 100 juta × $(1{,}095)^{20}$ | Rp 100 juta × $(1{,}08)^{20}$ |
+| | = **Rp 613,2 juta** | = **Rp 466,1 juta** |
+| **Selisih** | | **Rp 147,1 juta** |
+
+::: {.callout-warning}
+## Kesalahan Umum
+Investor pemula sering mengabaikan *expense ratio* karena nilainya tampak kecil (1–2%). Namun contoh di atas menunjukkan bahwa selisih 1,5% *expense ratio* dapat mengakibatkan perbedaan **Rp 147 juta** (atau ~24% dari nilai akhir) selama 20 tahun. Selalu bandingkan *expense ratio* sebelum memilih reksa dana!
+:::
+
+> *Sumber: Smart, Gitman & Joehnk (2017), Ch. 4–5*
+
+## Reksa Dana vs. ETF
+
+*Exchange-Traded Fund* (ETF) adalah inovasi yang menggabungkan keunggulan reksa dana (diversifikasi, biaya rendah) dengan fleksibilitas saham (diperdagangkan real-time di bursa).
+
+### Perbandingan Komprehensif
+
+| Aspek | Reksa Dana (Mutual Fund) | ETF |
+|-------|:-----------------------:|:---:|
+| **Perdagangan** | Sekali sehari (berdasarkan NAV) | Sepanjang jam bursa (real-time) |
+| **Harga** | NAV akhir hari | Harga pasar (bisa ≠ NAV) |
+| **Minimum investasi** | Bervariasi (Rp 10.000–Rp 1 juta) | 1 lot (100 unit) |
+| **Expense ratio** | 0,5%–2,5% | 0,1%–0,7% |
+| **Transparansi** | Portofolio dilaporkan berkala | Portofolio biasanya harian |
+| **Pajak** | Potensi *capital gain distribution* | Lebih efisien pajak |
+| **Strategi dominan** | Aktif dan pasif | Mayoritas pasif (*index tracking*) |
+| **Mekanisme harga** | *Forward pricing* (NAV dihitung akhir hari) | *Real-time market pricing* |
+
+### Mekanisme Creation/Redemption ETF
+
+Salah satu keunggulan struktural ETF adalah mekanisme ***creation/redemption*** yang menjaga harga ETF tetap mendekati NAV:
+
+1. **Creation**: *Authorized Participant* (AP) — biasanya bank investasi besar — menyerahkan sekeranjang saham (*creation basket*) kepada pengelola ETF dan menerima unit ETF baru sebagai gantinya.
+2. **Redemption**: Proses sebaliknya — AP menyerahkan unit ETF dan menerima kembali sekeranjang saham.
+3. **Arbitrase**: Jika harga ETF di pasar > NAV (*premium*), AP akan *create* unit baru (beli saham, tukar ke ETF, jual ETF) → tekanan jual menurunkan harga. Sebaliknya jika *discount*.
+
+::: {.callout-tip}
+## Insight Praktis
+Untuk investor jangka panjang dengan tujuan *passive investing*, ETF umumnya lebih efisien karena *expense ratio* lebih rendah. Namun, reksa dana masih relevan bagi investor yang menginginkan manajemen aktif atau memiliki kebiasaan investasi rutin (seperti *dollar cost averaging* otomatis).
+:::
+
+> *Sumber: Fabozzi & Markowitz (2011), Ch. 2; Smart, Gitman & Joehnk (2017), Ch. 5*
+
+## Jenis-Jenis Reksa Dana
+
+Reksa dana diklasifikasikan berdasarkan **kelas aset dominan** dan **strategi investasi**:
+
+### Berdasarkan Regulasi Indonesia (OJK)
+
+| Jenis Reksa Dana | Alokasi Utama | Risiko | Target Investor |
+|-----------------|--------------|:------:|----------------|
+| **Pasar Uang** | 100% instrumen pasar uang (jatuh tempo < 1 tahun) | Rendah | Konservatif, horison pendek |
+| **Pendapatan Tetap** | Min. 80% obligasi | Menengah | Investor income-oriented |
+| **Campuran** | Maks. 79% ekuitas + obligasi | Menengah | Investor moderat |
+| **Saham** | Min. 80% ekuitas | Tinggi | Investor agresif, horison panjang |
+
+### Berdasarkan Strategi (Konteks Global)
+
+| Jenis | Strategi | Contoh |
+|-------|---------|--------|
+| *Index fund* | Mereplikasi indeks pasar | Reksa Dana Indeks LQ45 |
+| *Sector fund* | Fokus pada sektor tertentu | Reksa Dana sektor perbankan |
+| *Balanced fund* | Kombinasi ekuitas + fixed income | Reksa Dana campuran |
+| *Target-date fund* | Alokasi berubah otomatis mendekati target pensiun | Belum umum di Indonesia |
+| *Fund of funds* | Berinvestasi di reksa dana lain | Tersedia di beberapa MI |
+
+> *Sumber: Smart, Gitman & Joehnk (2017), Ch. 4–5*
+
+## Ringkasan
+
+1. **Kelas aset utama** terdiri dari ekuitas, fixed income, dan instrumen pasar uang — masing-masing dengan profil risiko-return yang berbeda. Aset alternatif (real estate, komoditas, private equity) digunakan untuk diversifikasi tambahan.
+2. **Risk-return trade-off** adalah prinsip fundamental: kelas aset dengan return lebih tinggi memiliki risiko lebih tinggi.
+3. **Perusahaan investasi** dibagi menjadi open-end (reksa dana) dan closed-end. Reksa dana menentukan harga berdasarkan NAV harian, sedangkan closed-end fund diperdagangkan di bursa.
+4. **NAV** dihitung sebagai (Total Aset − Total Kewajiban) / Jumlah Unit Beredar.
+5. ***Expense ratio*** berdampak signifikan pada return jangka panjang karena efek *compounding* — selisih 1,5% bisa menghasilkan perbedaan puluhan persen setelah 20 tahun.
+6. **ETF** menawarkan keunggulan biaya rendah dan fleksibilitas perdagangan real-time melalui mekanisme *creation/redemption*.
+7. **Pemilihan reksa dana** harus mempertimbangkan tujuan investasi, horison waktu, toleransi risiko, dan biaya.
+
+## Latihan Soal
+
+**Soal 1 — Perhitungan NAV**
+
+Reksa Dana Sejahtera memiliki portofolio berikut pada akhir hari:
+
+- Saham: Rp 800 miliar (nilai pasar)
+- Obligasi: Rp 400 miliar (nilai pasar)
+- Deposito: Rp 100 miliar
+- *Accrued expenses*: Rp 8 miliar
+- Unit beredar: 1.000.000.000 unit
+
+(a) Hitung NAV per unit.
+(b) Jika seorang investor membeli 10.000 unit, berapa total yang harus dibayar?
+(c) Keesokan harinya, nilai pasar saham naik 2% sementara komponen lain tetap. Berapa NAV baru?
+
+**Soal 2 — Expense Ratio & Dampak Jangka Panjang**
+
+Reksa Dana P memiliki *expense ratio* 0,3% dan Reksa Dana Q memiliki *expense ratio* 1,8%. Keduanya menghasilkan *gross return* identik sebesar 11% per tahun. Jika Anda menginvestasikan Rp 50 juta selama 25 tahun di masing-masing reksa dana, (a) berapa nilai akhir di masing-masing? (b) berapa selisihnya dalam rupiah dan persentase?
+
+**Soal 3 — Closed-End Fund Premium/Discount**
+
+Sebuah *closed-end fund* memiliki NAV Rp 2.500 per saham namun diperdagangkan di bursa pada harga Rp 2.200. (a) Apakah fund ini diperdagangkan pada *premium* atau *discount*? (b) Berapa persentase premium/discount-nya? (c) Jelaskan satu kemungkinan alasan mengapa kondisi ini bisa terjadi.
+
+**Soal 4 — Perbandingan Produk**
+
+Seorang investor berusia 28 tahun memiliki dana Rp 20 juta untuk diinvestasikan setiap bulan dengan horison 30 tahun. Ia membandingkan: (A) Reksa Dana Saham Aktif (ER = 2,0%, *alpha* historis = 1,5%), (B) ETF Indeks LQ45 (ER = 0,3%). Analisis kelebihan dan kekurangan masing-masing pilihan dan berikan rekomendasi dengan justifikasi.
+
+## Referensi
+
+- Fabozzi, F. J., & Markowitz, H. M. (2011). *The Theory and Practice of Investment Management* (2nd ed.), Chapter 2. John Wiley & Sons.
+- Smart, S. B., Gitman, L. J., & Joehnk, M. D. (2017). *Fundamentals of Investing* (13th ed.), Chapters 4–5. Pearson.
+- Reilly, F. K., & Brown, K. C. (2015). *Investment Analysis and Portfolio Management* (10th ed.), Chapter 3. Cengage Learning.

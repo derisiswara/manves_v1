@@ -1,0 +1,165 @@
+---
+title: "Latihan Soal — Persiapan UAS"
+subtitle: "Manajemen Investasi — EKM 19608"
+number-sections: true
+---
+
+Halaman ini berisi kompilasi latihan soal dari Pertemuan 9–14 untuk persiapan Ujian Akhir Semester (UAS). Materi UAS mencakup:
+
+| Pertemuan | Topik |
+|:---------:|-------|
+| 9 | Saham Biasa |
+| 10 | Manajemen Portofolio Ekuitas |
+| 11 | Valuasi Saham |
+| 12 | Manajemen Portofolio Ekuitas Kuantitatif |
+| 13 | Long-Short Equity |
+| 14 | Risiko Multifaktor & Derivatif Ekuitas |
+
+::: {.callout-note}
+## Catatan
+UAS bersifat **komprehensif** — materi UTS (Pertemuan 1–7) juga bisa diujikan. Pastikan untuk me-review [Latihan UTS](../latihan/latihan-uts.qmd) juga.
+:::
+
+---
+
+## Pertemuan 9 — Saham Biasa
+
+**Soal 9.1** Jelaskan perbedaan utama antara saham biasa dan saham preferen berdasarkan: (a) hak suara, (b) dividen, (c) klaim likuidasi, dan (d) potensi capital gain.
+
+**Soal 9.2** PT ABC akan melakukan *rights issue* dengan rasio 4:1 di harga Rp 3.500. Harga pasar saat ini Rp 5.000. Investor memiliki 8.000 saham. (a) Berapa saham baru yang boleh dibeli? (b) Hitung *theoretical ex-rights price* (TERP). (c) Hitung nilai teoritis per right.
+
+**Soal 9.3** Hitung return indeks menggunakan metode *price-weighted* dan *value-weighted*:
+
+| Saham | Harga Awal | Harga Akhir | Saham Beredar (juta) |
+|:-----:|:----------:|:----------:|:-------------------:|
+| M | Rp 4.000 | Rp 4.400 | 8 |
+| N | Rp 2.000 | Rp 1.900 | 15 |
+| O | Rp 8.000 | Rp 8.800 | 3 |
+
+(a) Hitung return masing-masing metode. (b) Jelaskan mengapa hasilnya berbeda. (c) Metode mana yang digunakan IHSG?
+
+**Soal 9.4** Investor membeli 100 lot saham di harga Rp 3.000 dan menjual di Rp 3.400. Komisi beli: 0,15%, komisi jual: 0,25%, pajak jual: 0,10%. Hitung: (a) total biaya transaksi, (b) net profit, (c) effective return.
+
+---
+
+## Pertemuan 10 — Manajemen Portofolio Ekuitas
+
+**Soal 10.1** Portofolio indeks dan benchmark:
+
+| Kuartal | $R_p$ | $R_b$ |
+|:-------:|:-----:|:-----:|
+| Q1 | 5,5% | 5,0% |
+| Q2 | −3,2% | −3,8% |
+| Q3 | 7,1% | 7,5% |
+| Q4 | 2,0% | 2,3% |
+| Q5 | −1,5% | −1,0% |
+| Q6 | 4,8% | 4,5% |
+
+Hitung: (a) Rata-rata excess return. (b) Tracking error (quarterly). (c) Annualized tracking error (×$\sqrt{4}$). (d) Information Ratio.
+
+**Soal 10.2** Manajer X: return 17%, $\beta = 1{,}2$, TE = 7%. Manajer Y: return 14,5%, $\beta = 0{,}95$, TE = 4,5%. $R_f = 5\%$, $R_m = 12\%$. (a) Hitung Jensen's Alpha masing-masing. (b) Hitung IR. (c) Manajer mana yang lebih baik sebagai pelengkap (*satellite*) portofolio core-satellite?
+
+**Soal 10.3** Analisis RBSA (Returns-Based Style Analysis) seorang manajer menunjukkan: Large Value 50%, Large Growth 20%, Small Value 20%, Fixed Income 10%. Manajer mengklaim strateginya "aggressive growth all-cap." (a) Apakah klaim manajer konsisten dengan RBSA? (b) Benchmark apa yang paling tepat?
+
+**Soal 10.4** Portofolio Rp 2 miliar: 75% core (index fund, ER 0,25%) dan 25% satellite (manajer aktif, fee 2,5%, expected alpha 3,0%). (a) Hitung total biaya per tahun. (b) Jika benchmark return 11%, hitung expected portfolio return. (c) Berapa minimum alpha agar strategi ini *breakeven* vs. 100% pasif?
+
+---
+
+## Pertemuan 11 — Valuasi Saham
+
+**Soal 11.1** PT Dividen Jaya: $D_0 = \text{Rp 300}$, pertumbuhan dividen konstan 9%, $k = 15\%$. (a) Hitung intrinsic value. (b) Jika harga pasar Rp 4.800, apakah layak dibeli? (c) Hitung margin of safety. (d) Jika growth rate direvisi ke 6%, berapa perubahan intrinsic value (%)? 
+
+**Soal 11.2** PT Startup Indo: $D_0 = \text{Rp 50}$. Pertumbuhan 30% selama 5 tahun, kemudian 5% selamanya. $k = 20\%$. Hitung intrinsic value menggunakan two-stage DDM.
+
+**Soal 11.3** Data PT Infrastruktur Besar (miliar Rp): Net Income = 1.200, Depreciation = 400, CapEx = 600, ΔWC = 80, Net Borrowing = 200. Saham beredar: 5 miliar lembar. Pertumbuhan FCFE: 6%, $k = 12\%$. (a) Hitung FCFE. (b) FCFE per saham. (c) Intrinsic value.
+
+**Soal 11.4** Empat perusahaan consumer goods:
+
+| Perusahaan | EPS | BV/Share | EBITDA (M) | Market Cap (M) | Debt (M) | Cash (M) |
+|:----------:|:---:|:-------:|:----------:|:--------------:|:--------:|:--------:|
+| A | Rp 400 | Rp 2.000 | 800 | 8.000 | 1.500 | 500 |
+| B | Rp 250 | Rp 1.500 | 500 | 4.500 | 800 | 200 |
+| C | Rp 500 | Rp 3.000 | 1.200 | 12.000 | 600 | 1.000 |
+| D | Rp 180 | Rp 900 | 300 | 2.700 | 400 | 100 |
+
+Hitung P/E, P/B, dan EV/EBITDA untuk semua perusahaan. Identifikasi saham yang paling menarik dan paling mahal berdasarkan valuasi relatif.
+
+---
+
+## Pertemuan 12 — Portofolio Kuantitatif
+
+**Soal 12.1** Hitung composite score (Value 35%, Momentum 35%, Quality 30%):
+
+| Saham | z-Value | z-Momentum | z-Quality |
+|:-----:|:------:|:---------:|:--------:|
+| A | 2,0 | 0,5 | 0,8 |
+| B | −0,3 | 1,8 | 1,5 |
+| C | 1,0 | 1,0 | 1,0 |
+| D | 0,5 | −0,8 | 2,0 |
+| E | −1,0 | 2,5 | −0,3 |
+
+Rangking dan tentukan mana yang masuk kuintil atas (beli) dan kuintil bawah (jual/hindari).
+
+**Soal 12.2** Backtest strategi value-momentum selama 15 tahun:
+
+| Metrik | Strategi | Benchmark |
+|--------|:--------:|:---------:|
+| Annualized Return | 14,5% | 10,2% |
+| Volatility | 19% | 15% |
+| Max Drawdown | −42% | −35% |
+| Annual Turnover | 180% |  |
+
+$R_f = 3\%$, biaya round-trip = 0,50%. (a) Hitung Sharpe Ratio strategi dan benchmark. (b) Dampak biaya transaksi per tahun. (c) Net Sharpe Ratio setelah biaya. (d) Apakah strategi masih layak?
+
+**Soal 12.3** Jelaskan perbedaan antara: (a) survivorship bias vs. look-ahead bias, (b) in-sample vs. out-of-sample testing. Berikan contoh bagaimana masing-masing bisa menyesatkan hasil backtest.
+
+**Soal 12.4** Manajer kuantitatif memiliki universe 200 saham, portofolio 40 saham. Constraints: bobot min 1%, bobot maks 5%, no short-selling, sektor keuangan max 40%, turnover kuartalan max 30%. (a) Apakah mungkin memiliki portofolio equal-weight? (b) Jika 15 dari 40 saham masuk sektor keuangan, berapa range bobot sektor keuangan? (c) Apa trade-off antara ketatnya constraints dan potensi alpha?
+
+---
+
+## Pertemuan 13 — Long-Short Equity
+
+**Soal 13.1** Investor short sell 5.000 lembar saham di Rp 6.000. Initial margin = 50%, maintenance margin = 25%. (a) Berapa margin deposit awal? (b) Pada harga berapa terjadi margin call? (c) Jika cover di Rp 4.500, biaya pinjaman 0,8%, hitung net profit dan return on equity.
+
+**Soal 13.2** Hedge fund: NAV Rp 5 miliar. Long 130%, Short 50%. Return long = +14%, return short = +5% (saham naik). $R_f = 4\%$, biaya pinjaman = 1,5%. (a) Hitung gross dan net exposure. (b) Hitung return dari posisi long, posisi short, dan short rebate. (c) Total portfolio return. (d) Jika benchmark return = 10%, berapa alpha?
+
+**Soal 13.3** Portofolio long ($\beta_L = 1{,}4$) dan portofolio short ($\beta_S = 0{,}6$). Long weight = 100%. (a) Berapa short weight untuk beta-neutral? (b) Verifikasi bahwa portfolio beta = 0. (c) Jika pasar turun 10%, apa yang terjadi pada portofolio beta-neutral (asumsikan alpha = 0 dan hanya faktor market yang relevan)?
+
+**Soal 13.4** Pair trading: BBNI dan BMRI. Rasio historis BBNI/BMRI = 0,65 (±0,05). Saat ini: BBNI = Rp 5.800, BMRI = Rp 7.500 (rasio = 0,773). (a) Apa strategi yang tepat? (b) Jika rasio kembali ke 0,68 (BBNI = Rp 5.440, BMRI = Rp 8.000), hitung profit per pair. (c) Identifikasi 2 risiko utama strategi ini.
+
+---
+
+## Pertemuan 14 — Risiko Multifaktor & Derivatif Ekuitas
+
+**Soal 14.1** Call option pada saham BBCA: $K$ = Rp 9.000, $C$ = Rp 600. Hitung payoff dan profit jika harga saat expiration: (a) Rp 7.500, (b) Rp 9.600, (c) Rp 11.000. (d) Tentukan break-even price.
+
+**Soal 14.2** Investor memiliki 10.000 lembar saham @ Rp 5.000. Ia membeli protective put: $K$ = Rp 4.500, $P$ = Rp 350. (a) Berapa kerugian maksimal (Rp dan %)? (b) Break-even price? (c) Bandingkan P&L dengan dan tanpa proteksi jika harga turun ke Rp 3.000.
+
+**Soal 14.3** Covered call: Long 5.000 lembar @ Rp 7.000. Short call: $K$ = Rp 7.800, $C$ = Rp 300. (a) Profit maksimal. (b) Break-even price. (c) Jika harga naik ke Rp 9.000, berapa profit aktual dan opportunity cost?
+
+**Soal 14.4** Portofolio Rp 8 miliar, $\beta = 1{,}25$. Index futures: harga 1.100, multiplier Rp 500.000/poin. (a) Berapa kontrak untuk mengurangi beta ke 0,75? (b) Berapa kontrak untuk full hedge? (c) Jika indeks turun 8%, hitung approx. P&L portofolio sebelum dan setelah full hedge.
+
+**Soal 14.5** Portofolio memiliki risk attribution berikut:
+
+| Faktor | Kontribusi Risiko |
+|--------|:-----------------:|
+| Market | 68% |
+| Size | 12% |
+| Value | 10% |
+| Momentum | 5% |
+| Specific | 5% |
+
+(a) Apakah portofolio ini well-diversified? Jelaskan. (b) Manajer mengklaim sebagai "stock picker." Apakah klaim ini konsisten dengan risk attribution? (c) Bagaimana cara mengurangi market risk contribution tanpa menjual saham?
+
+---
+
+## Tips Persiapan UAS
+
+::: {.callout-tip}
+## Strategi Belajar
+1. **Formula kunci UAS**: DDM (Gordon Growth + two-stage), FCFE, P/E justified, tracking error, IR, payoff opsi (call & put), protective put, covered call, futures hedging ($N_f$), composite score.
+2. **Pahami hubungan antar konsep**: valuasi (Pert. 11) digunakan untuk stock selection (Pert. 10), yang di-scale secara kuantitatif (Pert. 12), dan bisa dilakukan long-short (Pert. 13), dengan hedging via derivatif (Pert. 14).
+3. **Latih kasus numerik**: Hitung DDM, FCFE valuation, option payoff, dan futures hedging secara manual.
+4. **Review juga materi UTS** — UAS bersifat komprehensif.
+5. **Perhatikan assumptions**: Setiap model memiliki asumsi — pertanyaan konseptual sering menguji pemahaman tentang kapan model berlaku dan kapan tidak.
+:::

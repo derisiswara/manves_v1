@@ -1,0 +1,87 @@
+---
+title: "Manajemen Investasi"
+subtitle: "EKM 19608 — Program Studi S1 Manajemen, Perbanas Institute"
+number-sections: false
+---
+
+::: {.hero-section}
+## Selamat Datang
+
+Mata kuliah **Manajemen Investasi** (EKM 19608) membahas teori dan praktik pengelolaan investasi secara menyeluruh — mulai dari pemahaman kelas aset, konstruksi portofolio, model *asset pricing*, hingga strategi manajemen portofolio ekuitas modern.
+
+**Dosen Pengampu:** Lia Kian
+
+**SKS:** 3 SKS | **Semester:** Ganjil/Genap
+:::
+
+## Deskripsi Mata Kuliah
+
+Mata kuliah ini dirancang untuk memberikan pemahaman komprehensif tentang proses manajemen investasi (*investment management process*) dari perspektif manajer investasi profesional. Mahasiswa akan mempelajari bagaimana menentukan tujuan investasi, memilih kelas aset yang sesuai, mengonstruksi portofolio yang optimal, serta mengevaluasi kinerja portofolio.
+
+Pembahasan dimulai dari fondasi teori portofolio Markowitz, berlanjut ke model *asset pricing* (CAPM dan model faktor), lalu mendalami instrumen investasi utama — saham, obligasi, dan reksa dana — serta implementasi praktis dalam valuasi dan manajemen portofolio ekuitas, termasuk penggunaan derivatif untuk manajemen risiko.
+
+Seluruh materi disajikan dengan pendekatan **teori + perhitungan manual**, di mana setiap konsep dijelaskan secara naratif dan setiap formula disertai contoh perhitungan langkah demi langkah.
+
+## Capaian Pembelajaran Lulusan (CPL)
+
+Setelah menyelesaikan mata kuliah ini, mahasiswa diharapkan mampu:
+
+1. **Memahami** proses manajemen investasi secara komprehensif, termasuk peran berbagai jenis investor dan kelas aset.
+2. **Menerapkan** teori seleksi portofolio Markowitz untuk mengonstruksi portofolio yang efisien.
+3. **Menganalisis** hubungan risiko dan *expected return* menggunakan CAPM dan model faktor multifaktor.
+4. **Mengevaluasi** valuasi saham menggunakan metode *discounted cash flow* (DCF) dan *relative valuation*.
+5. **Membandingkan** instrumen investasi utama: saham, obligasi, dan reksa dana, serta karakteristik risiko-return masing-masing.
+6. **Mengidentifikasi** peran derivatif dalam manajemen risiko portofolio.
+
+## Jadwal Pertemuan
+
+::: {.schedule-table}
+
+| Pertemuan | Topik | Referensi Utama |
+|:---------:|-------|-----------------|
+| 1 | Overview Manajemen Investasi | Fabozzi & Markowitz Ch.1; Smart et al. Ch.1 |
+| 2 | Kelas Aset & Perusahaan Investasi | Fabozzi & Markowitz Ch.2; Smart et al. Ch.4–5 |
+| 3 | Seleksi Portofolio | Fabozzi & Markowitz Ch.3; Reilly & Brown Ch.7–8 |
+| 4 | Capital Asset Pricing Model (CAPM) | Fabozzi & Markowitz Ch.4; Avramov Ch.3–4 |
+| 5 | Model Faktor & Pengantar Multifaktor | Fabozzi & Markowitz Ch.5; Fama & French (1993) |
+| 6 | Dinamika Harga Aset | Fabozzi & Markowitz Ch.6; Avramov Ch.6 |
+| 7 | Alokasi Aset & Konstruksi Portofolio | Fabozzi & Markowitz Ch.7; Reilly & Brown Ch.16 |
+| **8** | **Ujian Tengah Semester (UTS)** | **Materi Pertemuan 1–7** |
+| 9 | Dasar-Dasar Saham Biasa | Fabozzi & Markowitz Ch.9; Smart et al. Ch.6 |
+| 10 | Manajemen Portofolio Ekuitas | Fabozzi & Markowitz Ch.10; Reilly & Brown Ch.16 |
+| 11 | Valuasi Saham (DCF & Relative Valuation) | Fabozzi & Markowitz Ch.11; Reilly & Brown Ch.11 |
+| 12 | Reksa Dana & ETF | OJK (2023); Reilly & Brown Ch.24 |
+| 13 | Obligasi & Investasi Pendapatan Tetap | Reilly & Brown Ch.18–19; Kemenkeu RI (2023) |
+| 14 | Derivatif Ekuitas & Hedging | Fabozzi & Markowitz Ch.14; Reilly & Brown Ch.20 |
+| **15** | **Minggu Tenang** | **—** |
+| **16** | **Ujian Akhir Semester (UAS)** | **Materi Pertemuan 9–14** |
+
+:::
+
+## Sistem Penilaian
+
+| Komponen | Bobot |
+|----------|:-----:|
+| Ujian Tengah Semester (UTS) | 30% |
+| Tugas & Partisipasi | 25% |
+| Ujian Akhir Semester (UAS) | 45% |
+| **Total** | **100%** |
+
+### Ketentuan Tambahan
+
+- **UTS** mencakup materi Pertemuan 1–7 (teori portofolio, CAPM, APT, alokasi aset).
+- **UAS** mencakup materi Pertemuan 9–14 (valuasi saham, manajemen portofolio ekuitas, derivatif).
+- **Tugas** terdiri dari latihan perhitungan manual dan studi kasus yang dikumpulkan secara berkala.
+- Kehadiran minimal **75%** dari total pertemuan merupakan syarat mengikuti UAS.
+
+## Prasyarat
+
+Mahasiswa disarankan telah menempuh mata kuliah:
+
+- Pengantar Manajemen Keuangan
+- Statistika Bisnis
+- Matematika Ekonomi
+
+## Navigasi Materi
+
+Gunakan menu **Materi** di navbar atas untuk mengakses materi setiap pertemuan. Menu **Latihan** menyediakan kompilasi soal latihan untuk persiapan UTS dan UAS. Halaman **Referensi** memuat daftar pustaka lengkap yang digunakan sepanjang perkuliahan.

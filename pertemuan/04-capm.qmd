@@ -1,0 +1,443 @@
+---
+title: "Pertemuan 4: Capital Asset Pricing Model"
+subtitle: "Manajemen Investasi — EKM 19608"
+---
+
+## Tujuan Pembelajaran
+
+Setelah mengikuti pertemuan ini, mahasiswa diharapkan mampu:
+
+1. Menjelaskan asumsi-asumsi yang mendasari CAPM dan implikasinya.
+2. Membedakan *Capital Market Line* (CML) dan *Security Market Line* (SML).
+3. Menghitung *beta* ($\beta$) dari data return historis dan menginterpretasikannya.
+4. Menghitung *expected return* suatu aset menggunakan persamaan SML.
+5. Mengidentifikasi aset yang *overvalued* dan *undervalued* berdasarkan CAPM.
+
+## Pendahuluan: Dari Markowitz ke CAPM
+
+Di [Pertemuan 3](03-seleksi-portofolio.qmd), kita mempelajari bahwa investor rasional akan memilih portofolio yang berada di *efficient frontier*. Namun teori Markowitz belum menjawab pertanyaan fundamental: **berapa seharusnya expected return suatu aset individual, mengingat risikonya?**
+
+*Capital Asset Pricing Model* (CAPM), dikembangkan secara independen oleh **William Sharpe** (1964), **John Lintner** (1965), dan **Jan Mossin** (1966), menjawab pertanyaan tersebut. CAPM menyatakan bahwa dalam kondisi ekuilibrium pasar, **hanya risiko sistematis** (*systematic risk*) yang dihargai oleh pasar — risiko tidak sistematis (*unsystematic risk*) dapat dieliminasi melalui diversifikasi dan karenanya tidak mendapat kompensasi.
+
+::: {.callout-note}
+## Signifikansi CAPM
+CAPM adalah salah satu model paling berpengaruh dalam keuangan modern. Meskipun asumsinya sangat ketat dan validitas empirisnya terus diperdebatkan, CAPM tetap menjadi *benchmark* utama dalam praktik — digunakan untuk menghitung *cost of equity*, mengevaluasi kinerja portofolio, dan menilai kelayakan proyek investasi. William Sharpe menerima Nobel Ekonomi 1990 (bersama Markowitz dan Miller) atas kontribusinya.
+:::
+
+> *Sumber: Fabozzi & Markowitz (2011), Ch. 4; Avramov (2015), Ch. 3*
+
+## Asumsi CAPM
+
+CAPM dibangun di atas serangkaian asumsi ketat tentang perilaku investor dan kondisi pasar. Meskipun asumsi-asumsi ini tidak realistis secara sempurna, mereka memungkinkan derivasi model yang elegan dan memberikan insight yang berguna.
+
+### Asumsi tentang Investor
+
+1. **Investor bersifat *mean-variance optimizer***: Keputusan investasi hanya berdasarkan *expected return* dan *variance* (seperti framework Markowitz).
+2. **Investor memiliki horison satu periode yang sama**: Semua investor merencanakan investasi untuk satu periode yang identik.
+3. **Investor memiliki ekspektasi homogen (*homogeneous expectations*)**: Semua investor memiliki estimasi yang sama untuk *expected return*, *variance*, dan *covariance* semua aset.
+4. **Investor bersifat rasional dan *risk-averse***: Untuk tingkat return yang sama, investor selalu memilih risiko yang lebih rendah.
+
+### Asumsi tentang Pasar
+
+5. **Terdapat aset bebas risiko (*risk-free asset*)**: Investor dapat meminjam dan meminjamkan pada *risk-free rate* ($R_f$) yang sama, tanpa batas.
+6. **Tidak ada pajak dan biaya transaksi**: Semua aset dapat diperdagangkan tanpa *friction*.
+7. **Pasar sempurna (*perfect market*)**: Tidak ada investor individual yang cukup besar untuk memengaruhi harga. Semua informasi tersedia secara gratis dan simultan.
+8. **Semua aset dapat diperdagangkan dan dapat dibagi**: Termasuk *human capital* — semua aset likuid dan bisa dibeli dalam fraksi berapa pun.
+
+::: {.callout-warning}
+## Kesalahan Umum
+Mahasiswa sering mengkritik CAPM karena asumsinya "tidak realistis" — lalu menyimpulkan modelnya "tidak berguna". Ini pendekatan yang keliru. Dalam sains, model disederhanakan untuk menghasilkan prediksi yang *testable*. Pertanyaan yang tepat bukanlah "apakah asumsinya realistis?" melainkan "apakah prediksi modelnya cukup akurat untuk berguna?" CAPM, meskipun imperfect, tetap menjadi *first approximation* yang sangat bermanfaat.
+:::
+
+> *Sumber: Fabozzi & Markowitz (2011), Ch. 4; Avramov (2015), Ch. 3*
+
+## Capital Market Line (CML)
+
+### Konsep
+
+Ketika aset bebas risiko (*risk-free asset*) ditambahkan ke dalam analisis Markowitz, investor dapat mengombinasikan aset bebas risiko dengan **portofolio berisiko** mana pun di *efficient frontier*. Kombinasi ini menghasilkan garis lurus dalam ruang $\sigma$–$E(R)$.
+
+Portofolio berisiko optimal — yang dipilih **semua investor** karena ekspektasi homogen — adalah portofolio yang menghasilkan garis dengan **kemiringan tertinggi** (*steepest slope*) saat ditarik dari $R_f$ ke *efficient frontier*. Portofolio ini disebut ***market portfolio*** ($M$) dan garis tersebut disebut ***Capital Market Line*** (CML).
+
+### Formula CML
+
+::: {.callout-important}
+## Formula Kunci — Capital Market Line
+$$
+E(R_p) = R_f + \left[\frac{E(R_m) - R_f}{\sigma_m}\right] \sigma_p
+$$
+
+di mana:
+
+- $E(R_p)$ = expected return portofolio efisien
+- $R_f$ = risk-free rate
+- $E(R_m)$ = expected return portofolio pasar (*market portfolio*)
+- $\sigma_m$ = standard deviation portofolio pasar
+- $\sigma_p$ = standard deviation portofolio
+:::
+
+Kemiringan CML, $\frac{E(R_m) - R_f}{\sigma_m}$, disebut ***market price of risk*** atau ***Sharpe ratio*** portofolio pasar. Ini menunjukkan berapa unit tambahan *expected return* yang diperoleh untuk setiap unit tambahan risiko total ($\sigma$).
+
+### Contoh Perhitungan CML
+
+Diketahui:
+
+- $R_f = 5\%$
+- $E(R_m) = 12\%$
+- $\sigma_m = 16\%$
+
+**Kemiringan CML (*market price of risk*):**
+
+$$
+\text{Slope} = \frac{E(R_m) - R_f}{\sigma_m} = \frac{12\% - 5\%}{16\%} = \frac{7\%}{16\%} = 0{,}4375
+$$
+
+**Interpretasi:** Setiap 1% tambahan risiko ($\sigma$), investor mendapatkan kompensasi 0,4375% tambahan *expected return*.
+
+Jika seorang investor ingin portofolio dengan $\sigma_p = 10\%$:
+
+$$
+E(R_p) = 5\% + 0{,}4375 \times 10\% = 5\% + 4{,}375\% = 9{,}375\%
+$$
+
+Jika investor ingin portofolio dengan $\sigma_p = 24\%$ (lebih berisiko dari pasar → menggunakan *leverage*):
+
+$$
+E(R_p) = 5\% + 0{,}4375 \times 24\% = 5\% + 10{,}5\% = 15{,}5\%
+$$
+
+::: {.callout-tip}
+## Insight Praktis — Lending vs. Borrowing
+- Portofolio dengan $\sigma_p < \sigma_m$: Investor *"meminjamkan"* (*lending*) — menaruh sebagian dana di aset bebas risiko dan sisanya di portofolio pasar.
+- Portofolio dengan $\sigma_p > \sigma_m$: Investor *"meminjam"* (*borrowing*) — meminjam dana pada $R_f$ dan menginvestasikan lebih dari 100% kekayaan di portofolio pasar (*leverage*).
+:::
+
+> *Sumber: Fabozzi & Markowitz (2011), Ch. 4*
+
+## Beta ($\beta$): Ukuran Risiko Sistematis
+
+### Konsep
+
+Karena risiko tidak sistematis dapat dieliminasi melalui diversifikasi, **hanya risiko sistematis** yang relevan bagi investor yang memegang portofolio terdiversifikasi. CAPM mengukur risiko sistematis suatu aset menggunakan **beta** ($\beta$).
+
+::: {.callout-note}
+## Definisi Beta
+Beta ($\beta$) mengukur **sensitivitas return suatu aset terhadap return pasar**. Secara formal:
+
+$$
+\beta_i = \frac{\text{Cov}(R_i, R_m)}{\text{Var}(R_m)} = \frac{\text{Cov}(R_i, R_m)}{\sigma_m^2}
+$$
+
+atau equivalen:
+
+$$
+\beta_i = \rho_{i,m} \cdot \frac{\sigma_i}{\sigma_m}
+$$
+:::
+
+### Interpretasi Beta
+
+| Nilai Beta | Interpretasi | Contoh |
+|:----------:|-------------|--------|
+| $\beta = 1{,}0$ | Return aset bergerak **seiring** pasar | Index fund |
+| $\beta > 1{,}0$ | Aset lebih **volatile** dari pasar (*aggressive*) | Saham teknologi, *small-cap* |
+| $0 < \beta < 1{,}0$ | Aset kurang volatile dari pasar (*defensive*) | Saham utilitas, *consumer staples* |
+| $\beta = 0$ | Return tidak terkait pasar | Aset bebas risiko (secara teori) |
+| $\beta < 0$ | Return bergerak **berlawanan** pasar | Sangat jarang; emas kadang mendekati |
+
+**Contoh interpretasi:** Jika $\beta_{\text{BBCA}} = 1{,}2$, artinya ketika IHSG naik 10%, return BBCA **diharapkan** naik 12% (= $1{,}2 \times 10\%$). Sebaliknya, jika IHSG turun 10%, BBCA diharapkan turun 12%.
+
+### Contoh Perhitungan Beta dari Data Historis
+
+Berikut data return bulanan selama 6 bulan untuk Saham A dan Indeks Pasar:
+
+| Bulan | Return Saham A ($R_i$) | Return Pasar ($R_m$) |
+|:-----:|:---------------------:|:-------------------:|
+| 1 | 6% | 4% |
+| 2 | −3% | −2% |
+| 3 | 8% | 5% |
+| 4 | −1% | 1% |
+| 5 | 10% | 6% |
+| 6 | 4% | 2% |
+
+**Langkah 1:** Hitung rata-rata return.
+
+$$
+\bar{R}_i = \frac{6 + (-3) + 8 + (-1) + 10 + 4}{6} = \frac{24}{6} = 4\%
+$$
+
+$$
+\bar{R}_m = \frac{4 + (-2) + 5 + 1 + 6 + 2}{6} = \frac{16}{6} = 2{,}667\%
+$$
+
+**Langkah 2:** Hitung deviasi dan produk deviasi.
+
+| Bulan | $R_i - \bar{R}_i$ | $R_m - \bar{R}_m$ | $(R_i-\bar{R}_i)(R_m-\bar{R}_m)$ | $(R_m-\bar{R}_m)^2$ |
+|:-----:|:-----------------:|:-----------------:|:--------------------------------:|:-------------------:|
+| 1 | $2{,}000$ | $1{,}333$ | $2{,}667$ | $1{,}778$ |
+| 2 | $-7{,}000$ | $-4{,}667$ | $32{,}667$ | $21{,}778$ |
+| 3 | $4{,}000$ | $2{,}333$ | $9{,}333$ | $5{,}444$ |
+| 4 | $-5{,}000$ | $-1{,}667$ | $8{,}333$ | $2{,}778$ |
+| 5 | $6{,}000$ | $3{,}333$ | $20{,}000$ | $11{,}111$ |
+| 6 | $0{,}000$ | $-0{,}667$ | $0{,}000$ | $0{,}444$ |
+| | | **Jumlah** | **73{,}000** | **43{,}333** |
+
+**Langkah 3:** Hitung covariance dan variance.
+
+$$
+\text{Cov}(R_i, R_m) = \frac{73{,}000}{6 - 1} = \frac{73{,}000}{5} = 14{,}600
+$$
+
+$$
+\text{Var}(R_m) = \frac{43{,}333}{5} = 8{,}667
+$$
+
+**Langkah 4:** Hitung beta.
+
+$$
+\beta_i = \frac{\text{Cov}(R_i, R_m)}{\text{Var}(R_m)} = \frac{14{,}600}{8{,}667} = 1{,}685
+$$
+
+::: {.callout-tip}
+## Interpretasi
+Beta sebesar 1,685 menunjukkan bahwa Saham A bersifat ***aggressive*** — ia 68,5% lebih volatile daripada pasar. Ketika pasar naik 1%, Saham A diharapkan naik sekitar 1,685%. Saham dengan beta tinggi seperti ini cocok untuk investor dengan toleransi risiko tinggi yang mengekspektasikan pasar *bullish*.
+:::
+
+::: {.callout-warning}
+## Kesalahan Umum
+Beta yang dihitung dari data historis **bukan jaminan** beta di masa depan. Beta bisa berubah seiring perubahan bisnis model perusahaan, leverage keuangan, dan kondisi pasar. Oleh karena itu beta perlu diperbarui secara berkala menggunakan data yang lebih baru.
+:::
+
+> *Sumber: Fabozzi & Markowitz (2011), Ch. 4; Avramov (2015), Ch. 3*
+
+## Security Market Line (SML)
+
+### Konsep
+
+*Security Market Line* (SML) adalah **inti dari CAPM**. SML mendefinisikan hubungan linear antara *expected return* suatu aset dan **beta**-nya (risiko sistematis). Berbeda dengan CML yang hanya berlaku untuk portofolio efisien, SML berlaku untuk **semua aset dan portofolio** — efisien maupun tidak.
+
+### Formula SML
+
+::: {.callout-important}
+## Formula Kunci — Security Market Line (CAPM)
+$$
+E(R_i) = R_f + \beta_i \left[E(R_m) - R_f\right]
+$$
+
+di mana:
+
+- $E(R_i)$ = expected return aset ke-$i$ (dalam ekuilibrium)
+- $R_f$ = risk-free rate
+- $\beta_i$ = beta aset ke-$i$
+- $E(R_m) - R_f$ = *market risk premium* (MRP)
+:::
+
+### Contoh Perhitungan Expected Return via SML
+
+Diketahui:
+
+- $R_f = 5\%$
+- $E(R_m) = 12\%$ → Market Risk Premium = $12\% - 5\% = 7\%$
+
+Hitung expected return untuk tiga saham:
+
+| Saham | $\beta$ | Perhitungan | $E(R_i)$ |
+|:-----:|:------:|------------|:---------:|
+| X | 0,8 | $5\% + 0{,}8 \times 7\%$ | $10{,}6\%$ |
+| Y | 1,0 | $5\% + 1{,}0 \times 7\%$ | $12{,}0\%$ |
+| Z | 1,5 | $5\% + 1{,}5 \times 7\%$ | $15{,}5\%$ |
+
+**Verifikasi:**
+
+- Saham Y ($\beta = 1$): expected return = return pasar ✓
+- Saham X ($\beta < 1$): expected return < return pasar ✓
+- Saham Z ($\beta > 1$): expected return > return pasar ✓
+
+> *Sumber: Fabozzi & Markowitz (2011), Ch. 4; Avramov (2015), Ch. 3–4*
+
+## CML vs. SML: Perbedaan Penting
+
+::: {.callout-warning}
+## Kesalahan Umum
+Jangan samakan CML dengan SML! Ini adalah dua konsep yang berbeda.
+:::
+
+| Aspek | CML | SML |
+|-------|-----|-----|
+| **Ukuran risiko** | Total risk ($\sigma$) | Systematic risk ($\beta$) |
+| **Berlaku untuk** | Hanya portofolio **efisien** | **Semua** aset dan portofolio |
+| **Sumbu horizontal** | $\sigma_p$ | $\beta_i$ |
+| **Persamaan** | $E(R_p) = R_f + \frac{E(R_m)-R_f}{\sigma_m}\sigma_p$ | $E(R_i) = R_f + \beta_i[E(R_m)-R_f]$ |
+| **Interpretasi kemiringan** | *Market price of risk* (per unit $\sigma$) | *Market risk premium* (MRP) |
+| **Kegunaan utama** | Menentukan alokasi antara $R_f$ dan portofolio pasar | Menentukan *required return* dan menilai *mispricing* |
+
+## Menilai Mispricing: Alpha ($\alpha$)
+
+### Konsep
+
+Salah satu aplikasi terpenting CAPM adalah **mengidentifikasi aset yang mispriced** — yaitu aset yang return-nya tidak sesuai dengan apa yang diprediksi oleh SML.
+
+::: {.callout-note}
+## Definisi Alpha (Jensen's Alpha)
+$$
+\alpha_i = E(R_i)_{\text{actual}} - E(R_i)_{\text{CAPM}}
+$$
+
+- $\alpha > 0$: Aset memberikan return **lebih tinggi** dari yang diprediksi CAPM → ***undervalued*** → **Beli**
+- $\alpha < 0$: Aset memberikan return **lebih rendah** dari yang diprediksi CAPM → ***overvalued*** → **Jual**
+- $\alpha = 0$: Aset dihargai secara tepat (*fairly priced*) → berada di SML
+:::
+
+### Contoh Perhitungan Alpha
+
+Seorang analis mengestimasi expected return tiga saham berdasarkan analisis fundamental. Bandingkan dengan prediksi CAPM ($R_f = 5\%$, $E(R_m) = 12\%$):
+
+| Saham | $\beta$ | $E(R)_{\text{CAPM}}$ | $E(R)_{\text{Analis}}$ | $\alpha$ | Keputusan |
+|:-----:|:------:|:--------------------:|:---------------------:|:--------:|:---------:|
+| A | 0,8 | $5+0{,}8(7)=10{,}6\%$ | 13,0% | $+2{,}4\%$ | **Beli** (undervalued) |
+| B | 1,2 | $5+1{,}2(7)=13{,}4\%$ | 11,0% | $-2{,}4\%$ | **Jual** (overvalued) |
+| C | 1,0 | $5+1{,}0(7)=12{,}0\%$ | 12,0% | $0\%$ | **Tahan** (fairly priced) |
+
+::: {.callout-tip}
+## Interpretasi
+- **Saham A** berada **di atas** SML: analis mengekspektasikan return 13% padahal CAPM hanya "menuntut" 10,6% untuk beta 0,8. Ini menunjukkan saham tersebut memberikan kompensasi berlebih — layak dibeli.
+- **Saham B** berada **di bawah** SML: return yang diharapkan (11%) tidak cukup mengompensasi risiko beta 1,2 — layak dijual.
+- **Saham C** tepat **di** SML: *fairly priced*.
+:::
+
+> *Sumber: Fabozzi & Markowitz (2011), Ch. 4; Avramov (2015), Ch. 4*
+
+## Beta Portofolio
+
+Beta portofolio adalah **rata-rata tertimbang** beta aset-aset pembentuknya:
+
+$$
+\beta_p = \sum_{i=1}^{n} w_i \cdot \beta_i
+$$
+
+### Contoh Perhitungan
+
+| Saham | Bobot | $\beta$ | $w_i \times \beta_i$ |
+|:-----:|:-----:|:------:|:-------------------:|
+| BBCA | 40% | 1,2 | 0,48 |
+| TLKM | 30% | 0,8 | 0,24 |
+| ASII | 30% | 1,5 | 0,45 |
+| **Portofolio** | **100%** | | **$\beta_p = 1{,}17$** |
+
+Expected return portofolio via CAPM (dengan $R_f = 5\%$, $E(R_m) = 12\%$):
+
+$$
+E(R_p) = 5\% + 1{,}17 \times (12\% - 5\%) = 5\% + 8{,}19\% = 13{,}19\%
+$$
+
+::: {.callout-tip}
+## Insight Praktis
+Manajer portofolio dapat **mengatur beta portofolio** sesuai pandangannya tentang pasar:
+
+- Jika yakin pasar akan **naik** (*bullish*) → tingkatkan $\beta_p$ (overweight saham high-beta).
+- Jika khawatir pasar akan **turun** (*bearish*) → turunkan $\beta_p$ (overweight saham low-beta atau tambahkan aset bebas risiko).
+:::
+
+> *Sumber: Fabozzi & Markowitz (2011), Ch. 4*
+
+## Sharpe Ratio: Mengukur Kinerja Portofolio
+
+CAPM memberikan dasar bagi salah satu ukuran kinerja paling populer — **Sharpe Ratio**:
+
+$$
+S_p = \frac{E(R_p) - R_f}{\sigma_p}
+$$
+
+Sharpe Ratio mengukur ***excess return per unit risiko total***. Semakin tinggi, semakin baik kinerja portofolio relatif terhadap risiko yang diambil.
+
+### Contoh Perhitungan
+
+| Portofolio | $E(R_p)$ | $\sigma_p$ | Sharpe Ratio ($R_f = 5\%$) |
+|:----------:|:--------:|:---------:|:--------------------------:|
+| A | 14% | 20% | $(14-5)/20 = 0{,}45$ |
+| B | 12% | 15% | $(12-5)/15 = 0{,}47$ |
+| Pasar | 12% | 16% | $(12-5)/16 = 0{,}44$ |
+
+Berdasarkan Sharpe Ratio: **Portofolio B > A > Pasar** — B paling efisien per unit risiko, meskipun return absolutnya lebih rendah dari A.
+
+::: {.callout-tip}
+## Interpretasi Praktis
+Sharpe Ratio pasar ($\approx 0{,}44$) menjadi **benchmark**. Portofolio yang dikelola secara aktif harus memiliki Sharpe Ratio **lebih tinggi** dari benchmark agar manajemen aktifnya terjustifikasi.
+:::
+
+> *Sumber: Fabozzi & Markowitz (2011), Ch. 4; Reilly & Brown (2015), Ch. 18*
+
+## Keterbatasan CAPM
+
+Meskipun CAPM sangat berpengaruh dan banyak digunakan, model ini memiliki keterbatasan penting:
+
+1. **Asumsi tidak realistis** — pasar sempurna, tidak ada pajak/biaya transaksi, dan semua investor berpikir sama tidak pernah ada di dunia nyata.
+2. **Single-period model** — dunia nyata bersifat multi-period; ekspektasi berubah terus.
+3. **Beta tidak stabil** — beta berubah seiring perubahan bisnis dan leverage perusahaan, sehingga prediksi berdasarkan beta historis bisa tidak akurat.
+4. **Bukti empiris kurang kuat** — Fama & French (1993) menunjukkan bahwa selain beta, variabel lain seperti *ukuran perusahaan* dan *rasio nilai buku/harga* juga memengaruhi return secara signifikan.
+
+Keterbatasan-keterbatasan ini memotivasi pengembangan **model multifaktor** yang akan dibahas di [Pertemuan 5](05-model-faktor.qmd). Namun CAPM tetap menjadi *baseline* yang wajib dipahami sebelum masuk ke model yang lebih kompleks.
+
+> *Sumber: Fabozzi & Markowitz (2011), Ch. 4; Avramov (2015), Ch. 4*
+
+## Ringkasan
+
+1. **CAPM** menyatakan bahwa *expected return* suatu aset ditentukan oleh risiko **sistematis** ($\beta$) — bukan total risk ($\sigma$).
+2. **CML** menggambarkan hubungan risk-return untuk portofolio **efisien** menggunakan total risk; **SML** berlaku untuk **semua** aset menggunakan beta.
+3. **Beta** ($\beta = \text{Cov}(R_i,R_m)/\sigma_m^2$) mengukur sensitivitas return aset terhadap return pasar. $\beta > 1$ = agresif, $\beta < 1$ = defensif.
+4. **Persamaan SML**: $E(R_i) = R_f + \beta_i[E(R_m) - R_f]$ — ini adalah *required return* yang sepadan dengan risiko sistematis aset.
+5. **Alpha** ($\alpha$) mengukur selisih antara return ekspektasi analis dengan prediksi CAPM; $\alpha > 0$ menandakan aset *undervalued* (beli), $\alpha < 0$ *overvalued* (jual).
+6. **Sharpe Ratio** mengukur *excess return* per unit risiko total — berguna membandingkan kinerja antar portofolio.
+7. CAPM memiliki **keterbatasan** — asumsi ketat dan beta yang tidak stabil — namun tetap menjadi *baseline* yang wajib dipahami.
+
+## Latihan Soal
+
+**Soal 1 — Expected Return via SML**
+
+Diketahui $R_f = 4{,}5\%$ dan $E(R_m) = 11{,}5\%$. Hitung expected return menurut CAPM untuk saham dengan: (a) $\beta = 0{,}6$, (b) $\beta = 1{,}0$, (c) $\beta = 1{,}4$, (d) $\beta = 2{,}0$. Jelaskan pola yang Anda temukan.
+
+**Soal 2 — Perhitungan Beta**
+
+Berikut return bulanan Saham B dan Indeks Pasar selama 6 bulan:
+
+| Bulan | Saham B | Indeks Pasar |
+|:-----:|:-------:|:------------:|
+| 1 | 8% | 5% |
+| 2 | −4% | −3% |
+| 3 | 12% | 7% |
+| 4 | −2% | 0% |
+| 5 | 6% | 4% |
+| 6 | 10% | 6% |
+
+Hitung: (a) $\bar{R}_B$ dan $\bar{R}_m$, (b) $\text{Cov}(R_B, R_m)$, (c) $\text{Var}(R_m)$, dan (d) $\beta_B$. Klasifikasikan saham ini sebagai agresif atau defensif.
+
+**Soal 3 — Alpha dan Keputusan Investasi**
+
+Seorang analis mengestimasi expected return saham-saham berikut ($R_f = 5\%$, $E(R_m) = 13\%$):
+
+| Saham | $\beta$ | Expected Return (Analis) |
+|:-----:|:------:|:------------------------:|
+| P | 0,9 | 14% |
+| Q | 1,3 | 13% |
+| R | 1,1 | 14,5% |
+
+Untuk setiap saham: (a) hitung $E(R)$ menurut CAPM, (b) hitung $\alpha$, dan (c) tentukan apakah saham tersebut *overvalued*, *undervalued*, atau *fairly priced*.
+
+**Soal 4 — Beta Portofolio dan Sharpe Ratio**
+
+Seorang manajer mengelola portofolio dengan tiga saham ($R_f = 5\%$, $E(R_m) = 12\%$):
+
+| Saham | Bobot | Beta |
+|:-----:|:-----:|:----:|
+| BBCA | 50% | 0,9 |
+| TLKM | 30% | 0,7 |
+| ASII | 20% | 1,3 |
+
+(a) Hitung beta portofolio. (b) Hitung expected return portofolio menurut CAPM. (c) Jika return aktual portofolio adalah 12,5% dan $\sigma_p = 16\%$, hitung Sharpe Ratio portofolio. Bandingkan dengan Sharpe Ratio pasar ($\sigma_m = 18\%$).
+
+## Referensi
+
+- Fabozzi, F. J., & Markowitz, H. M. (2011). *The Theory and Practice of Investment Management* (2nd ed.), Chapter 4. John Wiley & Sons.
+- Avramov, D. (2015). *Investment Management*, Chapters 3–4. Hebrew University of Jerusalem.
+- Reilly, F. K., & Brown, K. C. (2015). *Investment Analysis and Portfolio Management* (10th ed.), Chapter 18. Cengage Learning.
+- Sharpe, W. F. (1964). Capital Asset Prices: A Theory of Market Equilibrium under Conditions of Risk. *Journal of Finance*, 19(3), 425–442.
